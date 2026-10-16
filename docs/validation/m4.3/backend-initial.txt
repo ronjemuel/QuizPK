@@ -1,0 +1,112 @@
+
+> quizpk-backend@1.0.0 test
+> node --test test/*.test.mjs
+
+✔ request validation trims input and rejects invalid types/settings/unknown controls (10.019385ms)
+✔ output boundary rejects empty/duplicate/partial/range/coercion/extra-field batches (4.280615ms)
+✔ HTTP success is versioned; retry returns same quiz and one provider call (363.703693ms)
+✔ auth and strict HTTPS fail before provider; embedded package/id gives no access (92.987385ms)
+✔ production requires local TLS proxy marker (110.515384ms)
+✔ per-user quota persists in SQL and cache retrieval does not spend quota (134.077231ms)
+✔ global daily budget protects provider across users (15.168923ms)
+✔ IP throttle expires and concurrency rejects another request (10.683615ms)
+✔ double tap while generation pending has one provider call (139.295769ms)
+✔ errors are sanitized and cached; provider secrets never appear (63.138154ms)
+✔ recoverable TIMEOUT (45.363692ms)
+✔ recoverable PROVIDER_LIMIT (33.310846ms)
+✔ recoverable PROVIDER_UNAVAILABLE (31.997538ms)
+✔ recoverable MALFORMED_QUESTIONS (46.208077ms)
+✔ recoverable TOPIC_REJECTED (42.355385ms)
+✔ restart with uncertain pending provider charge cannot call provider twice (4.767385ms)
+✔ Gemini structured output uses header secret, schema, bounded tokens and no automatic retries (5.741846ms)
+✔ provider limits/outage/malformed/safety/timeouts are mapped without provider bodies (5.96277ms)
+✔ selected Gemini 3.5 model uses a bounded low-thinking structured request (2.379923ms)
+✔ on-disk restart keeps auth, cached response, quota and uncertain reservations (196.067154ms)
+✖ shared fixture is accepted by online codec; protocol is independent of cloud auth (21.765ms)
+✔ protocol rejects unknown versions, forged roles/ownership/scores and coercions (3.32423ms)
+✔ future shared scoring vectors cover bounds, rounding, late, wrong and cancellation (0.894153ms)
+✔ future first-submit/fastest-correct vectors distinguish wrong-first, ties and zero correct (4.323461ms)
+✔ future transition vectors require manual moderator starts and forbid contestant controls (2.804846ms)
+✔ room API authenticates; health stays unchanged; code is not authentication (380.61477ms)
+✔ moderator is separate from eight contestants; ninth contestant cannot join (358.262384ms)
+✔ concurrent real HTTP join race never exceeds eight Classic seats (173.548384ms)
+✔ create retry is atomic/idempotent; same request with different payload conflicts (72.015385ms)
+✔ duplicate joins preserve participant identity; leave retry frees only one seat (124.374154ms)
+✔ one identity cannot occupy several rooms or claim creator role by display name (102.045231ms)
+✔ all cross-room reads/writes and role/owner forgery are rejected (138.963ms)
+✔ only owner can update lobby settings with a fresh revision; settings reset readiness (112.215154ms)
+✔ presence expires durably; host cannot be impersonated; explicit authenticated heartbeat recovers (149.065846ms)
+✔ disconnected players keep seats; reconnect is not an extra seat (156.107077ms)
+✔ expired and unknown invite codes have identical errors and reveal no room status (67.379385ms)
+✔ owner leave closes room without authority transfer; terminal snapshots omit roster/code (89.47877ms)
+✔ revoked identity cannot read, heartbeat or replay a previously successful creation (70.961538ms)
+✔ allowlisted snapshots never expose cloud identities, token hashes, private records or answers (56.589923ms)
+✔ invalid schemas/versions/JSON/types and oversized bodies fail with bounded sanitized errors (59.638154ms)
+✔ room commands retain strict production HTTPS enforcement (45.987692ms)
+✔ code-guess limit counts malformed and unsuccessful attempts; window expires (81.341154ms)
+✔ hourly code guessing remains capped across minute windows (229.171923ms)
+✔ write budget caps persistent receipts while snapshots remain available (256.574769ms)
+✔ room and ingress caps are enforced independently; unauthorized reads do not consume room budget (85.998846ms)
+✔ command clock window rejects stale/future new requests; existing receipts remain idempotent (60.886769ms)
+✔ per-user room request throttle is separate from Gemini quotas/throttle (924.524308ms)
+✔ global active-room cap is bounded (239.835693ms)
+✔ user daily creation cap survives closing rooms and cannot be overridden (142.160308ms)
+✔ room terminal cleanup and aged command replay cannot create a duplicate (55.009ms)
+✔ on-disk API restart preserves rooms/receipts/identity, invalidates presence and changes epoch (376.502154ms)
+✔ code collision retry is bounded and rolls back partial creation (28.171384ms)
+✖ additive M3 DB migration retains auth hashes, jobs, throttle and user_version without printing them (139.478462ms)
+✔ existing create-user CLI provisions unique tokens against a populated M3-compatible private DB (1577.342154ms)
+ℹ tests 54
+ℹ suites 0
+ℹ pass 52
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7601.387924
+
+✖ failing tests:
+
+test at test/protocol.test.mjs:7:1
+✖ shared fixture is accepted by online codec; protocol is independent of cloud auth (21.765ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'room.create',
+      'room.join',
+      'room.leave',
+      'room.heartbeat',
+      'room.ready',
+      'room.settings',
+  -   'match.start',
+  -   'match.answer'
+    ]
+  
+      at TestContext.<anonymous> (file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/backend/test/protocol.test.mjs:9:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.start (node:internal/test_runner/test:1191:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'room.create', 'room.join', 'room.leave', 'room.heartbeat', 'room.ready', 'room.settings' ],
+    expected: [ 'room.create', 'room.join', 'room.leave', 'room.heartbeat', 'room.ready', 'room.settings', 'match.start', 'match.answer' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at test/rooms.test.mjs:277:1
+✖ additive M3 DB migration retains auth hashes, jobs, throttle and user_version without printing them (139.478462ms)
+  Error: database is not open
+      at Store.close (file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/backend/src/store.mjs:50:21)
+      at TestContext.<anonymous> (file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/backend/test/rooms.test.mjs:297:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    code: 'ERR_INVALID_STATE'
+  }

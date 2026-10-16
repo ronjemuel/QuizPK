@@ -1,0 +1,20 @@
+{
+  "artifact": "artifacts/QuizPK-M3-ai-debug.apk",
+  "bytes": 6210337,
+  "sha256": "7fe96067cabeac51ce337a022e91743729c06d5f6752100e1a43b98d1665ff76",
+  "applicationId": "com.zeke.quizpk",
+  "versionName": "1.2-M3",
+  "versionCode": 3,
+  "minSdk": 24,
+  "targetSdk": 36,
+  "launcher": "com.zeke.quizpk.MainActivity",
+  "internetPermission": true,
+  "cleartextTrafficAllowed": false,
+  "signatureV2Verified": true,
+  "signerCount": 1,
+  "signingCertificateSha256": "f348cf5d46fb928644a96ef40bcecbaae780d45f6e15cdcdca42d1da1ee0eaff",
+  "sameSignerAsM2": true,
+  "identicalToCleanBuildOutput": true,
+  "realBackendGenerationVerified": false,
+  "physicalDeviceVerified": false
+}

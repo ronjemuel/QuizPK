@@ -1,0 +1,24 @@
+test_backup_or_config_tamper_prevents_start (test_m42_backend_ops.OpsTest.test_backup_or_config_tamper_prevents_start) ... ok
+test_guard_rejects_source_and_release_drift (test_m42_backend_ops.OpsTest.test_guard_rejects_source_and_release_drift) ... ok
+test_launch_rejects_active_listener (test_m42_backend_ops.OpsTest.test_launch_rejects_active_listener) ... ok
+test_launch_rejects_failed_or_incomplete_rehearsal (test_m42_backend_ops.OpsTest.test_launch_rejects_failed_or_incomplete_rehearsal) ... ok
+test_launch_rejects_missing_live_database (test_m42_backend_ops.OpsTest.test_launch_rejects_missing_live_database) ... ok
+test_online_backup_includes_committed_wal_and_ignores_uncommitted_data (test_m42_backend_ops.OpsTest.test_online_backup_includes_committed_wal_and_ignores_uncommitted_data) ... ERROR
+test_original_environment_is_exact_m3_recovery (test_m42_backend_ops.OpsTest.test_original_environment_is_exact_m3_recovery) ... ok
+test_production_uses_captured_environment_without_secret_arguments (test_m42_backend_ops.OpsTest.test_production_uses_captured_environment_without_secret_arguments) ... ok
+
+======================================================================
+ERROR: test_online_backup_includes_committed_wal_and_ignores_uncommitted_data (test_m42_backend_ops.OpsTest.test_online_backup_includes_committed_wal_and_ignores_uncommitted_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/test_m42_backend_ops.py", line 123, in test_online_backup_includes_committed_wal_and_ignores_uncommitted_data
+    backup_tool.backup('preflight')
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m42_backend_backup.py", line 74, in backup
+    raise RuntimeError('PRIVATE_ROOT_REQUIRED')
+RuntimeError: PRIVATE_ROOT_REQUIRED
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.155s
+
+FAILED (errors=1)

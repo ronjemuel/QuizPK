@@ -1,0 +1,11 @@
+{
+  "package": "com.zeke.quizpk",
+  "installedApkReadable": true,
+  "installedCertificateSha256": "f348cf5d46fb928644a96ef40bcecbaae780d45f6e15cdcdca42d1da1ee0eaff",
+  "installedMatchesPreservedM3Signer": true,
+  "installedMatchesRetainedM3ApkBytes": true,
+  "installedVersionCode": 3,
+  "installedVersionName": "1.2-M3",
+  "newVersion4IsUpgrade": true,
+  "inspectionCompleted": true
+}

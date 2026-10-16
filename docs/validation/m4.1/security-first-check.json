@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "sourceDocsFixturesAndEvidenceContainNoActualSecrets": true,
+    "workspacePrivateDatabaseStillAbsent": true,
+    "preexistingCredentialTokenSigningAndDataFilesUnchanged": true,
+    "m3CheckpointMatchesRecordedArchiveHash": true,
+    "checkpointExcludesSecretsSigningPrivateStateAndBuilds": false,
+    "checkpointContainsNoActualSecrets": true,
+    "androidBrandThemesBankReferencesBuildAndM3CoreUnchanged": true,
+    "noAndroidSourceOrResourceFilesAdded": true,
+    "retainedM3ApkBytesUnchanged": true,
+    "apkContainsNoSecretFilesOrValues": true,
+    "apkBankMatchesPreservedM2Bank": true,
+    "privateFileIgnoreRulesEffective": true,
+    "blankBackendTemplateRemainsTrackable": true
+  },
+  "counts": {
+    "publicFilesScanned": 305,
+    "privateFilesComparedWithoutPrintingHashes": 4,
+    "checkpointSourceFiles": 275,
+    "protectedM3SourceFilesCompared": 153
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "onlyPhone01CredentialChanged": true,
+    "allSavedJobsUnchanged": true,
+    "throttleUnchanged": true,
+    "schemaUnchanged": true,
+    "userVersionUnchanged": true,
+    "exposedTokenRejected": true,
+    "replacementTokenAccepted": true,
+    "privateTokenFileMatchesReplacement": true,
+    "tokenFile600": true
+  },
+  "allPassed": true,
+  "usersPreserved": 2,
+  "savedJobsPreserved": 4,
+  "rotationDirectory": "/data/data/com.termux/files/home/.local/share/quizpk-backups/20261013T032648Z-phone01-rotation",
+  "replacementTokenFile": "/data/data/com.termux/files/home/quizpk-server/private/phone01.token",
+  "backendStarted": false,
+  "liveMigrationPerformed": false
+}

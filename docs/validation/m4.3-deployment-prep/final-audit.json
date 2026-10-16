@@ -1,0 +1,6 @@
+{
+  "secretValuesAndHashesAbsentFromPublicOutputs": true,
+  "sevenPriorCheckpointsUnchanged": true,
+  "frozenOperationsVerified": true,
+  "finalRunningGuardPass": true
+}

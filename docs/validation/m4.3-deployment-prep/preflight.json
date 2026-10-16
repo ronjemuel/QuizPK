@@ -1,0 +1,24 @@
+{
+  "backupDirectory": "/data/data/com.termux/files/home/.local/share/quizpk-backups/20261013T094238Z-preflight",
+  "schema": 1,
+  "checks": {
+    "snapshotIntegrity": true,
+    "snapshotDataEqual": true,
+    "standaloneRestoreEqual": true,
+    "configCopiesVerified": true
+  },
+  "liveDurableBytesEqualDuringBackup": true,
+  "tableCounts": {
+    "jobs": 4,
+    "mp_limits": 7,
+    "mp_members": 7,
+    "mp_requests": 46,
+    "mp_rooms": 6,
+    "mp_schema": 1,
+    "throttle": 1,
+    "users": 2
+  },
+  "deployedSourceMatchesApprovedM42": true,
+  "liveServerStopped": false,
+  "liveMigrationPerformed": false
+}

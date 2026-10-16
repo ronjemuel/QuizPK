@@ -1,0 +1,12 @@
+{
+  "errors": 0,
+  "warnings": 52,
+  "previousWarnings": 48,
+  "increasedCounts": {
+    "PluralsCandidate": 2,
+    "Overdraw": 1,
+    "TooManyViews": 1
+  },
+  "decreasedCounts": {},
+  "newSuppressions": false
+}

@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "backupFilesVerified": true,
+    "liveSourceAndCredentialsUnchanged": true,
+    "liveDatabaseAndWalBytesUnchanged": false,
+    "privateBackupPermissions": true,
+    "allFourReviewCheckpointsUnchanged": true,
+    "approvedBackendAndProtocolUnchanged": true,
+    "androidAndBuildSourcesUnchanged": true,
+    "m3ApkUnchanged": true,
+    "m42ApkUnchanged": true,
+    "allPreviousPrivateFilesUnchanged": false,
+    "noActualCredentialsOrTokenHashesInPublicFiles": true,
+    "frozenHelpersEqualReviewedWorkspace": true,
+    "noWorkspaceDatabase": true,
+    "livePublicHttpsHealth200": true
+  },
+  "counts": {
+    "backendAndProtocolFiles": 16,
+    "androidAndBuildFiles": 129,
+    "previousPrivateFiles": 22,
+    "publicFilesScanned": 352
+  },
+  "allPassed": false,
+  "liveMigrationPerformed": false,
+  "liveRestartPerformed": false,
+  "androidModified": false,
+  "providerCalls": 0
+}

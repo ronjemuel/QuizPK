@@ -1,0 +1,15 @@
+{
+  "credential_files_valid_format": true,
+  "secret_ignore_rules_effective": true,
+  "safe_template_trackable": true,
+  "source_and_validation_secret_scan_clean": true,
+  "android_contains_no_provider_secret_or_private_path": true,
+  "apk_contains_no_secret_files": true,
+  "apk_secret_value_scan_clean": true,
+  "apk_no_backend_or_test_code": true,
+  "m2_seed_asset_unchanged": true,
+  "checkpoint_excludes_secrets": true,
+  "checkpoint_secret_value_scan_clean": true,
+  "m1_startup_brand_themes_and_m2_bank_preserved": true,
+  "m2_gameplay_and_scoring_engine_unchanged": true
+}

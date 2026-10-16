@@ -1,0 +1,19 @@
+test_backup_or_config_tamper_prevents_start (test_m42_backend_ops.OpsTest.test_backup_or_config_tamper_prevents_start) ... ok
+test_guard_rejects_source_and_release_drift (test_m42_backend_ops.OpsTest.test_guard_rejects_source_and_release_drift) ... ok
+test_launch_rejects_active_listener (test_m42_backend_ops.OpsTest.test_launch_rejects_active_listener) ... ok
+test_launch_rejects_failed_or_incomplete_rehearsal (test_m42_backend_ops.OpsTest.test_launch_rejects_failed_or_incomplete_rehearsal) ... ok
+test_launch_rejects_missing_live_database (test_m42_backend_ops.OpsTest.test_launch_rejects_missing_live_database) ... ok
+test_online_backup_includes_committed_wal_and_ignores_uncommitted_data (test_m42_backend_ops.OpsTest.test_online_backup_includes_committed_wal_and_ignores_uncommitted_data) ... ok
+test_original_environment_is_exact_m3_recovery (test_m42_backend_ops.OpsTest.test_original_environment_is_exact_m3_recovery) ... ok
+test_production_uses_captured_environment_without_secret_arguments (test_m42_backend_ops.OpsTest.test_production_uses_captured_environment_without_secret_arguments) ... ok
+test_stopped_backup_includes_nonempty_orphan_wal (test_m42_backend_ops.OpsTest.test_stopped_backup_includes_nonempty_orphan_wal) ... ok
+test_stopped_backup_never_creates_live_wal (test_m42_backend_ops.OpsTest.test_stopped_backup_never_creates_live_wal) ... ok
+test_stopped_guard_refuses_db_drift_after_rehearsal (test_m42_backend_ops.OpsTest.test_stopped_guard_refuses_db_drift_after_rehearsal) ... ok
+test_file_failure_after_commit_never_reenables_exposed_token (test_m42_rotation.RotationTests.test_file_failure_after_commit_never_reenables_exposed_token) ... ok
+test_live_data_drift_refuses_rotation (test_m42_rotation.RotationTests.test_live_data_drift_refuses_rotation) ... ok
+test_rotation_preserves_identity_other_users_and_jobs (test_m42_rotation.RotationTests.test_rotation_preserves_identity_other_users_and_jobs) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.153s
+
+OK

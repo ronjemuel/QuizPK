@@ -1,0 +1,13 @@
+{
+  "frozenHelperFiles": 5,
+  "recoveryRunbookFrozen": true,
+  "rehearsalChecks": 59,
+  "receiptBoundToRotatedBackup": true,
+  "preparedWindowRecordedAfterRehearsal": true,
+  "deploymentApproved": false,
+  "oldApprovedWindowStillAbsent": true,
+  "publicOriginUnchanged": true,
+  "bashBlocksParsed": 4,
+  "inlinePythonBlocksParsed": 2,
+  "liveCommandsExecuted": false
+}

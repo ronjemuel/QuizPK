@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/mp_scroll" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_network_panel" android:orientation="vertical">
+            <ImageView android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_players" android:importantForAccessibility="no" android:layout_marginTop="8dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_title" android:textAppearance="@style/Text.QuizPK.Title" android:layout_marginTop="16dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_intro" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="@color/surface_variant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_online" android:text="@string/mp_online" android:minHeight="56dp" app:icon="@drawable/ic_geography" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_online_body" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_local" android:text="@string/mp_local" android:minHeight="56dp" android:enabled="false" style="@style/Widget.Material3.Button.OutlinedButton" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_local_body" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_content" android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_online_badge" android:textAppearance="@style/Text.QuizPK.Label" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_heading" android:text="@string/mp_entry_title" android:textAppearance="@style/Text.QuizPK.Title" android:layout_marginTop="8dp" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardBackgroundColor="@color/surface_variant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_progress" android:indeterminate="true" android:visibility="invisible" style="?android:attr/progressBarStyleHorizontal" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_status" android:text="@string/mp_setup_status" android:textAppearance="@style/Text.QuizPK.Body" android:accessibilityLiveRegion="polite" />
+                    <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_retry" android:text="@string/mp_retry" android:minHeight="56dp" android:visibility="gone" android:layout_marginTop="8dp" style="@style/Widget.Material3.Button.OutlinedButton" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_connect" android:text="@string/mp_connect" android:minHeight="56dp" style="@style/Widget.Material3.Button.TextButton" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_entry_panel" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_entry_body" android:textAppearance="@style/Text.QuizPK.Body" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/create_room" android:text="@string/create_room" android:minHeight="56dp" android:enabled="false" android:layout_marginTop="16dp" app:icon="@drawable/ic_crown" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/join_room" android:text="@string/join_room" android:minHeight="56dp" android:enabled="false" android:layout_marginTop="8dp" app:icon="@drawable/ic_players" style="@style/Widget.Material3.Button.OutlinedButton" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_shared_login" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="16dp" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_choose_connection" android:text="@string/mp_choose_connection" android:minHeight="56dp" style="@style/Widget.Material3.Button.TextButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_create_panel" android:orientation="vertical" android:visibility="gone">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_create_name_layout" android:hint="@string/mp_name" android:layout_marginTop="12dp" app:counterEnabled="true" app:counterMaxLength="40">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_create_name" android:minHeight="56dp" android:maxLines="1" android:maxLength="40" android:inputType="textPersonName|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_mode_label" android:textAppearance="@style/Text.QuizPK.Section" android:layout_marginTop="20dp" />
+                <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_mode" android:orientation="vertical" android:checkedButton="@id/mp_classic">
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_classic" android:text="@string/mp_classic_option" android:minHeight="56dp" />
+                    <RadioButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_moderator" android:text="@string/mp_moderator_option" android:minHeight="56dp" />
+                </RadioGroup>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_role_help" android:text="@string/mp_classic_help" android:textAppearance="@style/Text.QuizPK.Body" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_lobby_settings" android:textAppearance="@style/Text.QuizPK.Section" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" />
+                <include layout="@layout/lobby_settings_fields" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_create_submit" android:text="@string/create_room" android:minHeight="56dp" android:layout_marginTop="16dp" app:icon="@drawable/ic_crown" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_create_back" android:text="@string/mp_form_back" android:minHeight="56dp" style="@style/Widget.Material3.Button.TextButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_panel" android:orientation="vertical" android:visibility="gone">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_name_layout" android:hint="@string/mp_name" android:layout_marginTop="12dp" app:counterEnabled="true" app:counterMaxLength="40">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_name" android:minHeight="56dp" android:maxLines="1" android:maxLength="40" android:inputType="textPersonName|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_code_layout" android:hint="@string/mp_invite_label" android:layout_marginTop="12dp" app:helperText="@string/mp_invite_hint">
+                    <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_code" android:minHeight="56dp" android:maxLines="1" android:maxLength="6" android:inputType="textCapCharacters|textNoSuggestions" android:fontFamily="monospace" android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_join_help" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="16dp" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_submit" android:text="@string/join_room" android:minHeight="56dp" android:layout_marginTop="16dp" app:icon="@drawable/ic_players" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_join_back" android:text="@string/mp_form_back" android:minHeight="56dp" style="@style/Widget.Material3.Button.TextButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_lobby_panel" android:orientation="vertical" android:visibility="gone">
+                <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_invite_label" android:textAppearance="@style/Text.QuizPK.Label" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_invite_code" android:fontFamily="monospace" android:textSize="28sp" android:textStyle="bold" android:textColor="@color/accent_text" android:letterSpacing="0.08" android:textIsSelectable="true" android:saveEnabled="false" android:layout_marginTop="8dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_expiry" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" />
+                        <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_copy_code" android:text="@string/mp_copy" android:minHeight="56dp" style="@style/Widget.Material3.Button.OutlinedButton" />
+                        <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_share_code" android:text="@string/mp_share" android:minHeight="56dp" style="@style/Widget.Material3.Button.OutlinedButton" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_code_private" android:textAppearance="@style/Text.QuizPK.Body" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_moderator_card" android:layout_marginTop="16dp" android:visibility="gone" app:cardBackgroundColor="@color/surface_variant">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_crown" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_moderator_label" android:textAppearance="@style/Text.QuizPK.Label" android:layout_marginTop="8dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_moderator_name" android:textAppearance="@style/Text.QuizPK.Section" android:layout_marginTop="8dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_moderator_presence" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_capacity" android:textAppearance="@style/Text.QuizPK.Section" android:layout_marginTop="24dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_ready_summary" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="4dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_empty_roster" android:text="@string/mp_empty_roster" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="12dp" />
+                <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_roster" android:nestedScrollingEnabled="false" android:layout_marginTop="12dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_host_status" android:text="@string/mp_host_missing" android:textAppearance="@style/Text.QuizPK.Body" android:textColor="@color/warning" android:visibility="gone" android:layout_marginTop="16dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_room_settings" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="24dp" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_edit_settings" android:text="@string/mp_edit_settings" android:minHeight="56dp" app:icon="@drawable/ic_settings" style="@style/Widget.Material3.Button.OutlinedButton" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_ready" android:text="@string/mp_ready" android:minHeight="56dp" android:layout_marginTop="12dp" />
+                <TextView android:id="@+id/mp_start_help" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/match_start_help" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="16dp" android:visibility="gone" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/mp_start_match" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/match_start" android:layout_marginTop="8dp" android:visibility="gone" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_leave" android:text="@string/mp_leave" android:minHeight="56dp" android:layout_marginTop="8dp" style="@style/Widget.Material3.Button.OutlinedButton" />
+            </LinearLayout>
+            <include layout="@layout/panel_classic_match" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_terminal_panel" android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_terminal_body" android:textAppearance="@style/Text.QuizPK.Body" />
+                <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_terminal_back" android:text="@string/mp_form_back" android:minHeight="56dp" android:layout_marginTop="16dp" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_lobby_only" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

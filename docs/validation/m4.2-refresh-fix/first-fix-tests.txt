@@ -1,0 +1,71 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Warning: Unable to set daemon's environment variables to match the client because: 
+  There is no native integration with this operating environment.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.aapt2FromMavenOverride=/tmp/manhwa-toolchain/sdk/build-tools/36.0.0/aapt2' is experimental.
+Add android.sync.suppressAgpWarnings=UNSUPPORTED_PROJECT_OPTION_USE to the gradle.properties file to suppress this warning.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:parseDebugLocalResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+
+> Task :app:compileDebugUnitTestJavaWithJavac
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/test/java/com/zeke/quizpk/StartupTest.java:35: warning: [deprecation] LEGACY in Mode has been deprecated
+@org.robolectric.annotation.SQLiteMode(org.robolectric.annotation.SQLiteMode.Mode.LEGACY)
+                                                                                 ^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/test/java/com/zeke/quizpk/LobbyFlowTest.java:30: warning: [deprecation] LEGACY in Mode has been deprecated
+@SQLiteMode(SQLiteMode.Mode.LEGACY)
+                           ^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/test/java/com/zeke/quizpk/LobbyFlowTest.java:128: warning: [deprecation] <T>getParcelableExtra(String) in Intent has been deprecated
+      Intent invitation = chooser.getParcelableExtra(Intent.EXTRA_INTENT);
+                                 ^
+  where T is a type-variable:
+    T extends Parcelable declared in method <T>getParcelableExtra(String)
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/test/java/com/zeke/quizpk/LobbyRefreshTest.java:27: warning: [deprecation] LEGACY in Mode has been deprecated
+@SQLiteMode(SQLiteMode.Mode.LEGACY)
+                           ^
+4 warnings
+
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest
+> Task :app:mergeDebugUnitTestManifest
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testDebugUnitTest
+
+[Incubating] Problems report is available at: file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 4m 34s
+30 actionable tasks: 20 executed, 10 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html

@@ -1,0 +1,9 @@
+{
+  "privateDirectories700": true,
+  "privateFiles600": true,
+  "backupHashesVerified": true,
+  "liveSourceAndCredentialsUnchanged": true,
+  "liveDatabaseAndWalBytesUnchanged": true,
+  "existingPublicHttpsHealth200": true,
+  "defaultCertificateVerification": true
+}

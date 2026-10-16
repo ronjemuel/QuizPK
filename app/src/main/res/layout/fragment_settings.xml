@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/screen_padding">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/appearance" android:textAppearance="@style/Text.QuizPK.Title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/appearance_body" android:textAppearance="@style/Text.QuizPK.Body" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <RadioGroup android:id="@+id/theme_choices" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:contentDescription="@string/theme_options">
+                    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/theme_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/theme_dark" android:textSize="16sp" />
+                    <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/theme_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/theme_light" android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/build_status" android:textAppearance="@style/Text.QuizPK.Section" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/build_status_body" android:textAppearance="@style/Text.QuizPK.Body" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/about_title" android:textAppearance="@style/Text.QuizPK.Section" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/about_body" android:textAppearance="@style/Text.QuizPK.Body" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/about_version" android:textAppearance="@style/Text.QuizPK.Label" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

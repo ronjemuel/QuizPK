@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.LobbyProtocolTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-13T09:11:12.579Z" hostname="localhost" time="19.189">
+  <properties/>
+  <testcase name="terminalSnapshotOmitsInviteSettingsAndRoster" classname="com.zeke.quizpk.LobbyProtocolTest" time="14.116"/>
+  <testcase name="javaCreateCodecMatchesSingleSharedNodeFixture" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.397"/>
+  <testcase name="revisionsAndEpochsReconcileWithoutMergingStaleState" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.411"/>
+  <testcase name="receiptMustMatchPendingIdAndNeverImportsServerRoles" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.249"/>
+  <testcase name="httpsAdapterKeepsTokenInHeaderAndRefusesRedirects" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.552"/>
+  <testcase name="snapshotRejectsPrivateFieldsCoercionsDuplicateIdsAndCapacityOverflow" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.395"/>
+  <testcase name="typedHttpErrorsAndRateAdviceNeverExposeResponseBodies" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.584"/>
+  <testcase name="localAndModeratorGameplayFailClosedWhileClassicCapabilityIsSupported" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.91"/>
+  <testcase name="namesCodesSettingsAndUnknownCommandsAreValidated" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.788"/>
+  <testcase name="moderatorSnapshotHasSeparateRoleAndEightContestantSeats" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.369"/>
+  <testcase name="httpsAdapterRejectsCleartextOversizedBodiesResponsesAndCertificateFailure" classname="com.zeke.quizpk.LobbyProtocolTest" time="0.381"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

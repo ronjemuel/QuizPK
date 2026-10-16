@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:minHeight="112dp" android:focusable="true" android:clickable="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:orientation="vertical" android:gravity="center">
+        <ImageView android:id="@+id/category_icon" android:layout_width="32dp" android:layout_height="32dp" android:importantForAccessibility="no" />
+        <TextView android:id="@+id/category_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:gravity="center" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+    <TextView android:id="@+id/category_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:textAppearance="@style/Text.QuizPK.Body" android:textSize="12sp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

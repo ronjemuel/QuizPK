@@ -1,0 +1,12 @@
+{
+  "existingPrivateDatabasePresent": true,
+  "tokenFilesChecked": 2,
+  "existingTokensAreDistinct": true,
+  "allTokensMatchEnabledIdentities": true,
+  "existingIdentitySchemaPresent": true,
+  "liveDatabaseStillHasM3OnlySchema": true,
+  "privateFilesCheckedWithoutPrintingHashes": 6,
+  "durableDatabaseWalTokensAndCredentialsBytesUnchanged": true,
+  "sqliteSharedMemoryReaderCoordinationChanged": true,
+  "durablePrivateFilesCompared": 5
+}

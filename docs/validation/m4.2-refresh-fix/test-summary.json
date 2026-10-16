@@ -1,0 +1,87 @@
+{
+  "android": {
+    "tests": 96,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "name": "com.zeke.quizpk.AiDataTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.AiFlowTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.LobbyBackendIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.LobbyFlowTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.LobbyProtocolTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.LobbyRefreshTest",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.OfflineDataTest",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.OfflineFlowTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.zeke.quizpk.StartupTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "backend": {
+    "tests": 54,
+    "failures": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 48
+  },
+  "assembly": "passed",
+  "typingDurationSeconds": 30,
+  "typingClock": "Robolectric simulated",
+  "physicalAcceptance": "pending",
+  "artifactSha256": "8299fa4fb782892f409ced06f53e9cb01b1d29348b4bccd894cafc6e4c8c494b"
+}

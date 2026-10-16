@@ -1,0 +1,4082 @@
+[
+  {
+    "id": "qpk-general-001",
+    "category": "General",
+    "difficulty": "Easy",
+    "text": "How many months are in one year of the Gregorian calendar?",
+    "options": [
+      "12",
+      "10",
+      "13",
+      "14"
+    ],
+    "correct": 0,
+    "explanation": "A Gregorian year has twelve calendar months.",
+    "source": "https://www.timeanddate.com/calendar/gregorian-calendar.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-002",
+    "category": "General",
+    "difficulty": "Easy",
+    "text": "How many sides does a triangle have?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correct": 3,
+    "explanation": "A triangle is a polygon with three sides.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-003",
+    "category": "General",
+    "difficulty": "Easy",
+    "text": "What is half of 100?",
+    "options": [
+      "40",
+      "75",
+      "50",
+      "25"
+    ],
+    "correct": 2,
+    "explanation": "Dividing 100 by two gives 50.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-004",
+    "category": "General",
+    "difficulty": "Easy",
+    "text": "How many items make one dozen?",
+    "options": [
+      "24",
+      "12",
+      "10",
+      "20"
+    ],
+    "correct": 1,
+    "explanation": "A dozen is a group of twelve.",
+    "source": "https://www.merriam-webster.com/dictionary/dozen",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-005",
+    "category": "General",
+    "difficulty": "Easy",
+    "text": "What do the letters UN stand for?",
+    "options": [
+      "United Nations",
+      "Universal Network",
+      "Union of Nations",
+      "United Neighbors"
+    ],
+    "correct": 0,
+    "explanation": "The United Nations is an international organization.",
+    "source": "https://www.un.org/en/about-us",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-006",
+    "category": "General",
+    "difficulty": "Normal",
+    "text": "How many official languages does the United Nations have?",
+    "options": [
+      "4",
+      "5",
+      "8",
+      "6"
+    ],
+    "correct": 3,
+    "explanation": "The six are Arabic, Chinese, English, French, Russian and Spanish.",
+    "source": "https://www.un.org/en/our-work/official-languages",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-007",
+    "category": "General",
+    "difficulty": "Normal",
+    "text": "What is the sum of the interior angles of a Euclidean triangle?",
+    "options": [
+      "270 degrees",
+      "360 degrees",
+      "180 degrees",
+      "90 degrees"
+    ],
+    "correct": 2,
+    "explanation": "The three interior angles of a plane triangle add to 180 degrees.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-008",
+    "category": "General",
+    "difficulty": "Normal",
+    "text": "Which SI prefix means one thousand?",
+    "options": [
+      "micro",
+      "kilo",
+      "milli",
+      "centi"
+    ],
+    "correct": 1,
+    "explanation": "The prefix kilo denotes a factor of 10 to the third power.",
+    "source": "https://www.bipm.org/en/measurement-units/si-prefixes",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-009",
+    "category": "General",
+    "difficulty": "Normal",
+    "text": "A square has sides of 6 cm. What is its area?",
+    "options": [
+      "36 square cm",
+      "12 square cm",
+      "24 square cm",
+      "18 square cm"
+    ],
+    "correct": 0,
+    "explanation": "The area of a square is side length multiplied by itself.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-010",
+    "category": "General",
+    "difficulty": "Normal",
+    "text": "What is the probability of heads on one fair coin toss?",
+    "options": [
+      "1/3",
+      "1/4",
+      "1",
+      "1/2"
+    ],
+    "correct": 3,
+    "explanation": "There are two equally likely outcomes and one is heads.",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-011",
+    "category": "General",
+    "difficulty": "Hard",
+    "text": "Two fair six-sided dice are rolled. What is the probability of a total of 2?",
+    "options": [
+      "1/12",
+      "1/18",
+      "1/36",
+      "1/6"
+    ],
+    "correct": 2,
+    "explanation": "Only the pair 1 and 1 works among 36 equally likely pairs.",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-012",
+    "category": "General",
+    "difficulty": "Hard",
+    "text": "What is the median of 2, 5, 9, 11 and 20?",
+    "options": [
+      "20",
+      "9",
+      "5",
+      "11"
+    ],
+    "correct": 1,
+    "explanation": "The median is the middle value in an ordered data set.",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-013",
+    "category": "General",
+    "difficulty": "Hard",
+    "text": "Which number is prime?",
+    "options": [
+      "29",
+      "21",
+      "27",
+      "33"
+    ],
+    "correct": 0,
+    "explanation": "The only positive divisors of 29 are 1 and 29.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-014",
+    "category": "General",
+    "difficulty": "Hard",
+    "text": "A right triangle has perpendicular sides 5 and 12. How long is its hypotenuse?",
+    "options": [
+      "15",
+      "17",
+      "7",
+      "13"
+    ],
+    "correct": 3,
+    "explanation": "The Pythagorean theorem gives the square root of 25 plus 144.",
+    "source": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-015",
+    "category": "General",
+    "difficulty": "Hard",
+    "text": "How many different orders can four distinct books have on a shelf?",
+    "options": [
+      "16",
+      "8",
+      "24",
+      "12"
+    ],
+    "correct": 2,
+    "explanation": "There are 4 times 3 times 2 times 1 possible orders.",
+    "source": "https://openstax.org/books/college-algebra-2e/pages/9-5-counting-principles",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-016",
+    "category": "General",
+    "difficulty": "Expert",
+    "text": "Which SI base unit measures luminous intensity?",
+    "options": [
+      "watt",
+      "candela",
+      "lumen",
+      "lux"
+    ],
+    "correct": 1,
+    "explanation": "The candela is the SI base unit for luminous intensity.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-017",
+    "category": "General",
+    "difficulty": "Expert",
+    "text": "Which SI base unit measures amount of substance?",
+    "options": [
+      "mole",
+      "kilogram",
+      "ampere",
+      "kelvin"
+    ],
+    "correct": 0,
+    "explanation": "Amount of substance is measured in moles.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-018",
+    "category": "General",
+    "difficulty": "Expert",
+    "text": "Which defining constant is used in the modern SI definition of the kilogram?",
+    "options": [
+      "Boltzmann constant",
+      "Avogadro constant",
+      "Gravitational constant",
+      "Planck constant"
+    ],
+    "correct": 3,
+    "explanation": "The kilogram definition fixes the numerical value of the Planck constant.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-019",
+    "category": "General",
+    "difficulty": "Expert",
+    "text": "Which SI prefix represents a factor of 10 to the power minus 9?",
+    "options": [
+      "pico",
+      "femto",
+      "nano",
+      "micro"
+    ],
+    "correct": 2,
+    "explanation": "Nano denotes one billionth of the base unit.",
+    "source": "https://www.bipm.org/en/measurement-units/si-prefixes",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-general-020",
+    "category": "General",
+    "difficulty": "Expert",
+    "text": "Which SI base unit measures thermodynamic temperature?",
+    "options": [
+      "pascal",
+      "kelvin",
+      "degree Celsius",
+      "joule"
+    ],
+    "correct": 1,
+    "explanation": "Thermodynamic temperature has the SI base unit kelvin.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-001",
+    "category": "Science",
+    "difficulty": "Easy",
+    "text": "What is the chemical symbol for hydrogen?",
+    "options": [
+      "H",
+      "He",
+      "Hg",
+      "Ho"
+    ],
+    "correct": 0,
+    "explanation": "Hydrogen has the symbol H and atomic number 1.",
+    "source": "https://periodic-table.rsc.org/element/1/hydrogen",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-002",
+    "category": "Science",
+    "difficulty": "Easy",
+    "text": "Which element has the symbol O?",
+    "options": [
+      "Gold",
+      "Osmium",
+      "Carbon",
+      "Oxygen"
+    ],
+    "correct": 3,
+    "explanation": "O is the symbol for oxygen.",
+    "source": "https://periodic-table.rsc.org/element/8/oxygen",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-003",
+    "category": "Science",
+    "difficulty": "Easy",
+    "text": "Which element has the symbol C?",
+    "options": [
+      "Copper",
+      "Chlorine",
+      "Carbon",
+      "Calcium"
+    ],
+    "correct": 2,
+    "explanation": "Carbon is element 6, represented by C.",
+    "source": "https://periodic-table.rsc.org/element/6/carbon",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-004",
+    "category": "Science",
+    "difficulty": "Easy",
+    "text": "What is the chemical symbol for sodium?",
+    "options": [
+      "N",
+      "Na",
+      "S",
+      "So"
+    ],
+    "correct": 1,
+    "explanation": "Sodium has the symbol Na.",
+    "source": "https://periodic-table.rsc.org/element/11/sodium",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-005",
+    "category": "Science",
+    "difficulty": "Easy",
+    "text": "Which element has the symbol Fe?",
+    "options": [
+      "Iron",
+      "Fluorine",
+      "Francium",
+      "Fermium"
+    ],
+    "correct": 0,
+    "explanation": "Fe is the chemical symbol for iron.",
+    "source": "https://periodic-table.rsc.org/element/26/iron",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-006",
+    "category": "Science",
+    "difficulty": "Normal",
+    "text": "Which organelle is a major site of aerobic ATP production in eukaryotic cells?",
+    "options": [
+      "Nucleus",
+      "Golgi apparatus",
+      "Lysosome",
+      "Mitochondrion"
+    ],
+    "correct": 3,
+    "explanation": "Cellular respiration produces ATP in mitochondria.",
+    "source": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-007",
+    "category": "Science",
+    "difficulty": "Normal",
+    "text": "Which organelle carries out photosynthesis in plants?",
+    "options": [
+      "Lysosome",
+      "Golgi apparatus",
+      "Chloroplast",
+      "Ribosome"
+    ],
+    "correct": 2,
+    "explanation": "Chloroplasts contain the photosynthetic machinery.",
+    "source": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-008",
+    "category": "Science",
+    "difficulty": "Normal",
+    "text": "Which DNA base pairs with adenine in the standard double helix?",
+    "options": [
+      "Cytosine",
+      "Thymine",
+      "Uracil",
+      "Guanine"
+    ],
+    "correct": 1,
+    "explanation": "In DNA, adenine pairs with thymine.",
+    "source": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-009",
+    "category": "Science",
+    "difficulty": "Normal",
+    "text": "Which structure contains most of a eukaryotic cell's DNA?",
+    "options": [
+      "Nucleus",
+      "Cell wall",
+      "Lysosome",
+      "Golgi apparatus"
+    ],
+    "correct": 0,
+    "explanation": "Most eukaryotic DNA is housed in the nucleus.",
+    "source": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-010",
+    "category": "Science",
+    "difficulty": "Normal",
+    "text": "Which gas is released by oxygenic photosynthesis?",
+    "options": [
+      "Nitrogen",
+      "Helium",
+      "Methane",
+      "Oxygen"
+    ],
+    "correct": 3,
+    "explanation": "Oxygenic photosynthesis releases oxygen from water.",
+    "source": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-011",
+    "category": "Science",
+    "difficulty": "Hard",
+    "text": "In F = ma, what does a represent?",
+    "options": [
+      "Amplitude",
+      "Atomic mass",
+      "Acceleration",
+      "Area"
+    ],
+    "correct": 2,
+    "explanation": "Newton's second law relates net force to mass and acceleration.",
+    "source": "https://openstax.org/books/college-physics-2e/pages/4-3-newtons-second-law-of-motion-concept-of-a-system",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-012",
+    "category": "Science",
+    "difficulty": "Hard",
+    "text": "What is the exact speed of light in vacuum in metres per second?",
+    "options": [
+      "150000000",
+      "299792458",
+      "300000000",
+      "29979245"
+    ],
+    "correct": 1,
+    "explanation": "The SI fixes this value exactly at 299792458 metres per second.",
+    "source": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-013",
+    "category": "Science",
+    "difficulty": "Hard",
+    "text": "At approximately 1 atmosphere, what is the freezing point of pure water?",
+    "options": [
+      "0 degrees Celsius",
+      "100 degrees Celsius",
+      "Minus 20 degrees Celsius",
+      "10 degrees Celsius"
+    ],
+    "correct": 0,
+    "explanation": "At normal atmospheric pressure pure water freezes near zero Celsius.",
+    "source": "https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-014",
+    "category": "Science",
+    "difficulty": "Hard",
+    "text": "What determines an element's atomic number?",
+    "options": [
+      "Number of neutrons",
+      "Number of electron shells",
+      "Total nucleons",
+      "Number of protons"
+    ],
+    "correct": 3,
+    "explanation": "Each element is defined by its proton count.",
+    "source": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-015",
+    "category": "Science",
+    "difficulty": "Hard",
+    "text": "What electric charge does a proton have?",
+    "options": [
+      "Zero",
+      "Alternating",
+      "Positive",
+      "Negative"
+    ],
+    "correct": 2,
+    "explanation": "Protons carry positive elementary charge.",
+    "source": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-016",
+    "category": "Science",
+    "difficulty": "Expert",
+    "text": "Which element has the symbol Au?",
+    "options": [
+      "Argon",
+      "Gold",
+      "Silver",
+      "Aluminium"
+    ],
+    "correct": 1,
+    "explanation": "Au is the symbol for gold.",
+    "source": "https://periodic-table.rsc.org/element/79/gold",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-017",
+    "category": "Science",
+    "difficulty": "Expert",
+    "text": "What is the chemical symbol for potassium?",
+    "options": [
+      "K",
+      "P",
+      "Pt",
+      "Po"
+    ],
+    "correct": 0,
+    "explanation": "Potassium has the symbol K.",
+    "source": "https://periodic-table.rsc.org/element/19/potassium",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-018",
+    "category": "Science",
+    "difficulty": "Expert",
+    "text": "Which element has the symbol W?",
+    "options": [
+      "Tin",
+      "Titanium",
+      "Tellurium",
+      "Tungsten"
+    ],
+    "correct": 3,
+    "explanation": "W represents tungsten, historically called wolfram.",
+    "source": "https://periodic-table.rsc.org/element/74/tungsten",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-019",
+    "category": "Science",
+    "difficulty": "Expert",
+    "text": "Which metal is liquid at 20 degrees Celsius and normal pressure?",
+    "options": [
+      "Copper",
+      "Aluminium",
+      "Mercury",
+      "Iron"
+    ],
+    "correct": 2,
+    "explanation": "Mercury melts well below room temperature.",
+    "source": "https://periodic-table.rsc.org/element/80/mercury",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-science-020",
+    "category": "Science",
+    "difficulty": "Expert",
+    "text": "Which nonmetal is liquid at 20 degrees Celsius and normal pressure?",
+    "options": [
+      "Iodine",
+      "Bromine",
+      "Chlorine",
+      "Sulfur"
+    ],
+    "correct": 1,
+    "explanation": "Bromine is liquid at room temperature.",
+    "source": "https://periodic-table.rsc.org/element/35/bromine",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-001",
+    "category": "History",
+    "difficulty": "Easy",
+    "text": "In what year did the United Nations come into existence?",
+    "options": [
+      "1945",
+      "1919",
+      "1939",
+      "1955"
+    ],
+    "correct": 0,
+    "explanation": "The UN Charter entered into force on 24 October 1945.",
+    "source": "https://www.un.org/en/about-us/history-of-the-un",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-002",
+    "category": "History",
+    "difficulty": "Easy",
+    "text": "In what year was the US Declaration of Independence adopted?",
+    "options": [
+      "1789",
+      "1812",
+      "1492",
+      "1776"
+    ],
+    "correct": 3,
+    "explanation": "Congress adopted the Declaration on 4 July 1776.",
+    "source": "https://www.archives.gov/milestone-documents/declaration-of-independence",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-003",
+    "category": "History",
+    "difficulty": "Easy",
+    "text": "Which ancient civilization built the pyramids at Giza?",
+    "options": [
+      "Vikings",
+      "Aztecs",
+      "Ancient Egyptians",
+      "Incas"
+    ],
+    "correct": 2,
+    "explanation": "The Giza pyramids are royal monuments of ancient Egypt.",
+    "source": "https://whc.unesco.org/en/list/86/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-004",
+    "category": "History",
+    "difficulty": "Easy",
+    "text": "Which country contains the historic Great Wall?",
+    "options": [
+      "Mongolia",
+      "China",
+      "India",
+      "Japan"
+    ],
+    "correct": 1,
+    "explanation": "The Great Wall is a historic defensive system in China.",
+    "source": "https://whc.unesco.org/en/list/438/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-005",
+    "category": "History",
+    "difficulty": "Easy",
+    "text": "Which city was divided by the Berlin Wall?",
+    "options": [
+      "Berlin",
+      "Vienna",
+      "Prague",
+      "Warsaw"
+    ],
+    "correct": 0,
+    "explanation": "The Wall divided Berlin from 1961 to 1989.",
+    "source": "https://www.britannica.com/event/Berlin-Wall",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-006",
+    "category": "History",
+    "difficulty": "Normal",
+    "text": "In what year did the Berlin Wall open?",
+    "options": [
+      "1979",
+      "1991",
+      "1961",
+      "1989"
+    ],
+    "correct": 3,
+    "explanation": "Border crossings opened on 9 November 1989.",
+    "source": "https://www.britannica.com/event/Berlin-Wall",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-007",
+    "category": "History",
+    "difficulty": "Normal",
+    "text": "Which civilization built Machu Picchu?",
+    "options": [
+      "Roman",
+      "Sumerian",
+      "Inca",
+      "Maya"
+    ],
+    "correct": 2,
+    "explanation": "Machu Picchu was built during the Inca Empire.",
+    "source": "https://whc.unesco.org/en/list/274/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-008",
+    "category": "History",
+    "difficulty": "Normal",
+    "text": "Petra was a major capital of which ancient people?",
+    "options": [
+      "Hittites",
+      "Nabataeans",
+      "Vikings",
+      "Incas"
+    ],
+    "correct": 1,
+    "explanation": "Petra was the Nabataean capital and a trading center.",
+    "source": "https://whc.unesco.org/en/list/326/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-009",
+    "category": "History",
+    "difficulty": "Normal",
+    "text": "Angkor was a center of which empire?",
+    "options": [
+      "Khmer Empire",
+      "Ottoman Empire",
+      "Inca Empire",
+      "Aztec Empire"
+    ],
+    "correct": 0,
+    "explanation": "Angkor preserves monuments of the Khmer Empire.",
+    "source": "https://whc.unesco.org/en/list/668/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-010",
+    "category": "History",
+    "difficulty": "Normal",
+    "text": "In what year was the US Constitution signed?",
+    "options": [
+      "1776",
+      "1804",
+      "1865",
+      "1787"
+    ],
+    "correct": 3,
+    "explanation": "The Constitution was signed on 17 September 1787.",
+    "source": "https://www.archives.gov/milestone-documents/constitution",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-011",
+    "category": "History",
+    "difficulty": "Hard",
+    "text": "In which city was the United Nations Charter signed in 1945?",
+    "options": [
+      "London",
+      "Geneva",
+      "San Francisco",
+      "New York"
+    ],
+    "correct": 2,
+    "explanation": "The Charter was signed in San Francisco on 26 June 1945.",
+    "source": "https://www.un.org/en/about-us/history-of-the-un",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-012",
+    "category": "History",
+    "difficulty": "Hard",
+    "text": "How many countries were original members of the United Nations?",
+    "options": [
+      "193",
+      "51",
+      "25",
+      "100"
+    ],
+    "correct": 1,
+    "explanation": "The UN began with 51 original member states.",
+    "source": "https://www.un.org/en/about-us",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-013",
+    "category": "History",
+    "difficulty": "Hard",
+    "text": "Which English king agreed to Magna Carta in 1215?",
+    "options": [
+      "John",
+      "Henry VIII",
+      "William I",
+      "Richard III"
+    ],
+    "correct": 0,
+    "explanation": "King John agreed to Magna Carta in June 1215.",
+    "source": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/originsofparliament/birthofparliament/overview/magnacarta/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-014",
+    "category": "History",
+    "difficulty": "Hard",
+    "text": "Which document formed the first constitution of the United States?",
+    "options": [
+      "Bill of Rights",
+      "Monroe Doctrine",
+      "Emancipation Proclamation",
+      "Articles of Confederation"
+    ],
+    "correct": 3,
+    "explanation": "The Articles of Confederation preceded the present Constitution.",
+    "source": "https://www.archives.gov/milestone-documents/list",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-015",
+    "category": "History",
+    "difficulty": "Hard",
+    "text": "What year is associated with the US Emancipation Proclamation taking effect?",
+    "options": [
+      "1812",
+      "1918",
+      "1863",
+      "1776"
+    ],
+    "correct": 2,
+    "explanation": "Lincoln's proclamation took effect on 1 January 1863.",
+    "source": "https://www.archives.gov/milestone-documents/emancipation-proclamation",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-016",
+    "category": "History",
+    "difficulty": "Expert",
+    "text": "Which pharaoh is associated with the Great Pyramid at Giza?",
+    "options": [
+      "Ramesses II",
+      "Khufu",
+      "Akhenaten",
+      "Tutankhamun"
+    ],
+    "correct": 1,
+    "explanation": "The Great Pyramid was built for Khufu.",
+    "source": "https://egymonuments.gov.eg/monuments/the-great-pyramid/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-017",
+    "category": "History",
+    "difficulty": "Expert",
+    "text": "Which ancient Egyptian capital appears in the UNESCO site name with its necropolis and Giza pyramids?",
+    "options": [
+      "Memphis",
+      "Thebes",
+      "Alexandria",
+      "Amarna"
+    ],
+    "correct": 0,
+    "explanation": "The World Heritage property is Memphis and its Necropolis.",
+    "source": "https://whc.unesco.org/en/list/86/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-018",
+    "category": "History",
+    "difficulty": "Expert",
+    "text": "Which court's statute forms an integral part of the UN Charter?",
+    "options": [
+      "International Criminal Court",
+      "European Court of Justice",
+      "Permanent Court of Arbitration",
+      "International Court of Justice"
+    ],
+    "correct": 3,
+    "explanation": "The ICJ Statute is annexed to the UN Charter.",
+    "source": "https://www.un.org/en/about-us/un-charter/full-text",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-019",
+    "category": "History",
+    "difficulty": "Expert",
+    "text": "Which century saw the construction of Machu Picchu?",
+    "options": [
+      "12th century",
+      "18th century",
+      "15th century",
+      "10th century"
+    ],
+    "correct": 2,
+    "explanation": "Machu Picchu was built in the fifteenth century.",
+    "source": "https://whc.unesco.org/en/list/274/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-history-020",
+    "category": "History",
+    "difficulty": "Expert",
+    "text": "The Magna Carta displayed at the US National Archives dates from which year?",
+    "options": [
+      "1689",
+      "1297",
+      "1215",
+      "1066"
+    ],
+    "correct": 1,
+    "explanation": "The Archives displays Edward I's 1297 reissue.",
+    "source": "https://www.archives.gov/exhibits/featured-documents/magna-carta",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-001",
+    "category": "Geography",
+    "difficulty": "Easy",
+    "text": "Which ocean is the largest by area?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "correct": 0,
+    "explanation": "The Pacific is Earth's largest ocean basin.",
+    "source": "https://oceanservice.noaa.gov/facts/biggestocean.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-002",
+    "category": "Geography",
+    "difficulty": "Easy",
+    "text": "Which continent has the largest land area?",
+    "options": [
+      "Africa",
+      "Europe",
+      "Antarctica",
+      "Asia"
+    ],
+    "correct": 3,
+    "explanation": "Asia is the largest continent.",
+    "source": "https://education.nationalgeographic.org/resource/Continent/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-003",
+    "category": "Geography",
+    "difficulty": "Easy",
+    "text": "Which line marks zero degrees latitude?",
+    "options": [
+      "Tropic of Cancer",
+      "Arctic Circle",
+      "Equator",
+      "Prime meridian"
+    ],
+    "correct": 2,
+    "explanation": "The Equator is the reference line for latitude.",
+    "source": "https://education.nationalgeographic.org/resource/equator/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-004",
+    "category": "Geography",
+    "difficulty": "Easy",
+    "text": "What is the capital of Japan?",
+    "options": [
+      "Seoul",
+      "Tokyo",
+      "Kyoto",
+      "Osaka"
+    ],
+    "correct": 1,
+    "explanation": "Tokyo is Japan's capital.",
+    "source": "https://www.geonames.org/countries/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-005",
+    "category": "Geography",
+    "difficulty": "Easy",
+    "text": "What is the capital of Pakistan?",
+    "options": [
+      "Islamabad",
+      "Karachi",
+      "Lahore",
+      "Peshawar"
+    ],
+    "correct": 0,
+    "explanation": "Islamabad is the capital of Pakistan.",
+    "source": "https://www.geonames.org/countries/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-006",
+    "category": "Geography",
+    "difficulty": "Normal",
+    "text": "Which mountain has the highest summit above sea level?",
+    "options": [
+      "K2",
+      "Kilimanjaro",
+      "Denali",
+      "Mount Everest"
+    ],
+    "correct": 3,
+    "explanation": "Everest has the highest elevation above mean sea level.",
+    "source": "https://education.nationalgeographic.org/resource/mount-everest/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-007",
+    "category": "Geography",
+    "difficulty": "Normal",
+    "text": "Which continent has no permanent native human population?",
+    "options": [
+      "Europe",
+      "South America",
+      "Antarctica",
+      "Australia"
+    ],
+    "correct": 2,
+    "explanation": "Antarctica has research stations but no indigenous permanent population.",
+    "source": "https://education.nationalgeographic.org/resource/antarctica/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-008",
+    "category": "Geography",
+    "difficulty": "Normal",
+    "text": "What is the capital of Canada?",
+    "options": [
+      "Montreal",
+      "Ottawa",
+      "Toronto",
+      "Vancouver"
+    ],
+    "correct": 1,
+    "explanation": "Ottawa is Canada's national capital.",
+    "source": "https://www.geonames.org/countries/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-009",
+    "category": "Geography",
+    "difficulty": "Normal",
+    "text": "Which Russian lake is the world's deepest lake?",
+    "options": [
+      "Lake Baikal",
+      "Lake Ladoga",
+      "Lake Victoria",
+      "Lake Erie"
+    ],
+    "correct": 0,
+    "explanation": "Lake Baikal is the deepest lake on Earth.",
+    "source": "https://whc.unesco.org/en/list/754/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-010",
+    "category": "Geography",
+    "difficulty": "Normal",
+    "text": "Which mountain range runs along western South America?",
+    "options": [
+      "Alps",
+      "Himalayas",
+      "Rockies",
+      "Andes"
+    ],
+    "correct": 3,
+    "explanation": "The Andes extend along South America's western edge.",
+    "source": "https://www.britannica.com/place/Andes-Mountains",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-011",
+    "category": "Geography",
+    "difficulty": "Hard",
+    "text": "Which strait connects the Atlantic Ocean and Mediterranean Sea?",
+    "options": [
+      "Bering Strait",
+      "Strait of Malacca",
+      "Strait of Gibraltar",
+      "Strait of Hormuz"
+    ],
+    "correct": 2,
+    "explanation": "Gibraltar separates southern Spain from northern Morocco.",
+    "source": "https://www.britannica.com/place/Strait-of-Gibraltar",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-012",
+    "category": "Geography",
+    "difficulty": "Hard",
+    "text": "Which meridian is the conventional reference for zero degrees longitude?",
+    "options": [
+      "Antarctic Circle",
+      "Prime meridian",
+      "Equator",
+      "Tropic of Capricorn"
+    ],
+    "correct": 1,
+    "explanation": "Longitude is measured east or west of the prime meridian.",
+    "source": "https://education.nationalgeographic.org/resource/longitude/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-013",
+    "category": "Geography",
+    "difficulty": "Hard",
+    "text": "Which ocean contains Challenger Deep?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "correct": 0,
+    "explanation": "Challenger Deep is in the Mariana Trench in the Pacific.",
+    "source": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-014",
+    "category": "Geography",
+    "difficulty": "Hard",
+    "text": "What is the capital of Mongolia?",
+    "options": [
+      "Astana",
+      "Bishkek",
+      "Tashkent",
+      "Ulaanbaatar"
+    ],
+    "correct": 3,
+    "explanation": "Ulaanbaatar is Mongolia's capital.",
+    "source": "https://www.geonames.org/countries/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-015",
+    "category": "Geography",
+    "difficulty": "Hard",
+    "text": "Which hemisphere contains a place at 35 degrees south latitude?",
+    "options": [
+      "Both northern and southern",
+      "Neither northern nor southern",
+      "Southern Hemisphere",
+      "Northern Hemisphere"
+    ],
+    "correct": 2,
+    "explanation": "South latitude places a location south of the Equator.",
+    "source": "https://education.nationalgeographic.org/resource/hemisphere/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-016",
+    "category": "Geography",
+    "difficulty": "Expert",
+    "text": "The International Date Line roughly follows which longitude?",
+    "options": [
+      "45 degrees west",
+      "180 degrees",
+      "0 degrees",
+      "90 degrees east"
+    ],
+    "correct": 1,
+    "explanation": "The Date Line broadly follows the 180-degree meridian.",
+    "source": "https://education.nationalgeographic.org/resource/date-line/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-017",
+    "category": "Geography",
+    "difficulty": "Expert",
+    "text": "How many arcminutes make one degree of latitude?",
+    "options": [
+      "60",
+      "100",
+      "24",
+      "360"
+    ],
+    "correct": 0,
+    "explanation": "A degree is divided into 60 minutes of arc.",
+    "source": "https://education.nationalgeographic.org/resource/latitude/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-018",
+    "category": "Geography",
+    "difficulty": "Expert",
+    "text": "At which latitude do all meridians meet at the North Pole?",
+    "options": [
+      "0 degrees",
+      "45 degrees north",
+      "180 degrees north",
+      "90 degrees north"
+    ],
+    "correct": 3,
+    "explanation": "The North Pole is at 90 degrees north latitude.",
+    "source": "https://education.nationalgeographic.org/resource/longitude/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-019",
+    "category": "Geography",
+    "difficulty": "Expert",
+    "text": "A location has coordinates 20 degrees N, 70 degrees E. Which pair of hemispheres contains it?",
+    "options": [
+      "Northern and Western",
+      "Southern and Western",
+      "Northern and Eastern",
+      "Southern and Eastern"
+    ],
+    "correct": 2,
+    "explanation": "N indicates north of the Equator and E indicates east longitude.",
+    "source": "https://education.nationalgeographic.org/resource/hemisphere/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-geography-020",
+    "category": "Geography",
+    "difficulty": "Expert",
+    "text": "Which World Heritage lake contains about one fifth of the world's unfrozen surface fresh water?",
+    "options": [
+      "Lake Geneva",
+      "Lake Baikal",
+      "Lake Chad",
+      "Lake Titicaca"
+    ],
+    "correct": 1,
+    "explanation": "UNESCO describes Baikal as holding about 20 percent of unfrozen freshwater reserves.",
+    "source": "https://whc.unesco.org/en/list/754/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-001",
+    "category": "Technology",
+    "difficulty": "Easy",
+    "text": "Which language gives web pages their basic document structure?",
+    "options": [
+      "HTML",
+      "SQL",
+      "CSS",
+      "Bash"
+    ],
+    "correct": 0,
+    "explanation": "HTML is a markup language used to structure web documents.",
+    "source": "https://www.w3.org/TR/html401/intro/intro.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-002",
+    "category": "Technology",
+    "difficulty": "Easy",
+    "text": "What is CSS primarily used for on the web?",
+    "options": [
+      "Database backups",
+      "Domain registration",
+      "Encrypting hard drives",
+      "Presentation and styling"
+    ],
+    "correct": 3,
+    "explanation": "CSS controls the presentation of structured documents.",
+    "source": "https://www.w3.org/Style/CSS/Overview.en.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-003",
+    "category": "Technology",
+    "difficulty": "Easy",
+    "text": "Who invented the World Wide Web?",
+    "options": [
+      "Ada Lovelace",
+      "Grace Hopper",
+      "Tim Berners-Lee",
+      "Alan Turing"
+    ],
+    "correct": 2,
+    "explanation": "Berners-Lee invented the Web at CERN in 1989.",
+    "source": "https://www.w3.org/People/Berners-Lee/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-004",
+    "category": "Technology",
+    "difficulty": "Easy",
+    "text": "How many bits are in a conventional byte?",
+    "options": [
+      "16",
+      "8",
+      "2",
+      "4"
+    ],
+    "correct": 1,
+    "explanation": "A byte conventionally contains eight bits.",
+    "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-005",
+    "category": "Technology",
+    "difficulty": "Easy",
+    "text": "What does URL stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Routing Language",
+      "Unified Runtime Link",
+      "User Resource List"
+    ],
+    "correct": 0,
+    "explanation": "A URL identifies the location of a resource.",
+    "source": "https://developer.mozilla.org/en-US/docs/Glossary/URL",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-006",
+    "category": "Technology",
+    "difficulty": "Normal",
+    "text": "Which two digits are used in binary notation?",
+    "options": [
+      "1 and 2",
+      "0 and 9",
+      "2 and 8",
+      "0 and 1"
+    ],
+    "correct": 3,
+    "explanation": "Base-two notation uses just zero and one.",
+    "source": "https://docs.python.org/3/library/functions.html#bin",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-007",
+    "category": "Technology",
+    "difficulty": "Normal",
+    "text": "What is hexadecimal 0x10 in decimal?",
+    "options": [
+      "8",
+      "20",
+      "16",
+      "10"
+    ],
+    "correct": 2,
+    "explanation": "The first place beyond the units in base sixteen has value sixteen.",
+    "source": "https://docs.python.org/3/library/functions.html#hex",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-008",
+    "category": "Technology",
+    "difficulty": "Normal",
+    "text": "What does HTTP status code 404 mean?",
+    "options": [
+      "Unauthorized",
+      "Not Found",
+      "OK",
+      "Created"
+    ],
+    "correct": 1,
+    "explanation": "404 indicates that the target resource was not found.",
+    "source": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-009",
+    "category": "Technology",
+    "difficulty": "Normal",
+    "text": "Which service translates domain names into records such as IP addresses?",
+    "options": [
+      "DNS",
+      "CSS",
+      "JPEG",
+      "USB"
+    ],
+    "correct": 0,
+    "explanation": "The Domain Name System maps names to resource records.",
+    "source": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-010",
+    "category": "Technology",
+    "difficulty": "Normal",
+    "text": "Which format uses object members written as name/value pairs?",
+    "options": [
+      "JPEG",
+      "MP3",
+      "PNG",
+      "JSON"
+    ],
+    "correct": 3,
+    "explanation": "JSON represents structured data with objects and arrays.",
+    "source": "https://www.rfc-editor.org/rfc/rfc8259.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-011",
+    "category": "Technology",
+    "difficulty": "Hard",
+    "text": "How many bits long is an IPv6 address?",
+    "options": [
+      "64",
+      "256",
+      "128",
+      "32"
+    ],
+    "correct": 2,
+    "explanation": "IPv6 addresses are 128 bits long.",
+    "source": "https://www.rfc-editor.org/rfc/rfc8200.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-012",
+    "category": "Technology",
+    "difficulty": "Hard",
+    "text": "Which HTTP method requests a representation of a resource?",
+    "options": [
+      "TRACE",
+      "GET",
+      "DELETE",
+      "CONNECT"
+    ],
+    "correct": 1,
+    "explanation": "GET requests transfer of a current representation of the target resource.",
+    "source": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-013",
+    "category": "Technology",
+    "difficulty": "Hard",
+    "text": "What does a SQL PRIMARY KEY identify?",
+    "options": [
+      "A uniquely identified row",
+      "A database password",
+      "A file format",
+      "A network port"
+    ],
+    "correct": 0,
+    "explanation": "A primary key identifies rows in a table.",
+    "source": "https://www.sqlite.org/lang_createtable.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-014",
+    "category": "Technology",
+    "difficulty": "Hard",
+    "text": "Which SQL clause filters rows according to a condition?",
+    "options": [
+      "ORDER BY",
+      "LIMIT",
+      "VALUES",
+      "WHERE"
+    ],
+    "correct": 3,
+    "explanation": "WHERE specifies the row selection condition.",
+    "source": "https://www.sqlite.org/lang.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-015",
+    "category": "Technology",
+    "difficulty": "Hard",
+    "text": "Which HTTP status code indicates successful creation of a resource?",
+    "options": [
+      "404",
+      "503",
+      "201",
+      "301"
+    ],
+    "correct": 2,
+    "explanation": "201 Created reports that the request created one or more resources.",
+    "source": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-016",
+    "category": "Technology",
+    "difficulty": "Expert",
+    "text": "How many bytes can one Unicode scalar value occupy in UTF-8?",
+    "options": [
+      "5 to 8",
+      "1 to 4",
+      "Exactly 2",
+      "Exactly 8"
+    ],
+    "correct": 1,
+    "explanation": "UTF-8 uses sequences of one through four bytes.",
+    "source": "https://www.rfc-editor.org/rfc/rfc3629.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-017",
+    "category": "Technology",
+    "difficulty": "Expert",
+    "text": "Which HTTP method has the same semantics as GET but sends no response content?",
+    "options": [
+      "HEAD",
+      "POST",
+      "PATCH",
+      "OPTIONS"
+    ],
+    "correct": 0,
+    "explanation": "HEAD requests headers without transferring the representation content.",
+    "source": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-018",
+    "category": "Technology",
+    "difficulty": "Expert",
+    "text": "What is the maximum numeric value of an unsigned 8-bit integer?",
+    "options": [
+      "127",
+      "256",
+      "128",
+      "255"
+    ],
+    "correct": 3,
+    "explanation": "Eight bits allow 256 values, numbered zero through 255.",
+    "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-019",
+    "category": "Technology",
+    "difficulty": "Expert",
+    "text": "In database transactions, what does the A in ACID mean?",
+    "options": [
+      "Authentication",
+      "Allocation",
+      "Atomicity",
+      "Availability"
+    ],
+    "correct": 2,
+    "explanation": "Atomicity means a transaction's changes occur as one unit.",
+    "source": "https://www.sqlite.org/transactional.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-technology-020",
+    "category": "Technology",
+    "difficulty": "Expert",
+    "text": "Which JSON literal represents the deliberate absence of a value?",
+    "options": [
+      "undefined",
+      "null",
+      "None",
+      "nil"
+    ],
+    "correct": 1,
+    "explanation": "JSON defines the literal null; undefined is not a JSON value.",
+    "source": "https://www.rfc-editor.org/rfc/rfc8259.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-001",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "text": "In association football, how many players does a team normally have on the field, including the goalkeeper?",
+    "options": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "The Laws of the Game specify a maximum of eleven players per team.",
+    "source": "https://www.theifab.com/laws/latest/the-players/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-002",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "text": "How many legal deliveries make an over in cricket?",
+    "options": [
+      "4",
+      "5",
+      "8",
+      "6"
+    ],
+    "correct": 3,
+    "explanation": "An over contains six valid balls; wides and no-balls do not count.",
+    "source": "https://www.lords.org/mcc/laws-of-cricket/laws/law-17-the-over/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-003",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "text": "Which sport uses a shuttlecock?",
+    "options": [
+      "Squash",
+      "Table tennis",
+      "Badminton",
+      "Tennis"
+    ],
+    "correct": 2,
+    "explanation": "A shuttle is used in badminton.",
+    "source": "https://corporate.bwfbadminton.com/statutes/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-004",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "text": "In tennis scoring, what does love mean?",
+    "options": [
+      "Forty",
+      "Zero",
+      "One",
+      "Fifteen"
+    ],
+    "correct": 1,
+    "explanation": "Love denotes a score of zero.",
+    "source": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-005",
+    "category": "Sports",
+    "difficulty": "Easy",
+    "text": "How many rings are in the Olympic symbol?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "correct": 0,
+    "explanation": "The Olympic symbol consists of five interlaced rings.",
+    "source": "https://olympics.com/ioc/olympic-rings",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-006",
+    "category": "Sports",
+    "difficulty": "Normal",
+    "text": "What is the standard marathon distance?",
+    "options": [
+      "40 km",
+      "21.0975 km",
+      "50 km",
+      "42.195 km"
+    ],
+    "correct": 3,
+    "explanation": "The marathon is run over 42.195 kilometres.",
+    "source": "https://worldathletics.org/disciplines/road-running/marathon",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-007",
+    "category": "Sports",
+    "difficulty": "Normal",
+    "text": "How many stumps form one cricket wicket?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "correct": 2,
+    "explanation": "A wicket comprises three stumps with two bails on top.",
+    "source": "https://www.lords.org/mcc/laws-of-cricket/laws/law-8-the-wickets/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-008",
+    "category": "Sports",
+    "difficulty": "Normal",
+    "text": "How long is a standard association football match, excluding added time?",
+    "options": [
+      "100 minutes",
+      "90 minutes",
+      "60 minutes",
+      "80 minutes"
+    ],
+    "correct": 1,
+    "explanation": "A match has two equal halves of 45 minutes.",
+    "source": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-009",
+    "category": "Sports",
+    "difficulty": "Normal",
+    "text": "How many points is a successful free throw worth in FIBA basketball?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 0,
+    "explanation": "A free throw scores one point.",
+    "source": "https://about.fiba.basketball/en/our-sport/official-basketball-rules",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-010",
+    "category": "Sports",
+    "difficulty": "Normal",
+    "text": "What is a 40-all score called in tennis?",
+    "options": [
+      "Love",
+      "Break",
+      "Let",
+      "Deuce"
+    ],
+    "correct": 3,
+    "explanation": "At 40-all the score is deuce.",
+    "source": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-011",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "text": "How long is a cricket pitch between the wickets?",
+    "options": [
+      "20 yards",
+      "24 yards",
+      "22 yards",
+      "18 yards"
+    ],
+    "correct": 2,
+    "explanation": "The pitch is 22 yards long.",
+    "source": "https://www.lords.org/mcc/laws-of-cricket/laws/law-6-the-pitch/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-012",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "text": "How far is the penalty mark from the goal line in association football?",
+    "options": [
+      "15 metres",
+      "11 metres",
+      "9 metres",
+      "12 metres"
+    ],
+    "correct": 1,
+    "explanation": "The penalty mark is eleven metres from the midpoint between the posts.",
+    "source": "https://www.theifab.com/laws/latest/the-field-of-play/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-013",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "text": "How many events make up the athletics decathlon?",
+    "options": [
+      "10",
+      "7",
+      "8",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "The decathlon combines ten track and field events.",
+    "source": "https://worldathletics.org/disciplines/combined-events/decathlon",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-014",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "text": "Which athletics race includes a water jump and barriers?",
+    "options": [
+      "1500 metres",
+      "100 metres hurdles",
+      "400 metres",
+      "3000 metres steeplechase"
+    ],
+    "correct": 3,
+    "explanation": "The steeplechase combines barriers with a water jump.",
+    "source": "https://worldathletics.org/disciplines/middlelong/3000-metres-steeplechase",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-015",
+    "category": "Sports",
+    "difficulty": "Hard",
+    "text": "How many players are on court for each team in standard FIBA five-on-five basketball?",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "4"
+    ],
+    "correct": 2,
+    "explanation": "Five players from each team are on the playing court.",
+    "source": "https://about.fiba.basketball/en/our-sport/official-basketball-rules",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-016",
+    "category": "Sports",
+    "difficulty": "Expert",
+    "text": "What is the minimum number of players a football team needs for a match to start or continue?",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "A match may not start or continue with fewer than seven players on a team.",
+    "source": "https://www.theifab.com/laws/latest/the-players/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-017",
+    "category": "Sports",
+    "difficulty": "Expert",
+    "text": "What is the width of a cricket wicket?",
+    "options": [
+      "9 inches",
+      "6 inches",
+      "8 inches",
+      "12 inches"
+    ],
+    "correct": 0,
+    "explanation": "The three stumps form a wicket nine inches wide.",
+    "source": "https://www.lords.org/mcc/laws-of-cricket/laws/law-8-the-wickets/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-018",
+    "category": "Sports",
+    "difficulty": "Expert",
+    "text": "In association football, can a player be offside when receiving the ball directly from a throw-in?",
+    "options": [
+      "Yes, always",
+      "Only in extra time",
+      "Only inside the penalty area",
+      "No"
+    ],
+    "correct": 3,
+    "explanation": "There is no offside offence when receiving directly from a throw-in.",
+    "source": "https://www.theifab.com/laws/latest/offside/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-019",
+    "category": "Sports",
+    "difficulty": "Expert",
+    "text": "Under standard advantage scoring in tennis, how many consecutive points from deuce win a game?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correct": 2,
+    "explanation": "A player must win the advantage point and then the next point.",
+    "source": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-sports-020",
+    "category": "Sports",
+    "difficulty": "Expert",
+    "text": "How many barriers and water jumps in total are cleared in a standard 3000-metre steeplechase?",
+    "options": [
+      "40",
+      "35",
+      "28",
+      "30"
+    ],
+    "correct": 1,
+    "explanation": "The race has 28 hurdle jumps and seven water jumps.",
+    "source": "https://worldathletics.org/disciplines/middlelong/3000-metres-steeplechase",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-001",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "text": "Which Pixar film features Woody and Buzz Lightyear?",
+    "options": [
+      "Toy Story",
+      "Cars",
+      "Finding Nemo",
+      "Inside Out"
+    ],
+    "correct": 0,
+    "explanation": "Woody and Buzz are the central toy characters in Toy Story.",
+    "source": "https://www.pixar.com/toy-story",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-002",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "text": "What kind of fish is Nemo in Finding Nemo?",
+    "options": [
+      "Shark",
+      "Tuna",
+      "Seahorse",
+      "Clownfish"
+    ],
+    "correct": 3,
+    "explanation": "Nemo and his father Marlin are clownfish.",
+    "source": "https://www.pixar.com/finding-nemo",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-003",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "text": "Which Pixar film follows the emotions inside Riley's mind?",
+    "options": [
+      "Up",
+      "Brave",
+      "Inside Out",
+      "Monsters, Inc."
+    ],
+    "correct": 2,
+    "explanation": "Inside Out personifies Riley's emotions.",
+    "source": "https://www.pixar.com/inside-out",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-004",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "text": "Which film features the monster duo Mike and Sulley?",
+    "options": [
+      "Ratatouille",
+      "Monsters, Inc.",
+      "Toy Story",
+      "Cars"
+    ],
+    "correct": 1,
+    "explanation": "Mike Wazowski and James P. Sullivan work at Monsters, Inc.",
+    "source": "https://www.pixar.com/monsters-inc",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-005",
+    "category": "Movies",
+    "difficulty": "Easy",
+    "text": "Which Cars character is a racing car?",
+    "options": [
+      "Lightning McQueen",
+      "Woody",
+      "Nemo",
+      "Wall-E"
+    ],
+    "correct": 0,
+    "explanation": "Lightning McQueen is the red racing car at the center of Cars.",
+    "source": "https://www.pixar.com/cars",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-006",
+    "category": "Movies",
+    "difficulty": "Normal",
+    "text": "Which film won the first Academy Award for Best Picture, then called Outstanding Picture?",
+    "options": [
+      "Casablanca",
+      "Gone with the Wind",
+      "The Jazz Singer",
+      "Wings"
+    ],
+    "correct": 3,
+    "explanation": "Wings received the award at the first Oscar ceremony.",
+    "source": "https://www.oscars.org/oscars/ceremonies/1929",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-007",
+    "category": "Movies",
+    "difficulty": "Normal",
+    "text": "Which film won the first Oscar for Animated Feature?",
+    "options": [
+      "Finding Nemo",
+      "Spirited Away",
+      "Shrek",
+      "Toy Story"
+    ],
+    "correct": 2,
+    "explanation": "Shrek won the inaugural Animated Feature award in 2002.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2002",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-008",
+    "category": "Movies",
+    "difficulty": "Normal",
+    "text": "Who directed Titanic, the 1997 feature film?",
+    "options": [
+      "Ridley Scott",
+      "James Cameron",
+      "Steven Spielberg",
+      "Peter Jackson"
+    ],
+    "correct": 1,
+    "explanation": "Cameron won the directing Oscar for Titanic.",
+    "source": "https://www.oscars.org/oscars/ceremonies/1998",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-009",
+    "category": "Movies",
+    "difficulty": "Normal",
+    "text": "Who directed Spirited Away?",
+    "options": [
+      "Hayao Miyazaki",
+      "Isao Takahata",
+      "Akira Kurosawa",
+      "Satoshi Kon"
+    ],
+    "correct": 0,
+    "explanation": "Miyazaki directed the 2003 Animated Feature Oscar winner.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2003",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-010",
+    "category": "Movies",
+    "difficulty": "Normal",
+    "text": "Who directed The Lord of the Rings: The Return of the King?",
+    "options": [
+      "James Cameron",
+      "George Lucas",
+      "Christopher Nolan",
+      "Peter Jackson"
+    ],
+    "correct": 3,
+    "explanation": "Peter Jackson won the directing Oscar for the film.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2004",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-011",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "text": "In which year was Disney's Snow White and the Seven Dwarfs first released?",
+    "options": [
+      "1947",
+      "1957",
+      "1937",
+      "1927"
+    ],
+    "correct": 2,
+    "explanation": "Disney's first full-length animated feature premiered in 1937.",
+    "source": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-012",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "text": "Which film won Best Picture at the 1998 Academy Awards?",
+    "options": [
+      "As Good as It Gets",
+      "Titanic",
+      "L.A. Confidential",
+      "Good Will Hunting"
+    ],
+    "correct": 1,
+    "explanation": "Titanic won Best Picture at the 70th Academy Awards.",
+    "source": "https://www.oscars.org/oscars/ceremonies/1998",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-013",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "text": "Which film won Animated Feature at the 2004 Academy Awards?",
+    "options": [
+      "Finding Nemo",
+      "Brother Bear",
+      "The Triplets of Belleville",
+      "Shrek"
+    ],
+    "correct": 0,
+    "explanation": "Finding Nemo won the 2004 Animated Feature Oscar.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2004",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-014",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "text": "How many Oscars did The Return of the King win at the 2004 ceremony?",
+    "options": [
+      "9",
+      "10",
+      "12",
+      "11"
+    ],
+    "correct": 3,
+    "explanation": "It won all eleven categories in which it was nominated.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2004",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-015",
+    "category": "Movies",
+    "difficulty": "Hard",
+    "text": "What is the Oscar statuette's official name?",
+    "options": [
+      "Hollywood Gold Prize",
+      "Motion Picture Star",
+      "Academy Award of Merit",
+      "Academy Medal of Cinema"
+    ],
+    "correct": 2,
+    "explanation": "The Academy Award of Merit is commonly called the Oscar.",
+    "source": "https://www.oscars.org/oscars/statuette",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-016",
+    "category": "Movies",
+    "difficulty": "Expert",
+    "text": "Who won the first Academy Award for Actor?",
+    "options": [
+      "Douglas Fairbanks",
+      "Emil Jannings",
+      "Charlie Chaplin",
+      "Buster Keaton"
+    ],
+    "correct": 1,
+    "explanation": "Jannings won for The Last Command and The Way of All Flesh.",
+    "source": "https://www.oscars.org/oscars/ceremonies/1929",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-017",
+    "category": "Movies",
+    "difficulty": "Expert",
+    "text": "Who won the first Academy Award for Actress?",
+    "options": [
+      "Janet Gaynor",
+      "Mary Pickford",
+      "Greta Garbo",
+      "Clara Bow"
+    ],
+    "correct": 0,
+    "explanation": "Gaynor received the first Actress Oscar for three performances.",
+    "source": "https://www.oscars.org/oscars/ceremonies/1929",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-018",
+    "category": "Movies",
+    "difficulty": "Expert",
+    "text": "In which Los Angeles hotel was the first Academy Awards ceremony held?",
+    "options": [
+      "Beverly Hills Hotel",
+      "Biltmore Hotel",
+      "Chateau Marmont",
+      "Hollywood Roosevelt Hotel"
+    ],
+    "correct": 3,
+    "explanation": "The first ceremony was held in the Roosevelt's Blossom Room.",
+    "source": "https://www.oscars.org/oscars/statuette",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-019",
+    "category": "Movies",
+    "difficulty": "Expert",
+    "text": "Who designed the original Oscar statuette figure?",
+    "options": [
+      "Louis B. Mayer",
+      "Douglas Fairbanks",
+      "Cedric Gibbons",
+      "Walt Disney"
+    ],
+    "correct": 2,
+    "explanation": "MGM art director Cedric Gibbons designed the statuette.",
+    "source": "https://www.oscars.org/oscars/statuette",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-movies-020",
+    "category": "Movies",
+    "difficulty": "Expert",
+    "text": "What were Oscar statuettes made of during three years of World War II?",
+    "options": [
+      "Marble",
+      "Painted plaster",
+      "Solid wood",
+      "Glass"
+    ],
+    "correct": 1,
+    "explanation": "A wartime metal shortage led to painted plaster Oscars.",
+    "source": "https://www.oscars.org/oscars/statuette",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-001",
+    "category": "Music",
+    "difficulty": "Easy",
+    "text": "How many lines are in a standard musical staff?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "correct": 0,
+    "explanation": "A standard staff has five lines and four spaces.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/notation-of-notes-clefs-and-ledger-lines/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-002",
+    "category": "Music",
+    "difficulty": "Easy",
+    "text": "Which clef is also called the G clef?",
+    "options": [
+      "Bass clef",
+      "Alto clef",
+      "Tenor clef",
+      "Treble clef"
+    ],
+    "correct": 3,
+    "explanation": "The treble clef identifies the G line.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/notation-of-notes-clefs-and-ledger-lines/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-003",
+    "category": "Music",
+    "difficulty": "Easy",
+    "text": "What does tempo describe?",
+    "options": [
+      "Number of musicians",
+      "Instrument color",
+      "Speed of the beat",
+      "Loudness only"
+    ],
+    "correct": 2,
+    "explanation": "Tempo describes how fast or slowly the beat moves.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/other-aspects-of-notation/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-004",
+    "category": "Music",
+    "difficulty": "Easy",
+    "text": "What does the dynamic marking f mean?",
+    "options": [
+      "Fast",
+      "Loud",
+      "Soft",
+      "Slow"
+    ],
+    "correct": 1,
+    "explanation": "F stands for forte, meaning loud.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/other-aspects-of-notation/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-005",
+    "category": "Music",
+    "difficulty": "Easy",
+    "text": "How many beats does a quarter note receive in 4/4 time?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 0,
+    "explanation": "In 4/4 the quarter note is the beat unit.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-006",
+    "category": "Music",
+    "difficulty": "Normal",
+    "text": "Which clef is also called the F clef?",
+    "options": [
+      "Treble clef",
+      "Alto clef",
+      "Soprano clef",
+      "Bass clef"
+    ],
+    "correct": 3,
+    "explanation": "The bass clef identifies the F line.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/notation-of-notes-clefs-and-ledger-lines/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-007",
+    "category": "Music",
+    "difficulty": "Normal",
+    "text": "What does a crescendo indicate?",
+    "options": [
+      "Immediately slower",
+      "Complete silence",
+      "Gradually louder",
+      "Gradually softer"
+    ],
+    "correct": 2,
+    "explanation": "Crescendo calls for a gradual increase in loudness.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/other-aspects-of-notation/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-008",
+    "category": "Music",
+    "difficulty": "Normal",
+    "text": "How many semitones make one octave in twelve-tone equal temperament?",
+    "options": [
+      "10",
+      "12",
+      "7",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "An octave spans twelve equal semitone steps.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-009",
+    "category": "Music",
+    "difficulty": "Normal",
+    "text": "Which tempo term usually means fast and lively?",
+    "options": [
+      "Allegro",
+      "Largo",
+      "Adagio",
+      "Grave"
+    ],
+    "correct": 0,
+    "explanation": "Allegro is a fast tempo marking.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/other-aspects-of-notation/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-010",
+    "category": "Music",
+    "difficulty": "Normal",
+    "text": "How many notes make up a triad?",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "correct": 3,
+    "explanation": "A triad contains a root, a third and a fifth.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-011",
+    "category": "Music",
+    "difficulty": "Hard",
+    "text": "What is the interval from C up to G in the same octave?",
+    "options": [
+      "Minor sixth",
+      "Perfect fourth",
+      "Perfect fifth",
+      "Major third"
+    ],
+    "correct": 2,
+    "explanation": "C to G spans a perfect fifth.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-012",
+    "category": "Music",
+    "difficulty": "Hard",
+    "text": "How many sharps or flats are in the key signature of C major?",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "2"
+    ],
+    "correct": 1,
+    "explanation": "C major uses no sharps or flats in its key signature.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-013",
+    "category": "Music",
+    "difficulty": "Hard",
+    "text": "What is the relative minor of C major?",
+    "options": [
+      "A minor",
+      "C minor",
+      "G minor",
+      "E minor"
+    ],
+    "correct": 0,
+    "explanation": "A natural minor shares C major's key signature.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-014",
+    "category": "Music",
+    "difficulty": "Hard",
+    "text": "Which scale raises both its sixth and seventh degrees when ascending in the traditional form?",
+    "options": [
+      "Natural minor",
+      "Major pentatonic",
+      "Whole-tone",
+      "Melodic minor"
+    ],
+    "correct": 3,
+    "explanation": "Traditional melodic minor raises degrees six and seven ascending.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-015",
+    "category": "Music",
+    "difficulty": "Hard",
+    "text": "What interval separates the root and third of a minor triad?",
+    "options": [
+      "Perfect fourth",
+      "Tritone",
+      "Minor third",
+      "Major third"
+    ],
+    "correct": 2,
+    "explanation": "A minor triad has a minor third above the root.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-016",
+    "category": "Music",
+    "difficulty": "Expert",
+    "text": "What interval is the inversion of a major third?",
+    "options": [
+      "Minor seventh",
+      "Minor sixth",
+      "Major sixth",
+      "Perfect fifth"
+    ],
+    "correct": 1,
+    "explanation": "Inverted interval sizes add to nine, and major becomes minor.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-017",
+    "category": "Music",
+    "difficulty": "Expert",
+    "text": "How many semitones span an augmented fourth?",
+    "options": [
+      "6",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct": 0,
+    "explanation": "An augmented fourth is a tritone of six semitones.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-018",
+    "category": "Music",
+    "difficulty": "Expert",
+    "text": "Which notes form a C diminished triad?",
+    "options": [
+      "C, E, G",
+      "C, E-flat, G",
+      "C, E, G-sharp",
+      "C, E-flat, G-flat"
+    ],
+    "correct": 3,
+    "explanation": "A diminished triad combines two minor thirds.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-019",
+    "category": "Music",
+    "difficulty": "Expert",
+    "text": "Which major key has four sharps in its key signature?",
+    "options": [
+      "A major",
+      "B major",
+      "E major",
+      "D major"
+    ],
+    "correct": 2,
+    "explanation": "E major has F-sharp, C-sharp, G-sharp and D-sharp.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-music-020",
+    "category": "Music",
+    "difficulty": "Expert",
+    "text": "Which scale degree is called the dominant?",
+    "options": [
+      "Sixth",
+      "Fifth",
+      "Second",
+      "Fourth"
+    ],
+    "correct": 1,
+    "explanation": "The dominant is the fifth scale degree.",
+    "source": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-001",
+    "category": "Literature",
+    "difficulty": "Easy",
+    "text": "Who wrote Pride and Prejudice?",
+    "options": [
+      "Jane Austen",
+      "Charlotte Bronte",
+      "Mary Shelley",
+      "George Eliot"
+    ],
+    "correct": 0,
+    "explanation": "Pride and Prejudice is a novel by Jane Austen.",
+    "source": "https://www.gutenberg.org/ebooks/1342",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-002",
+    "category": "Literature",
+    "difficulty": "Easy",
+    "text": "Who wrote Frankenstein; or, The Modern Prometheus?",
+    "options": [
+      "Jane Austen",
+      "Emily Bronte",
+      "Virginia Woolf",
+      "Mary Shelley"
+    ],
+    "correct": 3,
+    "explanation": "Mary Shelley wrote Frankenstein.",
+    "source": "https://www.gutenberg.org/ebooks/84",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-003",
+    "category": "Literature",
+    "difficulty": "Easy",
+    "text": "Who wrote Romeo and Juliet?",
+    "options": [
+      "John Milton",
+      "Geoffrey Chaucer",
+      "William Shakespeare",
+      "Christopher Marlowe"
+    ],
+    "correct": 2,
+    "explanation": "Romeo and Juliet is a tragedy by Shakespeare.",
+    "source": "https://www.gutenberg.org/ebooks/1513",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-004",
+    "category": "Literature",
+    "difficulty": "Easy",
+    "text": "Who wrote A Tale of Two Cities?",
+    "options": [
+      "Herman Melville",
+      "Charles Dickens",
+      "Thomas Hardy",
+      "Mark Twain"
+    ],
+    "correct": 1,
+    "explanation": "Dickens wrote the novel set in London and Paris.",
+    "source": "https://www.gutenberg.org/ebooks/98",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-005",
+    "category": "Literature",
+    "difficulty": "Easy",
+    "text": "Who wrote Alice's Adventures in Wonderland?",
+    "options": [
+      "Lewis Carroll",
+      "J.M. Barrie",
+      "Rudyard Kipling",
+      "Oscar Wilde"
+    ],
+    "correct": 0,
+    "explanation": "Lewis Carroll is the pen name used by Charles Dodgson.",
+    "source": "https://www.gutenberg.org/ebooks/11",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-006",
+    "category": "Literature",
+    "difficulty": "Normal",
+    "text": "Which detective lives at 221B Baker Street in Arthur Conan Doyle's stories?",
+    "options": [
+      "Hercule Poirot",
+      "Auguste Dupin",
+      "Father Brown",
+      "Sherlock Holmes"
+    ],
+    "correct": 3,
+    "explanation": "Holmes shares the Baker Street lodgings with Dr Watson.",
+    "source": "https://www.gutenberg.org/ebooks/1661",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-007",
+    "category": "Literature",
+    "difficulty": "Normal",
+    "text": "What is the surname of the five sisters in Pride and Prejudice?",
+    "options": [
+      "Earnshaw",
+      "March",
+      "Bennet",
+      "Dashwood"
+    ],
+    "correct": 2,
+    "explanation": "The novel follows the Bennet family.",
+    "source": "https://www.gutenberg.org/ebooks/1342",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-008",
+    "category": "Literature",
+    "difficulty": "Normal",
+    "text": "Who is the captain of the Pequod in Moby-Dick?",
+    "options": [
+      "Flint",
+      "Ahab",
+      "Ishmael",
+      "Nemo"
+    ],
+    "correct": 1,
+    "explanation": "Captain Ahab pursues the white whale.",
+    "source": "https://www.gutenberg.org/ebooks/2701",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-009",
+    "category": "Literature",
+    "difficulty": "Normal",
+    "text": "In Dracula, what is Count Dracula?",
+    "options": [
+      "A vampire",
+      "A werewolf",
+      "A ghost",
+      "A pirate"
+    ],
+    "correct": 0,
+    "explanation": "Stoker's Count Dracula is a vampire.",
+    "source": "https://www.gutenberg.org/ebooks/345",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-010",
+    "category": "Literature",
+    "difficulty": "Normal",
+    "text": "Which novel features the orphan Pip?",
+    "options": [
+      "Oliver Twist",
+      "David Copperfield",
+      "Jane Eyre",
+      "Great Expectations"
+    ],
+    "correct": 3,
+    "explanation": "Pip is the narrator of Great Expectations.",
+    "source": "https://www.gutenberg.org/ebooks/1400",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-011",
+    "category": "Literature",
+    "difficulty": "Hard",
+    "text": "Who wrote The Picture of Dorian Gray?",
+    "options": [
+      "H.G. Wells",
+      "Robert Louis Stevenson",
+      "Oscar Wilde",
+      "Bram Stoker"
+    ],
+    "correct": 2,
+    "explanation": "Wilde's novel centers on Dorian Gray and his portrait.",
+    "source": "https://www.gutenberg.org/ebooks/174",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-012",
+    "category": "Literature",
+    "difficulty": "Hard",
+    "text": "Who wrote The Time Machine?",
+    "options": [
+      "Herman Melville",
+      "H.G. Wells",
+      "Jules Verne",
+      "Arthur Conan Doyle"
+    ],
+    "correct": 1,
+    "explanation": "Wells published The Time Machine in 1895.",
+    "source": "https://www.gutenberg.org/ebooks/35",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-013",
+    "category": "Literature",
+    "difficulty": "Hard",
+    "text": "Who wrote The Strange Case of Dr Jekyll and Mr Hyde?",
+    "options": [
+      "Robert Louis Stevenson",
+      "Charles Dickens",
+      "H.G. Wells",
+      "Joseph Conrad"
+    ],
+    "correct": 0,
+    "explanation": "Stevenson wrote the novella about Jekyll and Hyde.",
+    "source": "https://www.gutenberg.org/ebooks/43",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-014",
+    "category": "Literature",
+    "difficulty": "Hard",
+    "text": "Who wrote Wuthering Heights?",
+    "options": [
+      "Charlotte Bronte",
+      "Anne Bronte",
+      "Jane Austen",
+      "Emily Bronte"
+    ],
+    "correct": 3,
+    "explanation": "Wuthering Heights is Emily Bronte's novel.",
+    "source": "https://www.gutenberg.org/ebooks/768",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-015",
+    "category": "Literature",
+    "difficulty": "Hard",
+    "text": "Who wrote Middlemarch?",
+    "options": [
+      "Elizabeth Gaskell",
+      "Anthony Trollope",
+      "George Eliot",
+      "Thomas Hardy"
+    ],
+    "correct": 2,
+    "explanation": "George Eliot was the pen name of Mary Ann Evans.",
+    "source": "https://www.gutenberg.org/ebooks/145",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-016",
+    "category": "Literature",
+    "difficulty": "Expert",
+    "text": "What is the name of the scientist who creates the creature in Frankenstein?",
+    "options": [
+      "Felix De Lacey",
+      "Victor Frankenstein",
+      "Henry Clerval",
+      "Robert Walton"
+    ],
+    "correct": 1,
+    "explanation": "Victor Frankenstein creates the unnamed creature.",
+    "source": "https://www.gutenberg.org/ebooks/84",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-017",
+    "category": "Literature",
+    "difficulty": "Expert",
+    "text": "Which Shakespeare play features the magician Prospero?",
+    "options": [
+      "The Tempest",
+      "Macbeth",
+      "Othello",
+      "King Lear"
+    ],
+    "correct": 0,
+    "explanation": "Prospero is the exiled duke and magician in The Tempest.",
+    "source": "https://www.gutenberg.org/ebooks/23042",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-018",
+    "category": "Literature",
+    "difficulty": "Expert",
+    "text": "What is the name of the ship in Treasure Island?",
+    "options": [
+      "Pequod",
+      "Nautilus",
+      "Walrus",
+      "Hispaniola"
+    ],
+    "correct": 3,
+    "explanation": "The Hispaniola carries the treasure-seeking expedition.",
+    "source": "https://www.gutenberg.org/ebooks/120",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-019",
+    "category": "Literature",
+    "difficulty": "Expert",
+    "text": "Which novel features Dorothea Brooke?",
+    "options": [
+      "Jane Eyre",
+      "North and South",
+      "Middlemarch",
+      "Emma"
+    ],
+    "correct": 2,
+    "explanation": "Dorothea Brooke is a central character in Middlemarch.",
+    "source": "https://www.gutenberg.org/ebooks/145",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-literature-020",
+    "category": "Literature",
+    "difficulty": "Expert",
+    "text": "Who narrates the opening of Moby-Dick with the words Call me Ishmael?",
+    "options": [
+      "Queequeg",
+      "Ishmael",
+      "Ahab",
+      "Starbuck"
+    ],
+    "correct": 1,
+    "explanation": "Ishmael is the novel's first-person narrator.",
+    "source": "https://www.gutenberg.org/ebooks/2701",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-001",
+    "category": "Animals",
+    "difficulty": "Easy",
+    "text": "What makes up most of a giant panda's diet?",
+    "options": [
+      "Bamboo",
+      "Fish",
+      "Meat",
+      "Insects"
+    ],
+    "correct": 0,
+    "explanation": "Giant pandas feed chiefly on bamboo.",
+    "source": "https://nationalzoo.si.edu/animals/giant-panda",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-002",
+    "category": "Animals",
+    "difficulty": "Easy",
+    "text": "Which animal is the fastest land mammal?",
+    "options": [
+      "Lion",
+      "Horse",
+      "Wolf",
+      "Cheetah"
+    ],
+    "correct": 3,
+    "explanation": "Cheetahs are specialized for short bursts of high-speed running.",
+    "source": "https://nationalzoo.si.edu/animals/cheetah",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-003",
+    "category": "Animals",
+    "difficulty": "Easy",
+    "text": "Which land animal is the tallest?",
+    "options": [
+      "Ostrich",
+      "Camel",
+      "Giraffe",
+      "Elephant"
+    ],
+    "correct": 2,
+    "explanation": "Giraffes are the tallest living land animals.",
+    "source": "https://animals.sandiegozoo.org/animals/giraffe",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-004",
+    "category": "Animals",
+    "difficulty": "Easy",
+    "text": "Which group do penguins belong to?",
+    "options": [
+      "Mammals",
+      "Birds",
+      "Fish",
+      "Reptiles"
+    ],
+    "correct": 1,
+    "explanation": "Penguins are flightless marine birds.",
+    "source": "https://zoo.sandiegozoo.org/animals/penguin",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-005",
+    "category": "Animals",
+    "difficulty": "Easy",
+    "text": "How many arms does an octopus have?",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "An octopus has eight arms.",
+    "source": "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-pacific-octopus",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-006",
+    "category": "Animals",
+    "difficulty": "Normal",
+    "text": "Which mammal lays eggs?",
+    "options": [
+      "Koala",
+      "Dolphin",
+      "Kangaroo",
+      "Platypus"
+    ],
+    "correct": 3,
+    "explanation": "The platypus is an egg-laying monotreme.",
+    "source": "https://animals.sandiegozoo.org/animals/platypus",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-007",
+    "category": "Animals",
+    "difficulty": "Normal",
+    "text": "Which leaves make up most of a koala's diet?",
+    "options": [
+      "Pine",
+      "Maple",
+      "Eucalyptus",
+      "Oak"
+    ],
+    "correct": 2,
+    "explanation": "Koalas mainly eat eucalyptus leaves.",
+    "source": "https://animals.sandiegozoo.org/animals/koala",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-008",
+    "category": "Animals",
+    "difficulty": "Normal",
+    "text": "Which fish is the largest living fish species?",
+    "options": [
+      "Manta ray",
+      "Whale shark",
+      "Great white shark",
+      "Bluefin tuna"
+    ],
+    "correct": 1,
+    "explanation": "Whale sharks are the largest living fish.",
+    "source": "https://oceanservice.noaa.gov/facts/bigfish.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-009",
+    "category": "Animals",
+    "difficulty": "Normal",
+    "text": "Which mammals are capable of sustained powered flight?",
+    "options": [
+      "Bats",
+      "Flying squirrels",
+      "Colugos",
+      "Sugar gliders"
+    ],
+    "correct": 0,
+    "explanation": "Bats are the only mammals with true powered flight.",
+    "source": "https://www.nps.gov/yose/learn/nature/bats.htm",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-010",
+    "category": "Animals",
+    "difficulty": "Normal",
+    "text": "Which animal group undergoes a caterpillar stage?",
+    "options": [
+      "Spiders",
+      "Earthworms",
+      "Snails",
+      "Butterflies"
+    ],
+    "correct": 3,
+    "explanation": "A caterpillar is the larval stage of a butterfly.",
+    "source": "https://www.fs.usda.gov/wildflowers/pollinators/animals/butterflies.shtml",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-011",
+    "category": "Animals",
+    "difficulty": "Hard",
+    "text": "What gives flamingos their pink coloration?",
+    "options": [
+      "Sunlight alone",
+      "Salt in their water",
+      "Pigments in their diet",
+      "Pink feathers at birth"
+    ],
+    "correct": 2,
+    "explanation": "Dietary carotenoids contribute to flamingos' pink plumage.",
+    "source": "https://nationalzoo.si.edu/animals/american-flamingo",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-012",
+    "category": "Animals",
+    "difficulty": "Hard",
+    "text": "Which living mammal uses a bill to detect prey's electrical signals?",
+    "options": [
+      "Cheetah",
+      "Platypus",
+      "Giraffe",
+      "Koala"
+    ],
+    "correct": 1,
+    "explanation": "The platypus detects weak electric fields with receptors in its bill.",
+    "source": "https://animals.sandiegozoo.org/animals/platypus",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-013",
+    "category": "Animals",
+    "difficulty": "Hard",
+    "text": "How many hearts does a giant Pacific octopus have?",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": 0,
+    "explanation": "Two hearts serve the gills and one serves the rest of the body.",
+    "source": "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-pacific-octopus",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-014",
+    "category": "Animals",
+    "difficulty": "Hard",
+    "text": "A koala is classified as which type of mammal?",
+    "options": [
+      "Monotreme",
+      "Primate",
+      "Rodent",
+      "Marsupial"
+    ],
+    "correct": 3,
+    "explanation": "Koalas are marsupials that rear young in a pouch.",
+    "source": "https://animals.sandiegozoo.org/animals/koala",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-015",
+    "category": "Animals",
+    "difficulty": "Hard",
+    "text": "What term describes the transfer of pollen by bees between flowers?",
+    "options": [
+      "Fermentation",
+      "Transpiration",
+      "Pollination",
+      "Germination"
+    ],
+    "correct": 2,
+    "explanation": "Bees carry pollen while visiting flowers.",
+    "source": "https://www.fs.usda.gov/wildflowers/pollinators/animals/bees.shtml",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-016",
+    "category": "Animals",
+    "difficulty": "Expert",
+    "text": "Which amphibian is known for retaining external gills as an adult?",
+    "options": [
+      "Fire salamander",
+      "Axolotl",
+      "Common toad",
+      "Tree frog"
+    ],
+    "correct": 1,
+    "explanation": "Axolotls retain larval features including external gills.",
+    "source": "https://animals.sandiegozoo.org/animals/axolotl",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-017",
+    "category": "Animals",
+    "difficulty": "Expert",
+    "text": "Which natural lake system in Mexico is the axolotl's remaining native stronghold?",
+    "options": [
+      "Xochimilco",
+      "Lake Baikal",
+      "Lake Victoria",
+      "Lake Geneva"
+    ],
+    "correct": 0,
+    "explanation": "Wild axolotls are native to the Xochimilco water system.",
+    "source": "https://animals.sandiegozoo.org/animals/axolotl",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-018",
+    "category": "Animals",
+    "difficulty": "Expert",
+    "text": "What name is often given to the giant panda's enlarged wrist bone used to grasp bamboo?",
+    "options": [
+      "A second elbow",
+      "A hoof",
+      "A third shoulder",
+      "A pseudo-thumb"
+    ],
+    "correct": 3,
+    "explanation": "An enlarged wrist bone functions like an opposable thumb.",
+    "source": "https://nationalzoo.si.edu/animals/giant-panda",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-019",
+    "category": "Animals",
+    "difficulty": "Expert",
+    "text": "What is the scientific name of the cheetah?",
+    "options": [
+      "Panthera tigris",
+      "Felis catus",
+      "Acinonyx jubatus",
+      "Panthera leo"
+    ],
+    "correct": 2,
+    "explanation": "The cheetah belongs to the genus Acinonyx.",
+    "source": "https://nationalzoo.si.edu/animals/cheetah",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-animals-020",
+    "category": "Animals",
+    "difficulty": "Expert",
+    "text": "Which tusk-bearing elephant species typically has smaller ears than African savanna elephants?",
+    "options": [
+      "No living elephant",
+      "Asian elephant",
+      "African forest elephant",
+      "Both have identical ears"
+    ],
+    "correct": 1,
+    "explanation": "Asian elephants generally have smaller ears than African elephants.",
+    "source": "https://nationalzoo.si.edu/animals/asian-elephant",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-001",
+    "category": "Food",
+    "difficulty": "Easy",
+    "text": "Which legume is used to make traditional tofu?",
+    "options": [
+      "Soybean",
+      "Chickpea",
+      "Lentil",
+      "Peanut"
+    ],
+    "correct": 0,
+    "explanation": "Tofu is made from coagulated soy milk.",
+    "source": "https://dictionary.cambridge.org/dictionary/english/tofu",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-002",
+    "category": "Food",
+    "difficulty": "Easy",
+    "text": "Sushi rice is traditionally seasoned with which acidic ingredient?",
+    "options": [
+      "Lemon juice",
+      "Olive oil",
+      "Soy sauce",
+      "Rice vinegar"
+    ],
+    "correct": 3,
+    "explanation": "Sushi uses rice seasoned with vinegar, commonly rice vinegar.",
+    "source": "https://www.breville.com/content/dam/breville/nz/assets/miscellaneous/instruction-manual/cookers/LRC480-instruction-manual.pdf",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-003",
+    "category": "Food",
+    "difficulty": "Easy",
+    "text": "Which spice is made from dried flower stigmas?",
+    "options": [
+      "Ginger",
+      "Pepper",
+      "Saffron",
+      "Cinnamon"
+    ],
+    "correct": 2,
+    "explanation": "Saffron comes from the stigmas of Crocus sativus.",
+    "source": "https://mpns.science.kew.org/mpns-portal/drugDetail?drugName=saffron",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-004",
+    "category": "Food",
+    "difficulty": "Easy",
+    "text": "Which plant part is cinnamon traditionally made from?",
+    "options": [
+      "Seed",
+      "Bark",
+      "Root",
+      "Leaf"
+    ],
+    "correct": 1,
+    "explanation": "Cinnamon is obtained from the inner bark of certain trees.",
+    "source": "https://www.kew.org/plants/cinnamon",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-005",
+    "category": "Food",
+    "difficulty": "Easy",
+    "text": "Which fruit is the main ingredient in guacamole?",
+    "options": [
+      "Avocado",
+      "Mango",
+      "Apple",
+      "Banana"
+    ],
+    "correct": 0,
+    "explanation": "Guacamole is an avocado-based preparation.",
+    "source": "https://www.kew.org/plants/avocado",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-006",
+    "category": "Food",
+    "difficulty": "Normal",
+    "text": "What kind of organism makes bread dough rise in ordinary yeast bread?",
+    "options": [
+      "Algae",
+      "Virus",
+      "Moss",
+      "Yeast"
+    ],
+    "correct": 3,
+    "explanation": "Yeast ferments sugars and produces carbon dioxide.",
+    "source": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-007",
+    "category": "Food",
+    "difficulty": "Normal",
+    "text": "Which legume is the main ingredient in traditional hummus?",
+    "options": [
+      "Soybean",
+      "Green pea",
+      "Chickpea",
+      "Kidney bean"
+    ],
+    "correct": 2,
+    "explanation": "Hummus is commonly made with chickpeas and tahini.",
+    "source": "https://dictionary.cambridge.org/dictionary/english/hummus",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-008",
+    "category": "Food",
+    "difficulty": "Normal",
+    "text": "Tahini is a paste made primarily from which seeds?",
+    "options": [
+      "Poppy",
+      "Sesame",
+      "Sunflower",
+      "Pumpkin"
+    ],
+    "correct": 1,
+    "explanation": "Tahini is ground sesame seed paste.",
+    "source": "https://dictionary.cambridge.org/dictionary/english/tahini",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-009",
+    "category": "Food",
+    "difficulty": "Normal",
+    "text": "Cocoa powder is made from the seeds of which tree?",
+    "options": [
+      "Cacao",
+      "Coffee",
+      "Tea",
+      "Olive"
+    ],
+    "correct": 0,
+    "explanation": "Cocoa is produced from cacao beans.",
+    "source": "https://www.kew.org/plants/cacao-tree",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-010",
+    "category": "Food",
+    "difficulty": "Normal",
+    "text": "Which vitamin is citrus fruit particularly known for supplying?",
+    "options": [
+      "Vitamin B12",
+      "Vitamin D",
+      "Vitamin K",
+      "Vitamin C"
+    ],
+    "correct": 3,
+    "explanation": "Citrus fruits are well-known dietary sources of vitamin C.",
+    "source": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-011",
+    "category": "Food",
+    "difficulty": "Hard",
+    "text": "Which protein network gives wheat dough much of its elasticity?",
+    "options": [
+      "Collagen",
+      "Keratin",
+      "Gluten",
+      "Casein"
+    ],
+    "correct": 2,
+    "explanation": "Hydrated wheat proteins form gluten in dough.",
+    "source": "https://www.kingarthurbaking.com/learn/guides/sourdough/faq",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-012",
+    "category": "Food",
+    "difficulty": "Hard",
+    "text": "Which Japanese seasoning paste is traditionally made by fermenting soybeans with salt and koji?",
+    "options": [
+      "Pesto",
+      "Miso",
+      "Tahini",
+      "Harissa"
+    ],
+    "correct": 1,
+    "explanation": "Miso is a fermented soybean seasoning.",
+    "source": "https://dictionary.cambridge.org/dictionary/english/miso",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-013",
+    "category": "Food",
+    "difficulty": "Hard",
+    "text": "Which aromatic spice consists of dried flower buds?",
+    "options": [
+      "Cloves",
+      "Cumin",
+      "Turmeric",
+      "Coriander seeds"
+    ],
+    "correct": 0,
+    "explanation": "Cloves are the dried unopened buds of the clove tree.",
+    "source": "https://www.kew.org/read-and-watch/christmas-spices",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-014",
+    "category": "Food",
+    "difficulty": "Hard",
+    "text": "Which plant part is ginger commonly used as a spice?",
+    "options": [
+      "Fruit",
+      "Flower",
+      "Leaf",
+      "Rhizome"
+    ],
+    "correct": 3,
+    "explanation": "Culinary ginger is an underground stem called a rhizome.",
+    "source": "https://www.kew.org/plants/ginger",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-015",
+    "category": "Food",
+    "difficulty": "Hard",
+    "text": "Which process turns milk into yogurt using bacterial cultures?",
+    "options": [
+      "Caramelization",
+      "Dehydration",
+      "Fermentation",
+      "Distillation"
+    ],
+    "correct": 2,
+    "explanation": "Yogurt cultures ferment milk sugars into lactic acid.",
+    "source": "https://books.lib.uoguelph.ca/dairyscienceandtechnologyebook/chapter/cultured-dairy-products-and-cheese/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-016",
+    "category": "Food",
+    "difficulty": "Expert",
+    "text": "Quinoa is botanically best described as what type of food crop?",
+    "options": [
+      "Legume",
+      "Pseudocereal",
+      "True cereal grass",
+      "Tree nut"
+    ],
+    "correct": 1,
+    "explanation": "Quinoa is not a grass, but its seeds are used like cereal grains.",
+    "source": "https://www.kew.org/plants/quinoa",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-017",
+    "category": "Food",
+    "difficulty": "Expert",
+    "text": "Which compound is chiefly responsible for the heat of chili peppers?",
+    "options": [
+      "Capsaicin",
+      "Caffeine",
+      "Menthol",
+      "Lactose"
+    ],
+    "correct": 0,
+    "explanation": "Capsaicin activates heat-sensitive receptors.",
+    "source": "https://www.acs.org/molecule-of-the-week/archive/c/capsaicin.html",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-018",
+    "category": "Food",
+    "difficulty": "Expert",
+    "text": "Which spice comes from the aril around a nutmeg seed?",
+    "options": [
+      "Saffron",
+      "Cardamom",
+      "Anise",
+      "Mace"
+    ],
+    "correct": 3,
+    "explanation": "Mace is the dried aril; nutmeg is the seed.",
+    "source": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77126699-1/general-information",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-019",
+    "category": "Food",
+    "difficulty": "Expert",
+    "text": "Which preparation is added to milk in traditional cheese making to coagulate casein?",
+    "options": [
+      "Cornstarch",
+      "Baking soda",
+      "Rennet",
+      "Pectin"
+    ],
+    "correct": 2,
+    "explanation": "Rennet enzymes coagulate milk proteins into curds.",
+    "source": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/1-introduction-to-cheese-making/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-food-020",
+    "category": "Food",
+    "difficulty": "Expert",
+    "text": "Which reaction between reducing sugars and amino compounds produces much of the browning in cooked food?",
+    "options": [
+      "Osmosis",
+      "Maillard reaction",
+      "Photosynthesis",
+      "Saponification"
+    ],
+    "correct": 1,
+    "explanation": "The Maillard reaction creates many browned colors and aromas.",
+    "source": "https://pubs.acs.org/doi/10.1021/acs.jafc.7b00882",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-001",
+    "category": "Space",
+    "difficulty": "Easy",
+    "text": "How many planets are in our solar system?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "correct": 0,
+    "explanation": "The solar system has eight recognized planets.",
+    "source": "https://science.nasa.gov/solar-system/planets/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-002",
+    "category": "Space",
+    "difficulty": "Easy",
+    "text": "Which planet is closest to the Sun?",
+    "options": [
+      "Venus",
+      "Earth",
+      "Mars",
+      "Mercury"
+    ],
+    "correct": 3,
+    "explanation": "Mercury is the innermost planet.",
+    "source": "https://science.nasa.gov/mercury/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-003",
+    "category": "Space",
+    "difficulty": "Easy",
+    "text": "Which planet is known as the Red Planet?",
+    "options": [
+      "Jupiter",
+      "Neptune",
+      "Mars",
+      "Venus"
+    ],
+    "correct": 2,
+    "explanation": "Iron minerals give Mars its reddish appearance.",
+    "source": "https://science.nasa.gov/mars/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-004",
+    "category": "Space",
+    "difficulty": "Easy",
+    "text": "Which planet is the largest in the solar system?",
+    "options": [
+      "Neptune",
+      "Jupiter",
+      "Saturn",
+      "Earth"
+    ],
+    "correct": 1,
+    "explanation": "Jupiter is the solar system's largest planet.",
+    "source": "https://science.nasa.gov/jupiter/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-005",
+    "category": "Space",
+    "difficulty": "Easy",
+    "text": "What is Earth's natural satellite called?",
+    "options": [
+      "The Moon",
+      "Titan",
+      "Europa",
+      "Phobos"
+    ],
+    "correct": 0,
+    "explanation": "Earth has one natural moon.",
+    "source": "https://science.nasa.gov/moon/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-006",
+    "category": "Space",
+    "difficulty": "Normal",
+    "text": "Which planet has the hottest average surface among the eight planets?",
+    "options": [
+      "Mercury",
+      "Mars",
+      "Jupiter",
+      "Venus"
+    ],
+    "correct": 3,
+    "explanation": "Venus's dense atmosphere traps heat efficiently.",
+    "source": "https://science.nasa.gov/venus/venus-facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-007",
+    "category": "Space",
+    "difficulty": "Normal",
+    "text": "Which two planets have no natural moons?",
+    "options": [
+      "Jupiter and Saturn",
+      "Uranus and Neptune",
+      "Mercury and Venus",
+      "Earth and Mars"
+    ],
+    "correct": 2,
+    "explanation": "Mercury and Venus have no natural moons.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-008",
+    "category": "Space",
+    "difficulty": "Normal",
+    "text": "Between which two planets is the main asteroid belt?",
+    "options": [
+      "Jupiter and Saturn",
+      "Mars and Jupiter",
+      "Earth and Mars",
+      "Venus and Earth"
+    ],
+    "correct": 1,
+    "explanation": "The main asteroid belt lies between Mars and Jupiter.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-009",
+    "category": "Space",
+    "difficulty": "Normal",
+    "text": "Which planet is farthest from the Sun among the eight planets?",
+    "options": [
+      "Neptune",
+      "Uranus",
+      "Saturn",
+      "Jupiter"
+    ],
+    "correct": 0,
+    "explanation": "Neptune is the outermost of the eight planets.",
+    "source": "https://science.nasa.gov/neptune/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-010",
+    "category": "Space",
+    "difficulty": "Normal",
+    "text": "What is Pluto classified as?",
+    "options": [
+      "Star",
+      "Comet",
+      "Natural moon",
+      "Dwarf planet"
+    ],
+    "correct": 3,
+    "explanation": "Pluto is a dwarf planet in the Kuiper Belt.",
+    "source": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-011",
+    "category": "Space",
+    "difficulty": "Hard",
+    "text": "Which planet has an axial tilt of about 98 degrees and rotates nearly on its side?",
+    "options": [
+      "Venus",
+      "Mercury",
+      "Uranus",
+      "Mars"
+    ],
+    "correct": 2,
+    "explanation": "Uranus's extreme axial tilt makes its rotation unusual.",
+    "source": "https://science.nasa.gov/uranus/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-012",
+    "category": "Space",
+    "difficulty": "Hard",
+    "text": "What is the name of Jupiter's largest moon?",
+    "options": [
+      "Callisto",
+      "Ganymede",
+      "Europa",
+      "Io"
+    ],
+    "correct": 1,
+    "explanation": "Ganymede is also the largest moon in the solar system.",
+    "source": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-013",
+    "category": "Space",
+    "difficulty": "Hard",
+    "text": "Which spacecraft mission studied Saturn from orbit for more than a decade?",
+    "options": [
+      "Cassini",
+      "Voyager 1",
+      "New Horizons",
+      "MESSENGER"
+    ],
+    "correct": 0,
+    "explanation": "Cassini orbited Saturn from 2004 until 2017.",
+    "source": "https://science.nasa.gov/mission/cassini/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-014",
+    "category": "Space",
+    "difficulty": "Hard",
+    "text": "Which Apollo mission first landed humans on the Moon?",
+    "options": [
+      "Apollo 8",
+      "Apollo 12",
+      "Apollo 17",
+      "Apollo 11"
+    ],
+    "correct": 3,
+    "explanation": "Apollo 11 landed Neil Armstrong and Buzz Aldrin in 1969.",
+    "source": "https://www.nasa.gov/mission/apollo-11/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-015",
+    "category": "Space",
+    "difficulty": "Hard",
+    "text": "Which Martian moons are named after fear and panic?",
+    "options": [
+      "Titan and Rhea",
+      "Triton and Nereid",
+      "Phobos and Deimos",
+      "Io and Europa"
+    ],
+    "correct": 2,
+    "explanation": "Mars has two small moons, Phobos and Deimos.",
+    "source": "https://science.nasa.gov/mars/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-016",
+    "category": "Space",
+    "difficulty": "Expert",
+    "text": "Which Jovian moon is the most volcanically active world in the solar system?",
+    "options": [
+      "Ganymede",
+      "Io",
+      "Europa",
+      "Callisto"
+    ],
+    "correct": 1,
+    "explanation": "Io's intense volcanic activity is driven by tidal heating.",
+    "source": "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-017",
+    "category": "Space",
+    "difficulty": "Expert",
+    "text": "Which large moon has its own internally generated magnetic field?",
+    "options": [
+      "Ganymede",
+      "Europa",
+      "Titan",
+      "Callisto"
+    ],
+    "correct": 0,
+    "explanation": "Ganymede is the only known moon with its own intrinsic magnetic field.",
+    "source": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-018",
+    "category": "Space",
+    "difficulty": "Expert",
+    "text": "Which moon's icy surface overlies a likely global ocean and is a target for Europa Clipper?",
+    "options": [
+      "Phobos",
+      "Mimas",
+      "Charon",
+      "Europa"
+    ],
+    "correct": 3,
+    "explanation": "Europa has strong evidence for a subsurface saltwater ocean.",
+    "source": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-019",
+    "category": "Space",
+    "difficulty": "Expert",
+    "text": "What is the approximate orbital period of Neptune in Earth years?",
+    "options": [
+      "29 years",
+      "12 years",
+      "165 years",
+      "84 years"
+    ],
+    "correct": 2,
+    "explanation": "Neptune takes about 165 Earth years to orbit the Sun.",
+    "source": "https://science.nasa.gov/neptune/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  },
+  {
+    "id": "qpk-space-020",
+    "category": "Space",
+    "difficulty": "Expert",
+    "text": "What is the name of Pluto's largest moon?",
+    "options": [
+      "Oberon",
+      "Charon",
+      "Triton",
+      "Titan"
+    ],
+    "correct": 1,
+    "explanation": "Charon is unusually large relative to Pluto.",
+    "source": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+    "reviewed": "2026-10-12",
+    "wording": "Original QuizPK wording; factual reference"
+  }
+]

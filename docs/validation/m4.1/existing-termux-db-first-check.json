@@ -1,0 +1,10 @@
+{
+  "existingPrivateDatabasePresent": true,
+  "tokenFilesChecked": 2,
+  "existingTokensAreDistinct": true,
+  "allTokensMatchEnabledIdentities": true,
+  "existingIdentitySchemaPresent": true,
+  "liveDatabaseStillHasM3OnlySchema": true,
+  "existingPrivateFilesBytesUnchangedByReadonlyCheck": false,
+  "privateFilesCheckedWithoutPrintingHashes": 6
+}

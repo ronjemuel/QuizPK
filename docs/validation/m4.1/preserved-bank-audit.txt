@@ -1,0 +1,3 @@
+PASS: 240 stable unique IDs/prompts; four distinct answers each; 12 categories x 4 difficulties x 5 questions.
+All Categories: 60 per difficulty. Category: 20 total, 5 per difficulty.
+Facts require source review; structural validation is not a truth check.

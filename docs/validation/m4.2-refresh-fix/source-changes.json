@@ -1,0 +1,26 @@
+{
+  "baselineFiles": 218,
+  "changed": [
+    "IMPLEMENTATION_LOG.md",
+    "README.md",
+    "app/build.gradle.kts",
+    "app/src/main/java/com/zeke/quizpk/ui/screens/LobbyViewModel.java",
+    "app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java",
+    "app/src/main/res/layout/fragment_multiplayer.xml",
+    "docs/TEST_NOTES.md"
+  ],
+  "added": [
+    "app/src/test/java/com/zeke/quizpk/LobbyRefreshTest.java",
+    "docs/M4_2_REFRESH_DEVICE_TEST_PLAN.md",
+    "docs/M4_2_REFRESH_FIX.md"
+  ],
+  "removed": [],
+  "existingProductionFilesChanged": [
+    "app/build.gradle.kts",
+    "app/src/main/java/com/zeke/quizpk/ui/screens/LobbyViewModel.java",
+    "app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java",
+    "app/src/main/res/layout/fragment_multiplayer.xml"
+  ],
+  "unchangedOriginalAndroidTests": true,
+  "backendAndProtocolUnchanged": true
+}

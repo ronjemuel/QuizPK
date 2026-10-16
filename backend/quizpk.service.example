@@ -1,0 +1,26 @@
+[Unit]
+Description=QuizPK secure quiz backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=quizpk
+Group=quizpk
+WorkingDirectory=/opt/quizpk/backend
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=QUIZPK_DB_PATH=/var/lib/quizpk/quizpk.sqlite
+EnvironmentFile=/etc/quizpk/backend.env
+ExecStart=/usr/bin/node /opt/quizpk/backend/src/server.mjs
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/quizpk
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

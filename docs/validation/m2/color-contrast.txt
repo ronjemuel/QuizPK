@@ -1,0 +1,34 @@
+values: text_primary on background = 16.46:1
+values: text_primary on surface = 17.47:1
+values: text_primary on surface_variant = 14.78:1
+values: text_secondary on background = 6.26:1
+values: text_secondary on surface = 6.65:1
+values: text_secondary on surface_variant = 5.62:1
+values: accent_text on background = 5.04:1
+values: accent_text on surface = 5.34:1
+values: accent_text on surface_variant = 4.52:1
+values: success on background = 5.41:1
+values: success on surface = 5.74:1
+values: success on surface_variant = 4.86:1
+values: error on background = 6.09:1
+values: error on surface = 6.46:1
+values: error on surface_variant = 5.47:1
+values: on_primary on primary = 5.34:1
+values-night: text_primary on background = 17.06:1
+values-night: text_primary on surface = 14.88:1
+values-night: text_primary on surface_variant = 13.74:1
+values-night: text_secondary on background = 9.40:1
+values-night: text_secondary on surface = 8.20:1
+values-night: text_secondary on surface_variant = 7.57:1
+values-night: accent_text on background = 8.54:1
+values-night: accent_text on surface = 7.45:1
+values-night: accent_text on surface_variant = 6.88:1
+values-night: success on background = 10.98:1
+values-night: success on surface = 9.57:1
+values-night: success on surface_variant = 8.84:1
+values-night: error on background = 8.77:1
+values-night: error on surface = 7.65:1
+values-night: error on surface_variant = 7.07:1
+values-night: on_primary on primary = 5.02:1
+PASS: all checked semantic text pairs exceed 4.5:1 by sRGB calculation.
+This static color calculation does not verify device rendering, all disabled states, TalkBack or visual acceptance.

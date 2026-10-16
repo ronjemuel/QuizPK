@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.LobbyRefreshTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-10-13T06:34:03.177Z" hostname="localhost" time="39.259">
+  <properties/>
+  <testcase name="anUnconfirmedCachedRoomMustNotNavigateAwayFromTheForm" classname="com.zeke.quizpk.LobbyRefreshTest" time="33.288">
+    <failure message="java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;8&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;8&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.zeke.quizpk.LobbyRefreshTest.anUnconfirmedCachedRoomMustNotNavigateAwayFromTheForm(LobbyRefreshTest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:502)
+	at org.robolectric.internal.SandboxTestRunner$2.lambda$evaluate$2(SandboxTestRunner.java:285)
+	at org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThread$0(Sandbox.java:104)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+</failure>
+  </testcase>
+  <testcase name="aBackgroundPollMustNotDisableAnEditorOrMoveItsCursor" classname="com.zeke.quizpk.LobbyRefreshTest" time="5.949">
+    <failure message="java.lang.AssertionError: Background GET disabled the focused editor" type="java.lang.AssertionError">java.lang.AssertionError: Background GET disabled the focused editor
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.zeke.quizpk.LobbyRefreshTest.aBackgroundPollMustNotDisableAnEditorOrMoveItsCursor(LobbyRefreshTest.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:502)
+	at org.robolectric.internal.SandboxTestRunner$2.lambda$evaluate$2(SandboxTestRunner.java:285)
+	at org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThread$0(Sandbox.java:104)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 13, 2026 6:34:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite4java from /data/data/com.termux/files/usr/tmp/quizpk-sqlite-host/libsqlite4java.so
+Oct 13, 2026 6:34:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite 3.53.4, wrapper 1.3
+Oct 13, 2026 6:34:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_anUnconfirmedCachedRoomMustNotNavigateAwayFromTheForm8294425841754688815/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:34:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: opened
+Oct 13, 2026 6:34:26 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: connection closed
+Oct 13, 2026 6:34:37 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:34:37 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_aBackgroundPollMustNotDisableAnEditorOrMoveItsCursor7855475231318127018/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:34:37 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: opened
+Oct 13, 2026 6:34:39 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: connection closed
+]]></system-err>
+</testsuite>

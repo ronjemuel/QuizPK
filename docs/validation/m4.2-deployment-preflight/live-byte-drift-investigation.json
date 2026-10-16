@@ -1,0 +1,28 @@
+{
+  "users": {
+    "rowsEqual": true,
+    "backupCount": 2,
+    "currentCount": 2,
+    "allBackupRowsStillPresent": true
+  },
+  "jobs": {
+    "rowsEqual": false,
+    "backupCount": 3,
+    "currentCount": 4,
+    "allBackupRowsStillPresent": true
+  },
+  "throttle": {
+    "rowsEqual": false,
+    "backupCount": 1,
+    "currentCount": 1,
+    "allBackupRowsStillPresent": false
+  },
+  "m3OnlySchema": true,
+  "userVersionEqual": true,
+  "previousBaselineChangedFiles": [
+    "liveWal"
+  ],
+  "25935Alive": true,
+  "25946Alive": true,
+  "3289Alive": true
+}

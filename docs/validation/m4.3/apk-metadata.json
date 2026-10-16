@@ -1,0 +1,16 @@
+{
+  "artifact": "artifacts/QuizPK-M4.3-classic-debug.apk",
+  "bytes": 7435777,
+  "sha256": "f3cfd99bddbb1f297767d7e63308b59f2aa818cbd316306ace782053f202e748",
+  "package": "com.zeke.quizpk",
+  "versionCode": 6,
+  "versionName": "1.4-M4.3",
+  "installedVersionCode": 5,
+  "minSdk": "24",
+  "targetSdk": "36",
+  "permissionsUnchanged": true,
+  "bankBytesUnchanged": true,
+  "testAndSecretFilesExcluded": true,
+  "matchesFinalBuild": true,
+  "privateValuesAndHashesAbsentFromPublicChangesAndUncompressedApk": true
+}

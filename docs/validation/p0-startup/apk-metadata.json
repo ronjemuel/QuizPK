@@ -1,0 +1,27 @@
+{
+  "apk": "app/build/outputs/apk/debug/app-debug.apk",
+  "size_bytes": 6061576,
+  "sha256": "623035a3377290b3440e766f6547a9ab4914fe3b4732fb46e3ff6b8cbf49135f",
+  "badging": [
+    "package: name='com.zeke.quizpk' versionCode='1' versionName='1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "minSdkVersion:'24'",
+    "targetSdkVersion:'36'",
+    "uses-permission: name='com.zeke.quizpk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'",
+    "application-label:'QuizPK'",
+    "launchable-activity: name='com.zeke.quizpk.MainActivity'  label='' icon=''"
+  ],
+  "unchanged_resource_entries": 820,
+  "physical_device_tests_executed": false,
+  "delivered_apk": "artifacts/QuizPK-M1-P0-startup-fix-debug.apk",
+  "tests": {
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "lint_counts": {
+    "Warning": 34
+  },
+  "clean_build": "BUILD SUCCESSFUL in 5m 27s",
+  "apk_signature_verified": true
+}

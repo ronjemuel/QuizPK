@@ -1,0 +1,53 @@
+{
+  "android": {
+    "total": {
+      "tests": 56,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "suites": [
+      {
+        "name": "com.zeke.quizpk.AiDataTest",
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 24.982
+      },
+      {
+        "name": "com.zeke.quizpk.AiFlowTest",
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 64.986
+      },
+      {
+        "name": "com.zeke.quizpk.OfflineDataTest",
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 27.934
+      },
+      {
+        "name": "com.zeke.quizpk.OfflineFlowTest",
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 30.072
+      },
+      {
+        "name": "com.zeke.quizpk.StartupTest",
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 17.425
+      }
+    ]
+  },
+  "backendMockTests": 20
+}

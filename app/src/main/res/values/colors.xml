@@ -1,0 +1,16 @@
+<resources>
+    <color name="background">#F7F8FC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#EEEAF9</color>
+    <color name="primary">#7052DC</color>
+    <color name="accent_text">#7052DC</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="text_primary">#171925</color>
+    <color name="text_secondary">#555C72</color>
+    <color name="outline">#DDE0EB</color>
+    <color name="icon_secondary">#A693E5</color>
+    <color name="gold">#86601B</color>
+    <color name="success">#187451</color>
+    <color name="error">#B32638</color>
+    <color name="warning">#805E18</color>
+</resources>

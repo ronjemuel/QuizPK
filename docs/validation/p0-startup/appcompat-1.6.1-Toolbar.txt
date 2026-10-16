@@ -1,0 +1,4384 @@
+Compiled from "Toolbar.java"
+public class androidx.appcompat.widget.Toolbar extends android.view.ViewGroup implements androidx.core.view.MenuHost {
+  private static final java.lang.String TAG;
+
+  androidx.appcompat.widget.ActionMenuView mMenuView;
+
+  private android.widget.TextView mTitleTextView;
+
+  private android.widget.TextView mSubtitleTextView;
+
+  private android.widget.ImageButton mNavButtonView;
+
+  private android.widget.ImageView mLogoView;
+
+  private android.graphics.drawable.Drawable mCollapseIcon;
+
+  private java.lang.CharSequence mCollapseDescription;
+
+  android.widget.ImageButton mCollapseButtonView;
+
+  android.view.View mExpandedActionView;
+
+  private android.content.Context mPopupContext;
+
+  private int mPopupTheme;
+
+  private int mTitleTextAppearance;
+
+  private int mSubtitleTextAppearance;
+
+  int mButtonGravity;
+
+  private int mMaxButtonHeight;
+
+  private int mTitleMarginStart;
+
+  private int mTitleMarginEnd;
+
+  private int mTitleMarginTop;
+
+  private int mTitleMarginBottom;
+
+  private androidx.appcompat.widget.RtlSpacingHelper mContentInsets;
+
+  private int mContentInsetStartWithNavigation;
+
+  private int mContentInsetEndWithActions;
+
+  private int mGravity;
+
+  private java.lang.CharSequence mTitleText;
+
+  private java.lang.CharSequence mSubtitleText;
+
+  private android.content.res.ColorStateList mTitleTextColor;
+
+  private android.content.res.ColorStateList mSubtitleTextColor;
+
+  private boolean mEatingTouch;
+
+  private boolean mEatingHover;
+
+  private final java.util.ArrayList<android.view.View> mTempViews;
+
+  private final java.util.ArrayList<android.view.View> mHiddenViews;
+
+  private final int[] mTempMargins;
+
+  final androidx.core.view.MenuHostHelper mMenuHostHelper;
+
+  private java.util.ArrayList<android.view.MenuItem> mProvidedMenuItems;
+
+  androidx.appcompat.widget.Toolbar$OnMenuItemClickListener mOnMenuItemClickListener;
+
+  private final androidx.appcompat.widget.ActionMenuView$OnMenuItemClickListener mMenuViewItemClickListener;
+
+  private androidx.appcompat.widget.ToolbarWidgetWrapper mWrapper;
+
+  private androidx.appcompat.widget.ActionMenuPresenter mOuterActionMenuPresenter;
+
+  private androidx.appcompat.widget.Toolbar$ExpandedActionViewMenuPresenter mExpandedMenuPresenter;
+
+  private androidx.appcompat.view.menu.MenuPresenter$Callback mActionMenuPresenterCallback;
+
+  androidx.appcompat.view.menu.MenuBuilder$Callback mMenuBuilderCallback;
+
+  private boolean mCollapsible;
+
+  private android.window.OnBackInvokedCallback mBackInvokedCallback;
+
+  private android.window.OnBackInvokedDispatcher mBackInvokedDispatcher;
+
+  private boolean mBackInvokedCallbackEnabled;
+
+  private final java.lang.Runnable mShowOverflowMenuRunnable;
+
+  public androidx.appcompat.widget.Toolbar(android.content.Context);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aconst_null
+       3: invokespecial #1                  // Method "<init>":(Landroid/content/Context;Landroid/util/AttributeSet;)V
+       6: return
+
+  public androidx.appcompat.widget.Toolbar(android.content.Context, android.util.AttributeSet);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: getstatic     #2                  // Field androidx/appcompat/R$attr.toolbarStyle:I
+       6: invokespecial #3                  // Method "<init>":(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+       9: return
+
+  public androidx.appcompat.widget.Toolbar(android.content.Context, android.util.AttributeSet, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: invokespecial #4                  // Method android/view/ViewGroup."<init>":(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+       7: aload_0
+       8: ldc           #7                  // int 8388627
+      10: putfield      #8                  // Field mGravity:I
+      13: aload_0
+      14: new           #9                  // class java/util/ArrayList
+      17: dup
+      18: invokespecial #10                 // Method java/util/ArrayList."<init>":()V
+      21: putfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+      24: aload_0
+      25: new           #9                  // class java/util/ArrayList
+      28: dup
+      29: invokespecial #10                 // Method java/util/ArrayList."<init>":()V
+      32: putfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      35: aload_0
+      36: iconst_2
+      37: newarray       int
+      39: putfield      #13                 // Field mTempMargins:[I
+      42: aload_0
+      43: new           #14                 // class androidx/core/view/MenuHostHelper
+      46: dup
+      47: aload_0
+      48: invokedynamic #15,  0             // InvokeDynamic #0:run:(Landroidx/appcompat/widget/Toolbar;)Ljava/lang/Runnable;
+      53: invokespecial #16                 // Method androidx/core/view/MenuHostHelper."<init>":(Ljava/lang/Runnable;)V
+      56: putfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+      59: aload_0
+      60: new           #9                  // class java/util/ArrayList
+      63: dup
+      64: invokespecial #10                 // Method java/util/ArrayList."<init>":()V
+      67: putfield      #18                 // Field mProvidedMenuItems:Ljava/util/ArrayList;
+      70: aload_0
+      71: new           #19                 // class androidx/appcompat/widget/Toolbar$1
+      74: dup
+      75: aload_0
+      76: invokespecial #20                 // Method androidx/appcompat/widget/Toolbar$1."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      79: putfield      #21                 // Field mMenuViewItemClickListener:Landroidx/appcompat/widget/ActionMenuView$OnMenuItemClickListener;
+      82: aload_0
+      83: new           #22                 // class androidx/appcompat/widget/Toolbar$2
+      86: dup
+      87: aload_0
+      88: invokespecial #23                 // Method androidx/appcompat/widget/Toolbar$2."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      91: putfield      #24                 // Field mShowOverflowMenuRunnable:Ljava/lang/Runnable;
+      94: aload_0
+      95: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      98: aload_2
+      99: getstatic     #26                 // Field androidx/appcompat/R$styleable.Toolbar:[I
+     102: iload_3
+     103: iconst_0
+     104: invokestatic  #27                 // Method androidx/appcompat/widget/TintTypedArray.obtainStyledAttributes:(Landroid/content/Context;Landroid/util/AttributeSet;[III)Landroidx/appcompat/widget/TintTypedArray;
+     107: astore        4
+     109: aload_0
+     110: aload_1
+     111: getstatic     #26                 // Field androidx/appcompat/R$styleable.Toolbar:[I
+     114: aload_2
+     115: aload         4
+     117: invokevirtual #28                 // Method androidx/appcompat/widget/TintTypedArray.getWrappedTypeArray:()Landroid/content/res/TypedArray;
+     120: iload_3
+     121: iconst_0
+     122: invokestatic  #29                 // Method androidx/core/view/ViewCompat.saveAttributeDataForStyleable:(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+     125: aload_0
+     126: aload         4
+     128: getstatic     #30                 // Field androidx/appcompat/R$styleable.Toolbar_titleTextAppearance:I
+     131: iconst_0
+     132: invokevirtual #31                 // Method androidx/appcompat/widget/TintTypedArray.getResourceId:(II)I
+     135: putfield      #32                 // Field mTitleTextAppearance:I
+     138: aload_0
+     139: aload         4
+     141: getstatic     #33                 // Field androidx/appcompat/R$styleable.Toolbar_subtitleTextAppearance:I
+     144: iconst_0
+     145: invokevirtual #31                 // Method androidx/appcompat/widget/TintTypedArray.getResourceId:(II)I
+     148: putfield      #34                 // Field mSubtitleTextAppearance:I
+     151: aload_0
+     152: aload         4
+     154: getstatic     #35                 // Field androidx/appcompat/R$styleable.Toolbar_android_gravity:I
+     157: aload_0
+     158: getfield      #8                  // Field mGravity:I
+     161: invokevirtual #36                 // Method androidx/appcompat/widget/TintTypedArray.getInteger:(II)I
+     164: putfield      #8                  // Field mGravity:I
+     167: aload_0
+     168: aload         4
+     170: getstatic     #37                 // Field androidx/appcompat/R$styleable.Toolbar_buttonGravity:I
+     173: bipush        48
+     175: invokevirtual #36                 // Method androidx/appcompat/widget/TintTypedArray.getInteger:(II)I
+     178: putfield      #38                 // Field mButtonGravity:I
+     181: aload         4
+     183: getstatic     #39                 // Field androidx/appcompat/R$styleable.Toolbar_titleMargin:I
+     186: iconst_0
+     187: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     190: istore        5
+     192: aload         4
+     194: getstatic     #41                 // Field androidx/appcompat/R$styleable.Toolbar_titleMargins:I
+     197: invokevirtual #42                 // Method androidx/appcompat/widget/TintTypedArray.hasValue:(I)Z
+     200: ifeq          215
+     203: aload         4
+     205: getstatic     #41                 // Field androidx/appcompat/R$styleable.Toolbar_titleMargins:I
+     208: iload         5
+     210: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     213: istore        5
+     215: aload_0
+     216: aload_0
+     217: aload_0
+     218: aload_0
+     219: iload         5
+     221: dup_x1
+     222: putfield      #43                 // Field mTitleMarginBottom:I
+     225: dup_x1
+     226: putfield      #44                 // Field mTitleMarginTop:I
+     229: dup_x1
+     230: putfield      #45                 // Field mTitleMarginEnd:I
+     233: putfield      #46                 // Field mTitleMarginStart:I
+     236: aload         4
+     238: getstatic     #47                 // Field androidx/appcompat/R$styleable.Toolbar_titleMarginStart:I
+     241: iconst_m1
+     242: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     245: istore        6
+     247: iload         6
+     249: iflt          258
+     252: aload_0
+     253: iload         6
+     255: putfield      #46                 // Field mTitleMarginStart:I
+     258: aload         4
+     260: getstatic     #48                 // Field androidx/appcompat/R$styleable.Toolbar_titleMarginEnd:I
+     263: iconst_m1
+     264: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     267: istore        7
+     269: iload         7
+     271: iflt          280
+     274: aload_0
+     275: iload         7
+     277: putfield      #45                 // Field mTitleMarginEnd:I
+     280: aload         4
+     282: getstatic     #49                 // Field androidx/appcompat/R$styleable.Toolbar_titleMarginTop:I
+     285: iconst_m1
+     286: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     289: istore        8
+     291: iload         8
+     293: iflt          302
+     296: aload_0
+     297: iload         8
+     299: putfield      #44                 // Field mTitleMarginTop:I
+     302: aload         4
+     304: getstatic     #50                 // Field androidx/appcompat/R$styleable.Toolbar_titleMarginBottom:I
+     307: iconst_m1
+     308: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     311: istore        9
+     313: iload         9
+     315: iflt          324
+     318: aload_0
+     319: iload         9
+     321: putfield      #43                 // Field mTitleMarginBottom:I
+     324: aload_0
+     325: aload         4
+     327: getstatic     #51                 // Field androidx/appcompat/R$styleable.Toolbar_maxButtonHeight:I
+     330: iconst_m1
+     331: invokevirtual #52                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelSize:(II)I
+     334: putfield      #53                 // Field mMaxButtonHeight:I
+     337: aload         4
+     339: getstatic     #54                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetStart:I
+     342: ldc           #56                 // int -2147483648
+     344: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     347: istore        10
+     349: aload         4
+     351: getstatic     #57                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetEnd:I
+     354: ldc           #56                 // int -2147483648
+     356: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     359: istore        11
+     361: aload         4
+     363: getstatic     #58                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetLeft:I
+     366: iconst_0
+     367: invokevirtual #52                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelSize:(II)I
+     370: istore        12
+     372: aload         4
+     374: getstatic     #59                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetRight:I
+     377: iconst_0
+     378: invokevirtual #52                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelSize:(II)I
+     381: istore        13
+     383: aload_0
+     384: invokespecial #60                 // Method ensureContentInsets:()V
+     387: aload_0
+     388: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+     391: iload         12
+     393: iload         13
+     395: invokevirtual #62                 // Method androidx/appcompat/widget/RtlSpacingHelper.setAbsolute:(II)V
+     398: iload         10
+     400: ldc           #56                 // int -2147483648
+     402: if_icmpne     412
+     405: iload         11
+     407: ldc           #56                 // int -2147483648
+     409: if_icmpeq     423
+     412: aload_0
+     413: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+     416: iload         10
+     418: iload         11
+     420: invokevirtual #63                 // Method androidx/appcompat/widget/RtlSpacingHelper.setRelative:(II)V
+     423: aload_0
+     424: aload         4
+     426: getstatic     #64                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetStartWithNavigation:I
+     429: ldc           #56                 // int -2147483648
+     431: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     434: putfield      #65                 // Field mContentInsetStartWithNavigation:I
+     437: aload_0
+     438: aload         4
+     440: getstatic     #66                 // Field androidx/appcompat/R$styleable.Toolbar_contentInsetEndWithActions:I
+     443: ldc           #56                 // int -2147483648
+     445: invokevirtual #40                 // Method androidx/appcompat/widget/TintTypedArray.getDimensionPixelOffset:(II)I
+     448: putfield      #67                 // Field mContentInsetEndWithActions:I
+     451: aload_0
+     452: aload         4
+     454: getstatic     #68                 // Field androidx/appcompat/R$styleable.Toolbar_collapseIcon:I
+     457: invokevirtual #69                 // Method androidx/appcompat/widget/TintTypedArray.getDrawable:(I)Landroid/graphics/drawable/Drawable;
+     460: putfield      #70                 // Field mCollapseIcon:Landroid/graphics/drawable/Drawable;
+     463: aload_0
+     464: aload         4
+     466: getstatic     #71                 // Field androidx/appcompat/R$styleable.Toolbar_collapseContentDescription:I
+     469: invokevirtual #72                 // Method androidx/appcompat/widget/TintTypedArray.getText:(I)Ljava/lang/CharSequence;
+     472: putfield      #73                 // Field mCollapseDescription:Ljava/lang/CharSequence;
+     475: aload         4
+     477: getstatic     #74                 // Field androidx/appcompat/R$styleable.Toolbar_title:I
+     480: invokevirtual #72                 // Method androidx/appcompat/widget/TintTypedArray.getText:(I)Ljava/lang/CharSequence;
+     483: astore        14
+     485: aload         14
+     487: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+     490: ifne          499
+     493: aload_0
+     494: aload         14
+     496: invokevirtual #76                 // Method setTitle:(Ljava/lang/CharSequence;)V
+     499: aload         4
+     501: getstatic     #77                 // Field androidx/appcompat/R$styleable.Toolbar_subtitle:I
+     504: invokevirtual #72                 // Method androidx/appcompat/widget/TintTypedArray.getText:(I)Ljava/lang/CharSequence;
+     507: astore        15
+     509: aload         15
+     511: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+     514: ifne          523
+     517: aload_0
+     518: aload         15
+     520: invokevirtual #78                 // Method setSubtitle:(Ljava/lang/CharSequence;)V
+     523: aload_0
+     524: aload_0
+     525: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+     528: putfield      #79                 // Field mPopupContext:Landroid/content/Context;
+     531: aload_0
+     532: aload         4
+     534: getstatic     #80                 // Field androidx/appcompat/R$styleable.Toolbar_popupTheme:I
+     537: iconst_0
+     538: invokevirtual #31                 // Method androidx/appcompat/widget/TintTypedArray.getResourceId:(II)I
+     541: invokevirtual #81                 // Method setPopupTheme:(I)V
+     544: aload         4
+     546: getstatic     #82                 // Field androidx/appcompat/R$styleable.Toolbar_navigationIcon:I
+     549: invokevirtual #69                 // Method androidx/appcompat/widget/TintTypedArray.getDrawable:(I)Landroid/graphics/drawable/Drawable;
+     552: astore        16
+     554: aload         16
+     556: ifnull        565
+     559: aload_0
+     560: aload         16
+     562: invokevirtual #83                 // Method setNavigationIcon:(Landroid/graphics/drawable/Drawable;)V
+     565: aload         4
+     567: getstatic     #84                 // Field androidx/appcompat/R$styleable.Toolbar_navigationContentDescription:I
+     570: invokevirtual #72                 // Method androidx/appcompat/widget/TintTypedArray.getText:(I)Ljava/lang/CharSequence;
+     573: astore        17
+     575: aload         17
+     577: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+     580: ifne          589
+     583: aload_0
+     584: aload         17
+     586: invokevirtual #85                 // Method setNavigationContentDescription:(Ljava/lang/CharSequence;)V
+     589: aload         4
+     591: getstatic     #86                 // Field androidx/appcompat/R$styleable.Toolbar_logo:I
+     594: invokevirtual #69                 // Method androidx/appcompat/widget/TintTypedArray.getDrawable:(I)Landroid/graphics/drawable/Drawable;
+     597: astore        18
+     599: aload         18
+     601: ifnull        610
+     604: aload_0
+     605: aload         18
+     607: invokevirtual #87                 // Method setLogo:(Landroid/graphics/drawable/Drawable;)V
+     610: aload         4
+     612: getstatic     #88                 // Field androidx/appcompat/R$styleable.Toolbar_logoDescription:I
+     615: invokevirtual #72                 // Method androidx/appcompat/widget/TintTypedArray.getText:(I)Ljava/lang/CharSequence;
+     618: astore        19
+     620: aload         19
+     622: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+     625: ifne          634
+     628: aload_0
+     629: aload         19
+     631: invokevirtual #89                 // Method setLogoDescription:(Ljava/lang/CharSequence;)V
+     634: aload         4
+     636: getstatic     #90                 // Field androidx/appcompat/R$styleable.Toolbar_titleTextColor:I
+     639: invokevirtual #42                 // Method androidx/appcompat/widget/TintTypedArray.hasValue:(I)Z
+     642: ifeq          657
+     645: aload_0
+     646: aload         4
+     648: getstatic     #90                 // Field androidx/appcompat/R$styleable.Toolbar_titleTextColor:I
+     651: invokevirtual #91                 // Method androidx/appcompat/widget/TintTypedArray.getColorStateList:(I)Landroid/content/res/ColorStateList;
+     654: invokevirtual #92                 // Method setTitleTextColor:(Landroid/content/res/ColorStateList;)V
+     657: aload         4
+     659: getstatic     #93                 // Field androidx/appcompat/R$styleable.Toolbar_subtitleTextColor:I
+     662: invokevirtual #42                 // Method androidx/appcompat/widget/TintTypedArray.hasValue:(I)Z
+     665: ifeq          680
+     668: aload_0
+     669: aload         4
+     671: getstatic     #93                 // Field androidx/appcompat/R$styleable.Toolbar_subtitleTextColor:I
+     674: invokevirtual #91                 // Method androidx/appcompat/widget/TintTypedArray.getColorStateList:(I)Landroid/content/res/ColorStateList;
+     677: invokevirtual #94                 // Method setSubtitleTextColor:(Landroid/content/res/ColorStateList;)V
+     680: aload         4
+     682: getstatic     #95                 // Field androidx/appcompat/R$styleable.Toolbar_menu:I
+     685: invokevirtual #42                 // Method androidx/appcompat/widget/TintTypedArray.hasValue:(I)Z
+     688: ifeq          704
+     691: aload_0
+     692: aload         4
+     694: getstatic     #95                 // Field androidx/appcompat/R$styleable.Toolbar_menu:I
+     697: iconst_0
+     698: invokevirtual #31                 // Method androidx/appcompat/widget/TintTypedArray.getResourceId:(II)I
+     701: invokevirtual #96                 // Method inflateMenu:(I)V
+     704: aload         4
+     706: invokevirtual #97                 // Method androidx/appcompat/widget/TintTypedArray.recycle:()V
+     709: return
+
+  public void setBackInvokedCallbackEnabled(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #98                 // Field mBackInvokedCallbackEnabled:Z
+       4: iload_1
+       5: if_icmpeq     17
+       8: aload_0
+       9: iload_1
+      10: putfield      #98                 // Field mBackInvokedCallbackEnabled:Z
+      13: aload_0
+      14: invokevirtual #99                 // Method updateBackInvokedCallbackState:()V
+      17: return
+
+  public boolean isBackInvokedCallbackEnabled();
+    Code:
+       0: aload_0
+       1: getfield      #98                 // Field mBackInvokedCallbackEnabled:Z
+       4: ireturn
+
+  public void setPopupTheme(int);
+    Code:
+       0: aload_0
+       1: getfield      #100                // Field mPopupTheme:I
+       4: iload_1
+       5: if_icmpeq     44
+       8: aload_0
+       9: iload_1
+      10: putfield      #100                // Field mPopupTheme:I
+      13: iload_1
+      14: ifne          28
+      17: aload_0
+      18: aload_0
+      19: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      22: putfield      #79                 // Field mPopupContext:Landroid/content/Context;
+      25: goto          44
+      28: aload_0
+      29: new           #101                // class android/view/ContextThemeWrapper
+      32: dup
+      33: aload_0
+      34: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      37: iload_1
+      38: invokespecial #102                // Method android/view/ContextThemeWrapper."<init>":(Landroid/content/Context;I)V
+      41: putfield      #79                 // Field mPopupContext:Landroid/content/Context;
+      44: return
+
+  public int getPopupTheme();
+    Code:
+       0: aload_0
+       1: getfield      #100                // Field mPopupTheme:I
+       4: ireturn
+
+  public void setTitleMargin(int, int, int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #46                 // Field mTitleMarginStart:I
+       5: aload_0
+       6: iload_2
+       7: putfield      #44                 // Field mTitleMarginTop:I
+      10: aload_0
+      11: iload_3
+      12: putfield      #45                 // Field mTitleMarginEnd:I
+      15: aload_0
+      16: iload         4
+      18: putfield      #43                 // Field mTitleMarginBottom:I
+      21: aload_0
+      22: invokevirtual #103                // Method requestLayout:()V
+      25: return
+
+  public int getTitleMarginStart();
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field mTitleMarginStart:I
+       4: ireturn
+
+  public void setTitleMarginStart(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #46                 // Field mTitleMarginStart:I
+       5: aload_0
+       6: invokevirtual #103                // Method requestLayout:()V
+       9: return
+
+  public int getTitleMarginTop();
+    Code:
+       0: aload_0
+       1: getfield      #44                 // Field mTitleMarginTop:I
+       4: ireturn
+
+  public void setTitleMarginTop(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #44                 // Field mTitleMarginTop:I
+       5: aload_0
+       6: invokevirtual #103                // Method requestLayout:()V
+       9: return
+
+  public int getTitleMarginEnd();
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field mTitleMarginEnd:I
+       4: ireturn
+
+  public void setTitleMarginEnd(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #45                 // Field mTitleMarginEnd:I
+       5: aload_0
+       6: invokevirtual #103                // Method requestLayout:()V
+       9: return
+
+  public int getTitleMarginBottom();
+    Code:
+       0: aload_0
+       1: getfield      #43                 // Field mTitleMarginBottom:I
+       4: ireturn
+
+  public void setTitleMarginBottom(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #43                 // Field mTitleMarginBottom:I
+       5: aload_0
+       6: invokevirtual #103                // Method requestLayout:()V
+       9: return
+
+  public void onRtlPropertiesChanged(int);
+    Code:
+       0: getstatic     #104                // Field android/os/Build$VERSION.SDK_INT:I
+       3: bipush        17
+       5: if_icmplt     13
+       8: aload_0
+       9: iload_1
+      10: invokespecial #105                // Method android/view/ViewGroup.onRtlPropertiesChanged:(I)V
+      13: aload_0
+      14: invokespecial #60                 // Method ensureContentInsets:()V
+      17: aload_0
+      18: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      21: iload_1
+      22: iconst_1
+      23: if_icmpne     30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: invokevirtual #107                // Method androidx/appcompat/widget/RtlSpacingHelper.setDirection:(Z)V
+      34: return
+
+  public void setLogo(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokestatic  #108                // Method androidx/appcompat/content/res/AppCompatResources.getDrawable:(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+       9: invokevirtual #87                 // Method setLogo:(Landroid/graphics/drawable/Drawable;)V
+      12: return
+
+  public boolean canShowOverflowMenu();
+    Code:
+       0: aload_0
+       1: invokevirtual #109                // Method getVisibility:()I
+       4: ifne          28
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: ifnull        28
+      14: aload_0
+      15: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      18: invokevirtual #111                // Method androidx/appcompat/widget/ActionMenuView.isOverflowReserved:()Z
+      21: ifeq          28
+      24: iconst_1
+      25: goto          29
+      28: iconst_0
+      29: ireturn
+
+  public boolean isOverflowMenuShowing();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: invokevirtual #112                // Method androidx/appcompat/widget/ActionMenuView.isOverflowMenuShowing:()Z
+      14: ifeq          21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public boolean isOverflowMenuShowPending();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: invokevirtual #113                // Method androidx/appcompat/widget/ActionMenuView.isOverflowMenuShowPending:()Z
+      14: ifeq          21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public boolean showOverflowMenu();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: invokevirtual #114                // Method androidx/appcompat/widget/ActionMenuView.showOverflowMenu:()Z
+      14: ifeq          21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public boolean hideOverflowMenu();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: invokevirtual #115                // Method androidx/appcompat/widget/ActionMenuView.hideOverflowMenu:()Z
+      14: ifeq          21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public void setMenu(androidx.appcompat.view.menu.MenuBuilder, androidx.appcompat.widget.ActionMenuPresenter);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: aload_0
+       5: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       8: ifnonnull     12
+      11: return
+      12: aload_0
+      13: invokespecial #116                // Method ensureMenuView:()V
+      16: aload_0
+      17: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      20: invokevirtual #117                // Method androidx/appcompat/widget/ActionMenuView.peekMenu:()Landroidx/appcompat/view/menu/MenuBuilder;
+      23: astore_3
+      24: aload_3
+      25: aload_1
+      26: if_acmpne     30
+      29: return
+      30: aload_3
+      31: ifnull        50
+      34: aload_3
+      35: aload_0
+      36: getfield      #118                // Field mOuterActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
+      39: invokevirtual #119                // Method androidx/appcompat/view/menu/MenuBuilder.removeMenuPresenter:(Landroidx/appcompat/view/menu/MenuPresenter;)V
+      42: aload_3
+      43: aload_0
+      44: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      47: invokevirtual #119                // Method androidx/appcompat/view/menu/MenuBuilder.removeMenuPresenter:(Landroidx/appcompat/view/menu/MenuPresenter;)V
+      50: aload_0
+      51: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      54: ifnonnull     69
+      57: aload_0
+      58: new           #121                // class androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter
+      61: dup
+      62: aload_0
+      63: invokespecial #122                // Method androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      66: putfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      69: aload_2
+      70: iconst_1
+      71: invokevirtual #123                // Method androidx/appcompat/widget/ActionMenuPresenter.setExpandedActionViewsExclusive:(Z)V
+      74: aload_1
+      75: ifnull        102
+      78: aload_1
+      79: aload_2
+      80: aload_0
+      81: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+      84: invokevirtual #124                // Method androidx/appcompat/view/menu/MenuBuilder.addMenuPresenter:(Landroidx/appcompat/view/menu/MenuPresenter;Landroid/content/Context;)V
+      87: aload_1
+      88: aload_0
+      89: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      92: aload_0
+      93: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+      96: invokevirtual #124                // Method androidx/appcompat/view/menu/MenuBuilder.addMenuPresenter:(Landroidx/appcompat/view/menu/MenuPresenter;Landroid/content/Context;)V
+      99: goto          136
+     102: aload_2
+     103: aload_0
+     104: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+     107: aconst_null
+     108: invokevirtual #125                // Method androidx/appcompat/widget/ActionMenuPresenter.initForMenu:(Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;)V
+     111: aload_0
+     112: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+     115: aload_0
+     116: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+     119: aconst_null
+     120: invokevirtual #126                // Method androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.initForMenu:(Landroid/content/Context;Landroidx/appcompat/view/menu/MenuBuilder;)V
+     123: aload_2
+     124: iconst_1
+     125: invokevirtual #127                // Method androidx/appcompat/widget/ActionMenuPresenter.updateMenuView:(Z)V
+     128: aload_0
+     129: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+     132: iconst_1
+     133: invokevirtual #128                // Method androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.updateMenuView:(Z)V
+     136: aload_0
+     137: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     140: aload_0
+     141: getfield      #100                // Field mPopupTheme:I
+     144: invokevirtual #129                // Method androidx/appcompat/widget/ActionMenuView.setPopupTheme:(I)V
+     147: aload_0
+     148: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     151: aload_2
+     152: invokevirtual #130                // Method androidx/appcompat/widget/ActionMenuView.setPresenter:(Landroidx/appcompat/widget/ActionMenuPresenter;)V
+     155: aload_0
+     156: aload_2
+     157: putfield      #118                // Field mOuterActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
+     160: aload_0
+     161: invokevirtual #99                 // Method updateBackInvokedCallbackState:()V
+     164: return
+
+  public void dismissPopupMenus();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnull        14
+       7: aload_0
+       8: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      11: invokevirtual #131                // Method androidx/appcompat/widget/ActionMenuView.dismissPopupMenus:()V
+      14: return
+
+  public boolean isTitleTruncated();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+       4: ifnonnull     9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      13: invokevirtual #133                // Method android/widget/TextView.getLayout:()Landroid/text/Layout;
+      16: astore_1
+      17: aload_1
+      18: ifnonnull     23
+      21: iconst_0
+      22: ireturn
+      23: aload_1
+      24: invokevirtual #134                // Method android/text/Layout.getLineCount:()I
+      27: istore_2
+      28: iconst_0
+      29: istore_3
+      30: iload_3
+      31: iload_2
+      32: if_icmpge     51
+      35: aload_1
+      36: iload_3
+      37: invokevirtual #135                // Method android/text/Layout.getEllipsisCount:(I)I
+      40: ifle          45
+      43: iconst_1
+      44: ireturn
+      45: iinc          3, 1
+      48: goto          30
+      51: iconst_0
+      52: ireturn
+
+  public void setLogo(android.graphics.drawable.Drawable);
+    Code:
+       0: aload_1
+       1: ifnull        31
+       4: aload_0
+       5: invokespecial #136                // Method ensureLogoView:()V
+       8: aload_0
+       9: aload_0
+      10: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      13: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      16: ifne          69
+      19: aload_0
+      20: aload_0
+      21: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      24: iconst_1
+      25: invokespecial #139                // Method addSystemView:(Landroid/view/View;Z)V
+      28: goto          69
+      31: aload_0
+      32: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      35: ifnull        69
+      38: aload_0
+      39: aload_0
+      40: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      43: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      46: ifeq          69
+      49: aload_0
+      50: aload_0
+      51: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      54: invokevirtual #140                // Method removeView:(Landroid/view/View;)V
+      57: aload_0
+      58: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      61: aload_0
+      62: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      65: invokevirtual #141                // Method java/util/ArrayList.remove:(Ljava/lang/Object;)Z
+      68: pop
+      69: aload_0
+      70: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      73: ifnull        84
+      76: aload_0
+      77: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      80: aload_1
+      81: invokevirtual #142                // Method android/widget/ImageView.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V
+      84: return
+
+  public android.graphics.drawable.Drawable getLogo();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      11: invokevirtual #143                // Method android/widget/ImageView.getDrawable:()Landroid/graphics/drawable/Drawable;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  public void setLogoDescription(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokevirtual #144                // Method android/content/Context.getText:(I)Ljava/lang/CharSequence;
+       9: invokevirtual #89                 // Method setLogoDescription:(Ljava/lang/CharSequence;)V
+      12: return
+
+  public void setLogoDescription(java.lang.CharSequence);
+    Code:
+       0: aload_1
+       1: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+       4: ifne          11
+       7: aload_0
+       8: invokespecial #136                // Method ensureLogoView:()V
+      11: aload_0
+      12: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      15: ifnull        26
+      18: aload_0
+      19: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      22: aload_1
+      23: invokevirtual #145                // Method android/widget/ImageView.setContentDescription:(Ljava/lang/CharSequence;)V
+      26: return
+
+  public java.lang.CharSequence getLogoDescription();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      11: invokevirtual #146                // Method android/widget/ImageView.getContentDescription:()Ljava/lang/CharSequence;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  private void ensureLogoView();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+       4: ifnonnull     22
+       7: aload_0
+       8: new           #147                // class androidx/appcompat/widget/AppCompatImageView
+      11: dup
+      12: aload_0
+      13: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      16: invokespecial #148                // Method androidx/appcompat/widget/AppCompatImageView."<init>":(Landroid/content/Context;)V
+      19: putfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+      22: return
+
+  public boolean hasExpandedActionView();
+    Code:
+       0: aload_0
+       1: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+       4: ifnull        21
+       7: aload_0
+       8: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      11: getfield      #149                // Field androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.mCurrentExpandedItem:Landroidx/appcompat/view/menu/MenuItemImpl;
+      14: ifnull        21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public void collapseActionView();
+    Code:
+       0: aload_0
+       1: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+       4: ifnonnull     11
+       7: aconst_null
+       8: goto          18
+      11: aload_0
+      12: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      15: getfield      #149                // Field androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.mCurrentExpandedItem:Landroidx/appcompat/view/menu/MenuItemImpl;
+      18: astore_1
+      19: aload_1
+      20: ifnull        28
+      23: aload_1
+      24: invokevirtual #150                // Method androidx/appcompat/view/menu/MenuItemImpl.collapseActionView:()Z
+      27: pop
+      28: return
+
+  public java.lang.CharSequence getTitle();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field mTitleText:Ljava/lang/CharSequence;
+       4: areturn
+
+  public void setTitle(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokevirtual #144                // Method android/content/Context.getText:(I)Ljava/lang/CharSequence;
+       9: invokevirtual #76                 // Method setTitle:(Ljava/lang/CharSequence;)V
+      12: return
+
+  public void setTitle(java.lang.CharSequence);
+    Code:
+       0: aload_1
+       1: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+       4: ifne          108
+       7: aload_0
+       8: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      11: ifnonnull     85
+      14: aload_0
+      15: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      18: astore_2
+      19: aload_0
+      20: new           #152                // class androidx/appcompat/widget/AppCompatTextView
+      23: dup
+      24: aload_2
+      25: invokespecial #153                // Method androidx/appcompat/widget/AppCompatTextView."<init>":(Landroid/content/Context;)V
+      28: putfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      31: aload_0
+      32: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      35: invokevirtual #154                // Method android/widget/TextView.setSingleLine:()V
+      38: aload_0
+      39: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      42: getstatic     #155                // Field android/text/TextUtils$TruncateAt.END:Landroid/text/TextUtils$TruncateAt;
+      45: invokevirtual #156                // Method android/widget/TextView.setEllipsize:(Landroid/text/TextUtils$TruncateAt;)V
+      48: aload_0
+      49: getfield      #32                 // Field mTitleTextAppearance:I
+      52: ifeq          67
+      55: aload_0
+      56: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      59: aload_2
+      60: aload_0
+      61: getfield      #32                 // Field mTitleTextAppearance:I
+      64: invokevirtual #157                // Method android/widget/TextView.setTextAppearance:(Landroid/content/Context;I)V
+      67: aload_0
+      68: getfield      #158                // Field mTitleTextColor:Landroid/content/res/ColorStateList;
+      71: ifnull        85
+      74: aload_0
+      75: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      78: aload_0
+      79: getfield      #158                // Field mTitleTextColor:Landroid/content/res/ColorStateList;
+      82: invokevirtual #159                // Method android/widget/TextView.setTextColor:(Landroid/content/res/ColorStateList;)V
+      85: aload_0
+      86: aload_0
+      87: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      90: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      93: ifne          146
+      96: aload_0
+      97: aload_0
+      98: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     101: iconst_1
+     102: invokespecial #139                // Method addSystemView:(Landroid/view/View;Z)V
+     105: goto          146
+     108: aload_0
+     109: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     112: ifnull        146
+     115: aload_0
+     116: aload_0
+     117: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     120: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+     123: ifeq          146
+     126: aload_0
+     127: aload_0
+     128: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     131: invokevirtual #140                // Method removeView:(Landroid/view/View;)V
+     134: aload_0
+     135: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+     138: aload_0
+     139: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     142: invokevirtual #141                // Method java/util/ArrayList.remove:(Ljava/lang/Object;)Z
+     145: pop
+     146: aload_0
+     147: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     150: ifnull        161
+     153: aload_0
+     154: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     157: aload_1
+     158: invokevirtual #160                // Method android/widget/TextView.setText:(Ljava/lang/CharSequence;)V
+     161: aload_0
+     162: aload_1
+     163: putfield      #151                // Field mTitleText:Ljava/lang/CharSequence;
+     166: return
+
+  public java.lang.CharSequence getSubtitle();
+    Code:
+       0: aload_0
+       1: getfield      #161                // Field mSubtitleText:Ljava/lang/CharSequence;
+       4: areturn
+
+  public void setSubtitle(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokevirtual #144                // Method android/content/Context.getText:(I)Ljava/lang/CharSequence;
+       9: invokevirtual #78                 // Method setSubtitle:(Ljava/lang/CharSequence;)V
+      12: return
+
+  public void setSubtitle(java.lang.CharSequence);
+    Code:
+       0: aload_1
+       1: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+       4: ifne          108
+       7: aload_0
+       8: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      11: ifnonnull     85
+      14: aload_0
+      15: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      18: astore_2
+      19: aload_0
+      20: new           #152                // class androidx/appcompat/widget/AppCompatTextView
+      23: dup
+      24: aload_2
+      25: invokespecial #153                // Method androidx/appcompat/widget/AppCompatTextView."<init>":(Landroid/content/Context;)V
+      28: putfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      31: aload_0
+      32: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      35: invokevirtual #154                // Method android/widget/TextView.setSingleLine:()V
+      38: aload_0
+      39: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      42: getstatic     #155                // Field android/text/TextUtils$TruncateAt.END:Landroid/text/TextUtils$TruncateAt;
+      45: invokevirtual #156                // Method android/widget/TextView.setEllipsize:(Landroid/text/TextUtils$TruncateAt;)V
+      48: aload_0
+      49: getfield      #34                 // Field mSubtitleTextAppearance:I
+      52: ifeq          67
+      55: aload_0
+      56: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      59: aload_2
+      60: aload_0
+      61: getfield      #34                 // Field mSubtitleTextAppearance:I
+      64: invokevirtual #157                // Method android/widget/TextView.setTextAppearance:(Landroid/content/Context;I)V
+      67: aload_0
+      68: getfield      #163                // Field mSubtitleTextColor:Landroid/content/res/ColorStateList;
+      71: ifnull        85
+      74: aload_0
+      75: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      78: aload_0
+      79: getfield      #163                // Field mSubtitleTextColor:Landroid/content/res/ColorStateList;
+      82: invokevirtual #159                // Method android/widget/TextView.setTextColor:(Landroid/content/res/ColorStateList;)V
+      85: aload_0
+      86: aload_0
+      87: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      90: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      93: ifne          146
+      96: aload_0
+      97: aload_0
+      98: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     101: iconst_1
+     102: invokespecial #139                // Method addSystemView:(Landroid/view/View;Z)V
+     105: goto          146
+     108: aload_0
+     109: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     112: ifnull        146
+     115: aload_0
+     116: aload_0
+     117: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     120: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+     123: ifeq          146
+     126: aload_0
+     127: aload_0
+     128: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     131: invokevirtual #140                // Method removeView:(Landroid/view/View;)V
+     134: aload_0
+     135: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+     138: aload_0
+     139: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     142: invokevirtual #141                // Method java/util/ArrayList.remove:(Ljava/lang/Object;)Z
+     145: pop
+     146: aload_0
+     147: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     150: ifnull        161
+     153: aload_0
+     154: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     157: aload_1
+     158: invokevirtual #160                // Method android/widget/TextView.setText:(Ljava/lang/CharSequence;)V
+     161: aload_0
+     162: aload_1
+     163: putfield      #161                // Field mSubtitleText:Ljava/lang/CharSequence;
+     166: return
+
+  public void setTitleTextAppearance(android.content.Context, int);
+    Code:
+       0: aload_0
+       1: iload_2
+       2: putfield      #32                 // Field mTitleTextAppearance:I
+       5: aload_0
+       6: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+       9: ifnull        21
+      12: aload_0
+      13: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      16: aload_1
+      17: iload_2
+      18: invokevirtual #157                // Method android/widget/TextView.setTextAppearance:(Landroid/content/Context;I)V
+      21: return
+
+  public void setSubtitleTextAppearance(android.content.Context, int);
+    Code:
+       0: aload_0
+       1: iload_2
+       2: putfield      #34                 // Field mSubtitleTextAppearance:I
+       5: aload_0
+       6: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+       9: ifnull        21
+      12: aload_0
+      13: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      16: aload_1
+      17: iload_2
+      18: invokevirtual #157                // Method android/widget/TextView.setTextAppearance:(Landroid/content/Context;I)V
+      21: return
+
+  public void setTitleTextColor(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #164                // Method android/content/res/ColorStateList.valueOf:(I)Landroid/content/res/ColorStateList;
+       5: invokevirtual #92                 // Method setTitleTextColor:(Landroid/content/res/ColorStateList;)V
+       8: return
+
+  public void setTitleTextColor(android.content.res.ColorStateList);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #158                // Field mTitleTextColor:Landroid/content/res/ColorStateList;
+       5: aload_0
+       6: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+       9: ifnull        20
+      12: aload_0
+      13: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+      16: aload_1
+      17: invokevirtual #159                // Method android/widget/TextView.setTextColor:(Landroid/content/res/ColorStateList;)V
+      20: return
+
+  public void setSubtitleTextColor(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #164                // Method android/content/res/ColorStateList.valueOf:(I)Landroid/content/res/ColorStateList;
+       5: invokevirtual #94                 // Method setSubtitleTextColor:(Landroid/content/res/ColorStateList;)V
+       8: return
+
+  public void setSubtitleTextColor(android.content.res.ColorStateList);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #163                // Field mSubtitleTextColor:Landroid/content/res/ColorStateList;
+       5: aload_0
+       6: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+       9: ifnull        20
+      12: aload_0
+      13: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+      16: aload_1
+      17: invokevirtual #159                // Method android/widget/TextView.setTextColor:(Landroid/content/res/ColorStateList;)V
+      20: return
+
+  public java.lang.CharSequence getNavigationContentDescription();
+    Code:
+       0: aload_0
+       1: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      11: invokevirtual #166                // Method android/widget/ImageButton.getContentDescription:()Ljava/lang/CharSequence;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  public void setNavigationContentDescription(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: ifeq          16
+       5: aload_0
+       6: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       9: iload_1
+      10: invokevirtual #144                // Method android/content/Context.getText:(I)Ljava/lang/CharSequence;
+      13: goto          17
+      16: aconst_null
+      17: invokevirtual #85                 // Method setNavigationContentDescription:(Ljava/lang/CharSequence;)V
+      20: return
+
+  public void setNavigationContentDescription(java.lang.CharSequence);
+    Code:
+       0: aload_1
+       1: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+       4: ifne          11
+       7: aload_0
+       8: invokespecial #167                // Method ensureNavButtonView:()V
+      11: aload_0
+      12: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      15: ifnull        34
+      18: aload_0
+      19: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      22: aload_1
+      23: invokevirtual #168                // Method android/widget/ImageButton.setContentDescription:(Ljava/lang/CharSequence;)V
+      26: aload_0
+      27: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      30: aload_1
+      31: invokestatic  #169                // Method androidx/appcompat/widget/TooltipCompat.setTooltipText:(Landroid/view/View;Ljava/lang/CharSequence;)V
+      34: return
+
+  public void setNavigationIcon(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokestatic  #108                // Method androidx/appcompat/content/res/AppCompatResources.getDrawable:(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+       9: invokevirtual #83                 // Method setNavigationIcon:(Landroid/graphics/drawable/Drawable;)V
+      12: return
+
+  public void setNavigationIcon(android.graphics.drawable.Drawable);
+    Code:
+       0: aload_1
+       1: ifnull        31
+       4: aload_0
+       5: invokespecial #167                // Method ensureNavButtonView:()V
+       8: aload_0
+       9: aload_0
+      10: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      13: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      16: ifne          69
+      19: aload_0
+      20: aload_0
+      21: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      24: iconst_1
+      25: invokespecial #139                // Method addSystemView:(Landroid/view/View;Z)V
+      28: goto          69
+      31: aload_0
+      32: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      35: ifnull        69
+      38: aload_0
+      39: aload_0
+      40: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      43: invokespecial #138                // Method isChildOrHidden:(Landroid/view/View;)Z
+      46: ifeq          69
+      49: aload_0
+      50: aload_0
+      51: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      54: invokevirtual #140                // Method removeView:(Landroid/view/View;)V
+      57: aload_0
+      58: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      61: aload_0
+      62: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      65: invokevirtual #141                // Method java/util/ArrayList.remove:(Ljava/lang/Object;)Z
+      68: pop
+      69: aload_0
+      70: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      73: ifnull        84
+      76: aload_0
+      77: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      80: aload_1
+      81: invokevirtual #170                // Method android/widget/ImageButton.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V
+      84: return
+
+  public android.graphics.drawable.Drawable getNavigationIcon();
+    Code:
+       0: aload_0
+       1: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      11: invokevirtual #171                // Method android/widget/ImageButton.getDrawable:()Landroid/graphics/drawable/Drawable;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  public void setNavigationOnClickListener(android.view.View$OnClickListener);
+    Code:
+       0: aload_0
+       1: invokespecial #167                // Method ensureNavButtonView:()V
+       4: aload_0
+       5: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+       8: aload_1
+       9: invokevirtual #172                // Method android/widget/ImageButton.setOnClickListener:(Landroid/view/View$OnClickListener;)V
+      12: return
+
+  public java.lang.CharSequence getCollapseContentDescription();
+    Code:
+       0: aload_0
+       1: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      11: invokevirtual #166                // Method android/widget/ImageButton.getContentDescription:()Ljava/lang/CharSequence;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  public void setCollapseContentDescription(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: ifeq          16
+       5: aload_0
+       6: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       9: iload_1
+      10: invokevirtual #144                // Method android/content/Context.getText:(I)Ljava/lang/CharSequence;
+      13: goto          17
+      16: aconst_null
+      17: invokevirtual #174                // Method setCollapseContentDescription:(Ljava/lang/CharSequence;)V
+      20: return
+
+  public void setCollapseContentDescription(java.lang.CharSequence);
+    Code:
+       0: aload_1
+       1: invokestatic  #75                 // Method android/text/TextUtils.isEmpty:(Ljava/lang/CharSequence;)Z
+       4: ifne          11
+       7: aload_0
+       8: invokevirtual #175                // Method ensureCollapseButtonView:()V
+      11: aload_0
+      12: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      15: ifnull        26
+      18: aload_0
+      19: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      22: aload_1
+      23: invokevirtual #168                // Method android/widget/ImageButton.setContentDescription:(Ljava/lang/CharSequence;)V
+      26: return
+
+  public android.graphics.drawable.Drawable getCollapseIcon();
+    Code:
+       0: aload_0
+       1: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      11: invokevirtual #171                // Method android/widget/ImageButton.getDrawable:()Landroid/graphics/drawable/Drawable;
+      14: goto          18
+      17: aconst_null
+      18: areturn
+
+  public void setCollapseIcon(int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       5: iload_1
+       6: invokestatic  #108                // Method androidx/appcompat/content/res/AppCompatResources.getDrawable:(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+       9: invokevirtual #176                // Method setCollapseIcon:(Landroid/graphics/drawable/Drawable;)V
+      12: return
+
+  public void setCollapseIcon(android.graphics.drawable.Drawable);
+    Code:
+       0: aload_1
+       1: ifnull        19
+       4: aload_0
+       5: invokevirtual #175                // Method ensureCollapseButtonView:()V
+       8: aload_0
+       9: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      12: aload_1
+      13: invokevirtual #170                // Method android/widget/ImageButton.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V
+      16: goto          37
+      19: aload_0
+      20: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      23: ifnull        37
+      26: aload_0
+      27: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      30: aload_0
+      31: getfield      #70                 // Field mCollapseIcon:Landroid/graphics/drawable/Drawable;
+      34: invokevirtual #170                // Method android/widget/ImageButton.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V
+      37: return
+
+  public android.view.Menu getMenu();
+    Code:
+       0: aload_0
+       1: invokespecial #177                // Method ensureMenu:()V
+       4: aload_0
+       5: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       8: invokevirtual #178                // Method androidx/appcompat/widget/ActionMenuView.getMenu:()Landroid/view/Menu;
+      11: areturn
+
+  public void setOverflowIcon(android.graphics.drawable.Drawable);
+    Code:
+       0: aload_0
+       1: invokespecial #177                // Method ensureMenu:()V
+       4: aload_0
+       5: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       8: aload_1
+       9: invokevirtual #179                // Method androidx/appcompat/widget/ActionMenuView.setOverflowIcon:(Landroid/graphics/drawable/Drawable;)V
+      12: return
+
+  public android.graphics.drawable.Drawable getOverflowIcon();
+    Code:
+       0: aload_0
+       1: invokespecial #177                // Method ensureMenu:()V
+       4: aload_0
+       5: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       8: invokevirtual #180                // Method androidx/appcompat/widget/ActionMenuView.getOverflowIcon:()Landroid/graphics/drawable/Drawable;
+      11: areturn
+
+  private void ensureMenu();
+    Code:
+       0: aload_0
+       1: invokespecial #116                // Method ensureMenuView:()V
+       4: aload_0
+       5: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       8: invokevirtual #117                // Method androidx/appcompat/widget/ActionMenuView.peekMenu:()Landroidx/appcompat/view/menu/MenuBuilder;
+      11: ifnonnull     68
+      14: aload_0
+      15: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      18: invokevirtual #178                // Method androidx/appcompat/widget/ActionMenuView.getMenu:()Landroid/view/Menu;
+      21: checkcast     #181                // class androidx/appcompat/view/menu/MenuBuilder
+      24: astore_1
+      25: aload_0
+      26: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      29: ifnonnull     44
+      32: aload_0
+      33: new           #121                // class androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter
+      36: dup
+      37: aload_0
+      38: invokespecial #122                // Method androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      41: putfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      44: aload_0
+      45: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      48: iconst_1
+      49: invokevirtual #182                // Method androidx/appcompat/widget/ActionMenuView.setExpandedActionViewsExclusive:(Z)V
+      52: aload_1
+      53: aload_0
+      54: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      57: aload_0
+      58: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+      61: invokevirtual #124                // Method androidx/appcompat/view/menu/MenuBuilder.addMenuPresenter:(Landroidx/appcompat/view/menu/MenuPresenter;Landroid/content/Context;)V
+      64: aload_0
+      65: invokevirtual #99                 // Method updateBackInvokedCallbackState:()V
+      68: return
+
+  private void ensureMenuView();
+    Code:
+       0: aload_0
+       1: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       4: ifnonnull     99
+       7: aload_0
+       8: new           #183                // class androidx/appcompat/widget/ActionMenuView
+      11: dup
+      12: aload_0
+      13: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      16: invokespecial #184                // Method androidx/appcompat/widget/ActionMenuView."<init>":(Landroid/content/Context;)V
+      19: putfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      22: aload_0
+      23: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      26: aload_0
+      27: getfield      #100                // Field mPopupTheme:I
+      30: invokevirtual #129                // Method androidx/appcompat/widget/ActionMenuView.setPopupTheme:(I)V
+      33: aload_0
+      34: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      37: aload_0
+      38: getfield      #21                 // Field mMenuViewItemClickListener:Landroidx/appcompat/widget/ActionMenuView$OnMenuItemClickListener;
+      41: invokevirtual #185                // Method androidx/appcompat/widget/ActionMenuView.setOnMenuItemClickListener:(Landroidx/appcompat/widget/ActionMenuView$OnMenuItemClickListener;)V
+      44: aload_0
+      45: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      48: aload_0
+      49: getfield      #186                // Field mActionMenuPresenterCallback:Landroidx/appcompat/view/menu/MenuPresenter$Callback;
+      52: new           #187                // class androidx/appcompat/widget/Toolbar$3
+      55: dup
+      56: aload_0
+      57: invokespecial #188                // Method androidx/appcompat/widget/Toolbar$3."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      60: invokevirtual #189                // Method androidx/appcompat/widget/ActionMenuView.setMenuCallbacks:(Landroidx/appcompat/view/menu/MenuPresenter$Callback;Landroidx/appcompat/view/menu/MenuBuilder$Callback;)V
+      63: aload_0
+      64: invokevirtual #190                // Method generateDefaultLayoutParams:()Landroidx/appcompat/widget/Toolbar$LayoutParams;
+      67: astore_1
+      68: aload_1
+      69: ldc           #191                // int 8388613
+      71: aload_0
+      72: getfield      #38                 // Field mButtonGravity:I
+      75: bipush        112
+      77: iand
+      78: ior
+      79: putfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+      82: aload_0
+      83: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      86: aload_1
+      87: invokevirtual #193                // Method androidx/appcompat/widget/ActionMenuView.setLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)V
+      90: aload_0
+      91: aload_0
+      92: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      95: iconst_0
+      96: invokespecial #139                // Method addSystemView:(Landroid/view/View;Z)V
+      99: return
+
+  private android.view.MenuInflater getMenuInflater();
+    Code:
+       0: new           #194                // class androidx/appcompat/view/SupportMenuInflater
+       3: dup
+       4: aload_0
+       5: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       8: invokespecial #195                // Method androidx/appcompat/view/SupportMenuInflater."<init>":(Landroid/content/Context;)V
+      11: areturn
+
+  public void inflateMenu(int);
+    Code:
+       0: aload_0
+       1: invokespecial #196                // Method getMenuInflater:()Landroid/view/MenuInflater;
+       4: iload_1
+       5: aload_0
+       6: invokevirtual #197                // Method getMenu:()Landroid/view/Menu;
+       9: invokevirtual #198                // Method android/view/MenuInflater.inflate:(ILandroid/view/Menu;)V
+      12: return
+
+  public void setOnMenuItemClickListener(androidx.appcompat.widget.Toolbar$OnMenuItemClickListener);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #199                // Field mOnMenuItemClickListener:Landroidx/appcompat/widget/Toolbar$OnMenuItemClickListener;
+       5: return
+
+  public void setContentInsetsRelative(int, int);
+    Code:
+       0: aload_0
+       1: invokespecial #60                 // Method ensureContentInsets:()V
+       4: aload_0
+       5: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       8: iload_1
+       9: iload_2
+      10: invokevirtual #63                 // Method androidx/appcompat/widget/RtlSpacingHelper.setRelative:(II)V
+      13: return
+
+  public int getContentInsetStart();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      11: invokevirtual #200                // Method androidx/appcompat/widget/RtlSpacingHelper.getStart:()I
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  public int getContentInsetEnd();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      11: invokevirtual #201                // Method androidx/appcompat/widget/RtlSpacingHelper.getEnd:()I
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  public void setContentInsetsAbsolute(int, int);
+    Code:
+       0: aload_0
+       1: invokespecial #60                 // Method ensureContentInsets:()V
+       4: aload_0
+       5: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       8: iload_1
+       9: iload_2
+      10: invokevirtual #62                 // Method androidx/appcompat/widget/RtlSpacingHelper.setAbsolute:(II)V
+      13: return
+
+  public int getContentInsetLeft();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      11: invokevirtual #202                // Method androidx/appcompat/widget/RtlSpacingHelper.getLeft:()I
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  public int getContentInsetRight();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      11: invokevirtual #203                // Method androidx/appcompat/widget/RtlSpacingHelper.getRight:()I
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  public int getContentInsetStartWithNavigation();
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field mContentInsetStartWithNavigation:I
+       4: ldc           #56                 // int -2147483648
+       6: if_icmpeq     16
+       9: aload_0
+      10: getfield      #65                 // Field mContentInsetStartWithNavigation:I
+      13: goto          20
+      16: aload_0
+      17: invokevirtual #204                // Method getContentInsetStart:()I
+      20: ireturn
+
+  public void setContentInsetStartWithNavigation(int);
+    Code:
+       0: iload_1
+       1: ifge          7
+       4: ldc           #56                 // int -2147483648
+       6: istore_1
+       7: iload_1
+       8: aload_0
+       9: getfield      #65                 // Field mContentInsetStartWithNavigation:I
+      12: if_icmpeq     31
+      15: aload_0
+      16: iload_1
+      17: putfield      #65                 // Field mContentInsetStartWithNavigation:I
+      20: aload_0
+      21: invokevirtual #205                // Method getNavigationIcon:()Landroid/graphics/drawable/Drawable;
+      24: ifnull        31
+      27: aload_0
+      28: invokevirtual #103                // Method requestLayout:()V
+      31: return
+
+  public int getContentInsetEndWithActions();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field mContentInsetEndWithActions:I
+       4: ldc           #56                 // int -2147483648
+       6: if_icmpeq     16
+       9: aload_0
+      10: getfield      #67                 // Field mContentInsetEndWithActions:I
+      13: goto          20
+      16: aload_0
+      17: invokevirtual #206                // Method getContentInsetEnd:()I
+      20: ireturn
+
+  public void setContentInsetEndWithActions(int);
+    Code:
+       0: iload_1
+       1: ifge          7
+       4: ldc           #56                 // int -2147483648
+       6: istore_1
+       7: iload_1
+       8: aload_0
+       9: getfield      #67                 // Field mContentInsetEndWithActions:I
+      12: if_icmpeq     31
+      15: aload_0
+      16: iload_1
+      17: putfield      #67                 // Field mContentInsetEndWithActions:I
+      20: aload_0
+      21: invokevirtual #205                // Method getNavigationIcon:()Landroid/graphics/drawable/Drawable;
+      24: ifnull        31
+      27: aload_0
+      28: invokevirtual #103                // Method requestLayout:()V
+      31: return
+
+  public int getCurrentContentInsetStart();
+    Code:
+       0: aload_0
+       1: invokevirtual #205                // Method getNavigationIcon:()Landroid/graphics/drawable/Drawable;
+       4: ifnull        25
+       7: aload_0
+       8: invokevirtual #204                // Method getContentInsetStart:()I
+      11: aload_0
+      12: getfield      #65                 // Field mContentInsetStartWithNavigation:I
+      15: iconst_0
+      16: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      19: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      22: goto          29
+      25: aload_0
+      26: invokevirtual #204                // Method getContentInsetStart:()I
+      29: ireturn
+
+  public int getCurrentContentInsetEnd();
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: aload_0
+       3: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+       6: ifnull        34
+       9: aload_0
+      10: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      13: invokevirtual #117                // Method androidx/appcompat/widget/ActionMenuView.peekMenu:()Landroidx/appcompat/view/menu/MenuBuilder;
+      16: astore_2
+      17: aload_2
+      18: ifnull        32
+      21: aload_2
+      22: invokevirtual #208                // Method androidx/appcompat/view/menu/MenuBuilder.hasVisibleItems:()Z
+      25: ifeq          32
+      28: iconst_1
+      29: goto          33
+      32: iconst_0
+      33: istore_1
+      34: iload_1
+      35: ifeq          56
+      38: aload_0
+      39: invokevirtual #206                // Method getContentInsetEnd:()I
+      42: aload_0
+      43: getfield      #67                 // Field mContentInsetEndWithActions:I
+      46: iconst_0
+      47: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      50: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      53: goto          60
+      56: aload_0
+      57: invokevirtual #206                // Method getContentInsetEnd:()I
+      60: ireturn
+
+  public int getCurrentContentInsetLeft();
+    Code:
+       0: aload_0
+       1: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+       4: iconst_1
+       5: if_icmpne     15
+       8: aload_0
+       9: invokevirtual #210                // Method getCurrentContentInsetEnd:()I
+      12: goto          19
+      15: aload_0
+      16: invokevirtual #211                // Method getCurrentContentInsetStart:()I
+      19: ireturn
+
+  public int getCurrentContentInsetRight();
+    Code:
+       0: aload_0
+       1: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+       4: iconst_1
+       5: if_icmpne     15
+       8: aload_0
+       9: invokevirtual #211                // Method getCurrentContentInsetStart:()I
+      12: goto          19
+      15: aload_0
+      16: invokevirtual #210                // Method getCurrentContentInsetEnd:()I
+      19: ireturn
+
+  private void ensureNavButtonView();
+    Code:
+       0: aload_0
+       1: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+       4: ifnonnull     53
+       7: aload_0
+       8: new           #212                // class androidx/appcompat/widget/AppCompatImageButton
+      11: dup
+      12: aload_0
+      13: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      16: aconst_null
+      17: getstatic     #213                // Field androidx/appcompat/R$attr.toolbarNavigationButtonStyle:I
+      20: invokespecial #214                // Method androidx/appcompat/widget/AppCompatImageButton."<init>":(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+      23: putfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      26: aload_0
+      27: invokevirtual #190                // Method generateDefaultLayoutParams:()Landroidx/appcompat/widget/Toolbar$LayoutParams;
+      30: astore_1
+      31: aload_1
+      32: ldc           #215                // int 8388611
+      34: aload_0
+      35: getfield      #38                 // Field mButtonGravity:I
+      38: bipush        112
+      40: iand
+      41: ior
+      42: putfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+      45: aload_0
+      46: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      49: aload_1
+      50: invokevirtual #216                // Method android/widget/ImageButton.setLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)V
+      53: return
+
+  android.view.View getNavButtonView();
+    Code:
+       0: aload_0
+       1: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+       4: areturn
+
+  void ensureCollapseButtonView();
+    Code:
+       0: aload_0
+       1: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+       4: ifnonnull     95
+       7: aload_0
+       8: new           #212                // class androidx/appcompat/widget/AppCompatImageButton
+      11: dup
+      12: aload_0
+      13: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+      16: aconst_null
+      17: getstatic     #213                // Field androidx/appcompat/R$attr.toolbarNavigationButtonStyle:I
+      20: invokespecial #214                // Method androidx/appcompat/widget/AppCompatImageButton."<init>":(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+      23: putfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      26: aload_0
+      27: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      30: aload_0
+      31: getfield      #70                 // Field mCollapseIcon:Landroid/graphics/drawable/Drawable;
+      34: invokevirtual #170                // Method android/widget/ImageButton.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V
+      37: aload_0
+      38: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      41: aload_0
+      42: getfield      #73                 // Field mCollapseDescription:Ljava/lang/CharSequence;
+      45: invokevirtual #168                // Method android/widget/ImageButton.setContentDescription:(Ljava/lang/CharSequence;)V
+      48: aload_0
+      49: invokevirtual #190                // Method generateDefaultLayoutParams:()Landroidx/appcompat/widget/Toolbar$LayoutParams;
+      52: astore_1
+      53: aload_1
+      54: ldc           #215                // int 8388611
+      56: aload_0
+      57: getfield      #38                 // Field mButtonGravity:I
+      60: bipush        112
+      62: iand
+      63: ior
+      64: putfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+      67: aload_1
+      68: iconst_2
+      69: putfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+      72: aload_0
+      73: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      76: aload_1
+      77: invokevirtual #216                // Method android/widget/ImageButton.setLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)V
+      80: aload_0
+      81: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+      84: new           #219                // class androidx/appcompat/widget/Toolbar$4
+      87: dup
+      88: aload_0
+      89: invokespecial #220                // Method androidx/appcompat/widget/Toolbar$4."<init>":(Landroidx/appcompat/widget/Toolbar;)V
+      92: invokevirtual #172                // Method android/widget/ImageButton.setOnClickListener:(Landroid/view/View$OnClickListener;)V
+      95: return
+
+  private void addSystemView(android.view.View, boolean);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: astore_3
+       5: aload_3
+       6: ifnonnull     18
+       9: aload_0
+      10: invokevirtual #190                // Method generateDefaultLayoutParams:()Landroidx/appcompat/widget/Toolbar$LayoutParams;
+      13: astore        4
+      15: goto          42
+      18: aload_0
+      19: aload_3
+      20: invokevirtual #222                // Method checkLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)Z
+      23: ifne          36
+      26: aload_0
+      27: aload_3
+      28: invokevirtual #223                // Method generateLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)Landroidx/appcompat/widget/Toolbar$LayoutParams;
+      31: astore        4
+      33: goto          42
+      36: aload_3
+      37: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      40: astore        4
+      42: aload         4
+      44: iconst_1
+      45: putfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+      48: iload_2
+      49: ifeq          77
+      52: aload_0
+      53: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+      56: ifnull        77
+      59: aload_1
+      60: aload         4
+      62: invokevirtual #225                // Method android/view/View.setLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)V
+      65: aload_0
+      66: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      69: aload_1
+      70: invokevirtual #226                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      73: pop
+      74: goto          84
+      77: aload_0
+      78: aload_1
+      79: aload         4
+      81: invokevirtual #227                // Method addView:(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+      84: return
+
+  protected android.os.Parcelable onSaveInstanceState();
+    Code:
+       0: new           #228                // class androidx/appcompat/widget/Toolbar$SavedState
+       3: dup
+       4: aload_0
+       5: invokespecial #229                // Method android/view/ViewGroup.onSaveInstanceState:()Landroid/os/Parcelable;
+       8: invokespecial #230                // Method androidx/appcompat/widget/Toolbar$SavedState."<init>":(Landroid/os/Parcelable;)V
+      11: astore_1
+      12: aload_0
+      13: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      16: ifnull        43
+      19: aload_0
+      20: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      23: getfield      #149                // Field androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.mCurrentExpandedItem:Landroidx/appcompat/view/menu/MenuItemImpl;
+      26: ifnull        43
+      29: aload_1
+      30: aload_0
+      31: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      34: getfield      #149                // Field androidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter.mCurrentExpandedItem:Landroidx/appcompat/view/menu/MenuItemImpl;
+      37: invokevirtual #231                // Method androidx/appcompat/view/menu/MenuItemImpl.getItemId:()I
+      40: putfield      #232                // Field androidx/appcompat/widget/Toolbar$SavedState.expandedMenuItemId:I
+      43: aload_1
+      44: aload_0
+      45: invokevirtual #233                // Method isOverflowMenuShowing:()Z
+      48: putfield      #234                // Field androidx/appcompat/widget/Toolbar$SavedState.isOverflowOpen:Z
+      51: aload_1
+      52: areturn
+
+  protected void onRestoreInstanceState(android.os.Parcelable);
+    Code:
+       0: aload_1
+       1: instanceof    #228                // class androidx/appcompat/widget/Toolbar$SavedState
+       4: ifne          13
+       7: aload_0
+       8: aload_1
+       9: invokespecial #235                // Method android/view/ViewGroup.onRestoreInstanceState:(Landroid/os/Parcelable;)V
+      12: return
+      13: aload_1
+      14: checkcast     #228                // class androidx/appcompat/widget/Toolbar$SavedState
+      17: astore_2
+      18: aload_0
+      19: aload_2
+      20: invokevirtual #236                // Method androidx/appcompat/widget/Toolbar$SavedState.getSuperState:()Landroid/os/Parcelable;
+      23: invokespecial #235                // Method android/view/ViewGroup.onRestoreInstanceState:(Landroid/os/Parcelable;)V
+      26: aload_0
+      27: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      30: ifnull        43
+      33: aload_0
+      34: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      37: invokevirtual #117                // Method androidx/appcompat/widget/ActionMenuView.peekMenu:()Landroidx/appcompat/view/menu/MenuBuilder;
+      40: goto          44
+      43: aconst_null
+      44: astore_3
+      45: aload_2
+      46: getfield      #232                // Field androidx/appcompat/widget/Toolbar$SavedState.expandedMenuItemId:I
+      49: ifeq          88
+      52: aload_0
+      53: getfield      #120                // Field mExpandedMenuPresenter:Landroidx/appcompat/widget/Toolbar$ExpandedActionViewMenuPresenter;
+      56: ifnull        88
+      59: aload_3
+      60: ifnull        88
+      63: aload_3
+      64: aload_2
+      65: getfield      #232                // Field androidx/appcompat/widget/Toolbar$SavedState.expandedMenuItemId:I
+      68: invokeinterface #237,  2          // InterfaceMethod android/view/Menu.findItem:(I)Landroid/view/MenuItem;
+      73: astore        4
+      75: aload         4
+      77: ifnull        88
+      80: aload         4
+      82: invokeinterface #238,  1          // InterfaceMethod android/view/MenuItem.expandActionView:()Z
+      87: pop
+      88: aload_2
+      89: getfield      #234                // Field androidx/appcompat/widget/Toolbar$SavedState.isOverflowOpen:Z
+      92: ifeq          99
+      95: aload_0
+      96: invokespecial #239                // Method postShowOverflowMenu:()V
+      99: return
+
+  private void postShowOverflowMenu();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #24                 // Field mShowOverflowMenuRunnable:Ljava/lang/Runnable;
+       5: invokevirtual #240                // Method removeCallbacks:(Ljava/lang/Runnable;)Z
+       8: pop
+       9: aload_0
+      10: aload_0
+      11: getfield      #24                 // Field mShowOverflowMenuRunnable:Ljava/lang/Runnable;
+      14: invokevirtual #241                // Method post:(Ljava/lang/Runnable;)Z
+      17: pop
+      18: return
+
+  protected void onDetachedFromWindow();
+    Code:
+       0: aload_0
+       1: invokespecial #242                // Method android/view/ViewGroup.onDetachedFromWindow:()V
+       4: aload_0
+       5: aload_0
+       6: getfield      #24                 // Field mShowOverflowMenuRunnable:Ljava/lang/Runnable;
+       9: invokevirtual #240                // Method removeCallbacks:(Ljava/lang/Runnable;)Z
+      12: pop
+      13: aload_0
+      14: invokevirtual #99                 // Method updateBackInvokedCallbackState:()V
+      17: return
+
+  protected void onAttachedToWindow();
+    Code:
+       0: aload_0
+       1: invokespecial #243                // Method android/view/ViewGroup.onAttachedToWindow:()V
+       4: aload_0
+       5: invokevirtual #99                 // Method updateBackInvokedCallbackState:()V
+       8: return
+
+  public boolean onTouchEvent(android.view.MotionEvent);
+    Code:
+       0: aload_1
+       1: invokevirtual #244                // Method android/view/MotionEvent.getActionMasked:()I
+       4: istore_2
+       5: iload_2
+       6: ifne          14
+       9: aload_0
+      10: iconst_0
+      11: putfield      #245                // Field mEatingTouch:Z
+      14: aload_0
+      15: getfield      #245                // Field mEatingTouch:Z
+      18: ifne          40
+      21: aload_0
+      22: aload_1
+      23: invokespecial #246                // Method android/view/ViewGroup.onTouchEvent:(Landroid/view/MotionEvent;)Z
+      26: istore_3
+      27: iload_2
+      28: ifne          40
+      31: iload_3
+      32: ifne          40
+      35: aload_0
+      36: iconst_1
+      37: putfield      #245                // Field mEatingTouch:Z
+      40: iload_2
+      41: iconst_1
+      42: if_icmpeq     50
+      45: iload_2
+      46: iconst_3
+      47: if_icmpne     55
+      50: aload_0
+      51: iconst_0
+      52: putfield      #245                // Field mEatingTouch:Z
+      55: iconst_1
+      56: ireturn
+
+  public boolean onHoverEvent(android.view.MotionEvent);
+    Code:
+       0: aload_1
+       1: invokevirtual #244                // Method android/view/MotionEvent.getActionMasked:()I
+       4: istore_2
+       5: iload_2
+       6: bipush        9
+       8: if_icmpne     16
+      11: aload_0
+      12: iconst_0
+      13: putfield      #248                // Field mEatingHover:Z
+      16: aload_0
+      17: getfield      #248                // Field mEatingHover:Z
+      20: ifne          44
+      23: aload_0
+      24: aload_1
+      25: invokespecial #249                // Method android/view/ViewGroup.onHoverEvent:(Landroid/view/MotionEvent;)Z
+      28: istore_3
+      29: iload_2
+      30: bipush        9
+      32: if_icmpne     44
+      35: iload_3
+      36: ifne          44
+      39: aload_0
+      40: iconst_1
+      41: putfield      #248                // Field mEatingHover:Z
+      44: iload_2
+      45: bipush        10
+      47: if_icmpeq     55
+      50: iload_2
+      51: iconst_3
+      52: if_icmpne     60
+      55: aload_0
+      56: iconst_0
+      57: putfield      #248                // Field mEatingHover:Z
+      60: iconst_1
+      61: ireturn
+
+  private void measureChildConstrained(android.view.View, int, int, int, int, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #250                // class android/view/ViewGroup$MarginLayoutParams
+       7: astore        7
+       9: iload_2
+      10: aload_0
+      11: invokevirtual #251                // Method getPaddingLeft:()I
+      14: aload_0
+      15: invokevirtual #252                // Method getPaddingRight:()I
+      18: iadd
+      19: aload         7
+      21: getfield      #253                // Field android/view/ViewGroup$MarginLayoutParams.leftMargin:I
+      24: iadd
+      25: aload         7
+      27: getfield      #254                // Field android/view/ViewGroup$MarginLayoutParams.rightMargin:I
+      30: iadd
+      31: iload_3
+      32: iadd
+      33: aload         7
+      35: getfield      #255                // Field android/view/ViewGroup$MarginLayoutParams.width:I
+      38: invokestatic  #256                // Method getChildMeasureSpec:(III)I
+      41: istore        8
+      43: iload         4
+      45: aload_0
+      46: invokevirtual #257                // Method getPaddingTop:()I
+      49: aload_0
+      50: invokevirtual #258                // Method getPaddingBottom:()I
+      53: iadd
+      54: aload         7
+      56: getfield      #259                // Field android/view/ViewGroup$MarginLayoutParams.topMargin:I
+      59: iadd
+      60: aload         7
+      62: getfield      #260                // Field android/view/ViewGroup$MarginLayoutParams.bottomMargin:I
+      65: iadd
+      66: iload         5
+      68: iadd
+      69: aload         7
+      71: getfield      #261                // Field android/view/ViewGroup$MarginLayoutParams.height:I
+      74: invokestatic  #256                // Method getChildMeasureSpec:(III)I
+      77: istore        9
+      79: iload         9
+      81: invokestatic  #262                // Method android/view/View$MeasureSpec.getMode:(I)I
+      84: istore        10
+      86: iload         10
+      88: ldc_w         #264                // int 1073741824
+      91: if_icmpeq     131
+      94: iload         6
+      96: iflt          131
+      99: iload         10
+     101: ifeq          117
+     104: iload         9
+     106: invokestatic  #265                // Method android/view/View$MeasureSpec.getSize:(I)I
+     109: iload         6
+     111: invokestatic  #266                // Method java/lang/Math.min:(II)I
+     114: goto          119
+     117: iload         6
+     119: istore        11
+     121: iload         11
+     123: ldc_w         #264                // int 1073741824
+     126: invokestatic  #267                // Method android/view/View$MeasureSpec.makeMeasureSpec:(II)I
+     129: istore        9
+     131: aload_1
+     132: iload         8
+     134: iload         9
+     136: invokevirtual #268                // Method android/view/View.measure:(II)V
+     139: return
+
+  private int measureChildCollapseMargins(android.view.View, int, int, int, int, int[]);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #250                // class android/view/ViewGroup$MarginLayoutParams
+       7: astore        7
+       9: aload         7
+      11: getfield      #253                // Field android/view/ViewGroup$MarginLayoutParams.leftMargin:I
+      14: aload         6
+      16: iconst_0
+      17: iaload
+      18: isub
+      19: istore        8
+      21: aload         7
+      23: getfield      #254                // Field android/view/ViewGroup$MarginLayoutParams.rightMargin:I
+      26: aload         6
+      28: iconst_1
+      29: iaload
+      30: isub
+      31: istore        9
+      33: iconst_0
+      34: iload         8
+      36: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      39: istore        10
+      41: iconst_0
+      42: iload         9
+      44: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      47: istore        11
+      49: iload         10
+      51: iload         11
+      53: iadd
+      54: istore        12
+      56: aload         6
+      58: iconst_0
+      59: iconst_0
+      60: iload         8
+      62: ineg
+      63: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      66: iastore
+      67: aload         6
+      69: iconst_1
+      70: iconst_0
+      71: iload         9
+      73: ineg
+      74: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      77: iastore
+      78: iload_2
+      79: aload_0
+      80: invokevirtual #251                // Method getPaddingLeft:()I
+      83: aload_0
+      84: invokevirtual #252                // Method getPaddingRight:()I
+      87: iadd
+      88: iload         12
+      90: iadd
+      91: iload_3
+      92: iadd
+      93: aload         7
+      95: getfield      #255                // Field android/view/ViewGroup$MarginLayoutParams.width:I
+      98: invokestatic  #256                // Method getChildMeasureSpec:(III)I
+     101: istore        13
+     103: iload         4
+     105: aload_0
+     106: invokevirtual #257                // Method getPaddingTop:()I
+     109: aload_0
+     110: invokevirtual #258                // Method getPaddingBottom:()I
+     113: iadd
+     114: aload         7
+     116: getfield      #259                // Field android/view/ViewGroup$MarginLayoutParams.topMargin:I
+     119: iadd
+     120: aload         7
+     122: getfield      #260                // Field android/view/ViewGroup$MarginLayoutParams.bottomMargin:I
+     125: iadd
+     126: iload         5
+     128: iadd
+     129: aload         7
+     131: getfield      #261                // Field android/view/ViewGroup$MarginLayoutParams.height:I
+     134: invokestatic  #256                // Method getChildMeasureSpec:(III)I
+     137: istore        14
+     139: aload_1
+     140: iload         13
+     142: iload         14
+     144: invokevirtual #268                // Method android/view/View.measure:(II)V
+     147: aload_1
+     148: invokevirtual #269                // Method android/view/View.getMeasuredWidth:()I
+     151: iload         12
+     153: iadd
+     154: ireturn
+
+  private boolean shouldCollapse();
+    Code:
+       0: aload_0
+       1: getfield      #270                // Field mCollapsible:Z
+       4: ifne          9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: invokevirtual #271                // Method getChildCount:()I
+      13: istore_1
+      14: iconst_0
+      15: istore_2
+      16: iload_2
+      17: iload_1
+      18: if_icmpge     57
+      21: aload_0
+      22: iload_2
+      23: invokevirtual #272                // Method getChildAt:(I)Landroid/view/View;
+      26: astore_3
+      27: aload_0
+      28: aload_3
+      29: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+      32: ifeq          51
+      35: aload_3
+      36: invokevirtual #269                // Method android/view/View.getMeasuredWidth:()I
+      39: ifle          51
+      42: aload_3
+      43: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+      46: ifle          51
+      49: iconst_0
+      50: ireturn
+      51: iinc          2, 1
+      54: goto          16
+      57: iconst_1
+      58: ireturn
+
+  protected void onMeasure(int, int);
+    Code:
+       0: iconst_0
+       1: istore_3
+       2: iconst_0
+       3: istore        4
+       5: iconst_0
+       6: istore        5
+       8: aload_0
+       9: getfield      #13                 // Field mTempMargins:[I
+      12: astore        6
+      14: aload_0
+      15: invokestatic  #275                // Method androidx/appcompat/widget/ViewUtils.isLayoutRtl:(Landroid/view/View;)Z
+      18: ifeq          30
+      21: iconst_1
+      22: istore        7
+      24: iconst_0
+      25: istore        8
+      27: goto          36
+      30: iconst_0
+      31: istore        7
+      33: iconst_1
+      34: istore        8
+      36: iconst_0
+      37: istore        9
+      39: aload_0
+      40: aload_0
+      41: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      44: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+      47: ifeq          121
+      50: aload_0
+      51: aload_0
+      52: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      55: iload_1
+      56: iload_3
+      57: iload_2
+      58: iconst_0
+      59: aload_0
+      60: getfield      #53                 // Field mMaxButtonHeight:I
+      63: invokespecial #276                // Method measureChildConstrained:(Landroid/view/View;IIIII)V
+      66: aload_0
+      67: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      70: invokevirtual #277                // Method android/widget/ImageButton.getMeasuredWidth:()I
+      73: aload_0
+      74: aload_0
+      75: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      78: invokespecial #278                // Method getHorizontalMargins:(Landroid/view/View;)I
+      81: iadd
+      82: istore        9
+      84: iload         4
+      86: aload_0
+      87: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      90: invokevirtual #279                // Method android/widget/ImageButton.getMeasuredHeight:()I
+      93: aload_0
+      94: aload_0
+      95: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+      98: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     101: iadd
+     102: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     105: istore        4
+     107: iload         5
+     109: aload_0
+     110: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+     113: invokevirtual #281                // Method android/widget/ImageButton.getMeasuredState:()I
+     116: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     119: istore        5
+     121: aload_0
+     122: aload_0
+     123: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     126: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     129: ifeq          203
+     132: aload_0
+     133: aload_0
+     134: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     137: iload_1
+     138: iload_3
+     139: iload_2
+     140: iconst_0
+     141: aload_0
+     142: getfield      #53                 // Field mMaxButtonHeight:I
+     145: invokespecial #276                // Method measureChildConstrained:(Landroid/view/View;IIIII)V
+     148: aload_0
+     149: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     152: invokevirtual #277                // Method android/widget/ImageButton.getMeasuredWidth:()I
+     155: aload_0
+     156: aload_0
+     157: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     160: invokespecial #278                // Method getHorizontalMargins:(Landroid/view/View;)I
+     163: iadd
+     164: istore        9
+     166: iload         4
+     168: aload_0
+     169: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     172: invokevirtual #279                // Method android/widget/ImageButton.getMeasuredHeight:()I
+     175: aload_0
+     176: aload_0
+     177: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     180: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     183: iadd
+     184: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     187: istore        4
+     189: iload         5
+     191: aload_0
+     192: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     195: invokevirtual #281                // Method android/widget/ImageButton.getMeasuredState:()I
+     198: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     201: istore        5
+     203: aload_0
+     204: invokevirtual #211                // Method getCurrentContentInsetStart:()I
+     207: istore        10
+     209: iload_3
+     210: iload         10
+     212: iload         9
+     214: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     217: iadd
+     218: istore_3
+     219: aload         6
+     221: iload         7
+     223: iconst_0
+     224: iload         10
+     226: iload         9
+     228: isub
+     229: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     232: iastore
+     233: iconst_0
+     234: istore        11
+     236: aload_0
+     237: aload_0
+     238: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     241: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     244: ifeq          318
+     247: aload_0
+     248: aload_0
+     249: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     252: iload_1
+     253: iload_3
+     254: iload_2
+     255: iconst_0
+     256: aload_0
+     257: getfield      #53                 // Field mMaxButtonHeight:I
+     260: invokespecial #276                // Method measureChildConstrained:(Landroid/view/View;IIIII)V
+     263: aload_0
+     264: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     267: invokevirtual #283                // Method androidx/appcompat/widget/ActionMenuView.getMeasuredWidth:()I
+     270: aload_0
+     271: aload_0
+     272: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     275: invokespecial #278                // Method getHorizontalMargins:(Landroid/view/View;)I
+     278: iadd
+     279: istore        11
+     281: iload         4
+     283: aload_0
+     284: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     287: invokevirtual #284                // Method androidx/appcompat/widget/ActionMenuView.getMeasuredHeight:()I
+     290: aload_0
+     291: aload_0
+     292: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     295: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     298: iadd
+     299: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     302: istore        4
+     304: iload         5
+     306: aload_0
+     307: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     310: invokevirtual #285                // Method androidx/appcompat/widget/ActionMenuView.getMeasuredState:()I
+     313: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     316: istore        5
+     318: aload_0
+     319: invokevirtual #210                // Method getCurrentContentInsetEnd:()I
+     322: istore        12
+     324: iload_3
+     325: iload         12
+     327: iload         11
+     329: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     332: iadd
+     333: istore_3
+     334: aload         6
+     336: iload         8
+     338: iconst_0
+     339: iload         12
+     341: iload         11
+     343: isub
+     344: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     347: iastore
+     348: aload_0
+     349: aload_0
+     350: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     353: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     356: ifeq          413
+     359: iload_3
+     360: aload_0
+     361: aload_0
+     362: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     365: iload_1
+     366: iload_3
+     367: iload_2
+     368: iconst_0
+     369: aload         6
+     371: invokespecial #286                // Method measureChildCollapseMargins:(Landroid/view/View;IIII[I)I
+     374: iadd
+     375: istore_3
+     376: iload         4
+     378: aload_0
+     379: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     382: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+     385: aload_0
+     386: aload_0
+     387: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     390: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     393: iadd
+     394: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     397: istore        4
+     399: iload         5
+     401: aload_0
+     402: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     405: invokevirtual #287                // Method android/view/View.getMeasuredState:()I
+     408: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     411: istore        5
+     413: aload_0
+     414: aload_0
+     415: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     418: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     421: ifeq          478
+     424: iload_3
+     425: aload_0
+     426: aload_0
+     427: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     430: iload_1
+     431: iload_3
+     432: iload_2
+     433: iconst_0
+     434: aload         6
+     436: invokespecial #286                // Method measureChildCollapseMargins:(Landroid/view/View;IIII[I)I
+     439: iadd
+     440: istore_3
+     441: iload         4
+     443: aload_0
+     444: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     447: invokevirtual #288                // Method android/widget/ImageView.getMeasuredHeight:()I
+     450: aload_0
+     451: aload_0
+     452: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     455: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     458: iadd
+     459: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     462: istore        4
+     464: iload         5
+     466: aload_0
+     467: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     470: invokevirtual #289                // Method android/widget/ImageView.getMeasuredState:()I
+     473: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     476: istore        5
+     478: aload_0
+     479: invokevirtual #271                // Method getChildCount:()I
+     482: istore        13
+     484: iconst_0
+     485: istore        14
+     487: iload         14
+     489: iload         13
+     491: if_icmpge     584
+     494: aload_0
+     495: iload         14
+     497: invokevirtual #272                // Method getChildAt:(I)Landroid/view/View;
+     500: astore        15
+     502: aload         15
+     504: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     507: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     510: astore        16
+     512: aload         16
+     514: getfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+     517: ifne          578
+     520: aload_0
+     521: aload         15
+     523: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     526: ifne          532
+     529: goto          578
+     532: iload_3
+     533: aload_0
+     534: aload         15
+     536: iload_1
+     537: iload_3
+     538: iload_2
+     539: iconst_0
+     540: aload         6
+     542: invokespecial #286                // Method measureChildCollapseMargins:(Landroid/view/View;IIII[I)I
+     545: iadd
+     546: istore_3
+     547: iload         4
+     549: aload         15
+     551: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+     554: aload_0
+     555: aload         15
+     557: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     560: iadd
+     561: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     564: istore        4
+     566: iload         5
+     568: aload         15
+     570: invokevirtual #287                // Method android/view/View.getMeasuredState:()I
+     573: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     576: istore        5
+     578: iinc          14, 1
+     581: goto          487
+     584: iconst_0
+     585: istore        14
+     587: iconst_0
+     588: istore        15
+     590: aload_0
+     591: getfield      #44                 // Field mTitleMarginTop:I
+     594: aload_0
+     595: getfield      #43                 // Field mTitleMarginBottom:I
+     598: iadd
+     599: istore        16
+     601: aload_0
+     602: getfield      #46                 // Field mTitleMarginStart:I
+     605: aload_0
+     606: getfield      #45                 // Field mTitleMarginEnd:I
+     609: iadd
+     610: istore        17
+     612: aload_0
+     613: aload_0
+     614: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     617: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     620: ifeq          693
+     623: aload_0
+     624: aload_0
+     625: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     628: iload_1
+     629: iload_3
+     630: iload         17
+     632: iadd
+     633: iload_2
+     634: iload         16
+     636: aload         6
+     638: invokespecial #286                // Method measureChildCollapseMargins:(Landroid/view/View;IIII[I)I
+     641: istore        14
+     643: aload_0
+     644: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     647: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+     650: aload_0
+     651: aload_0
+     652: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     655: invokespecial #278                // Method getHorizontalMargins:(Landroid/view/View;)I
+     658: iadd
+     659: istore        14
+     661: aload_0
+     662: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     665: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+     668: aload_0
+     669: aload_0
+     670: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     673: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     676: iadd
+     677: istore        15
+     679: iload         5
+     681: aload_0
+     682: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     685: invokevirtual #292                // Method android/widget/TextView.getMeasuredState:()I
+     688: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     691: istore        5
+     693: aload_0
+     694: aload_0
+     695: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     698: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     701: ifeq          767
+     704: iload         14
+     706: aload_0
+     707: aload_0
+     708: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     711: iload_1
+     712: iload_3
+     713: iload         17
+     715: iadd
+     716: iload_2
+     717: iload         15
+     719: iload         16
+     721: iadd
+     722: aload         6
+     724: invokespecial #286                // Method measureChildCollapseMargins:(Landroid/view/View;IIII[I)I
+     727: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     730: istore        14
+     732: iload         15
+     734: aload_0
+     735: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     738: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+     741: aload_0
+     742: aload_0
+     743: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     746: invokespecial #280                // Method getVerticalMargins:(Landroid/view/View;)I
+     749: iadd
+     750: iadd
+     751: istore        15
+     753: iload         5
+     755: aload_0
+     756: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     759: invokevirtual #292                // Method android/widget/TextView.getMeasuredState:()I
+     762: invokestatic  #282                // Method android/view/View.combineMeasuredStates:(II)I
+     765: istore        5
+     767: iload_3
+     768: iload         14
+     770: iadd
+     771: istore_3
+     772: iload         4
+     774: iload         15
+     776: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     779: istore        4
+     781: iload_3
+     782: aload_0
+     783: invokevirtual #251                // Method getPaddingLeft:()I
+     786: aload_0
+     787: invokevirtual #252                // Method getPaddingRight:()I
+     790: iadd
+     791: iadd
+     792: istore_3
+     793: iload         4
+     795: aload_0
+     796: invokevirtual #257                // Method getPaddingTop:()I
+     799: aload_0
+     800: invokevirtual #258                // Method getPaddingBottom:()I
+     803: iadd
+     804: iadd
+     805: istore        4
+     807: iload_3
+     808: aload_0
+     809: invokevirtual #293                // Method getSuggestedMinimumWidth:()I
+     812: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     815: iload_1
+     816: iload         5
+     818: ldc_w         #295                // int -16777216
+     821: iand
+     822: invokestatic  #296                // Method android/view/View.resolveSizeAndState:(III)I
+     825: istore        18
+     827: iload         4
+     829: aload_0
+     830: invokevirtual #297                // Method getSuggestedMinimumHeight:()I
+     833: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     836: iload_2
+     837: iload         5
+     839: bipush        16
+     841: ishl
+     842: invokestatic  #296                // Method android/view/View.resolveSizeAndState:(III)I
+     845: istore        19
+     847: aload_0
+     848: iload         18
+     850: aload_0
+     851: invokespecial #298                // Method shouldCollapse:()Z
+     854: ifeq          861
+     857: iconst_0
+     858: goto          863
+     861: iload         19
+     863: invokevirtual #299                // Method setMeasuredDimension:(II)V
+     866: return
+
+  protected void onLayout(boolean, int, int, int, int);
+    Code:
+       0: aload_0
+       1: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+       4: iconst_1
+       5: if_icmpne     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: istore        6
+      15: aload_0
+      16: invokevirtual #300                // Method getWidth:()I
+      19: istore        7
+      21: aload_0
+      22: invokevirtual #301                // Method getHeight:()I
+      25: istore        8
+      27: aload_0
+      28: invokevirtual #251                // Method getPaddingLeft:()I
+      31: istore        9
+      33: aload_0
+      34: invokevirtual #252                // Method getPaddingRight:()I
+      37: istore        10
+      39: aload_0
+      40: invokevirtual #257                // Method getPaddingTop:()I
+      43: istore        11
+      45: aload_0
+      46: invokevirtual #258                // Method getPaddingBottom:()I
+      49: istore        12
+      51: iload         9
+      53: istore        13
+      55: iload         7
+      57: iload         10
+      59: isub
+      60: istore        14
+      62: aload_0
+      63: getfield      #13                 // Field mTempMargins:[I
+      66: astore        15
+      68: aload         15
+      70: iconst_0
+      71: aload         15
+      73: iconst_1
+      74: iconst_0
+      75: dup_x2
+      76: iastore
+      77: iastore
+      78: aload_0
+      79: invokestatic  #302                // Method androidx/core/view/ViewCompat.getMinimumHeight:(Landroid/view/View;)I
+      82: istore        16
+      84: iload         16
+      86: iflt          101
+      89: iload         16
+      91: iload         5
+      93: iload_3
+      94: isub
+      95: invokestatic  #266                // Method java/lang/Math.min:(II)I
+      98: goto          102
+     101: iconst_0
+     102: istore        17
+     104: aload_0
+     105: aload_0
+     106: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+     109: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     112: ifeq          155
+     115: iload         6
+     117: ifeq          139
+     120: aload_0
+     121: aload_0
+     122: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+     125: iload         14
+     127: aload         15
+     129: iload         17
+     131: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+     134: istore        14
+     136: goto          155
+     139: aload_0
+     140: aload_0
+     141: getfield      #165                // Field mNavButtonView:Landroid/widget/ImageButton;
+     144: iload         13
+     146: aload         15
+     148: iload         17
+     150: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+     153: istore        13
+     155: aload_0
+     156: aload_0
+     157: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     160: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     163: ifeq          206
+     166: iload         6
+     168: ifeq          190
+     171: aload_0
+     172: aload_0
+     173: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     176: iload         14
+     178: aload         15
+     180: iload         17
+     182: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+     185: istore        14
+     187: goto          206
+     190: aload_0
+     191: aload_0
+     192: getfield      #173                // Field mCollapseButtonView:Landroid/widget/ImageButton;
+     195: iload         13
+     197: aload         15
+     199: iload         17
+     201: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+     204: istore        13
+     206: aload_0
+     207: aload_0
+     208: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     211: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     214: ifeq          257
+     217: iload         6
+     219: ifeq          241
+     222: aload_0
+     223: aload_0
+     224: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     227: iload         13
+     229: aload         15
+     231: iload         17
+     233: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+     236: istore        13
+     238: goto          257
+     241: aload_0
+     242: aload_0
+     243: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+     246: iload         14
+     248: aload         15
+     250: iload         17
+     252: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+     255: istore        14
+     257: aload_0
+     258: invokevirtual #305                // Method getCurrentContentInsetLeft:()I
+     261: istore        18
+     263: aload_0
+     264: invokevirtual #306                // Method getCurrentContentInsetRight:()I
+     267: istore        19
+     269: aload         15
+     271: iconst_0
+     272: iconst_0
+     273: iload         18
+     275: iload         13
+     277: isub
+     278: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     281: iastore
+     282: aload         15
+     284: iconst_1
+     285: iconst_0
+     286: iload         19
+     288: iload         7
+     290: iload         10
+     292: isub
+     293: iload         14
+     295: isub
+     296: isub
+     297: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     300: iastore
+     301: iload         13
+     303: iload         18
+     305: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     308: istore        13
+     310: iload         14
+     312: iload         7
+     314: iload         10
+     316: isub
+     317: iload         19
+     319: isub
+     320: invokestatic  #266                // Method java/lang/Math.min:(II)I
+     323: istore        14
+     325: aload_0
+     326: aload_0
+     327: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     330: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     333: ifeq          376
+     336: iload         6
+     338: ifeq          360
+     341: aload_0
+     342: aload_0
+     343: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     346: iload         14
+     348: aload         15
+     350: iload         17
+     352: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+     355: istore        14
+     357: goto          376
+     360: aload_0
+     361: aload_0
+     362: getfield      #224                // Field mExpandedActionView:Landroid/view/View;
+     365: iload         13
+     367: aload         15
+     369: iload         17
+     371: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+     374: istore        13
+     376: aload_0
+     377: aload_0
+     378: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     381: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     384: ifeq          427
+     387: iload         6
+     389: ifeq          411
+     392: aload_0
+     393: aload_0
+     394: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     397: iload         14
+     399: aload         15
+     401: iload         17
+     403: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+     406: istore        14
+     408: goto          427
+     411: aload_0
+     412: aload_0
+     413: getfield      #137                // Field mLogoView:Landroid/widget/ImageView;
+     416: iload         13
+     418: aload         15
+     420: iload         17
+     422: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+     425: istore        13
+     427: aload_0
+     428: aload_0
+     429: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     432: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     435: istore        20
+     437: aload_0
+     438: aload_0
+     439: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     442: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     445: istore        21
+     447: iconst_0
+     448: istore        22
+     450: iload         20
+     452: ifeq          491
+     455: aload_0
+     456: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     459: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     462: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     465: astore        23
+     467: iload         22
+     469: aload         23
+     471: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     474: aload_0
+     475: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     478: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+     481: iadd
+     482: aload         23
+     484: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     487: iadd
+     488: iadd
+     489: istore        22
+     491: iload         21
+     493: ifeq          532
+     496: aload_0
+     497: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     500: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     503: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     506: astore        23
+     508: iload         22
+     510: aload         23
+     512: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     515: aload_0
+     516: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     519: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+     522: iadd
+     523: aload         23
+     525: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     528: iadd
+     529: iadd
+     530: istore        22
+     532: iload         20
+     534: ifne          542
+     537: iload         21
+     539: ifeq          1285
+     542: iload         20
+     544: ifeq          554
+     547: aload_0
+     548: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     551: goto          558
+     554: aload_0
+     555: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     558: astore        24
+     560: iload         21
+     562: ifeq          572
+     565: aload_0
+     566: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     569: goto          576
+     572: aload_0
+     573: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     576: astore        25
+     578: aload         24
+     580: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     583: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     586: astore        26
+     588: aload         25
+     590: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     593: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     596: astore        27
+     598: iload         20
+     600: ifeq          613
+     603: aload_0
+     604: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     607: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+     610: ifgt          628
+     613: iload         21
+     615: ifeq          632
+     618: aload_0
+     619: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     622: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+     625: ifle          632
+     628: iconst_1
+     629: goto          633
+     632: iconst_0
+     633: istore        28
+     635: aload_0
+     636: getfield      #8                  // Field mGravity:I
+     639: bipush        112
+     641: iand
+     642: lookupswitch  { // 3
+                    16: 696
+                    48: 676
+                    80: 808
+               default: 696
+          }
+     676: aload_0
+     677: invokevirtual #257                // Method getPaddingTop:()I
+     680: aload         26
+     682: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     685: iadd
+     686: aload_0
+     687: getfield      #44                 // Field mTitleMarginTop:I
+     690: iadd
+     691: istore        23
+     693: goto          829
+     696: iload         8
+     698: iload         11
+     700: isub
+     701: iload         12
+     703: isub
+     704: istore        29
+     706: iload         29
+     708: iload         22
+     710: isub
+     711: iconst_2
+     712: idiv
+     713: istore        30
+     715: iload         30
+     717: aload         26
+     719: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     722: aload_0
+     723: getfield      #44                 // Field mTitleMarginTop:I
+     726: iadd
+     727: if_icmpge     745
+     730: aload         26
+     732: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     735: aload_0
+     736: getfield      #44                 // Field mTitleMarginTop:I
+     739: iadd
+     740: istore        30
+     742: goto          798
+     745: iload         8
+     747: iload         12
+     749: isub
+     750: iload         22
+     752: isub
+     753: iload         30
+     755: isub
+     756: iload         11
+     758: isub
+     759: istore        31
+     761: iload         31
+     763: aload         26
+     765: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     768: aload_0
+     769: getfield      #43                 // Field mTitleMarginBottom:I
+     772: iadd
+     773: if_icmpge     798
+     776: iconst_0
+     777: iload         30
+     779: aload         27
+     781: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     784: aload_0
+     785: getfield      #43                 // Field mTitleMarginBottom:I
+     788: iadd
+     789: iload         31
+     791: isub
+     792: isub
+     793: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     796: istore        30
+     798: iload         11
+     800: iload         30
+     802: iadd
+     803: istore        23
+     805: goto          829
+     808: iload         8
+     810: iload         12
+     812: isub
+     813: aload         27
+     815: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     818: isub
+     819: aload_0
+     820: getfield      #43                 // Field mTitleMarginBottom:I
+     823: isub
+     824: iload         22
+     826: isub
+     827: istore        23
+     829: iload         6
+     831: ifeq          1061
+     834: iload         28
+     836: ifeq          846
+     839: aload_0
+     840: getfield      #46                 // Field mTitleMarginStart:I
+     843: goto          847
+     846: iconst_0
+     847: aload         15
+     849: iconst_1
+     850: iaload
+     851: isub
+     852: istore        29
+     854: iload         14
+     856: iconst_0
+     857: iload         29
+     859: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     862: isub
+     863: istore        14
+     865: aload         15
+     867: iconst_1
+     868: iconst_0
+     869: iload         29
+     871: ineg
+     872: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     875: iastore
+     876: iload         14
+     878: istore        30
+     880: iload         14
+     882: istore        31
+     884: iload         20
+     886: ifeq          959
+     889: aload_0
+     890: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     893: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     896: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     899: astore        32
+     901: iload         30
+     903: aload_0
+     904: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     907: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+     910: isub
+     911: istore        33
+     913: iload         23
+     915: aload_0
+     916: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     919: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+     922: iadd
+     923: istore        34
+     925: aload_0
+     926: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+     929: iload         33
+     931: iload         23
+     933: iload         30
+     935: iload         34
+     937: invokevirtual #310                // Method android/widget/TextView.layout:(IIII)V
+     940: iload         33
+     942: aload_0
+     943: getfield      #45                 // Field mTitleMarginEnd:I
+     946: isub
+     947: istore        30
+     949: iload         34
+     951: aload         32
+     953: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     956: iadd
+     957: istore        23
+     959: iload         21
+     961: ifeq          1044
+     964: aload_0
+     965: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     968: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     971: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     974: astore        32
+     976: iload         23
+     978: aload         32
+     980: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     983: iadd
+     984: istore        23
+     986: iload         31
+     988: aload_0
+     989: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+     992: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+     995: isub
+     996: istore        33
+     998: iload         23
+    1000: aload_0
+    1001: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1004: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+    1007: iadd
+    1008: istore        34
+    1010: aload_0
+    1011: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1014: iload         33
+    1016: iload         23
+    1018: iload         31
+    1020: iload         34
+    1022: invokevirtual #310                // Method android/widget/TextView.layout:(IIII)V
+    1025: iload         31
+    1027: aload_0
+    1028: getfield      #45                 // Field mTitleMarginEnd:I
+    1031: isub
+    1032: istore        31
+    1034: iload         34
+    1036: aload         32
+    1038: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+    1041: iadd
+    1042: istore        23
+    1044: iload         28
+    1046: ifeq          1058
+    1049: iload         30
+    1051: iload         31
+    1053: invokestatic  #266                // Method java/lang/Math.min:(II)I
+    1056: istore        14
+    1058: goto          1285
+    1061: iload         28
+    1063: ifeq          1073
+    1066: aload_0
+    1067: getfield      #46                 // Field mTitleMarginStart:I
+    1070: goto          1074
+    1073: iconst_0
+    1074: aload         15
+    1076: iconst_0
+    1077: iaload
+    1078: isub
+    1079: istore        29
+    1081: iload         13
+    1083: iconst_0
+    1084: iload         29
+    1086: invokestatic  #207                // Method java/lang/Math.max:(II)I
+    1089: iadd
+    1090: istore        13
+    1092: aload         15
+    1094: iconst_0
+    1095: iconst_0
+    1096: iload         29
+    1098: ineg
+    1099: invokestatic  #207                // Method java/lang/Math.max:(II)I
+    1102: iastore
+    1103: iload         13
+    1105: istore        30
+    1107: iload         13
+    1109: istore        31
+    1111: iload         20
+    1113: ifeq          1186
+    1116: aload_0
+    1117: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+    1120: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+    1123: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+    1126: astore        32
+    1128: iload         30
+    1130: aload_0
+    1131: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+    1134: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+    1137: iadd
+    1138: istore        33
+    1140: iload         23
+    1142: aload_0
+    1143: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+    1146: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+    1149: iadd
+    1150: istore        34
+    1152: aload_0
+    1153: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+    1156: iload         30
+    1158: iload         23
+    1160: iload         33
+    1162: iload         34
+    1164: invokevirtual #310                // Method android/widget/TextView.layout:(IIII)V
+    1167: iload         33
+    1169: aload_0
+    1170: getfield      #45                 // Field mTitleMarginEnd:I
+    1173: iadd
+    1174: istore        30
+    1176: iload         34
+    1178: aload         32
+    1180: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+    1183: iadd
+    1184: istore        23
+    1186: iload         21
+    1188: ifeq          1271
+    1191: aload_0
+    1192: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1195: invokevirtual #307                // Method android/widget/TextView.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+    1198: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+    1201: astore        32
+    1203: iload         23
+    1205: aload         32
+    1207: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+    1210: iadd
+    1211: istore        23
+    1213: iload         31
+    1215: aload_0
+    1216: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1219: invokevirtual #290                // Method android/widget/TextView.getMeasuredWidth:()I
+    1222: iadd
+    1223: istore        33
+    1225: iload         23
+    1227: aload_0
+    1228: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1231: invokevirtual #291                // Method android/widget/TextView.getMeasuredHeight:()I
+    1234: iadd
+    1235: istore        34
+    1237: aload_0
+    1238: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+    1241: iload         31
+    1243: iload         23
+    1245: iload         33
+    1247: iload         34
+    1249: invokevirtual #310                // Method android/widget/TextView.layout:(IIII)V
+    1252: iload         33
+    1254: aload_0
+    1255: getfield      #45                 // Field mTitleMarginEnd:I
+    1258: iadd
+    1259: istore        31
+    1261: iload         34
+    1263: aload         32
+    1265: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+    1268: iadd
+    1269: istore        23
+    1271: iload         28
+    1273: ifeq          1285
+    1276: iload         30
+    1278: iload         31
+    1280: invokestatic  #207                // Method java/lang/Math.max:(II)I
+    1283: istore        13
+    1285: aload_0
+    1286: aload_0
+    1287: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1290: iconst_3
+    1291: invokespecial #311                // Method addCustomViewsWithGravity:(Ljava/util/List;I)V
+    1294: aload_0
+    1295: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1298: invokevirtual #312                // Method java/util/ArrayList.size:()I
+    1301: istore        23
+    1303: iconst_0
+    1304: istore        24
+    1306: iload         24
+    1308: iload         23
+    1310: if_icmpge     1343
+    1313: aload_0
+    1314: aload_0
+    1315: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1318: iload         24
+    1320: invokevirtual #313                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+    1323: checkcast     #294                // class android/view/View
+    1326: iload         13
+    1328: aload         15
+    1330: iload         17
+    1332: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+    1335: istore        13
+    1337: iinc          24, 1
+    1340: goto          1306
+    1343: aload_0
+    1344: aload_0
+    1345: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1348: iconst_5
+    1349: invokespecial #311                // Method addCustomViewsWithGravity:(Ljava/util/List;I)V
+    1352: aload_0
+    1353: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1356: invokevirtual #312                // Method java/util/ArrayList.size:()I
+    1359: istore        24
+    1361: iconst_0
+    1362: istore        25
+    1364: iload         25
+    1366: iload         24
+    1368: if_icmpge     1401
+    1371: aload_0
+    1372: aload_0
+    1373: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1376: iload         25
+    1378: invokevirtual #313                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+    1381: checkcast     #294                // class android/view/View
+    1384: iload         14
+    1386: aload         15
+    1388: iload         17
+    1390: invokespecial #303                // Method layoutChildRight:(Landroid/view/View;I[II)I
+    1393: istore        14
+    1395: iinc          25, 1
+    1398: goto          1364
+    1401: aload_0
+    1402: aload_0
+    1403: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1406: iconst_1
+    1407: invokespecial #311                // Method addCustomViewsWithGravity:(Ljava/util/List;I)V
+    1410: aload_0
+    1411: aload_0
+    1412: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1415: aload         15
+    1417: invokespecial #314                // Method getViewListMeasuredWidth:(Ljava/util/List;[I)I
+    1420: istore        25
+    1422: iload         9
+    1424: iload         7
+    1426: iload         9
+    1428: isub
+    1429: iload         10
+    1431: isub
+    1432: iconst_2
+    1433: idiv
+    1434: iadd
+    1435: istore        26
+    1437: iload         25
+    1439: iconst_2
+    1440: idiv
+    1441: istore        27
+    1443: iload         26
+    1445: iload         27
+    1447: isub
+    1448: istore        28
+    1450: iload         28
+    1452: iload         25
+    1454: iadd
+    1455: istore        29
+    1457: iload         28
+    1459: iload         13
+    1461: if_icmpge     1471
+    1464: iload         13
+    1466: istore        28
+    1468: goto          1488
+    1471: iload         29
+    1473: iload         14
+    1475: if_icmple     1488
+    1478: iload         28
+    1480: iload         29
+    1482: iload         14
+    1484: isub
+    1485: isub
+    1486: istore        28
+    1488: aload_0
+    1489: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1492: invokevirtual #312                // Method java/util/ArrayList.size:()I
+    1495: istore        30
+    1497: iconst_0
+    1498: istore        31
+    1500: iload         31
+    1502: iload         30
+    1504: if_icmpge     1537
+    1507: aload_0
+    1508: aload_0
+    1509: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1512: iload         31
+    1514: invokevirtual #313                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+    1517: checkcast     #294                // class android/view/View
+    1520: iload         28
+    1522: aload         15
+    1524: iload         17
+    1526: invokespecial #304                // Method layoutChildLeft:(Landroid/view/View;I[II)I
+    1529: istore        28
+    1531: iinc          31, 1
+    1534: goto          1500
+    1537: aload_0
+    1538: getfield      #11                 // Field mTempViews:Ljava/util/ArrayList;
+    1541: invokevirtual #315                // Method java/util/ArrayList.clear:()V
+    1544: return
+
+  private int getViewListMeasuredWidth(java.util.List<android.view.View>, int[]);
+    Code:
+       0: aload_2
+       1: iconst_0
+       2: iaload
+       3: istore_3
+       4: aload_2
+       5: iconst_1
+       6: iaload
+       7: istore        4
+       9: iconst_0
+      10: istore        5
+      12: aload_1
+      13: invokeinterface #316,  1          // InterfaceMethod java/util/List.size:()I
+      18: istore        6
+      20: iconst_0
+      21: istore        7
+      23: iload         7
+      25: iload         6
+      27: if_icmpge     127
+      30: aload_1
+      31: iload         7
+      33: invokeinterface #317,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      38: checkcast     #294                // class android/view/View
+      41: astore        8
+      43: aload         8
+      45: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+      48: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      51: astore        9
+      53: aload         9
+      55: getfield      #318                // Field androidx/appcompat/widget/Toolbar$LayoutParams.leftMargin:I
+      58: iload_3
+      59: isub
+      60: istore        10
+      62: aload         9
+      64: getfield      #319                // Field androidx/appcompat/widget/Toolbar$LayoutParams.rightMargin:I
+      67: iload         4
+      69: isub
+      70: istore        11
+      72: iconst_0
+      73: iload         10
+      75: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      78: istore        12
+      80: iconst_0
+      81: iload         11
+      83: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      86: istore        13
+      88: iconst_0
+      89: iload         10
+      91: ineg
+      92: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      95: istore_3
+      96: iconst_0
+      97: iload         11
+      99: ineg
+     100: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     103: istore        4
+     105: iload         5
+     107: iload         12
+     109: aload         8
+     111: invokevirtual #269                // Method android/view/View.getMeasuredWidth:()I
+     114: iadd
+     115: iload         13
+     117: iadd
+     118: iadd
+     119: istore        5
+     121: iinc          7, 1
+     124: goto          23
+     127: iload         5
+     129: ireturn
+
+  private int layoutChildLeft(android.view.View, int, int[], int);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       7: astore        5
+       9: aload         5
+      11: getfield      #318                // Field androidx/appcompat/widget/Toolbar$LayoutParams.leftMargin:I
+      14: aload_3
+      15: iconst_0
+      16: iaload
+      17: isub
+      18: istore        6
+      20: iload_2
+      21: iconst_0
+      22: iload         6
+      24: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      27: iadd
+      28: istore_2
+      29: aload_3
+      30: iconst_0
+      31: iconst_0
+      32: iload         6
+      34: ineg
+      35: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      38: iastore
+      39: aload_0
+      40: aload_1
+      41: iload         4
+      43: invokespecial #320                // Method getChildTop:(Landroid/view/View;I)I
+      46: istore        7
+      48: aload_1
+      49: invokevirtual #269                // Method android/view/View.getMeasuredWidth:()I
+      52: istore        8
+      54: aload_1
+      55: iload_2
+      56: iload         7
+      58: iload_2
+      59: iload         8
+      61: iadd
+      62: iload         7
+      64: aload_1
+      65: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+      68: iadd
+      69: invokevirtual #321                // Method android/view/View.layout:(IIII)V
+      72: iload_2
+      73: iload         8
+      75: aload         5
+      77: getfield      #319                // Field androidx/appcompat/widget/Toolbar$LayoutParams.rightMargin:I
+      80: iadd
+      81: iadd
+      82: istore_2
+      83: iload_2
+      84: ireturn
+
+  private int layoutChildRight(android.view.View, int, int[], int);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       7: astore        5
+       9: aload         5
+      11: getfield      #319                // Field androidx/appcompat/widget/Toolbar$LayoutParams.rightMargin:I
+      14: aload_3
+      15: iconst_1
+      16: iaload
+      17: isub
+      18: istore        6
+      20: iload_2
+      21: iconst_0
+      22: iload         6
+      24: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      27: isub
+      28: istore_2
+      29: aload_3
+      30: iconst_1
+      31: iconst_0
+      32: iload         6
+      34: ineg
+      35: invokestatic  #207                // Method java/lang/Math.max:(II)I
+      38: iastore
+      39: aload_0
+      40: aload_1
+      41: iload         4
+      43: invokespecial #320                // Method getChildTop:(Landroid/view/View;I)I
+      46: istore        7
+      48: aload_1
+      49: invokevirtual #269                // Method android/view/View.getMeasuredWidth:()I
+      52: istore        8
+      54: aload_1
+      55: iload_2
+      56: iload         8
+      58: isub
+      59: iload         7
+      61: iload_2
+      62: iload         7
+      64: aload_1
+      65: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+      68: iadd
+      69: invokevirtual #321                // Method android/view/View.layout:(IIII)V
+      72: iload_2
+      73: iload         8
+      75: aload         5
+      77: getfield      #318                // Field androidx/appcompat/widget/Toolbar$LayoutParams.leftMargin:I
+      80: iadd
+      81: isub
+      82: istore_2
+      83: iload_2
+      84: ireturn
+
+  private int getChildTop(android.view.View, int);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       7: astore_3
+       8: aload_1
+       9: invokevirtual #274                // Method android/view/View.getMeasuredHeight:()I
+      12: istore        4
+      14: iload_2
+      15: ifle          27
+      18: iload         4
+      20: iload_2
+      21: isub
+      22: iconst_2
+      23: idiv
+      24: goto          28
+      27: iconst_0
+      28: istore        5
+      30: aload_0
+      31: aload_3
+      32: getfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+      35: invokespecial #322                // Method getChildVerticalGravity:(I)I
+      38: lookupswitch  { // 3
+                    16: 101
+                    48: 72
+                    80: 80
+               default: 101
+          }
+      72: aload_0
+      73: invokevirtual #257                // Method getPaddingTop:()I
+      76: iload         5
+      78: isub
+      79: ireturn
+      80: aload_0
+      81: invokevirtual #301                // Method getHeight:()I
+      84: aload_0
+      85: invokevirtual #258                // Method getPaddingBottom:()I
+      88: isub
+      89: iload         4
+      91: isub
+      92: aload_3
+      93: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+      96: isub
+      97: iload         5
+      99: isub
+     100: ireturn
+     101: aload_0
+     102: invokevirtual #257                // Method getPaddingTop:()I
+     105: istore        6
+     107: aload_0
+     108: invokevirtual #258                // Method getPaddingBottom:()I
+     111: istore        7
+     113: aload_0
+     114: invokevirtual #301                // Method getHeight:()I
+     117: istore        8
+     119: iload         8
+     121: iload         6
+     123: isub
+     124: iload         7
+     126: isub
+     127: istore        9
+     129: iload         9
+     131: iload         4
+     133: isub
+     134: iconst_2
+     135: idiv
+     136: istore        10
+     138: iload         10
+     140: aload_3
+     141: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     144: if_icmpge     156
+     147: aload_3
+     148: getfield      #308                // Field androidx/appcompat/widget/Toolbar$LayoutParams.topMargin:I
+     151: istore        10
+     153: goto          197
+     156: iload         8
+     158: iload         7
+     160: isub
+     161: iload         4
+     163: isub
+     164: iload         10
+     166: isub
+     167: iload         6
+     169: isub
+     170: istore        11
+     172: iload         11
+     174: aload_3
+     175: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     178: if_icmpge     197
+     181: iconst_0
+     182: iload         10
+     184: aload_3
+     185: getfield      #309                // Field androidx/appcompat/widget/Toolbar$LayoutParams.bottomMargin:I
+     188: iload         11
+     190: isub
+     191: isub
+     192: invokestatic  #207                // Method java/lang/Math.max:(II)I
+     195: istore        10
+     197: iload         6
+     199: iload         10
+     201: iadd
+     202: ireturn
+
+  private int getChildVerticalGravity(int);
+    Code:
+       0: iload_1
+       1: bipush        112
+       3: iand
+       4: istore_2
+       5: iload_2
+       6: lookupswitch  { // 3
+                    16: 40
+                    48: 40
+                    80: 40
+               default: 42
+          }
+      40: iload_2
+      41: ireturn
+      42: aload_0
+      43: getfield      #8                  // Field mGravity:I
+      46: bipush        112
+      48: iand
+      49: ireturn
+
+  private void addCustomViewsWithGravity(java.util.List<android.view.View>, int);
+    Code:
+       0: aload_0
+       1: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+       4: iconst_1
+       5: if_icmpne     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: istore_3
+      14: aload_0
+      15: invokevirtual #271                // Method getChildCount:()I
+      18: istore        4
+      20: iload_2
+      21: aload_0
+      22: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+      25: invokestatic  #323                // Method androidx/core/view/GravityCompat.getAbsoluteGravity:(II)I
+      28: istore        5
+      30: aload_1
+      31: invokeinterface #324,  1          // InterfaceMethod java/util/List.clear:()V
+      36: iload_3
+      37: ifeq          118
+      40: iload         4
+      42: iconst_1
+      43: isub
+      44: istore        6
+      46: iload         6
+      48: iflt          115
+      51: aload_0
+      52: iload         6
+      54: invokevirtual #272                // Method getChildAt:(I)Landroid/view/View;
+      57: astore        7
+      59: aload         7
+      61: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+      64: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      67: astore        8
+      69: aload         8
+      71: getfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+      74: ifne          109
+      77: aload_0
+      78: aload         7
+      80: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+      83: ifeq          109
+      86: aload_0
+      87: aload         8
+      89: getfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+      92: invokespecial #325                // Method getChildHorizontalGravity:(I)I
+      95: iload         5
+      97: if_icmpne     109
+     100: aload_1
+     101: aload         7
+     103: invokeinterface #326,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     108: pop
+     109: iinc          6, -1
+     112: goto          46
+     115: goto          192
+     118: iconst_0
+     119: istore        6
+     121: iload         6
+     123: iload         4
+     125: if_icmpge     192
+     128: aload_0
+     129: iload         6
+     131: invokevirtual #272                // Method getChildAt:(I)Landroid/view/View;
+     134: astore        7
+     136: aload         7
+     138: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+     141: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+     144: astore        8
+     146: aload         8
+     148: getfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+     151: ifne          186
+     154: aload_0
+     155: aload         7
+     157: invokespecial #273                // Method shouldLayout:(Landroid/view/View;)Z
+     160: ifeq          186
+     163: aload_0
+     164: aload         8
+     166: getfield      #192                // Field androidx/appcompat/widget/Toolbar$LayoutParams.gravity:I
+     169: invokespecial #325                // Method getChildHorizontalGravity:(I)I
+     172: iload         5
+     174: if_icmpne     186
+     177: aload_1
+     178: aload         7
+     180: invokeinterface #326,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     185: pop
+     186: iinc          6, 1
+     189: goto          121
+     192: return
+
+  private int getChildHorizontalGravity(int);
+    Code:
+       0: aload_0
+       1: invokestatic  #209                // Method androidx/core/view/ViewCompat.getLayoutDirection:(Landroid/view/View;)I
+       4: istore_2
+       5: iload_1
+       6: iload_2
+       7: invokestatic  #323                // Method androidx/core/view/GravityCompat.getAbsoluteGravity:(II)I
+      10: istore_3
+      11: iload_3
+      12: bipush        7
+      14: iand
+      15: istore        4
+      17: iload         4
+      19: tableswitch   { // 1 to 5
+                     1: 52
+                     2: 55
+                     3: 52
+                     4: 55
+                     5: 52
+               default: 55
+          }
+      52: iload         4
+      54: ireturn
+      55: iload_2
+      56: iconst_1
+      57: if_icmpne     64
+      60: iconst_5
+      61: goto          65
+      64: iconst_3
+      65: ireturn
+
+  private boolean shouldLayout(android.view.View);
+    Code:
+       0: aload_1
+       1: ifnull        25
+       4: aload_1
+       5: invokevirtual #327                // Method android/view/View.getParent:()Landroid/view/ViewParent;
+       8: aload_0
+       9: if_acmpne     25
+      12: aload_1
+      13: invokevirtual #328                // Method android/view/View.getVisibility:()I
+      16: bipush        8
+      18: if_icmpeq     25
+      21: iconst_1
+      22: goto          26
+      25: iconst_0
+      26: ireturn
+
+  private int getHorizontalMargins(android.view.View);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #250                // class android/view/ViewGroup$MarginLayoutParams
+       7: astore_2
+       8: aload_2
+       9: invokestatic  #329                // Method androidx/core/view/MarginLayoutParamsCompat.getMarginStart:(Landroid/view/ViewGroup$MarginLayoutParams;)I
+      12: aload_2
+      13: invokestatic  #330                // Method androidx/core/view/MarginLayoutParamsCompat.getMarginEnd:(Landroid/view/ViewGroup$MarginLayoutParams;)I
+      16: iadd
+      17: ireturn
+
+  private int getVerticalMargins(android.view.View);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+       4: checkcast     #250                // class android/view/ViewGroup$MarginLayoutParams
+       7: astore_2
+       8: aload_2
+       9: getfield      #259                // Field android/view/ViewGroup$MarginLayoutParams.topMargin:I
+      12: aload_2
+      13: getfield      #260                // Field android/view/ViewGroup$MarginLayoutParams.bottomMargin:I
+      16: iadd
+      17: ireturn
+
+  public androidx.appcompat.widget.Toolbar$LayoutParams generateLayoutParams(android.util.AttributeSet);
+    Code:
+       0: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       3: dup
+       4: aload_0
+       5: invokevirtual #25                 // Method getContext:()Landroid/content/Context;
+       8: aload_1
+       9: invokespecial #331                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(Landroid/content/Context;Landroid/util/AttributeSet;)V
+      12: areturn
+
+  protected androidx.appcompat.widget.Toolbar$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams);
+    Code:
+       0: aload_1
+       1: instanceof    #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       4: ifeq          19
+       7: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      10: dup
+      11: aload_1
+      12: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      15: invokespecial #332                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(Landroidx/appcompat/widget/Toolbar$LayoutParams;)V
+      18: areturn
+      19: aload_1
+      20: instanceof    #333                // class androidx/appcompat/app/ActionBar$LayoutParams
+      23: ifeq          38
+      26: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      29: dup
+      30: aload_1
+      31: checkcast     #333                // class androidx/appcompat/app/ActionBar$LayoutParams
+      34: invokespecial #334                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(Landroidx/appcompat/app/ActionBar$LayoutParams;)V
+      37: areturn
+      38: aload_1
+      39: instanceof    #250                // class android/view/ViewGroup$MarginLayoutParams
+      42: ifeq          57
+      45: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      48: dup
+      49: aload_1
+      50: checkcast     #250                // class android/view/ViewGroup$MarginLayoutParams
+      53: invokespecial #335                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(Landroid/view/ViewGroup$MarginLayoutParams;)V
+      56: areturn
+      57: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      60: dup
+      61: aload_1
+      62: invokespecial #336                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(Landroid/view/ViewGroup$LayoutParams;)V
+      65: areturn
+
+  protected androidx.appcompat.widget.Toolbar$LayoutParams generateDefaultLayoutParams();
+    Code:
+       0: new           #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+       3: dup
+       4: bipush        -2
+       6: bipush        -2
+       8: invokespecial #337                // Method androidx/appcompat/widget/Toolbar$LayoutParams."<init>":(II)V
+      11: areturn
+
+  protected boolean checkLayoutParams(android.view.ViewGroup$LayoutParams);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #338                // Method android/view/ViewGroup.checkLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)Z
+       5: ifeq          19
+       8: aload_1
+       9: instanceof    #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      12: ifeq          19
+      15: iconst_1
+      16: goto          20
+      19: iconst_0
+      20: ireturn
+
+  public androidx.appcompat.widget.DecorToolbar getWrapper();
+    Code:
+       0: aload_0
+       1: getfield      #339                // Field mWrapper:Landroidx/appcompat/widget/ToolbarWidgetWrapper;
+       4: ifnonnull     20
+       7: aload_0
+       8: new           #340                // class androidx/appcompat/widget/ToolbarWidgetWrapper
+      11: dup
+      12: aload_0
+      13: iconst_1
+      14: invokespecial #341                // Method androidx/appcompat/widget/ToolbarWidgetWrapper."<init>":(Landroidx/appcompat/widget/Toolbar;Z)V
+      17: putfield      #339                // Field mWrapper:Landroidx/appcompat/widget/ToolbarWidgetWrapper;
+      20: aload_0
+      21: getfield      #339                // Field mWrapper:Landroidx/appcompat/widget/ToolbarWidgetWrapper;
+      24: areturn
+
+  void removeChildrenForExpandedActionView();
+    Code:
+       0: aload_0
+       1: invokevirtual #271                // Method getChildCount:()I
+       4: istore_1
+       5: iload_1
+       6: iconst_1
+       7: isub
+       8: istore_2
+       9: iload_2
+      10: iflt          65
+      13: aload_0
+      14: iload_2
+      15: invokevirtual #272                // Method getChildAt:(I)Landroid/view/View;
+      18: astore_3
+      19: aload_3
+      20: invokevirtual #221                // Method android/view/View.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams;
+      23: checkcast     #217                // class androidx/appcompat/widget/Toolbar$LayoutParams
+      26: astore        4
+      28: aload         4
+      30: getfield      #218                // Field androidx/appcompat/widget/Toolbar$LayoutParams.mViewType:I
+      33: iconst_2
+      34: if_icmpeq     59
+      37: aload_3
+      38: aload_0
+      39: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      42: if_acmpeq     59
+      45: aload_0
+      46: iload_2
+      47: invokevirtual #342                // Method removeViewAt:(I)V
+      50: aload_0
+      51: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      54: aload_3
+      55: invokevirtual #226                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      58: pop
+      59: iinc          2, -1
+      62: goto          9
+      65: return
+
+  void addChildrenForExpandedActionView();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+       4: invokevirtual #312                // Method java/util/ArrayList.size:()I
+       7: istore_1
+       8: iload_1
+       9: iconst_1
+      10: isub
+      11: istore_2
+      12: iload_2
+      13: iflt          37
+      16: aload_0
+      17: aload_0
+      18: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      21: iload_2
+      22: invokevirtual #313                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      25: checkcast     #294                // class android/view/View
+      28: invokevirtual #343                // Method addView:(Landroid/view/View;)V
+      31: iinc          2, -1
+      34: goto          12
+      37: aload_0
+      38: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      41: invokevirtual #315                // Method java/util/ArrayList.clear:()V
+      44: return
+
+  private boolean isChildOrHidden(android.view.View);
+    Code:
+       0: aload_1
+       1: invokevirtual #327                // Method android/view/View.getParent:()Landroid/view/ViewParent;
+       4: aload_0
+       5: if_acmpeq     19
+       8: aload_0
+       9: getfield      #12                 // Field mHiddenViews:Ljava/util/ArrayList;
+      12: aload_1
+      13: invokevirtual #344                // Method java/util/ArrayList.contains:(Ljava/lang/Object;)Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  public void setCollapsible(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #270                // Field mCollapsible:Z
+       5: aload_0
+       6: invokevirtual #103                // Method requestLayout:()V
+       9: return
+
+  public void setMenuCallbacks(androidx.appcompat.view.menu.MenuPresenter$Callback, androidx.appcompat.view.menu.MenuBuilder$Callback);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #186                // Field mActionMenuPresenterCallback:Landroidx/appcompat/view/menu/MenuPresenter$Callback;
+       5: aload_0
+       6: aload_2
+       7: putfield      #345                // Field mMenuBuilderCallback:Landroidx/appcompat/view/menu/MenuBuilder$Callback;
+      10: aload_0
+      11: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      14: ifnull        26
+      17: aload_0
+      18: getfield      #110                // Field mMenuView:Landroidx/appcompat/widget/ActionMenuView;
+      21: aload_1
+      22: aload_2
+      23: invokevirtual #189                // Method androidx/appcompat/widget/ActionMenuView.setMenuCallbacks:(Landroidx/appcompat/view/menu/MenuPresenter$Callback;Landroidx/appcompat/view/menu/MenuBuilder$Callback;)V
+      26: return
+
+  private void ensureContentInsets();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+       4: ifnonnull     18
+       7: aload_0
+       8: new           #55                 // class androidx/appcompat/widget/RtlSpacingHelper
+      11: dup
+      12: invokespecial #346                // Method androidx/appcompat/widget/RtlSpacingHelper."<init>":()V
+      15: putfield      #61                 // Field mContentInsets:Landroidx/appcompat/widget/RtlSpacingHelper;
+      18: return
+
+  final android.widget.TextView getTitleTextView();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field mTitleTextView:Landroid/widget/TextView;
+       4: areturn
+
+  final android.widget.TextView getSubtitleTextView();
+    Code:
+       0: aload_0
+       1: getfield      #162                // Field mSubtitleTextView:Landroid/widget/TextView;
+       4: areturn
+
+  androidx.appcompat.widget.ActionMenuPresenter getOuterActionMenuPresenter();
+    Code:
+       0: aload_0
+       1: getfield      #118                // Field mOuterActionMenuPresenter:Landroidx/appcompat/widget/ActionMenuPresenter;
+       4: areturn
+
+  android.content.Context getPopupContext();
+    Code:
+       0: aload_0
+       1: getfield      #79                 // Field mPopupContext:Landroid/content/Context;
+       4: areturn
+
+  private java.util.ArrayList<android.view.MenuItem> getCurrentMenuItems();
+    Code:
+       0: new           #9                  // class java/util/ArrayList
+       3: dup
+       4: invokespecial #10                 // Method java/util/ArrayList."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokevirtual #197                // Method getMenu:()Landroid/view/Menu;
+      12: astore_2
+      13: iconst_0
+      14: istore_3
+      15: iload_3
+      16: aload_2
+      17: invokeinterface #347,  1          // InterfaceMethod android/view/Menu.size:()I
+      22: if_icmpge     43
+      25: aload_1
+      26: aload_2
+      27: iload_3
+      28: invokeinterface #348,  2          // InterfaceMethod android/view/Menu.getItem:(I)Landroid/view/MenuItem;
+      33: invokevirtual #226                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      36: pop
+      37: iinc          3, 1
+      40: goto          15
+      43: aload_1
+      44: areturn
+
+  private void onCreateMenu();
+    Code:
+       0: aload_0
+       1: invokevirtual #197                // Method getMenu:()Landroid/view/Menu;
+       4: astore_1
+       5: aload_0
+       6: invokespecial #349                // Method getCurrentMenuItems:()Ljava/util/ArrayList;
+       9: astore_2
+      10: aload_0
+      11: getfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+      14: aload_1
+      15: aload_0
+      16: invokespecial #196                // Method getMenuInflater:()Landroid/view/MenuInflater;
+      19: invokevirtual #350                // Method androidx/core/view/MenuHostHelper.onCreateMenu:(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+      22: aload_0
+      23: invokespecial #349                // Method getCurrentMenuItems:()Ljava/util/ArrayList;
+      26: astore_3
+      27: aload_3
+      28: aload_2
+      29: invokevirtual #351                // Method java/util/ArrayList.removeAll:(Ljava/util/Collection;)Z
+      32: pop
+      33: aload_0
+      34: aload_3
+      35: putfield      #18                 // Field mProvidedMenuItems:Ljava/util/ArrayList;
+      38: return
+
+  public void addMenuProvider(androidx.core.view.MenuProvider);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+       4: aload_1
+       5: invokevirtual #352                // Method androidx/core/view/MenuHostHelper.addMenuProvider:(Landroidx/core/view/MenuProvider;)V
+       8: return
+
+  public void addMenuProvider(androidx.core.view.MenuProvider, androidx.lifecycle.LifecycleOwner);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+       4: aload_1
+       5: aload_2
+       6: invokevirtual #353                // Method androidx/core/view/MenuHostHelper.addMenuProvider:(Landroidx/core/view/MenuProvider;Landroidx/lifecycle/LifecycleOwner;)V
+       9: return
+
+  public void addMenuProvider(androidx.core.view.MenuProvider, androidx.lifecycle.LifecycleOwner, androidx.lifecycle.Lifecycle$State);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+       4: aload_1
+       5: aload_2
+       6: aload_3
+       7: invokevirtual #354                // Method androidx/core/view/MenuHostHelper.addMenuProvider:(Landroidx/core/view/MenuProvider;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$State;)V
+      10: return
+
+  public void removeMenuProvider(androidx.core.view.MenuProvider);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field mMenuHostHelper:Landroidx/core/view/MenuHostHelper;
+       4: aload_1
+       5: invokevirtual #355                // Method androidx/core/view/MenuHostHelper.removeMenuProvider:(Landroidx/core/view/MenuProvider;)V
+       8: return
+
+  public void invalidateMenu();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mProvidedMenuItems:Ljava/util/ArrayList;
+       4: invokevirtual #356                // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+       7: astore_1
+       8: aload_1
+       9: invokeinterface #357,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      14: ifeq          45
+      17: aload_1
+      18: invokeinterface #358,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      23: checkcast     #359                // class android/view/MenuItem
+      26: astore_2
+      27: aload_0
+      28: invokevirtual #197                // Method getMenu:()Landroid/view/Menu;
+      31: aload_2
+      32: invokeinterface #360,  1          // InterfaceMethod android/view/MenuItem.getItemId:()I
+      37: invokeinterface #361,  2          // InterfaceMethod android/view/Menu.removeItem:(I)V
+      42: goto          8
+      45: aload_0
+      46: invokespecial #362                // Method onCreateMenu:()V
+      49: return
+
+  void updateBackInvokedCallbackState();
+    Code:
+       0: getstatic     #104                // Field android/os/Build$VERSION.SDK_INT:I
+       3: bipush        33
+       5: if_icmplt     118
+       8: aload_0
+       9: invokestatic  #363                // Method androidx/appcompat/widget/Toolbar$Api33Impl.findOnBackInvokedDispatcher:(Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;
+      12: astore_1
+      13: aload_0
+      14: invokevirtual #364                // Method hasExpandedActionView:()Z
+      17: ifeq          42
+      20: aload_1
+      21: ifnull        42
+      24: aload_0
+      25: invokestatic  #365                // Method androidx/core/view/ViewCompat.isAttachedToWindow:(Landroid/view/View;)Z
+      28: ifeq          42
+      31: aload_0
+      32: getfield      #98                 // Field mBackInvokedCallbackEnabled:Z
+      35: ifeq          42
+      38: iconst_1
+      39: goto          43
+      42: iconst_0
+      43: istore_2
+      44: iload_2
+      45: ifeq          91
+      48: aload_0
+      49: getfield      #366                // Field mBackInvokedDispatcher:Landroid/window/OnBackInvokedDispatcher;
+      52: ifnonnull     91
+      55: aload_0
+      56: getfield      #367                // Field mBackInvokedCallback:Landroid/window/OnBackInvokedCallback;
+      59: ifnonnull     75
+      62: aload_0
+      63: aload_0
+      64: invokedynamic #368,  0            // InvokeDynamic #1:run:(Landroidx/appcompat/widget/Toolbar;)Ljava/lang/Runnable;
+      69: invokestatic  #369                // Method androidx/appcompat/widget/Toolbar$Api33Impl.newOnBackInvokedCallback:(Ljava/lang/Runnable;)Landroid/window/OnBackInvokedCallback;
+      72: putfield      #367                // Field mBackInvokedCallback:Landroid/window/OnBackInvokedCallback;
+      75: aload_1
+      76: aload_0
+      77: getfield      #367                // Field mBackInvokedCallback:Landroid/window/OnBackInvokedCallback;
+      80: invokestatic  #370                // Method androidx/appcompat/widget/Toolbar$Api33Impl.tryRegisterOnBackInvokedCallback:(Ljava/lang/Object;Ljava/lang/Object;)V
+      83: aload_0
+      84: aload_1
+      85: putfield      #366                // Field mBackInvokedDispatcher:Landroid/window/OnBackInvokedDispatcher;
+      88: goto          118
+      91: iload_2
+      92: ifne          118
+      95: aload_0
+      96: getfield      #366                // Field mBackInvokedDispatcher:Landroid/window/OnBackInvokedDispatcher;
+      99: ifnull        118
+     102: aload_0
+     103: getfield      #366                // Field mBackInvokedDispatcher:Landroid/window/OnBackInvokedDispatcher;
+     106: aload_0
+     107: getfield      #367                // Field mBackInvokedCallback:Landroid/window/OnBackInvokedCallback;
+     110: invokestatic  #371                // Method androidx/appcompat/widget/Toolbar$Api33Impl.tryUnregisterOnBackInvokedCallback:(Ljava/lang/Object;Ljava/lang/Object;)V
+     113: aload_0
+     114: aconst_null
+     115: putfield      #366                // Field mBackInvokedDispatcher:Landroid/window/OnBackInvokedDispatcher;
+     118: return
+
+  protected android.view.ViewGroup$LayoutParams generateDefaultLayoutParams();
+    Code:
+       0: aload_0
+       1: invokevirtual #190                // Method generateDefaultLayoutParams:()Landroidx/appcompat/widget/Toolbar$LayoutParams;
+       4: areturn
+
+  protected android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #223                // Method generateLayoutParams:(Landroid/view/ViewGroup$LayoutParams;)Landroidx/appcompat/widget/Toolbar$LayoutParams;
+       5: areturn
+
+  public android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #372                // Method generateLayoutParams:(Landroid/util/AttributeSet;)Landroidx/appcompat/widget/Toolbar$LayoutParams;
+       5: areturn
+}

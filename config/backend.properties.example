@@ -1,0 +1,8 @@
+# Planning template for M3/M4. NOT consumed by the M1 Android app.
+# Values may identify a public endpoint/project; never put private server keys here.
+# Empty values mean services are unavailable, not a demo connection.
+ai.baseUrl=
+multiplayer.baseUrl=
+firebase.projectId=
+# AI/provider keys, service accounts, admin credentials and signing passwords
+# belong in server secret storage or private signing files, never in the APK.

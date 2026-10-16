@@ -1,0 +1,3 @@
+PASS: Saved-theme implementation, day/night colors/themes, shared styles and QuizPK brand vectors match the pre-M2 source checkpoint byte-for-byte.
+PASS: All 19 starter reference PNGs match the checkpoint byte-for-byte.
+The MainActivity zero-drawable P0 correction is retained and covered by StartupTest.

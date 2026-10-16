@@ -1,0 +1,8 @@
+test_file_failure_after_commit_never_reenables_exposed_token (test_m42_rotation.RotationTests.test_file_failure_after_commit_never_reenables_exposed_token) ... ok
+test_live_data_drift_refuses_rotation (test_m42_rotation.RotationTests.test_live_data_drift_refuses_rotation) ... ok
+test_rotation_preserves_identity_other_users_and_jobs (test_m42_rotation.RotationTests.test_rotation_preserves_identity_other_users_and_jobs) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.808s
+
+OK

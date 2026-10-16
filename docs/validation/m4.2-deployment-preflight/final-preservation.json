@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "backupFilesVerified": true,
+    "liveSourceAndCredentialsUnchanged": true,
+    "privateBackupPermissions": true,
+    "allFourReviewCheckpointsUnchanged": true,
+    "approvedBackendAndProtocolUnchanged": true,
+    "androidAndBuildSourcesUnchanged": true,
+    "m3ApkUnchanged": true,
+    "m42ApkUnchanged": true,
+    "allImmutablePreviousPrivateFilesUnchanged": true,
+    "allOriginalSavedJobsPreserved": true,
+    "bothOriginalIdentitiesPreserved": true,
+    "liveStillM3Schema": true,
+    "liveM3UserVersionUnchanged": true,
+    "latestSnapshotJobsPreserved": true,
+    "noActualCredentialsOrTokenHashesInPublicFiles": true,
+    "frozenHelpersAndReviewDocsEqualWorkspace": true,
+    "frozenOperationsHashesVerified": true,
+    "noWorkspaceDatabase": true,
+    "livePublicHttpsHealth200": true
+  },
+  "observations": {
+    "liveDurableBytesEqualLatestSnapshotBaseline": true,
+    "initialJobCount": 3,
+    "latestBackupJobCount": 4,
+    "currentLiveJobCount": 4,
+    "normalLiveJobActivityObserved": true
+  },
+  "counts": {
+    "backendAndProtocolFiles": 16,
+    "androidAndBuildFiles": 129,
+    "immutablePreviousPrivateFiles": 20,
+    "publicFilesScanned": 357
+  },
+  "allPassed": true,
+  "liveMigrationPerformed": false,
+  "liveRestartPerformed": false,
+  "androidModified": false,
+  "rehearsalProviderCalls": 0
+}

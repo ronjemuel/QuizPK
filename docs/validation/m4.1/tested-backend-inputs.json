@@ -1,0 +1,23 @@
+{
+  "backend/src/check-config.mjs": "589e4939c2e492200f458a93fc5ba6111ca9ab212a229ac8fd91b1a8f2cfb1a9",
+  "backend/src/check-room-db.mjs": "770c394832dfd8a83ba00057cceaec687416a8d28d945d94ed80e0eb9c5dd3ce",
+  "backend/src/config.mjs": "94f01acaba65ff3b42ae63f03fdba2863b8d13208285459cc21e43a59f5dce5e",
+  "backend/src/contract.mjs": "15cdbb35f54007813c031b712e5d9b21ec97f26546d5de0d0c0df3d4b5a00eae",
+  "backend/src/create-user.mjs": "08631ccf714ee02ffa36ce9e3530070191318bb565a04c8ce76faf944f72d20d",
+  "backend/src/gemini.mjs": "2666259bcdbe6c34b393bcdfdc484380910b43d5489e31862bde47146c7cdb78",
+  "backend/src/multiplayer/http.mjs": "7b75f0cb0046ad069a80f8594488d69738256212b14ae50d1e7cae71153f9d25",
+  "backend/src/multiplayer/migrations.mjs": "d28530e024e9170935aef87feead5c54cb610a1676d2d8537a4d61612f95d7e8",
+  "backend/src/multiplayer/protocol.mjs": "1de2052fc0d6d4fa6b3b382f1b7f61c058d3509d908921ef3adc5ad188457046",
+  "backend/src/multiplayer/rooms.mjs": "ccd5f0c613c44ae0a1a4caa5cc5daa29a972f5caec7511491fb01c6dadeb7c57",
+  "backend/src/revoke-user.mjs": "0d379e92395cd96482cdd3da5786aae70c14573869277b49ee3451658ea2dca7",
+  "backend/src/server.mjs": "b7a62d74debd25e69108cb1eb59901f77ff3d370bba44a6fe7dfd9fc93f1b7b2",
+  "backend/src/smoke.mjs": "c59b5a6e8aad166ca0c55bbf428d0e26bd132a71597f2d7ed0c1ed0b980a09d1",
+  "backend/src/store.mjs": "a2cacf1ce7d2258a34ed613aab58cbaa42da0c775bbd41d273b34b602066fa66",
+  "backend/test/api.test.mjs": "67434541d6f3625c5c6c5a160ade0f34bd4afccbc94c50bd782a87c4d4708b4d",
+  "backend/test/persistence.test.mjs": "c39173ab471628ae61a1ed8b34b903dbaf1540044e47bed91c8c5650700b64b9",
+  "backend/test/protocol-reference.mjs": "3f2ec7c37e0769348d4c7f4df88331653168057daa20b55934677bf0e684490b",
+  "backend/test/protocol.test.mjs": "a0affbd513275db7b34119455248bacc43c3eb0572f7719451ce33e267fa84b2",
+  "backend/test/rooms.test.mjs": "48e5ecbadbc21e645df7b9f0e68100a725adc26c43d69b8532deae27437273bb",
+  "backend/package.json": "f35d32dfe8ac5ad1ff7bed5ec077cee20ef5259d45aca46000fd9b3833c2b37d",
+  "protocol/multiplayer-v1.json": "2f0a722fd12aa66cb4fc0e42be9b60ee5b4048bd2aef58bef792e7b7a4a07d86"
+}

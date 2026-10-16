@@ -1,0 +1,1875 @@
+{
+    "$schema" : "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+    "version" : "2.1.0",
+    "runs" : [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Android Lint",
+                    "fullName": "Android Lint (in gradle)",
+                    "version": "9.3.1",
+                    "semanticVersion": "9.3.1",
+                    "organization": "Google",
+                    "informationUri": "https://developer.android.com/studio/write/lint",
+                    "fullDescription": {
+                        "text": "Static analysis originally for Android source code but now performing general analysis"
+                    },
+                    "language": "en-US",
+                    "rules": [
+                        {
+                            "id": "AlwaysShowAction",
+                            "shortDescription": {
+                                "text": "Usage of showAsAction=always",
+                                "markdown": "Usage of `showAsAction=always`"
+                            },
+                            "fullDescription": {
+                                "text": "Using showAsAction=\"always\" in menu XML, or MenuItem.SHOW_AS_ACTION_ALWAYS in Java code is usually a deviation from the user interface style guide.Use ifRoom or the corresponding MenuItem.SHOW_AS_ACTION_IF_ROOM instead.\n\nIf always is used sparingly there are usually no problems and behavior is roughly equivalent to ifRoom but with preference over other ifRoom items. Using it more than twice in the same menu is a bad idea.\n\nThis check looks for menu XML files that contain more than two always actions, or some always actions and no ifRoom actions. In Java code, it looks for projects that contain references to MenuItem.SHOW_AS_ACTION_ALWAYS and no references to MenuItem.SHOW_AS_ACTION_IF_ROOM.",
+                                "markdown": "Using `showAsAction=\"always\"` in menu XML, or `MenuItem.SHOW_AS_ACTION_ALWAYS` in Java code is usually a deviation from the user interface style guide.Use `ifRoom` or the corresponding `MenuItem.SHOW_AS_ACTION_IF_ROOM` instead.\n\nIf `always` is used sparingly there are usually no problems and behavior is roughly equivalent to `ifRoom` but with preference over other `ifRoom` items. Using it more than twice in the same menu is a bad idea.\n\nThis check looks for menu XML files that contain more than two `always` actions, or some `always` actions and no `ifRoom` actions. In Java code, it looks for projects that contain references to `MenuItem.SHOW_AS_ACTION_ALWAYS` and no references to `MenuItem.SHOW_AS_ACTION_IF_ROOM`."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GradleDependency",
+                            "shortDescription": {
+                                "text": "Obsolete Gradle Dependency"
+                            },
+                            "fullDescription": {
+                                "text": "This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IconDipSize",
+                            "shortDescription": {
+                                "text": "Icon density-independent size validation"
+                            },
+                            "fullDescription": {
+                                "text": "Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (dip) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.",
+                                "markdown": "Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (`dip`) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Icons",
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IconDuplicatesConfig",
+                            "shortDescription": {
+                                "text": "Identical bitmaps across various configurations"
+                            },
+                            "fullDescription": {
+                                "text": "If an icon is provided under different configuration parameters such as drawable-hdpi or -v11, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional.",
+                                "markdown": "If an icon is provided under different configuration parameters such as `drawable-hdpi` or `-v11`, they should typically be different. This detector catches cases where the same icon is provided in different configuration folder which is usually not intentional."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Icons",
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IconLocation",
+                            "shortDescription": {
+                                "text": "Image defined in density-independent drawable folder"
+                            },
+                            "fullDescription": {
+                                "text": "The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to drawable-mdpi and consider providing higher and lower resolution versions in drawable-ldpi, drawable-hdpi and drawable-xhdpi. If the icon really is density independent (for example a solid color) you can place it in drawable-nodpi.",
+                                "markdown": "The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 60
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Icons",
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MonochromeLauncherIcon",
+                            "shortDescription": {
+                                "text": "Monochrome icon is not defined"
+                            },
+                            "fullDescription": {
+                                "text": "The system may use the coloring of the user's chosen wallpaper and theme to tint app icons. Providing a <monochrome> layer (which will be used for tinting) for every adaptive icon is strongly recommended, otherwise Android 16 QPR 2 and above will simply tint the color version of the icon, which may look unusual. Devices running earlier Android versions will (with no monochrome layer) show the untinted color icon for your app, which will look inconsistent.",
+                                "markdown": "The system may use the coloring of the user's chosen wallpaper and theme to tint app icons. Providing a `<monochrome>` layer (which will be used for tinting) for every adaptive icon is strongly recommended, otherwise Android 16 QPR 2 and above will simply tint the color version of the icon, which may look unusual. Devices running earlier Android versions will (with no monochrome layer) show the untinted color icon for your app, which will look inconsistent."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Icons",
+                                    "Usability"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NotShrinkingResources",
+                            "shortDescription": {
+                                "text": "Use resource shrinking to optimize your resources"
+                            },
+                            "fullDescription": {
+                                "text": "When minification / dex optimization is enabled, you should also enable resource shrinking, since it enables considerable download and storage savings, and optimizes your app's resource table."
+                            },
+                            "defaultConfiguration": {
+                                "level": "error",
+                                "rank": 90
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ObsoleteSdkInt",
+                            "shortDescription": {
+                                "text": "Obsolete SDK_INT Version Check"
+                            },
+                            "fullDescription": {
+                                "text": "This check flags version checks that are not necessary, because the minSdkVersion (or surrounding known API level) is already at least as high as the version checked for.\n\nSimilarly, it also looks for resources in -vNN folders, such as values-v14 where the version qualifier is less than or equal to the minSdkVersion, where the contents should be merged into the best folder.",
+                                "markdown": "This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.\n\nSimilarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OldTargetApi",
+                            "shortDescription": {
+                                "text": "Target SDK attribute is not targeting latest version"
+                            },
+                            "fullDescription": {
+                                "text": "When your application or sdk runs on a version of Android that is more recent than your targetSdk specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the targetSdk is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the targetSdk to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html",
+                                "markdown": "When your application or sdk runs on a version of Android that is more recent than your `targetSdk` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdk` is less than 14, your app may get an option button in the UI.\n\nTo fix this issue, set the `targetSdk` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: https://developer.android.com/reference/android/os/Build.VERSION_CODES.html as well as follow this guide:\nhttps://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 50
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Correctness"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Overdraw",
+                            "shortDescription": {
+                                "text": "Overdraw: Painting regions more than once"
+                            },
+                            "fullDescription": {
+                                "text": "If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called \"overdraw\".\n\nNOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.\n\nIf you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.\n\nOf course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UnusedResources",
+                            "shortDescription": {
+                                "text": "Unused resources"
+                            },
+                            "fullDescription": {
+                                "text": "Unused resources make applications larger and slow down builds.\n\n\nThe unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.\n\nYou can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests=true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests=true.\n",
+                                "markdown": "Unused resources make applications larger and slow down builds.\n\n\nThe unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.\n\nYou can include test sources in the unused resource check by setting the system property `lint.unused-resources.include-tests=true`, and to exclude them (usually for performance reasons), use `lint.unused-resources.exclude-tests=true`.\n"
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 80
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UselessParent",
+                            "shortDescription": {
+                                "text": "Unnecessary parent layout"
+                            },
+                            "fullDescription": {
+                                "text": "A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 90
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Performance"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UseTomlInstead",
+                            "shortDescription": {
+                                "text": "Use TOML Version Catalog Instead"
+                            },
+                            "fullDescription": {
+                                "text": "If your project is using a libs.versions.toml file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically).",
+                                "markdown": "If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+                            },
+                            "defaultConfiguration": {
+                                "level": "warning",
+                                "rank": 70
+                            },
+                            "properties": {
+                                "tags": [
+                                    "Productivity"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            "originalUriBaseIds": {
+                "%SRCROOT%": {
+                    "uri": "file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/"
+                }
+            },
+            "results": [
+                {
+                    "ruleId": "OldTargetApi",
+                    "ruleIndex": 8,
+                    "message": {
+                        "text": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.",
+                        "markdown": "Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 51,
+                                    "startColumn": 9,
+                                    "endLine": 51,
+                                    "endColumn": 23,
+                                    "charOffset": 1279,
+                                    "charLength": 14,
+                                    "snippet": {
+                                        "text": "targetSdk = 36"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 49,
+                                    "endLine": 54,
+                                    "snippet": {
+                                        "text": "        applicationId = \"com.zeke.quizpk\"\n        minSdk = 24 \n        targetSdk = 36  \n        versionCode = 2\n        versionName = \"1.1-M2\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Update targetSdkVersion to 37"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 51,
+                                                "startColumn": 21,
+                                                "charOffset": 1291,
+                                                "endLine": 51,
+                                                "endColumn": 23,
+                                                "charLength": 2
+                                            },
+                                            "insertedContent": {
+                                                "text": "37\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "609c93e07614b43a"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "A newer version of compileSdk than 36 is available: 37",
+                        "markdown": "A newer version of `compileSdk` than 36 is available: 37"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 30,
+                                    "startColumn": 5,
+                                    "endLine": 30,
+                                    "endColumn": 20,
+                                    "charOffset": 675,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "compileSdk = 36"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 28,
+                                    "endLine": 33,
+                                    "snippet": {
+                                        "text": "android {\n    namespace = \"com.zeke.quizpk\"\n    compileSdk = 36 \n    \n    // disable linter\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Set compileSdk to 37"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 30,
+                                                "startColumn": 18,
+                                                "charOffset": 688,
+                                                "endLine": 30,
+                                                "endColumn": 20,
+                                                "charLength": 2
+                                            },
+                                            "insertedContent": {
+                                                "text": "37\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "f037578b9a8206de"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "A newer version of com.google.android.material:material than 1.9.0 is available: 1.10.0"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/libs.versions.toml"
+                                },
+                                "region": {
+                                    "startLine": 6,
+                                    "startColumn": 12,
+                                    "endLine": 6,
+                                    "endColumn": 19,
+                                    "charOffset": 101,
+                                    "charLength": 7,
+                                    "snippet": {
+                                        "text": "\"1.9.0\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 4,
+                                    "endLine": 9,
+                                    "snippet": {
+                                        "text": "appcompat = \"1.6.1\"\nconstraintlayout = \"2.1.4\"\nmaterial = \"1.9.0\"\nstartupRuntime = \"1.1.1\"\ninterpolator = \"1.0.0\"\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.10.0"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 6,
+                                                "startColumn": 13,
+                                                "charOffset": 102,
+                                                "endLine": 6,
+                                                "endColumn": 18,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.10.0\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "716ed6f0200b8e98"
+                    }
+                },
+                {
+                    "ruleId": "GradleDependency",
+                    "ruleIndex": 1,
+                    "message": {
+                        "text": "A newer version of androidx.startup:startup-runtime than 1.1.1 is available: 1.2.0"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "gradle/libs.versions.toml"
+                                },
+                                "region": {
+                                    "startLine": 7,
+                                    "startColumn": 18,
+                                    "endLine": 7,
+                                    "endColumn": 25,
+                                    "charOffset": 126,
+                                    "charLength": 7,
+                                    "snippet": {
+                                        "text": "\"1.1.1\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 5,
+                                    "endLine": 10,
+                                    "snippet": {
+                                        "text": "constraintlayout = \"2.1.4\"\nmaterial = \"1.9.0\"\nstartupRuntime = \"1.1.1\"\ninterpolator = \"1.0.0\"\n\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Change to 1.2.0"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 7,
+                                                "startColumn": 19,
+                                                "charOffset": 127,
+                                                "endLine": 7,
+                                                "endColumn": 24,
+                                                "charLength": 5
+                                            },
+                                            "insertedContent": {
+                                                "text": "1.2.0\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "f659aee1e9f23bd1"
+                    }
+                },
+                {
+                    "ruleId": "ObsoleteSdkInt",
+                    "ruleIndex": 7,
+                    "message": {
+                        "text": "This folder configuration (v24) is unnecessary; minSdkVersion is 24. Merge all the resources in this folder into drawable.",
+                        "markdown": "This folder configuration (`v24`) is unnecessary; `minSdkVersion` is 24. Merge all the resources in this folder into `drawable`."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable-v24"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 9,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/AppTheme)",
+                        "markdown": "Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_main.xml"
+                                },
+                                "region": {
+                                    "startLine": 2,
+                                    "startColumn": 257,
+                                    "endLine": 2,
+                                    "endColumn": 295,
+                                    "charOffset": 295,
+                                    "charLength": 38,
+                                    "snippet": {
+                                        "text": "android:background=\"@color/background\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 5,
+                                    "snippet": {
+                                        "text": "<?xml version='1.0' encoding='utf-8'?>\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:id=\"@+id/app_root\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:background=\"@color/background\">\n    <com.google.android.material.appbar.MaterialToolbar android:id=\"@+id/toolbar\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"56dp\" android:background=\"@color/background\" app:title=\"@string/app_name\" app:titleTextColor=\"@color/text_primary\" app:logo=\"@drawable/ic_quizpk\" />\n    <androidx.fragment.app.FragmentContainerView android:id=\"@+id/screen_container\" android:layout_width=\"match_parent\" android:layout_height=\"0dp\" android:layout_weight=\"1\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "971327b4ea3d456d"
+                    }
+                },
+                {
+                    "ruleId": "Overdraw",
+                    "ruleIndex": 9,
+                    "message": {
+                        "text": "Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/AppTheme)",
+                        "markdown": "Possible overdraw: Root element paints background `@color/background` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/activity_offline.xml"
+                                },
+                                "region": {
+                                    "startLine": 2,
+                                    "startColumn": 261,
+                                    "endLine": 2,
+                                    "endColumn": 299,
+                                    "charOffset": 299,
+                                    "charLength": 38,
+                                    "snippet": {
+                                        "text": "android:background=\"@color/background\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 5,
+                                    "snippet": {
+                                        "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\" xmlns:app=\"http://schemas.android.com/apk/res-auto\" android:id=\"@+id/offline_root\" android:layout_width=\"match_parent\" android:layout_height=\"match_parent\" android:orientation=\"vertical\" android:background=\"@color/background\">\n<com.google.android.material.appbar.MaterialToolbar android:id=\"@+id/offline_toolbar\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"56dp\" app:title=\"@string/offline_quiz\" app:titleTextColor=\"@color/text_primary\" app:navigationIcon=\"@drawable/ic_back\" android:background=\"@color/background\" app:navigationContentDescription=\"@string/back\" />\n<androidx.fragment.app.FragmentContainerView android:id=\"@+id/offline_container\" android:layout_width=\"match_parent\" android:layout_height=\"0dp\" android:layout_weight=\"1\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "5e2500a28622392c"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.xml.backup_rules appears to be unused",
+                        "markdown": "The resource `R.xml.backup_rules` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/xml/backup_rules.xml"
+                                },
+                                "region": {
+                                    "startLine": 8,
+                                    "startColumn": 1,
+                                    "endLine": 13,
+                                    "endColumn": 23,
+                                    "charOffset": 326,
+                                    "charLength": 150,
+                                    "snippet": {
+                                        "text": "<full-backup-content>\n  <!--\n   <include domain=\"sharedpref\" path=\".\"/>\n   <exclude domain=\"sharedpref\" path=\"device.xml\"/>\n-->\n</full-backup-content>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 6,
+                                    "endLine": 13,
+                                    "snippet": {
+                                        "text": "   See https://developer.android.com/about/versions/12/backup-restore\n-->\n<full-backup-content>\n  <!--\n   <include domain=\"sharedpref\" path=\".\"/>\n   <exclude domain=\"sharedpref\" path=\"device.xml\"/>\n-->\n</full-backup-content>"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "a30e06d7306560e9"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.color.gold appears to be unused",
+                        "markdown": "The resource `R.color.gold` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/colors.xml"
+                                },
+                                "region": {
+                                    "startLine": 12,
+                                    "startColumn": 12,
+                                    "endLine": 12,
+                                    "endColumn": 23,
+                                    "charOffset": 480,
+                                    "charLength": 11,
+                                    "snippet": {
+                                        "text": "name=\"gold\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 10,
+                                    "endLine": 15,
+                                    "snippet": {
+                                        "text": "    <color name=\"outline\">#DDE0EB</color>\n    <color name=\"icon_secondary\">#A693E5</color>\n    <color name=\"gold\">#86601B</color>\n    <color name=\"success\">#187451</color>\n    <color name=\"error\">#B32638</color>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "b871b57bd86e5714"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.color.warning appears to be unused",
+                        "markdown": "The resource `R.color.warning` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/colors.xml"
+                                },
+                                "region": {
+                                    "startLine": 15,
+                                    "startColumn": 12,
+                                    "endLine": 15,
+                                    "endColumn": 26,
+                                    "charOffset": 601,
+                                    "charLength": 14,
+                                    "snippet": {
+                                        "text": "name=\"warning\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 13,
+                                    "endLine": 17,
+                                    "snippet": {
+                                        "text": "    <color name=\"success\">#187451</color>\n    <color name=\"error\">#B32638</color>\n    <color name=\"warning\">#805E18</color>\n</resources>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "10189f861dba3a88"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.xml.data_extraction_rules appears to be unused",
+                        "markdown": "The resource `R.xml.data_extraction_rules` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/xml/data_extraction_rules.xml"
+                                },
+                                "region": {
+                                    "startLine": 6,
+                                    "startColumn": 1,
+                                    "endLine": 19,
+                                    "endColumn": 25,
+                                    "charOffset": 221,
+                                    "charLength": 320,
+                                    "snippet": {
+                                        "text": "<data-extraction-rules>\n  <cloud-backup>\n    <!-- TODO: Use <include> and <exclude> to control what is backed up.\n        <include .../>\n        <exclude .../>\n        -->\n  </cloud-backup>\n  <!--\n    <device-transfer>\n        <include .../>\n        <exclude .../>\n    </device-transfer>\n    -->\n</data-extraction-rules>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 4,
+                                    "endLine": 19,
+                                    "snippet": {
+                                        "text": "   for details.\n-->\n<data-extraction-rules>\n  <cloud-backup>\n    <!-- TODO: Use <include> and <exclude> to control what is backed up.\n        <include .../>\n        <exclude .../>\n        -->\n  </cloud-backup>\n  <!--\n    <device-transfer>\n        <include .../>\n        <exclude .../>\n    </device-transfer>\n    -->\n</data-extraction-rules>"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "2af62e9fe88aa69d"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.dimen.space_xs appears to be unused",
+                        "markdown": "The resource `R.dimen.space_xs` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/dimens.xml"
+                                },
+                                "region": {
+                                    "startLine": 2,
+                                    "startColumn": 12,
+                                    "endLine": 2,
+                                    "endColumn": 27,
+                                    "charOffset": 23,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "name=\"space_xs\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 5,
+                                    "snippet": {
+                                        "text": "<resources>\n    <dimen name=\"space_xs\">4dp</dimen>\n    <dimen name=\"space_sm\">8dp</dimen>\n    <dimen name=\"space_md\">16dp</dimen>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "c62b2e6218a39e2e"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.dimen.space_sm appears to be unused",
+                        "markdown": "The resource `R.dimen.space_sm` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/dimens.xml"
+                                },
+                                "region": {
+                                    "startLine": 3,
+                                    "startColumn": 12,
+                                    "endLine": 3,
+                                    "endColumn": 27,
+                                    "charOffset": 62,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "name=\"space_sm\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 6,
+                                    "snippet": {
+                                        "text": "<resources>\n    <dimen name=\"space_xs\">4dp</dimen>\n    <dimen name=\"space_sm\">8dp</dimen>\n    <dimen name=\"space_md\">16dp</dimen>\n    <dimen name=\"space_lg\">24dp</dimen>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "09ae8c1f67bbffe9"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.dimen.space_md appears to be unused",
+                        "markdown": "The resource `R.dimen.space_md` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/dimens.xml"
+                                },
+                                "region": {
+                                    "startLine": 4,
+                                    "startColumn": 12,
+                                    "endLine": 4,
+                                    "endColumn": 27,
+                                    "charOffset": 101,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "name=\"space_md\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 2,
+                                    "endLine": 7,
+                                    "snippet": {
+                                        "text": "    <dimen name=\"space_xs\">4dp</dimen>\n    <dimen name=\"space_sm\">8dp</dimen>\n    <dimen name=\"space_md\">16dp</dimen>\n    <dimen name=\"space_lg\">24dp</dimen>\n    <dimen name=\"space_xl\">32dp</dimen>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "74685c8211a2b301"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.dimen.space_lg appears to be unused",
+                        "markdown": "The resource `R.dimen.space_lg` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/dimens.xml"
+                                },
+                                "region": {
+                                    "startLine": 5,
+                                    "startColumn": 12,
+                                    "endLine": 5,
+                                    "endColumn": 27,
+                                    "charOffset": 141,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "name=\"space_lg\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 3,
+                                    "endLine": 8,
+                                    "snippet": {
+                                        "text": "    <dimen name=\"space_sm\">8dp</dimen>\n    <dimen name=\"space_md\">16dp</dimen>\n    <dimen name=\"space_lg\">24dp</dimen>\n    <dimen name=\"space_xl\">32dp</dimen>\n    <dimen name=\"screen_padding\">16dp</dimen>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "b88e309dccac8978"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.dimen.space_xl appears to be unused",
+                        "markdown": "The resource `R.dimen.space_xl` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/dimens.xml"
+                                },
+                                "region": {
+                                    "startLine": 6,
+                                    "startColumn": 12,
+                                    "endLine": 6,
+                                    "endColumn": 27,
+                                    "charOffset": 181,
+                                    "charLength": 15,
+                                    "snippet": {
+                                        "text": "name=\"space_xl\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 4,
+                                    "endLine": 9,
+                                    "snippet": {
+                                        "text": "    <dimen name=\"space_md\">16dp</dimen>\n    <dimen name=\"space_lg\">24dp</dimen>\n    <dimen name=\"space_xl\">32dp</dimen>\n    <dimen name=\"screen_padding\">16dp</dimen>\n    <dimen name=\"card_radius\">16dp</dimen>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "e10d12087e39187e"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.drawable.ic_launcher_background appears to be unused",
+                        "markdown": "The resource `R.drawable.ic_launcher_background` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/ic_launcher_background.xml"
+                                },
+                                "region": {
+                                    "startLine": 2,
+                                    "startColumn": 1,
+                                    "endLine": 170,
+                                    "endColumn": 10,
+                                    "charOffset": 39,
+                                    "charLength": 5566,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    <path\n        android:fillColor=\"#3DDC84\"\n        android:pathData=\"M0,0h108v108h-108z\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M9,0L9,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,0L19,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M29,0L29,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M39,0L39,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M49,0L49,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M59,0L59,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M69,0L69,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M79,0L79,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M89,0L89,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M99,0L99,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,9L108,9\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,19L108,19\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,29L108,29\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,39L108,39\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,49L108,49\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,59L108,59\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,69L108,69\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,79L108,79\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,89L108,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,99L108,99\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,29L89,29\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,39L89,39\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,49L89,49\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,59L89,59\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,69L89,69\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,79L89,79\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M29,19L29,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M39,19L39,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M49,19L49,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M59,19L59,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M69,19L69,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M79,19L79,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n</vector>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 171,
+                                    "snippet": {
+                                        "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    <path\n        android:fillColor=\"#3DDC84\"\n        android:pathData=\"M0,0h108v108h-108z\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M9,0L9,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,0L19,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M29,0L29,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M39,0L39,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M49,0L49,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M59,0L59,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M69,0L69,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M79,0L79,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M89,0L89,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M99,0L99,108\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,9L108,9\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,19L108,19\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,29L108,29\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,39L108,39\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,49L108,49\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,59L108,59\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,69L108,69\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,79L108,79\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,89L108,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M0,99L108,99\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,29L89,29\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,39L89,39\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,49L89,49\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,59L89,59\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,69L89,69\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M19,79L89,79\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M29,19L29,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M39,19L39,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M49,19L49,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M59,19L59,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M69,19L69,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n    <path\n        android:fillColor=\"#00000000\"\n        android:pathData=\"M79,19L79,89\"\n        android:strokeWidth=\"0.8\"\n        android:strokeColor=\"#33FFFFFF\" />\n</vector>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1784ac8f342a62fb"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.drawable.ic_launcher_foreground appears to be unused",
+                        "markdown": "The resource `R.drawable.ic_launcher_foreground` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 1,
+                                    "endLine": 30,
+                                    "endColumn": 10,
+                                    "charOffset": 0,
+                                    "charLength": 1702,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:aapt=\"http://schemas.android.com/aapt\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    <path android:pathData=\"M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z\">\n        <aapt:attr name=\"android:fillColor\">\n            <gradient\n                android:endX=\"85.84757\"\n                android:endY=\"92.4963\"\n                android:startX=\"42.9492\"\n                android:startY=\"49.59793\"\n                android:type=\"linear\">\n                <item\n                    android:color=\"#44000000\"\n                    android:offset=\"0.0\" />\n                <item\n                    android:color=\"#00000000\"\n                    android:offset=\"1.0\" />\n            </gradient>\n        </aapt:attr>\n    </path>\n    <path\n        android:fillColor=\"#FFFFFF\"\n        android:fillType=\"nonZero\"\n        android:pathData=\"M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z\"\n        android:strokeWidth=\"1\"\n        android:strokeColor=\"#00000000\" />\n</vector>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 30,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:aapt=\"http://schemas.android.com/aapt\"\n    android:width=\"108dp\"\n    android:height=\"108dp\"\n    android:viewportWidth=\"108\"\n    android:viewportHeight=\"108\">\n    <path android:pathData=\"M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z\">\n        <aapt:attr name=\"android:fillColor\">\n            <gradient\n                android:endX=\"85.84757\"\n                android:endY=\"92.4963\"\n                android:startX=\"42.9492\"\n                android:startY=\"49.59793\"\n                android:type=\"linear\">\n                <item\n                    android:color=\"#44000000\"\n                    android:offset=\"0.0\" />\n                <item\n                    android:color=\"#00000000\"\n                    android:offset=\"1.0\" />\n            </gradient>\n        </aapt:attr>\n    </path>\n    <path\n        android:fillColor=\"#FFFFFF\"\n        android:fillType=\"nonZero\"\n        android:pathData=\"M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z\"\n        android:strokeWidth=\"1\"\n        android:strokeColor=\"#00000000\" />\n</vector>"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "11a978414650a1b8"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.drawable.ic_launcher_round appears to be unused",
+                        "markdown": "The resource `R.drawable.ic_launcher_round` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/ic_launcher_round.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.drawable.ic_lock appears to be unused",
+                        "markdown": "The resource `R.drawable.ic_lock` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/ic_lock.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 1,
+                                    "endLine": 4,
+                                    "endColumn": 10,
+                                    "charOffset": 0,
+                                    "charLength": 467,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\" android:width=\"24dp\" android:height=\"24dp\" android:viewportWidth=\"24\" android:viewportHeight=\"24\">\n    <path android:fillColor=\"@color/primary\" android:fillType=\"evenOdd\" android:pathData=\"M4,10 H20 V23 H4 Z\" />\n    <path android:fillColor=\"@color/icon_secondary\" android:fillType=\"evenOdd\" android:pathData=\"M7,10 V6 C7,-1 17,-1 17,6 V10 H15 V6 C15,2 9,2 9,6 V10 Z M11,14 H13 V19 H11 Z\" />\n</vector>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 5,
+                                    "snippet": {
+                                        "text": "<vector xmlns:android=\"http://schemas.android.com/apk/res/android\" android:width=\"24dp\" android:height=\"24dp\" android:viewportWidth=\"24\" android:viewportHeight=\"24\">\n    <path android:fillColor=\"@color/primary\" android:fillType=\"evenOdd\" android:pathData=\"M4,10 H20 V23 H4 Z\" />\n    <path android:fillColor=\"@color/icon_secondary\" android:fillType=\"evenOdd\" android:pathData=\"M7,10 V6 C7,-1 17,-1 17,6 V10 H15 V6 C15,2 9,2 9,6 V10 Z M11,14 H13 V19 H11 Z\" />\n</vector>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "ce7751ffdb4bd168"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.string.gameplay_pending appears to be unused",
+                        "markdown": "The resource `R.string.gameplay_pending` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 31,
+                                    "startColumn": 13,
+                                    "endLine": 31,
+                                    "endColumn": 36,
+                                    "charOffset": 1960,
+                                    "charLength": 23,
+                                    "snippet": {
+                                        "text": "name=\"gameplay_pending\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 29,
+                                    "endLine": 34,
+                                    "snippet": {
+                                        "text": "    <string name=\"catalog_preview\">OFFLINE LIBRARY</string>\n    <string name=\"category_selected\">%1$s selected</string>\n    <string name=\"gameplay_pending\">Gameplay arrives in M2</string>\n    <string name=\"choose_category\">Choose a category</string>\n    <string name=\"ai_title\">Made for your curiosity</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "d9fb3e064475dfb6"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.string.category_accessibility appears to be unused",
+                        "markdown": "The resource `R.string.category_accessibility` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 78,
+                                    "startColumn": 13,
+                                    "endLine": 78,
+                                    "endColumn": 42,
+                                    "charOffset": 5736,
+                                    "charLength": 29,
+                                    "snippet": {
+                                        "text": "name=\"category_accessibility\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 76,
+                                    "endLine": 81,
+                                    "snippet": {
+                                        "text": "    <string name=\"food\">Food</string>\n    <string name=\"space\">Space</string>\n    <string name=\"category_accessibility\">%1$s category</string>\n    <string name=\"navigate_multiplayer\">Multiplayer, private rooms</string>\n    <string name=\"theme_dark_description\">Use dark theme</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "45d301b959d748ca"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.string.theme_dark_description appears to be unused",
+                        "markdown": "The resource `R.string.theme_dark_description` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 80,
+                                    "startColumn": 13,
+                                    "endLine": 80,
+                                    "endColumn": 42,
+                                    "charOffset": 5877,
+                                    "charLength": 29,
+                                    "snippet": {
+                                        "text": "name=\"theme_dark_description\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 78,
+                                    "endLine": 83,
+                                    "snippet": {
+                                        "text": "    <string name=\"category_accessibility\">%1$s category</string>\n    <string name=\"navigate_multiplayer\">Multiplayer, private rooms</string>\n    <string name=\"theme_dark_description\">Use dark theme</string>\n    <string name=\"theme_light_description\">Use light theme</string>\n    <string name=\"all_categories\">All Categories / Random Mix</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "3f8752550e92cd7d"
+                    }
+                },
+                {
+                    "ruleId": "UnusedResources",
+                    "ruleIndex": 10,
+                    "message": {
+                        "text": "The resource R.string.theme_light_description appears to be unused",
+                        "markdown": "The resource `R.string.theme_light_description` appears to be unused"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/values/strings.xml"
+                                },
+                                "region": {
+                                    "startLine": 81,
+                                    "startColumn": 13,
+                                    "endLine": 81,
+                                    "endColumn": 43,
+                                    "charOffset": 5943,
+                                    "charLength": 30,
+                                    "snippet": {
+                                        "text": "name=\"theme_light_description\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 79,
+                                    "endLine": 84,
+                                    "snippet": {
+                                        "text": "    <string name=\"navigate_multiplayer\">Multiplayer, private rooms</string>\n    <string name=\"theme_dark_description\">Use dark theme</string>\n    <string name=\"theme_light_description\">Use light theme</string>\n    <string name=\"all_categories\">All Categories / Random Mix</string>\n    <string name=\"configure_quiz\">Next · Configure quiz</string>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "4b80d9f66b57e184"
+                    }
+                },
+                {
+                    "ruleId": "NotShrinkingResources",
+                    "ruleIndex": 6,
+                    "message": {
+                        "text": "If enabling minification, also set isShrinkResources = true"
+                    },
+                    "level": "warning",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 70,
+                                    "startColumn": 13,
+                                    "endLine": 70,
+                                    "endColumn": 35,
+                                    "charOffset": 1750,
+                                    "charLength": 22,
+                                    "snippet": {
+                                        "text": "isMinifyEnabled = true"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 68,
+                                    "endLine": 73,
+                                    "snippet": {
+                                        "text": "                signingConfig = signingConfigs.getByName(\"release\")\n            }\n            isMinifyEnabled = true\n            proguardFiles(getDefaultProguardFile(\"proguard-android-optimize.txt\"), \"proguard-rules.pro\")\n        }\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Replace with true..."
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 70,
+                                                "startColumn": 31,
+                                                "charOffset": 1768,
+                                                "endLine": 70,
+                                                "endColumn": 35,
+                                                "charLength": 4
+                                            },
+                                            "insertedContent": {
+                                                "text": "true\n            isShrinkResources = true\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "7021e6c22e27930c"
+                    }
+                },
+                {
+                    "ruleId": "UselessParent",
+                    "ruleIndex": 11,
+                    "message": {
+                        "text": "This RadioGroup layout or its LinearLayout parent is possibly unnecessary",
+                        "markdown": "This `RadioGroup` layout or its `LinearLayout` parent is possibly unnecessary"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/layout/fragment_settings.xml"
+                                },
+                                "region": {
+                                    "startLine": 8,
+                                    "startColumn": 18,
+                                    "endLine": 8,
+                                    "endColumn": 28,
+                                    "charOffset": 1190,
+                                    "charLength": 10,
+                                    "snippet": {
+                                        "text": "RadioGroup"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 6,
+                                    "endLine": 11,
+                                    "snippet": {
+                                        "text": "        <com.google.android.material.card.MaterialCardView android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:layout_marginTop=\"16dp\">\n            <LinearLayout android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:orientation=\"vertical\" android:padding=\"20dp\">\n                <RadioGroup android:id=\"@+id/theme_choices\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:orientation=\"vertical\" android:contentDescription=\"@string/theme_options\">\n                    <com.google.android.material.radiobutton.MaterialRadioButton android:id=\"@+id/theme_dark\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"56dp\" android:text=\"@string/theme_dark\" android:textSize=\"16sp\" />\n                    <com.google.android.material.radiobutton.MaterialRadioButton android:id=\"@+id/theme_light\" android:layout_width=\"match_parent\" android:layout_height=\"wrap_content\" android:minHeight=\"56dp\" android:text=\"@string/theme_light\" android:textSize=\"16sp\" />\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "c0fdb01a7d63980e"
+                    }
+                },
+                {
+                    "ruleId": "MonochromeLauncherIcon",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "The application adaptive icon is missing a monochrome tag"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 1,
+                                    "endLine": 1,
+                                    "endColumn": 208,
+                                    "charOffset": 0,
+                                    "charLength": 207,
+                                    "snippet": {
+                                        "text": "<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\"><background android:drawable=\"@drawable/bg_launcher\" /><foreground android:drawable=\"@drawable/ic_quizpk_launcher\" /></adaptive-icon>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 2,
+                                    "snippet": {
+                                        "text": "<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\"><background android:drawable=\"@drawable/bg_launcher\" /><foreground android:drawable=\"@drawable/ic_quizpk_launcher\" /></adaptive-icon>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1b6133f5ce0a06a6"
+                    }
+                },
+                {
+                    "ruleId": "MonochromeLauncherIcon",
+                    "ruleIndex": 5,
+                    "message": {
+                        "text": "The application adaptive roundIcon is missing a monochrome tag"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+                                },
+                                "region": {
+                                    "startLine": 1,
+                                    "startColumn": 1,
+                                    "endLine": 1,
+                                    "endColumn": 208,
+                                    "charOffset": 0,
+                                    "charLength": 207,
+                                    "snippet": {
+                                        "text": "<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\"><background android:drawable=\"@drawable/bg_launcher\" /><foreground android:drawable=\"@drawable/ic_quizpk_launcher\" /></adaptive-icon>"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 1,
+                                    "endLine": 2,
+                                    "snippet": {
+                                        "text": "<adaptive-icon xmlns:android=\"http://schemas.android.com/apk/res/android\"><background android:drawable=\"@drawable/bg_launcher\" /><foreground android:drawable=\"@drawable/ic_quizpk_launcher\" /></adaptive-icon>\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1b6133f5ce0a06a6"
+                    }
+                },
+                {
+                    "ruleId": "IconDipSize",
+                    "ruleIndex": 2,
+                    "message": {
+                        "text": "The image ic_launcher.webp varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.webp: 108x108 dp (162x162 px), mipmap-mdpi/ic_launcher.webp: 108x108 dp (108x108 px), mipmap-xhdpi/ic_launcher.webp: 108x108 dp (216x216 px), mipmap-xxhdpi/ic_launcher.webp: 108x108 dp (324x324 px), mipmap-xxxhdpi/ic_launcher.webp: 48x48 dp (192x192 px)",
+                        "markdown": "The image `ic_launcher.webp` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.webp: 108x108 dp (162x162 px), mipmap-mdpi/ic_launcher.webp: 108x108 dp (108x108 px), mipmap-xhdpi/ic_launcher.webp: 108x108 dp (216x216 px), mipmap-xxhdpi/ic_launcher.webp: 108x108 dp (324x324 px), mipmap-xxxhdpi/ic_launcher.webp: 48x48 dp (192x192 px)"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        },
+                        {
+                            "id": 2,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        },
+                        {
+                            "id": 3,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        },
+                        {
+                            "id": 4,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                    }
+                },
+                {
+                    "ruleId": "IconDuplicatesConfig",
+                    "ruleIndex": 3,
+                    "message": {
+                        "text": "The ic_launcher_round.webp icon has identical contents in the following configuration folders: drawable, mipmap-xxhdpi",
+                        "markdown": "The `ic_launcher_round.webp` icon has identical contents in the following configuration folders: drawable, mipmap-xxhdpi"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "relatedLocations": [
+                        {
+                            "id": 1,
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/ic_launcher_round.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                    }
+                },
+                {
+                    "ruleId": "IconLocation",
+                    "ruleIndex": 4,
+                    "message": {
+                        "text": "Found bitmap drawable res/drawable/ic_launcher_round.webp in densityless folder",
+                        "markdown": "Found bitmap drawable `res/drawable/ic_launcher_round.webp` in densityless folder"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/res/drawable/ic_launcher_round.webp"
+                                },
+                                "region": {
+                                    "byteOffset": 0
+                                }                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                    }
+                },
+                {
+                    "ruleId": "AlwaysShowAction",
+                    "ruleIndex": 0,
+                    "message": {
+                        "text": "Prefer \"SHOW_AS_ACTION_IF_ROOM\" instead of \"SHOW_AS_ACTION_ALWAYS\"",
+                        "markdown": "Prefer \"`SHOW_AS_ACTION_IF_ROOM`\" instead of \"`SHOW_AS_ACTION_ALWAYS`\""
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/src/main/java/com/zeke/quizpk/MainActivity.java"
+                                },
+                                "region": {
+                                    "startLine": 60,
+                                    "startColumn": 47,
+                                    "endLine": 60,
+                                    "endColumn": 68,
+                                    "charOffset": 2726,
+                                    "charLength": 21,
+                                    "snippet": {
+                                        "text": "SHOW_AS_ACTION_ALWAYS"
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 58,
+                                    "endLine": 63,
+                                    "snippet": {
+                                        "text": "        settingsItem.setIcon(R.drawable.ic_settings);\n        MenuItemCompat.setContentDescription(settingsItem, getString(R.string.open_settings));\n        settingsItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);\n        binding.toolbar.setOnMenuItemClickListener(item -> {\n            openSettings();\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "a2cbca03c797fddd"
+                    }
+                },
+                {
+                    "ruleId": "UseTomlInstead",
+                    "ruleIndex": 12,
+                    "message": {
+                        "text": "Use version catalog instead"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 157,
+                                    "startColumn": 24,
+                                    "endLine": 157,
+                                    "endColumn": 44,
+                                    "charOffset": 5551,
+                                    "charLength": 20,
+                                    "snippet": {
+                                        "text": "\"junit:junit:4.13.2\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 155,
+                                    "endLine": 160,
+                                    "snippet": {
+                                        "text": "    implementation(libs.androidx.interpolator)\n\n    testImplementation(\"junit:junit:4.13.2\")\n    testImplementation(\"org.robolectric:robolectric:4.14.1\")\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Replace with new library catalog declaration for junit"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 3,
+                                                "startColumn": 1,
+                                                "charOffset": 25
+                                            },
+                                            "insertedContent": {
+                                                "text": "junit = \"4.13.2\"\n\n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 16,
+                                                "startColumn": 1,
+                                                "charOffset": 735
+                                            },
+                                            "insertedContent": {
+                                                "text": "junit = { module = \"junit:junit\", version.ref = \"junit\" }\n\n"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 157,
+                                                "startColumn": 24,
+                                                "charOffset": 5551,
+                                                "endLine": 157,
+                                                "endColumn": 44,
+                                                "charLength": 20
+                                            },
+                                            "insertedContent": {
+                                                "text": "libs.junit\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1791e9f1f3ccc124"
+                    }
+                },
+                {
+                    "ruleId": "UseTomlInstead",
+                    "ruleIndex": 12,
+                    "message": {
+                        "text": "Use version catalog instead"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uriBaseId": "%SRCROOT%",
+                                    "uri": "app/build.gradle.kts"
+                                },
+                                "region": {
+                                    "startLine": 158,
+                                    "startColumn": 24,
+                                    "endLine": 158,
+                                    "endColumn": 60,
+                                    "charOffset": 5596,
+                                    "charLength": 36,
+                                    "snippet": {
+                                        "text": "\"org.robolectric:robolectric:4.14.1\""
+                                    }
+                                },
+                                "contextRegion": {
+                                    "startLine": 156,
+                                    "endLine": 160,
+                                    "snippet": {
+                                        "text": "\n    testImplementation(\"junit:junit:4.13.2\")\n    testImplementation(\"org.robolectric:robolectric:4.14.1\")\n}\n"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "fixes": [
+                        {
+                            "description": {
+                                "text": "Replace with new library catalog declaration for robolectric"
+                            },
+                            "artifactChanges": [
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "gradle/libs.versions.toml"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 7,
+                                                "startColumn": 1,
+                                                "charOffset": 109
+                                            },
+                                            "insertedContent": {
+                                                "text": "robolectric = \"4.14.1\"\n\n"
+                                            }
+                                        },
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 16,
+                                                "startColumn": 1,
+                                                "charOffset": 735
+                                            },
+                                            "insertedContent": {
+                                                "text": "robolectric = { module = \"org.robolectric:robolectric\", version.ref = \"robolectric\" }\n\n"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "artifactLocation": {
+                                        "uriBaseId": "%SRCROOT%",
+                                        "uri": "app/build.gradle.kts"
+                                    },
+                                    "replacements": [
+                                        {
+                                            "deletedRegion": {
+                                                "startLine": 158,
+                                                "startColumn": 24,
+                                                "charOffset": 5596,
+                                                "endLine": 158,
+                                                "endColumn": 60,
+                                                "charLength": 36
+                                            },
+                                            "insertedContent": {
+                                                "text": "libs.robolectric\n"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "sourceContext/v1": "1d0aa44e79134f44"
+                    }
+                }
+            ]
+        }
+    ]
+}

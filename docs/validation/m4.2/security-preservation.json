@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "credentialsSigningLiveSourceDatabaseAndWalUnchanged": true,
+    "sourceDocsTestsAndEvidenceContainNoActualSecrets": true,
+    "workspacePrivateDatabaseAbsent": true,
+    "m41CheckpointUnchanged": true,
+    "m41CheckpointExcludesPrivateBuildAndEvidence": true,
+    "m41CheckpointContainsNoActualSecrets": true,
+    "soloStorageCredentialsBrandThemesBankBackendProtocolAndPriorTestsUnchanged": true,
+    "QuizPK-M3-source-before-M4.1.tar.gzUnchanged": true,
+    "QuizPK-M3-approved-before-M4.1.tar.gzUnchanged": true,
+    "m42ReviewCheckpointExcludesPrivateBuildAndEvidence": true,
+    "m42ReviewCheckpointContainsNoActualSecrets": true,
+    "m42ReviewCheckpointMatchesFinalWorkspaceSource": true,
+    "retainedM3ApkUnchanged": true,
+    "installedM3PackageAndSignerVerifiedWithoutInstallation": true,
+    "deliveredApkMatchesVerifiedUpdateSignatureAndMetadata": true,
+    "apkContainsNoPrivateFilesOrValues": true,
+    "apkContainsNoBackendFixturesOrTestRuntime": true,
+    "apkDexContainsNoLobbyTestClassesOrRobolectric": true,
+    "apkBankBytesPreserved": true,
+    "privateFileIgnoreRulesEffective": true
+  },
+  "counts": {
+    "privateAndLiveDurableFilesCompared": 22,
+    "publicFilesScanned": 395,
+    "protectedM1ThroughM41SourceFilesCompared": 164,
+    "m42ReviewCheckpointSourceFiles": 208
+  }
+}

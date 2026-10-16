@@ -1,0 +1,1 @@
+b928ad122e4b58d07c0dedc0b8574f03731695ea169ec338e70b0ed4912fd14c  artifacts/QuizPK-M2-offline-debug.apk

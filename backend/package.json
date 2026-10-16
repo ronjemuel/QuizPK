@@ -1,0 +1,1 @@
+{"name":"quizpk-backend","version":"1.0.0","private":true,"type":"module","engines":{"node":">=24"},"scripts":{"start":"node src/server.mjs","test":"node --test test/*.test.mjs","check-config":"node src/check-config.mjs","create-user":"node src/create-user.mjs","smoke":"node src/smoke.mjs"}}

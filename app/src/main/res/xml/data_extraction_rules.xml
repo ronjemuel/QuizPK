@@ -1,0 +1,10 @@
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="quizpk_backend_login.xml" />
+        <exclude domain="sharedpref" path="quizpk_ai_pending.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="quizpk_backend_login.xml" />
+        <exclude domain="sharedpref" path="quizpk_ai_pending.xml" />
+    </device-transfer>
+</data-extraction-rules>

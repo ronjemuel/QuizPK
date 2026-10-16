@@ -1,0 +1,87 @@
+{
+  "reviewDateUtc": "2026-10-13",
+  "lastDiagnosticTimestampUtc": "2026-10-13T14:39:57Z",
+  "status": "BLOCKED_FOR_REVIEW",
+  "handoffReadCompletely": "QuizPK_M4_3_FRESH_SESSION_HANDOFF_V2.md",
+  "requestedUnversionedHandoffPresent": false,
+  "gitRepositoryPresent": false,
+  "projectAgentsFileFound": false,
+  "publicHealth": {
+    "origin": "https://viking-prophet-parallel-researchers.trycloudflare.com",
+    "httpStatus": 530,
+    "expectedHealthBody": false,
+    "tlsVerificationEnabled": true,
+    "redirected": false,
+    "credentialsSent": false
+  },
+  "runtime": {
+    "executorNodeVersion": "v24.18.0",
+    "visibleNumericProcDirectories": 12,
+    "visibleBackendProcesses": 0,
+    "visibleTunnelProcesses": 0,
+    "procTcpTableReadable": false,
+    "loopback8787ConnectErrno": 111,
+    "nativeProductionStateEstablished": false,
+    "liveDatabasePathEstablished": false,
+    "historicalCapturedDatabasePath": "/data/data/com.termux/files/home/quizpk-server/data/quizpk.sqlite"
+  },
+  "checksPerformedNow": {
+    "historicalBackupHashesValid": true,
+    "historicalFrozenReleaseValid": true,
+    "historicalReceiptBindingValid": true,
+    "currentLiveSourceConfigFilesMatchHistorical": true,
+    "liveSourceFilesMatchApprovedM42": true,
+    "workspaceBackendSourceMatchesHistoricalFrozenM43": true,
+    "approvedM42CheckpointHashMatches": true,
+    "m43ApkHashMatches": true,
+    "deployedSourceLobbyMatchesCapabilityFalse": true,
+    "deployedSourceClassicRoutesAbsent": true,
+    "deployedSourceRejectsSchemaTwo": true,
+    "deployedSourceProductionTlsGatePresent": true,
+    "historicalRotationHelperRejectsMultiplayerSchema": true
+  },
+  "historicalEvidenceOnly": {
+    "backupSchema": 1,
+    "identities": 2,
+    "savedAiJobs": 4,
+    "rooms": 6,
+    "androidTestsPassed": 106,
+    "backendTestsPassed": 74,
+    "realDataRehearsalChecksPassed": 87,
+    "combinedOperatorTestsPassed": 33
+  },
+  "notEstablishedNow": [
+    "native production PID, start identity, Node executable and environment",
+    "one native loopback listener and its SQLite owner",
+    "healthy current public origin and runtime TLS/auth/lobby capability",
+    "current live schema, row counts and durable DB/WAL equality",
+    "fresh online backup, current-origin context and rehearsal"
+  ],
+  "testSuitesRerunNow": [],
+  "documentationValidation": {
+    "bashBlocksParsedWithoutExecution": 10,
+    "allBashBlocksParse": true,
+    "allRelativeRunbookLinksExist": true,
+    "historicalOperationsManifestAnchorAndFilesVerify": true,
+    "retainedAndroidXmlTotals": {
+      "tests": 106,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "newBackupCreated": false,
+  "newDeploymentContextCreated": false,
+  "newRehearsalRun": false,
+  "liveSqliteConnectionOpened": false,
+  "liveDatabaseWritesPerformed": false,
+  "liveProcessSignalledOrStarted": false,
+  "liveSourceReplaced": false,
+  "tunnelChanged": false,
+  "providerCalls": 0,
+  "credentialsRotated": false,
+  "latestPhone01ExposureStillRequiresRotation": true,
+  "apkInstalledOrRebuilt": false,
+  "m431Implemented": false,
+  "revisedRunbook": "docs/M4_3_DEPLOYMENT_RUNBOOK_REVISED.md"
+}

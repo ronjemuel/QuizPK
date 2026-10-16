@@ -1,0 +1,8 @@
+{
+  "sameRunningPidAndStart": true,
+  "liveSourceAndConfigMatchPreflight": true,
+  "liveMainAndWalBytesEqualToPreflight": true,
+  "reviewedBackendStillMatchesFrozenRelease": true,
+  "m43ApkUnchanged": true,
+  "m42ApprovedCheckpointUnchanged": true
+}

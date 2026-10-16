@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.StartupTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:09:11.386Z" hostname="localhost" time="17.7">
+  <properties/>
+  <testcase name="repeatedLaunchAndWarmLifecycleReturnToHome" classname="com.zeke.quizpk.StartupTest" time="2.603"/>
+  <testcase name="recreationRestoresSettingsAndItsPreviousDestination" classname="com.zeke.quizpk.StartupTest" time="2.102"/>
+  <testcase name="homeCardsAndAllTabsNavigateToNativeScreens" classname="com.zeke.quizpk.StartupTest" time="3.755"/>
+  <testcase name="settingsMenuOpensAndBackReturnsHome" classname="com.zeke.quizpk.StartupTest" time="1.901"/>
+  <testcase name="settingsClearsLogoAndBackRestoresProfileWithoutZeroLookup" classname="com.zeke.quizpk.StartupTest" time="2.032"/>
+  <testcase name="coldStartInflatesHomeAndBranding" classname="com.zeke.quizpk.StartupTest" time="2.043"/>
+  <testcase name="lightAndDarkChoicesPersistAcrossActivityRelaunches" classname="com.zeke.quizpk.StartupTest" time="3.262"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 13, 2026 1:09:11 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:11 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[103]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:11 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[103]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[103]: connection closed
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[104]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[104]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[104]: connection closed
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[105]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[105]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[105]: connection closed
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[106]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[106]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[106]: connection closed
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[107]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[107]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[107]: connection closed
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[108]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_repeatedLaunchAndWarmLifecycleReturnToHome3811353866965791487/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[108]: opened
+Oct 13, 2026 1:09:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[108]: connection closed
+Oct 13, 2026 1:09:14 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:14 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[109]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_recreationRestoresSettingsAndItsPreviousDestination5514170900760709211/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:14 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[109]: opened
+Oct 13, 2026 1:09:14 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[109]: connection closed
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[110]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_recreationRestoresSettingsAndItsPreviousDestination5514170900760709211/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[110]: opened
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[110]: connection closed
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[111]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_recreationRestoresSettingsAndItsPreviousDestination5514170900760709211/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[111]: opened
+Oct 13, 2026 1:09:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[111]: connection closed
+Oct 13, 2026 1:09:16 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:16 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[112]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:16 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[112]: opened
+Oct 13, 2026 1:09:17 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[112]: connection closed
+Oct 13, 2026 1:09:17 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:17 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[113]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:17 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[113]: opened
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[113]: connection closed
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[114]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[114]: opened
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[114]: connection closed
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[115]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[115]: opened
+Oct 13, 2026 1:09:18 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[115]: connection closed
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[116]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[116]: opened
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[116]: connection closed
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[117]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[117]: opened
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[117]: connection closed
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[118]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_homeCardsAndAllTabsNavigateToNativeScreens7619489464566330847/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[118]: opened
+Oct 13, 2026 1:09:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[118]: connection closed
+Oct 13, 2026 1:09:20 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:20 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[119]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_settingsMenuOpensAndBackReturnsHome14164983373895790403/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:20 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[119]: opened
+Oct 13, 2026 1:09:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[119]: connection closed
+Oct 13, 2026 1:09:21 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[120]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_settingsMenuOpensAndBackReturnsHome14164983373895790403/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[120]: opened
+Oct 13, 2026 1:09:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[120]: connection closed
+Oct 13, 2026 1:09:22 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:22 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[121]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_settingsClearsLogoAndBackRestoresProfileWithoutZeroLookup5135393040298347286/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:22 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[121]: opened
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[121]: connection closed
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[122]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_settingsClearsLogoAndBackRestoresProfileWithoutZeroLookup5135393040298347286/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[122]: opened
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[122]: connection closed
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[123]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_settingsClearsLogoAndBackRestoresProfileWithoutZeroLookup5135393040298347286/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[123]: opened
+Oct 13, 2026 1:09:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[123]: connection closed
+Oct 13, 2026 1:09:24 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:24 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[124]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_coldStartInflatesHomeAndBranding12063684014665818060/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:24 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[124]: opened
+Oct 13, 2026 1:09:25 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[124]: connection closed
+Oct 13, 2026 1:09:26 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:26 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[125]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_lightAndDarkChoicesPersistAcrossActivityRelaunches5178975698934105075/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:26 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[125]: opened
+Oct 13, 2026 1:09:27 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[125]: connection closed
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[126]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_lightAndDarkChoicesPersistAcrossActivityRelaunches5178975698934105075/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[126]: opened
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[126]: connection closed
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[127]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-StartupTest_lightAndDarkChoicesPersistAcrossActivityRelaunches5178975698934105075/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[127]: opened
+Oct 13, 2026 1:09:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[127]: connection closed
+]]></system-err>
+</testsuite>

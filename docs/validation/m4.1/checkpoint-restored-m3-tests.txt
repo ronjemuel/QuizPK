@@ -1,0 +1,28 @@
+✔ request validation trims input and rejects invalid types/settings/unknown controls (9.911077ms)
+✔ output boundary rejects empty/duplicate/partial/range/coercion/extra-field batches (9.345538ms)
+✔ HTTP success is versioned; retry returns same quiz and one provider call (257.621461ms)
+✔ auth and strict HTTPS fail before provider; embedded package/id gives no access (49.745539ms)
+✔ production requires local TLS proxy marker (51.682846ms)
+✔ per-user quota persists in SQL and cache retrieval does not spend quota (111.985308ms)
+✔ global daily budget protects provider across users (12.013539ms)
+✔ IP throttle expires and concurrency rejects another request (9.376077ms)
+✔ double tap while generation pending has one provider call (129.856923ms)
+✔ errors are sanitized and cached; provider secrets never appear (56.786538ms)
+✔ recoverable TIMEOUT (20.395923ms)
+✔ recoverable PROVIDER_LIMIT (15.319154ms)
+✔ recoverable PROVIDER_UNAVAILABLE (17.638154ms)
+✔ recoverable MALFORMED_QUESTIONS (22.616616ms)
+✔ recoverable TOPIC_REJECTED (31.401231ms)
+✔ restart with uncertain pending provider charge cannot call provider twice (2.34577ms)
+✔ Gemini structured output uses header secret, schema, bounded tokens and no automatic retries (4.901539ms)
+✔ provider limits/outage/malformed/safety/timeouts are mapped without provider bodies (5.861ms)
+✔ selected Gemini 3.5 model uses a bounded low-thinking structured request (2.075154ms)
+✔ on-disk restart keeps auth, cached response, quota and uncertain reservations (123.403307ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1844.522462

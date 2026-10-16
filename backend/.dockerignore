@@ -1,0 +1,6 @@
+**/*.env
+.env*
+private
+node_modules
+data
+test

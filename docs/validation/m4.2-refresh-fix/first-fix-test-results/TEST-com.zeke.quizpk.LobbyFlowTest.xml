@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.LobbyFlowTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-13T06:44:05.954Z" hostname="localhost" time="63.746">
+  <properties/>
+  <testcase name="moderatorIsSeparateFromEightContestantsAndCannotReadyOrAnswer" classname="com.zeke.quizpk.LobbyFlowTest" time="6.337"/>
+  <testcase name="fullExpiredAndRateErrorsStayTypedAndDoNotFabricateMembership" classname="com.zeke.quizpk.LobbyFlowTest" time="4.57"/>
+  <testcase name="compactLargeFontFormsAndBothThemeLobbiesStayScrollable" classname="com.zeke.quizpk.LobbyFlowTest" time="8.54"/>
+  <testcase name="connectionLossDisablesStaleControlsAndRevocationClearsPrivateRoom" classname="com.zeke.quizpk.LobbyFlowTest" time="6.086"/>
+  <testcase name="settingsCarryCapturedRevisionAndServerResetsReadiness" classname="com.zeke.quizpk.LobbyFlowTest" time="4.732"/>
+  <testcase name="credentialChangeDropsOldRoomAndPendingActionWithoutCrossIdentityReplay" classname="com.zeke.quizpk.LobbyFlowTest" time="3.954"/>
+  <testcase name="processReentryRecoversMembershipWithoutCreatingAnotherRoom" classname="com.zeke.quizpk.LobbyFlowTest" time="5.11"/>
+  <testcase name="networkChoiceComesFirstAndLocalCannotStartCloudOrLan" classname="com.zeke.quizpk.LobbyFlowTest" time="3.555"/>
+  <testcase name="foregroundHeartbeatStopsOnHomeAndReconnectUsesSameSeat" classname="com.zeke.quizpk.LobbyFlowTest" time="4.275"/>
+  <testcase name="joiningValidatesLocallyThenUsesServerModeAndContestantPermissions" classname="com.zeke.quizpk.LobbyFlowTest" time="2.99"/>
+  <testcase name="rapidCreateAndRecreationKeepOneInFlightCommand" classname="com.zeke.quizpk.LobbyFlowTest" time="4.491"/>
+  <testcase name="classicCreatorCanReadyCopyShareAndCloseOnlyAfterConfirmation" classname="com.zeke.quizpk.LobbyFlowTest" time="4.632"/>
+  <testcase name="lostCreateReplyRetriesExactlySameBodyAndRecoversAcrossRecreation" classname="com.zeke.quizpk.LobbyFlowTest" time="4.468"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 13, 2026 6:44:06 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:06 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_moderatorIsSeparateFromEightContestantsAndCannotReadyOrAnswer15820282321313647142/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:06 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: opened
+Oct 13, 2026 6:44:08 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: connection closed
+Oct 13, 2026 6:44:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_fullExpiredAndRateErrorsStayTypedAndDoNotFabricateMembership14950889191791037208/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: opened
+Oct 13, 2026 6:44:14 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: connection closed
+Oct 13, 2026 6:44:17 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:17 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_compactLargeFontFormsAndBothThemeLobbiesStayScrollable16240830347677388246/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:17 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: opened
+Oct 13, 2026 6:44:19 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: connection closed
+Oct 13, 2026 6:44:22 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:22 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_compactLargeFontFormsAndBothThemeLobbiesStayScrollable16240830347677388246/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:22 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: opened
+Oct 13, 2026 6:44:22 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: connection closed
+Oct 13, 2026 6:44:27 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:27 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_connectionLossDisablesStaleControlsAndRevocationClearsPrivateRoom4059045398565700665/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:27 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: opened
+Oct 13, 2026 6:44:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: connection closed
+Oct 13, 2026 6:44:32 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:32 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_settingsCarryCapturedRevisionAndServerResetsReadiness15110246847651469015/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:32 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: opened
+Oct 13, 2026 6:44:33 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: connection closed
+Oct 13, 2026 6:44:36 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:36 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_credentialChangeDropsOldRoomAndPendingActionWithoutCrossIdentityReplay2274809903495776727/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:36 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: opened
+Oct 13, 2026 6:44:38 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: connection closed
+Oct 13, 2026 6:44:40 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:40 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_processReentryRecoversMembershipWithoutCreatingAnotherRoom5970703756620356810/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:40 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: opened
+Oct 13, 2026 6:44:42 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: connection closed
+Oct 13, 2026 6:44:43 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:43 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_processReentryRecoversMembershipWithoutCreatingAnotherRoom5970703756620356810/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:43 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: opened
+Oct 13, 2026 6:44:44 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: connection closed
+Oct 13, 2026 6:44:45 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:45 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_networkChoiceComesFirstAndLocalCannotStartCloudOrLan4484531537919805447/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:45 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: opened
+Oct 13, 2026 6:44:48 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: connection closed
+Oct 13, 2026 6:44:49 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:49 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_foregroundHeartbeatStopsOnHomeAndReconnectUsesSameSeat11349530545721567691/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:49 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: opened
+Oct 13, 2026 6:44:50 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: connection closed
+Oct 13, 2026 6:44:52 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:52 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_foregroundHeartbeatStopsOnHomeAndReconnectUsesSameSeat11349530545721567691/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:52 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: opened
+Oct 13, 2026 6:44:52 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: connection closed
+Oct 13, 2026 6:44:53 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:53 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[15]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_joiningValidatesLocallyThenUsesServerModeAndContestantPermissions2717192639930543450/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:53 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[15]: opened
+Oct 13, 2026 6:44:55 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[15]: connection closed
+Oct 13, 2026 6:44:56 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:44:56 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[16]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_rapidCreateAndRecreationKeepOneInFlightCommand10345535223633920721/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:44:56 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[16]: opened
+Oct 13, 2026 6:44:58 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[16]: connection closed
+Oct 13, 2026 6:45:01 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:45:01 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[17]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_classicCreatorCanReadyCopyShareAndCloseOnlyAfterConfirmation9731620269497380105/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:45:01 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[17]: opened
+Oct 13, 2026 6:45:02 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[17]: connection closed
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Invalid ID 0x00000000.
+Oct 13, 2026 6:45:05 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:45:05 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[18]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyFlowTest_lostCreateReplyRetriesExactlySameBodyAndRecoversAcrossRecreation6069374346235604423/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:45:05 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[18]: opened
+Oct 13, 2026 6:45:07 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[18]: connection closed
+]]></system-err>
+</testsuite>

@@ -1,0 +1,1 @@
+7fe96067cabeac51ce337a022e91743729c06d5f6752100e1a43b98d1665ff76  artifacts/QuizPK-M3-ai-debug.apk

@@ -1,0 +1,9 @@
+# Replace with a real domain pointed at your server. No static files are served.
+quizpk.example.invalid {
+    request_body {
+        max_size 8KB
+    }
+    reverse_proxy 127.0.0.1:8787 {
+        header_up X-Forwarded-Proto https
+    }
+}

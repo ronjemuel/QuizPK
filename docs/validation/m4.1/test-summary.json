@@ -1,0 +1,56 @@
+{
+  "androidSuites": [
+    {
+      "name": "com.zeke.quizpk.AiDataTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.zeke.quizpk.AiFlowTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.zeke.quizpk.OfflineDataTest",
+      "tests": "19",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.zeke.quizpk.OfflineFlowTest",
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.zeke.quizpk.StartupTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "androidTotal": {
+    "tests": 56,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "backend": {
+    "tests": 54,
+    "pass": 54,
+    "fail": 0,
+    "skipped": 0
+  },
+  "restoredCheckpointBackend": {
+    "tests": 20,
+    "pass": 20,
+    "fail": 0
+  }
+}

@@ -1,0 +1,12 @@
+Oct 12, 2026 12:06:11 PM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite4java from /data/data/com.termux/files/usr/tmp/quizpk-sqlite-host/libsqlite4java.so
+Oct 12, 2026 12:06:11 PM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite 3.53.4, wrapper 1.3
+SQLite core: 3.53.4
+Oct 12, 2026 12:06:11 PM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: instantiated [null]
+Oct 12, 2026 12:06:11 PM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: opened
+real sqlite
+Oct 12, 2026 12:06:11 PM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: connection closed

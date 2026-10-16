@@ -1,0 +1,11 @@
+{
+  "privateAndLiveFilesChecked": 36,
+  "privateAndLiveBytesEqual": true,
+  "originalSourceFilesRemoved": 0,
+  "sourceChangesInventoriedAgainstApprovedM42": true,
+  "m3AndM42ApksUnchanged": true,
+  "existingCheckpointHashesEqual": true,
+  "privateMaterialAbsentFromPublicChangesAndApk": true,
+  "noLiveSqliteConnectionOrServiceStart": true,
+  "noAppInstallationOrSavedDataAccess": true
+}

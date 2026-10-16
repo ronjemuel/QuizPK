@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "android": {
+    "tests": 106,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "backend": {
+    "tests": 74,
+    "pass": 74,
+    "fail": 0
+  },
+  "operator": {
+    "tests": 17,
+    "pass": 17
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 52
+  },
+  "assembly": "PASS",
+  "bankAudit": "PASS",
+  "physicalM43Acceptance": "PENDING",
+  "liveDeployment": "NOT_PERFORMED"
+}

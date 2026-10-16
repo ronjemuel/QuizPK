@@ -1,0 +1,65 @@
+URLs 174 fetched 110 failed 64
+https://animals.sandiegozoo.org/animals/penguin HTTP Error 404: Not Found
+https://corporate.bwfbadminton.com/statutes/ [Errno 104] Connection reset by peer
+https://developer.mozilla.org/en-US/docs/Glossary/Byte HTTP Error 404: Not Found
+https://ods.od.nih.gov/factsheets/VitaminC-Consumer/ HTTP Error 403: Forbidden
+https://olympics.com/ioc/olympic-rings The read operation timed out
+https://science.nasa.gov/jupiter/moons/europa/facts/ HTTP Error 404: Not Found
+https://science.nasa.gov/jupiter/moons/ganymede/facts/ HTTP Error 404: Not Found
+https://science.nasa.gov/jupiter/moons/io/facts/ HTTP Error 404: Not Found
+https://viva.pressbooks.pub/openmusictheory/chapter/dynamics-and-dynamic-changes/ HTTP Error 404: Not Found
+https://viva.pressbooks.pub/openmusictheory/chapter/tempo/ HTTP Error 404: Not Found
+https://www.britannica.com/event/Berlin-Wall HTTP Error 403: Forbidden
+https://www.britannica.com/place/Andes-Mountains HTTP Error 403: Forbidden
+https://www.britannica.com/place/Strait-of-Gibraltar HTTP Error 403: Forbidden
+https://www.britannica.com/plant/avocado HTTP Error 403: Forbidden
+https://www.britannica.com/plant/cacao HTTP Error 403: Forbidden
+https://www.britannica.com/plant/cinnamon HTTP Error 403: Forbidden
+https://www.britannica.com/plant/clove HTTP Error 403: Forbidden
+https://www.britannica.com/plant/ginger HTTP Error 403: Forbidden
+https://www.britannica.com/plant/nutmeg HTTP Error 403: Forbidden
+https://www.britannica.com/plant/quinoa HTTP Error 403: Forbidden
+https://www.britannica.com/plant/saffron HTTP Error 403: Forbidden
+https://www.britannica.com/science/Maillard-reaction HTTP Error 403: Forbidden
+https://www.britannica.com/science/capsaicin HTTP Error 403: Forbidden
+https://www.britannica.com/science/gluten HTTP Error 403: Forbidden
+https://www.britannica.com/science/yeast-fungus HTTP Error 403: Forbidden
+https://www.britannica.com/topic/Pyramids-of-Giza HTTP Error 403: Forbidden
+https://www.britannica.com/topic/hummus HTTP Error 403: Forbidden
+https://www.britannica.com/topic/miso HTTP Error 403: Forbidden
+https://www.britannica.com/topic/rennet HTTP Error 403: Forbidden
+https://www.britannica.com/topic/sushi HTTP Error 403: Forbidden
+https://www.britannica.com/topic/tahini HTTP Error 403: Forbidden
+https://www.britannica.com/topic/tofu HTTP Error 403: Forbidden
+https://www.britannica.com/topic/yogurt HTTP Error 403: Forbidden
+https://www.fisheries.noaa.gov/species/whale-shark HTTP Error 404: Not Found
+https://www.fs.usda.gov/wildflowers/pollinators/animals/bees.shtml HTTP Error 403: Forbidden
+https://www.fs.usda.gov/wildflowers/pollinators/animals/butterflies.shtml HTTP Error 403: Forbidden
+https://www.gutenberg.org/ebooks/11 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/1342 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/1400 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/145 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/1513 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/1661 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/174 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/23042 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/2701 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/345 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/35 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/43 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/768 HTTP Error 503: Service Unavailable
+https://www.gutenberg.org/ebooks/84 HTTP Error 504: Gateway Time-out
+https://www.gutenberg.org/ebooks/98 HTTP Error 503: Service Unavailable
+https://www.lords.org/mcc/the-laws-of-cricket/the-over HTTP Error 404: Not Found
+https://www.lords.org/mcc/the-laws-of-cricket/the-pitch HTTP Error 404: Not Found
+https://www.lords.org/mcc/the-laws-of-cricket/the-wickets HTTP Error 404: Not Found
+https://www.merriam-webster.com/dictionary/dozen HTTP Error 403: Forbidden
+https://www.nps.gov/subjects/bats/about-bats.htm HTTP Error 404: Not Found
+https://www.oscars.org/oscars/ceremonies/1929 HTTP Error 403: Forbidden
+https://www.oscars.org/oscars/ceremonies/1998 HTTP Error 403: Forbidden
+https://www.oscars.org/oscars/ceremonies/2002 HTTP Error 403: Forbidden
+https://www.oscars.org/oscars/ceremonies/2003 HTTP Error 403: Forbidden
+https://www.oscars.org/oscars/ceremonies/2004 HTTP Error 403: Forbidden
+https://www.oscars.org/oscars/statuette HTTP Error 403: Forbidden
+https://www.parliament.uk/about/living-heritage/evolutionofparliament/originsofparliament/birthofparliament/overview/magnacarta/ HTTP Error 403: Forbidden
+https://www.timeanddate.com/calendar/gregorian-calendar.html HTTP Error 403: Forbidden

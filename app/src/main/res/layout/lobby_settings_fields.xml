@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_category" android:textAppearance="@style/Text.QuizPK.Body" android:labelFor="@id/mp_category" />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_category" android:minHeight="56dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/difficulty" android:textAppearance="@style/Text.QuizPK.Body" android:labelFor="@id/mp_difficulty" />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_difficulty" android:minHeight="56dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_question_count" android:textAppearance="@style/Text.QuizPK.Body" android:labelFor="@id/mp_count" />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_count" android:minHeight="56dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_timer" android:textAppearance="@style/Text.QuizPK.Body" android:labelFor="@id/mp_timer" />
+    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/mp_timer" android:minHeight="56dp" />
+</LinearLayout>

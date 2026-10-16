@@ -1,0 +1,8 @@
+adb devices -l
+List of devices attached
+
+No ADB target or emulator is connected.
+command -v emulator: no binary on PATH.
+Native getprop identifies the host as TECNO KL7 / Android 14, but it is not an authorized ADB target.
+Native logcat -b crash -d -t 100 returned no lines; no QuizPK device stack trace was obtained.
+Do not treat the empty/restricted log output as proof of no crash.

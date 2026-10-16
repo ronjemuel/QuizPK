@@ -1,0 +1,50 @@
+{
+  "suites": [
+    {
+      "name": "com.zeke.quizpk.OfflineDataTest",
+      "tests": "19",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "44.76"
+    },
+    {
+      "name": "com.zeke.quizpk.OfflineFlowTest",
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "47.964"
+    },
+    {
+      "name": "com.zeke.quizpk.StartupTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "17.079"
+    }
+  ],
+  "tests": 37,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "lint_severities": {
+    "Warning": 34
+  },
+  "lint_warning_ids": {
+    "OldTargetApi": 1,
+    "GradleDependency": 3,
+    "ObsoleteSdkInt": 1,
+    "Overdraw": 2,
+    "UnusedResources": 17,
+    "NotShrinkingResources": 1,
+    "UselessParent": 1,
+    "MonochromeLauncherIcon": 2,
+    "IconDipSize": 1,
+    "IconDuplicatesConfig": 1,
+    "IconLocation": 1,
+    "AlwaysShowAction": 1,
+    "UseTomlInstead": 2
+  }
+}

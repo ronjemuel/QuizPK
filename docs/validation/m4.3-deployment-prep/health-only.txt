@@ -1,0 +1,1 @@
+TLS smoke failed; URL, credentials and response contents omitted. Keep review gate closed.

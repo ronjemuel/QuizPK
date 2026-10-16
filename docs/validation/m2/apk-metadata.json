@@ -1,0 +1,18 @@
+{
+  "application_id": "com.zeke.quizpk",
+  "version_code": 2,
+  "version_name": "1.1-M2",
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "apk": "artifacts/QuizPK-M2-offline-debug.apk",
+  "bytes": 6155138,
+  "sha256": "b928ad122e4b58d07c0dedc0b8574f03731695ea169ec338e70b0ed4912fd14c",
+  "bundled_questions": 240,
+  "test_code_or_host_sqlite_in_apk": false,
+  "source_inputs_unchanged": true,
+  "apk_signature_verified": true,
+  "same_signing_certificate_as_m1": true,
+  "signer_certificate_sha256": "f348cf5d46fb928644a96ef40bcecbaae780d45f6e15cdcdca42d1da1ee0eaff",
+  "internet_permission": false,
+  "launcher": "com.zeke.quizpk.MainActivity"
+}

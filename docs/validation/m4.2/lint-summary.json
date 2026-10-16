@@ -1,0 +1,143 @@
+{
+  "errors": 0,
+  "warnings": 49,
+  "byIssue": {
+    "OldTargetApi": 1,
+    "GradleDependency": 3,
+    "PluralsCandidate": 2,
+    "NotifyDataSetChanged": 1,
+    "ObsoleteSdkInt": 1,
+    "NestedWeights": 1,
+    "Overdraw": 2,
+    "UnusedResources": 28,
+    "NotShrinkingResources": 1,
+    "UselessParent": 1,
+    "MonochromeLauncherIcon": 2,
+    "IconDipSize": 1,
+    "IconDuplicatesConfig": 1,
+    "IconLocation": 1,
+    "AlwaysShowAction": 1,
+    "UseTomlInstead": 2
+  },
+  "newRelativeToM3": [
+    {
+      "id": "PluralsCandidate",
+      "message": "Formatting %d followed by words (\"questions\"): This should probably be a plural rather than a string",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/multiplayer_strings.xml",
+          "line": "53"
+        }
+      ]
+    },
+    {
+      "id": "NotifyDataSetChanged",
+      "message": "It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.",
+      "locations": [
+        {
+          "file": "app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java",
+          "line": "557"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.multiplayer_title` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "39"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.multiplayer_body` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "40"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.classic_title` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "41"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.classic_body` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "42"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.moderator_title` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "43"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.moderator_body` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "44"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.moderator_rule` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "45"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.rooms_unavailable_title` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "46"
+        }
+      ]
+    },
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.string.rooms_unavailable_body` appears to be unused",
+      "locations": [
+        {
+          "file": "app/src/main/res/values/strings.xml",
+          "line": "47"
+        }
+      ]
+    }
+  ],
+  "removedRelativeToM3": [
+    {
+      "id": "UnusedResources",
+      "message": "The resource `R.color.warning` appears to be unused",
+      "files": [
+        "app/src/main/res/values/colors.xml"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+E: full-backup-content (line=1)
+    E: exclude (line=2)
+      A: domain="sharedpref" (Raw: "sharedpref")
+      A: path="quizpk_backend_login.xml" (Raw: "quizpk_backend_login.xml")
+    E: exclude (line=3)
+      A: domain="sharedpref" (Raw: "sharedpref")
+      A: path="quizpk_ai_pending.xml" (Raw: "quizpk_ai_pending.xml")

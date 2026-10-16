@@ -1,0 +1,25 @@
+--- original/MainActivity.java
++++ fixed/MainActivity.java
+@@ -7,6 +7,7 @@
+ import android.view.View;
+ import androidx.activity.OnBackPressedCallback;
+ import androidx.appcompat.app.AppCompatActivity;
++import androidx.appcompat.content.res.AppCompatResources;
+ import androidx.core.graphics.Insets;
+ import androidx.core.view.ViewCompat;
+ import androidx.core.view.MenuItemCompat;
+@@ -148,9 +149,12 @@
+         if (binding == null) return;
+         boolean settings = isSettingsVisible();
+         binding.bottomNavigation.setVisibility(settings ? View.GONE : View.VISIBLE);
+-        binding.toolbar.setNavigationIcon(settings ? R.drawable.ic_back : 0);
++        // Drawable overloads accept null; resource overloads try to load resource 0.
++        binding.toolbar.setNavigationIcon(settings
++                ? AppCompatResources.getDrawable(this, R.drawable.ic_back) : null);
+         binding.toolbar.setNavigationContentDescription(R.string.back);
+-        binding.toolbar.setLogo(settings ? 0 : R.drawable.ic_quizpk);
++        binding.toolbar.setLogo(settings
++                ? null : AppCompatResources.getDrawable(this, R.drawable.ic_quizpk));
+         binding.toolbar.getMenu().setGroupVisible(0, !settings);
+         int title = R.string.app_name;
+         if (settings) title = R.string.settings;

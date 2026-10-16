@@ -1,0 +1,17 @@
+{
+  "apk": "app/build/outputs/apk/debug/app-debug.apk",
+  "size_bytes": 7046059,
+  "sha256": "58be63d9c6992b072eb5f2ecd74ab0ca8f1056c32eb202d4f156dd56b7a6fd4a",
+  "lint_counts": {
+    "Warning": 32
+  },
+  "badging": [
+    "package: name='com.zeke.quizpk' versionCode='1' versionName='1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "minSdkVersion:'24'",
+    "targetSdkVersion:'36'",
+    "uses-permission: name='com.zeke.quizpk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'",
+    "application-label:'QuizPK'",
+    "launchable-activity: name='com.zeke.quizpk.MainActivity'  label='' icon=''"
+  ],
+  "device_tests_executed": false
+}

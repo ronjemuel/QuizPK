@@ -1,0 +1,11 @@
+{
+  "privateAndLiveFilesChecked": 36,
+  "privateAndLiveBytesEqual": true,
+  "originalSourceFilesRemoved": 0,
+  "existingProductionChangesLimitedToFourApprovedFiles": true,
+  "m3AndM42ApksUnchanged": true,
+  "fiveExistingCheckpointHashesEqual": true,
+  "privateMaterialAbsentFromPublicChangesAndApk": true,
+  "noLiveSqliteConnectionOrServiceStart": true,
+  "noAppInstallationOrSavedDataAccess": true
+}

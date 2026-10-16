@@ -1,0 +1,8 @@
+{
+  "checkpoint": "QuizPK-M4.2-approved-before-M4.3.tar.gz",
+  "files": 222,
+  "sha256": "c9f6c5c527f13603fb8e3905c0e8bdbce6ff43338316da954734190af7b3b5e0",
+  "allFileHashesVerified": true,
+  "privateBaselineFiles": 36,
+  "privateMaterialsExcluded": true
+}

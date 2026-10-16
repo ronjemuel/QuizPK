@@ -1,0 +1,31 @@
+{
+  "preparation": "COMPLETE_FOR_REVIEW",
+  "deploymentGate": "CURRENT_HTTPS_ORIGIN_UNVERIFIED",
+  "backendTests": {
+    "passed": 74,
+    "failed": 0
+  },
+  "realDataRehearsal": {
+    "passed": 87,
+    "failed": 0
+  },
+  "operatorTests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "frozenOperatorTests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "publicHttpsVerified": false,
+  "oldOriginDnsFailure": true,
+  "controlDnsResolves": true,
+  "loopbackHttpsEnforced": true,
+  "sameLiveProcessRunning": true,
+  "liveDurableBytesPreserved": true,
+  "credentialsChanged": false,
+  "liveMigrationPerformed": false,
+  "liveSourceReplaced": false,
+  "apkInstalled": false,
+  "providerCalls": 0
+}

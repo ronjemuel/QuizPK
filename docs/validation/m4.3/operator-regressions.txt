@@ -1,0 +1,33 @@
+...........EE....
+======================================================================
+ERROR: test_stopped_backup_includes_nonempty_orphan_wal (tools.test_m42_backend_ops.OpsTest.test_stopped_backup_includes_nonempty_orphan_wal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/test_m42_backend_ops.py", line 170, in test_stopped_backup_includes_nonempty_orphan_wal
+    backup_tool.backup('maintenance', str(self.before))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m42_backend_backup.py", line 106, in backup
+    ensure_stopped()
+    ~~~~~~~~~~~~~~^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m42_backend_backup.py", line 70, in ensure_stopped
+    raise RuntimeError('LISTENER_PRESENT')
+RuntimeError: LISTENER_PRESENT
+
+======================================================================
+ERROR: test_stopped_backup_never_creates_live_wal (tools.test_m42_backend_ops.OpsTest.test_stopped_backup_never_creates_live_wal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/test_m42_backend_ops.py", line 152, in test_stopped_backup_never_creates_live_wal
+    backup_tool.backup('maintenance', str(self.before))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m42_backend_backup.py", line 106, in backup
+    ensure_stopped()
+    ~~~~~~~~~~~~~~^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m42_backend_backup.py", line 70, in ensure_stopped
+    raise RuntimeError('LISTENER_PRESENT')
+RuntimeError: LISTENER_PRESENT
+
+----------------------------------------------------------------------
+Ran 17 tests in 5.895s
+
+FAILED (errors=2)

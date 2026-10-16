@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.LobbyRefreshTest" tests="13" skipped="0" failures="2" errors="0" timestamp="2026-10-13T06:57:34.621Z" hostname="localhost" time="97.568">
+  <properties/>
+  <testcase name="missingReadWaitsForAuthenticatedCurrentBeforeLeavingLobby" classname="com.zeke.quizpk.LobbyRefreshTest" time="37.711"/>
+  <testcase name="anUnconfirmedCachedRoomMustNotNavigateAwayFromTheForm" classname="com.zeke.quizpk.LobbyRefreshTest" time="8.426"/>
+  <testcase name="recreationDuringReadPreservesNameRangeModeAndSettings" classname="com.zeke.quizpk.LobbyRefreshTest" time="6.981"/>
+  <testcase name="switchingJoinFieldsAndKeyboardInsetsPreservesBothSelections" classname="com.zeke.quizpk.LobbyRefreshTest" time="4.745"/>
+  <testcase name="continuousThirtySecondsOfComposingTextSurviveSixSlowPolls" classname="com.zeke.quizpk.LobbyRefreshTest" time="5.413"/>
+  <testcase name="rosterChangesUseRowNotificationsAndValidServerTransitionsStillNavigate" classname="com.zeke.quizpk.LobbyRefreshTest" time="4.646"/>
+  <testcase name="oldRevisionAndRetiredAuthorityCannotResurrectPriorState" classname="com.zeke.quizpk.LobbyRefreshTest" time="4.5"/>
+  <testcase name="savedFragmentDraftRestoresWithAFreshActivityAndModel" classname="com.zeke.quizpk.LobbyRefreshTest" time="6.085">
+    <failure message="java.lang.AssertionError: expected:&lt;1&gt; but was:&lt;10&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1&gt; but was:&lt;10&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.zeke.quizpk.LobbyRefreshTest.savedFragmentDraftRestoresWithAFreshActivityAndModel(LobbyRefreshTest.java:381)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:502)
+	at org.robolectric.internal.SandboxTestRunner$2.lambda$evaluate$2(SandboxTestRunner.java:285)
+	at org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThread$0(Sandbox.java:104)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+</failure>
+  </testcase>
+  <testcase name="aValidNewRevisionDoesNotRequireWallClockToMoveForward" classname="com.zeke.quizpk.LobbyRefreshTest" time="4.751"/>
+  <testcase name="settingsBackRestoresDestroyedViewWithoutLosingFocusOrScroll" classname="com.zeke.quizpk.LobbyRefreshTest" time="4.468">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.zeke.quizpk.LobbyRefreshTest.settingsBackRestoresDestroyedViewWithoutLosingFocusOrScroll(LobbyRefreshTest.java:351)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:502)
+	at org.robolectric.internal.SandboxTestRunner$2.lambda$evaluate$2(SandboxTestRunner.java:285)
+	at org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThread$0(Sandbox.java:104)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: org.robolectric.android.internal.AndroidTestEnvironment$UnExecutedRunnablesException: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(Looper.getMainLooper()).idle() call.
+</failure>
+  </testcase>
+  <testcase name="lateCanceledResponseCannotReplaceNewCredentialState" classname="com.zeke.quizpk.LobbyRefreshTest" time="3.432"/>
+  <testcase name="aBackgroundPollMustNotDisableAnEditorOrMoveItsCursor" classname="com.zeke.quizpk.LobbyRefreshTest" time="3.057"/>
+  <testcase name="reconnectKeepsDraftSettingsAndCursorInsteadOfReinitializingThePage" classname="com.zeke.quizpk.LobbyRefreshTest" time="3.322"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 13, 2026 6:57:56 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite4java from /data/data/com.termux/files/usr/tmp/quizpk-sqlite-host/libsqlite4java.so
+Oct 13, 2026 6:57:56 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] Internal: loaded sqlite 3.53.4, wrapper 1.3
+Oct 13, 2026 6:57:57 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_missingReadWaitsForAuthenticatedCurrentBeforeLeavingLobby13494074508083628989/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:57:57 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: opened
+Oct 13, 2026 6:58:00 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[1]: connection closed
+Oct 13, 2026 6:58:13 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_anUnconfirmedCachedRoomMustNotNavigateAwayFromTheForm7563095449934796716/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:13 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: opened
+Oct 13, 2026 6:58:15 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[2]: connection closed
+Oct 13, 2026 6:58:21 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_recreationDuringReadPreservesNameRangeModeAndSettings11639991864929164238/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:21 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: opened
+Oct 13, 2026 6:58:23 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[3]: connection closed
+Oct 13, 2026 6:58:28 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_switchingJoinFieldsAndKeyboardInsetsPreservesBothSelections11368191584755489607/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:28 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: opened
+Oct 13, 2026 6:58:30 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[4]: connection closed
+Oct 13, 2026 6:58:33 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:33 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_continuousThirtySecondsOfComposingTextSurviveSixSlowPolls4335607632839734360/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:33 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: opened
+Oct 13, 2026 6:58:34 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[5]: connection closed
+Oct 13, 2026 6:58:38 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:38 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_rosterChangesUseRowNotificationsAndValidServerTransitionsStillNavigate4989433579954714642/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:38 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: opened
+Oct 13, 2026 6:58:40 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[6]: connection closed
+Oct 13, 2026 6:58:43 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:43 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_oldRevisionAndRetiredAuthorityCannotResurrectPriorState1038528538576759649/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:43 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: opened
+Oct 13, 2026 6:58:45 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[7]: connection closed
+Oct 13, 2026 6:58:47 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:47 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_savedFragmentDraftRestoresWithAFreshActivityAndModel13937786542193828407/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:47 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: opened
+Oct 13, 2026 6:58:49 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[8]: connection closed
+Oct 13, 2026 6:58:51 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:51 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_savedFragmentDraftRestoresWithAFreshActivityAndModel13937786542193828407/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:51 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: opened
+Oct 13, 2026 6:58:51 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[9]: connection closed
+Oct 13, 2026 6:58:53 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:53 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_aValidNewRevisionDoesNotRequireWallClockToMoveForward14188073109874322490/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:53 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: opened
+Oct 13, 2026 6:58:55 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[10]: connection closed
+Oct 13, 2026 6:58:58 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:58:58 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_settingsBackRestoresDestroyedViewWithoutLosingFocusOrScroll11239122482779635921/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:58:58 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: opened
+Oct 13, 2026 6:59:00 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[11]: connection closed
+Oct 13, 2026 6:59:03 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:59:03 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_lateCanceledResponseCannotReplaceNewCredentialState13300571813267923017/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:59:03 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: opened
+Oct 13, 2026 6:59:04 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[12]: connection closed
+Oct 13, 2026 6:59:06 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:59:06 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_aBackgroundPollMustNotDisableAnEditorOrMoveItsCursor787912377072941596/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:59:06 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: opened
+Oct 13, 2026 6:59:07 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[13]: connection closed
+Oct 13, 2026 6:59:09 AM com.almworks.sqlite4java.Internal log
+WARNING: [sqlite] SQLite: cannot set library path, library already loaded
+Oct 13, 2026 6:59:09 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: instantiated [/data/data/com.termux/files/usr/tmp/robolectric-LobbyRefreshTest_reconnectKeepsDraftSettingsAndCursorInsteadOfReinitializingThePage11184593609552555089/com.zeke.quizpk-dataDir/databases/quizpk_offline.db]
+Oct 13, 2026 6:59:09 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: opened
+Oct 13, 2026 6:59:11 AM com.almworks.sqlite4java.Internal log
+INFO: [sqlite] DB[14]: connection closed
+]]></system-err>
+</testsuite>

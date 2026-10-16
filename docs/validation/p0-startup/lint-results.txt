@@ -1,0 +1,269 @@
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:51: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 36  
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdk specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdk is
+   less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdk to the highest available value. Then
+   test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:30: Warning: A newer version of compileSdk than 36 is available: 37 [GradleDependency]
+    compileSdk = 36 
+    ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/gradle/libs.versions.toml:6: Warning: A newer version of com.google.android.material:material than 1.9.0 is available: 1.10.0 [GradleDependency]
+material = "1.9.0"
+           ~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/gradle/libs.versions.toml:7: Warning: A newer version of androidx.startup:startup-runtime than 1.1.1 is available: 1.2.0 [GradleDependency]
+startupRuntime = "1.1.1"
+                 ~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable-v24: Warning: This folder configuration (v24) is unnecessary; minSdkVersion is 24. Merge all the resources in this folder into drawable. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/layout/component_category.xml:3: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:orientation="vertical" android:gravity="center">
+     ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompoundDrawables":
+   A LinearLayout which contains an ImageView and a TextView can be more
+   efficiently handled as a compound drawable (a single TextView, using the
+   drawableTop, drawableLeft, drawableRight and/or drawableBottom attributes
+   to draw one or more images adjacent to the text).
+
+   If the two widgets are offset from each other with margins, this can be
+   replaced with a drawablePadding attribute.
+
+   There's a lint quickfix to perform this conversion in the Eclipse plugin.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/layout/activity_main.xml:2: Warning: Possible overdraw: Root element paints background @color/background with a theme that also paints a background (inferred theme is @style/AppTheme) [Overdraw]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+                                                                                                                                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/xml/backup_rules.xml:8: Warning: The resource R.xml.backup_rules appears to be unused [UnusedResources]
+<full-backup-content>
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/colors.xml:12: Warning: The resource R.color.gold appears to be unused [UnusedResources]
+    <color name="gold">#86601B</color>
+           ~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/colors.xml:13: Warning: The resource R.color.success appears to be unused [UnusedResources]
+    <color name="success">#187451</color>
+           ~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/colors.xml:15: Warning: The resource R.color.warning appears to be unused [UnusedResources]
+    <color name="warning">#805E18</color>
+           ~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/xml/data_extraction_rules.xml:6: Warning: The resource R.xml.data_extraction_rules appears to be unused [UnusedResources]
+<data-extraction-rules>
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/dimens.xml:2: Warning: The resource R.dimen.space_xs appears to be unused [UnusedResources]
+    <dimen name="space_xs">4dp</dimen>
+           ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/dimens.xml:3: Warning: The resource R.dimen.space_sm appears to be unused [UnusedResources]
+    <dimen name="space_sm">8dp</dimen>
+           ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/dimens.xml:4: Warning: The resource R.dimen.space_md appears to be unused [UnusedResources]
+    <dimen name="space_md">16dp</dimen>
+           ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/dimens.xml:5: Warning: The resource R.dimen.space_lg appears to be unused [UnusedResources]
+    <dimen name="space_lg">24dp</dimen>
+           ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/dimens.xml:6: Warning: The resource R.dimen.space_xl appears to be unused [UnusedResources]
+    <dimen name="space_xl">32dp</dimen>
+           ~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable/ic_crown.xml:1: Warning: The resource R.drawable.ic_crown appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable/ic_launcher_background.xml:2: Warning: The resource R.drawable.ic_launcher_background appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable-v24/ic_launcher_foreground.xml:1: Warning: The resource R.drawable.ic_launcher_foreground appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable/ic_launcher_round.webp: Warning: The resource R.drawable.ic_launcher_round appears to be unused [UnusedResources]
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable/ic_lock.xml:1: Warning: The resource R.drawable.ic_lock appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/strings.xml:80: Warning: The resource R.string.theme_dark_description appears to be unused [UnusedResources]
+    <string name="theme_dark_description">Use dark theme</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/values/strings.xml:81: Warning: The resource R.string.theme_light_description appears to be unused [UnusedResources]
+    <string name="theme_light_description">Use light theme</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests=true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests=true.
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:70: Warning: If enabling minification, also set isShrinkResources = true [NotShrinkingResources]
+            isMinifyEnabled = true
+            ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotShrinkingResources":
+   When minification / dex optimization is enabled, you should also enable
+   resource shrinking, since it enables considerable download and storage
+   savings, and optimizes your app's resource table.
+
+   https://developer.android.com/topic/performance/app-optimization/enable-app-optimization
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/layout/fragment_settings.xml:8: Warning: This RadioGroup layout or its LinearLayout parent is possibly unnecessary [UselessParent]
+                <RadioGroup android:id="@+id/theme_choices" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:contentDescription="@string/theme_options">
+                 ~~~~~~~~~~
+
+   Explanation for issues of type "UselessParent":
+   A layout with children that has no siblings, is not a scrollview or a root
+   layout, and does not have a background, can be removed and have its
+   children moved directly into the parent for a flatter and more efficient
+   layout hierarchy.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:1: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"><background android:drawable="@drawable/bg_launcher" /><foreground android:drawable="@drawable/ic_quizpk_launcher" /></adaptive-icon>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:1: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"><background android:drawable="@drawable/bg_launcher" /><foreground android:drawable="@drawable/ic_quizpk_launcher" /></adaptive-icon>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   The system may use the coloring of the user's chosen wallpaper and theme to
+   tint app icons. Providing a <monochrome> layer (which will be used for
+   tinting) for every adaptive icon is strongly recommended, otherwise Android
+   16 QPR 2 and above will simply tint the color version of the icon, which
+   may look unusual. Devices running earlier Android versions will (with no
+   monochrome layer) show the untinted color icon for your app, which will
+   look inconsistent.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp: Warning: The image ic_launcher.webp varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.webp: 108x108 dp (162x162 px), mipmap-mdpi/ic_launcher.webp: 108x108 dp (108x108 px), mipmap-xhdpi/ic_launcher.webp: 108x108 dp (216x216 px), mipmap-xxhdpi/ic_launcher.webp: 108x108 dp (324x324 px), mipmap-xxxhdpi/ic_launcher.webp: 48x48 dp (192x192 px) [IconDipSize]
+
+   Explanation for issues of type "IconDipSize":
+   Checks the all icons which are provided in multiple densities, all compute
+   to roughly the same density-independent pixel (dip) size. This catches
+   errors where images are either placed in the wrong folder, or icons are
+   changed to new sizes but some folders are forgotten.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp: Warning: The ic_launcher_round.webp icon has identical contents in the following configuration folders: drawable, mipmap-xxhdpi [IconDuplicatesConfig]
+
+   Explanation for issues of type "IconDuplicatesConfig":
+   If an icon is provided under different configuration parameters such as
+   drawable-hdpi or -v11, they should typically be different. This detector
+   catches cases where the same icon is provided in different configuration
+   folder which is usually not intentional.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/res/drawable/ic_launcher_round.webp: Warning: Found bitmap drawable res/drawable/ic_launcher_round.webp in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/java/com/zeke/quizpk/MainActivity.java:60: Warning: Prefer "SHOW_AS_ACTION_IF_ROOM" instead of "SHOW_AS_ACTION_ALWAYS" [AlwaysShowAction]
+        settingsItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+                                              ~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "AlwaysShowAction":
+   Using showAsAction="always" in menu XML, or MenuItem.SHOW_AS_ACTION_ALWAYS
+   in Java code is usually a deviation from the user interface style guide.Use
+   ifRoom or the corresponding MenuItem.SHOW_AS_ACTION_IF_ROOM instead.
+
+   If always is used sparingly there are usually no problems and behavior is
+   roughly equivalent to ifRoom but with preference over other ifRoom items.
+   Using it more than twice in the same menu is a bad idea.
+
+   This check looks for menu XML files that contain more than two always
+   actions, or some always actions and no ifRoom actions. In Java code, it
+   looks for projects that contain references to
+   MenuItem.SHOW_AS_ACTION_ALWAYS and no references to
+   MenuItem.SHOW_AS_ACTION_IF_ROOM.
+
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:154: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("junit:junit:4.13.2")
+                       ~~~~~~~~~~~~~~~~~~~~
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:155: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("org.robolectric:robolectric:4.14.1")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+0 errors, 34 warnings

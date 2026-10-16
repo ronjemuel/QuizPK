@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mp_match_panel" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+    <TextView android:id="@+id/match_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Label" android:layout_marginTop="16dp" />
+    <TextView android:id="@+id/match_clock" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Title" android:layout_marginTop="8dp" android:accessibilityLiveRegion="none" />
+    <TextView android:id="@+id/match_phase" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="8dp" android:accessibilityLiveRegion="polite" />
+    <com.google.android.material.card.MaterialCardView android:id="@+id/match_question_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="@color/surface_variant">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <TextView android:id="@+id/match_question" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Section" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/match_option_a" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="16dp" android:gravity="start|center_vertical" android:textAllCaps="false" style="@style/Widget.Material3.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/match_option_b" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="8dp" android:gravity="start|center_vertical" android:textAllCaps="false" style="@style/Widget.Material3.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/match_option_c" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="8dp" android:gravity="start|center_vertical" android:textAllCaps="false" style="@style/Widget.Material3.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/match_option_d" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="8dp" android:gravity="start|center_vertical" android:textAllCaps="false" style="@style/Widget.Material3.Button.OutlinedButton" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/match_submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/match_submit" android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:id="@+id/match_reveal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="16dp" android:visibility="gone" />
+    <TextView android:id="@+id/match_records" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="12dp" android:visibility="gone" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/match_standings" android:textAppearance="@style/Text.QuizPK.Section" android:layout_marginTop="24dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/match_roster" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" android:layout_marginTop="12dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/match_done" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/match_done" android:layout_marginTop="24dp" android:visibility="gone" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/match_online_notice" android:textAppearance="@style/Text.QuizPK.Body" android:layout_marginTop="16dp" />
+</LinearLayout>

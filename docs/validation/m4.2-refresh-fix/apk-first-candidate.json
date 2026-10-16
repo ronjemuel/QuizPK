@@ -1,0 +1,10 @@
+{
+  "artifact": "artifacts/QuizPK-M4.2-refresh-fix-debug.apk",
+  "bytes": 6299312,
+  "sha256": "76877c9d7fa78bda8d00d800249f44abdf527e02b8e41c69a0b341e984da287e",
+  "package": "com.zeke.quizpk",
+  "versionCode": 5,
+  "versionName": "1.3.1-M4.2",
+  "bankBytesUnchanged": true,
+  "testAndSecretFilesExcluded": true
+}

@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "failedBackupAllFilesVerified": true,
+    "mainBeforeAfterEqual": true,
+    "currentMainEqualsFailedSnapshotSource": true,
+    "walAbsentBefore": true,
+    "walAfterWasEmpty": true,
+    "currentWalEmpty": true,
+    "step3DidNotCreateWindowPath": true,
+    "step3DidNotCreateRehearsal": true,
+    "failedSnapshotIntegrity": true,
+    "liveIntegrity": true,
+    "foreignKeysClean": true,
+    "liveSnapshotRowsEqual": true,
+    "liveM3Only": true,
+    "userVersionEqual": true,
+    "phone01ExistsEnabled": true,
+    "ownerFileMatchesOwnEnabledIdentity": true,
+    "ownerTokenFileUnchangedFromPreflight": true,
+    "phone01FileMatchesOwnEnabledIdentity": true,
+    "phone01TokenFileUnchangedFromPreflight": true,
+    "syntheticReadOnlyOpenCreatesEmptyWal": true
+  },
+  "counts": {
+    "users": 2,
+    "jobs": 4
+  },
+  "noLiveSqlWrites": true,
+  "cause": "Read-only SQLite open created a previously absent zero-byte WAL; main database bytes did not change.",
+  "failedBackupUsableForDataRecovery": true
+}

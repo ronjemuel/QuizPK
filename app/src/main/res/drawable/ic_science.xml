@@ -1,0 +1,6 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/primary" android:fillType="evenOdd" android:pathData="M12,10 A2,2 0,1 0,12,14 A2,2 0,1 0,12,10" />
+    <group android:pivotX="12" android:pivotY="12" android:rotation="0"><path android:fillColor="@android:color/transparent" android:strokeColor="@color/icon_secondary" android:strokeWidth="1.5" android:pathData="M2,12 A10,4 0,1 0,22,12 A10,4 0,1 0,2,12" /></group>
+    <group android:pivotX="12" android:pivotY="12" android:rotation="60"><path android:fillColor="@android:color/transparent" android:strokeColor="@color/icon_secondary" android:strokeWidth="1.5" android:pathData="M2,12 A10,4 0,1 0,22,12 A10,4 0,1 0,2,12" /></group>
+    <group android:pivotX="12" android:pivotY="12" android:rotation="120"><path android:fillColor="@android:color/transparent" android:strokeColor="@color/icon_secondary" android:strokeWidth="1.5" android:pathData="M2,12 A10,4 0,1 0,22,12 A10,4 0,1 0,2,12" /></group>
+</vector>

@@ -1,0 +1,1165 @@
+[
+  {
+    "url": "https://about.fiba.basketball/en/our-sport/official-basketball-rules",
+    "status": 200,
+    "resolved": "https://about.fiba.basketball/en/our-sport/official-basketball-rules",
+    "title": "Official Basketball Rules |\u00a0About FIBA",
+    "cache": "/tmp/quizpk-source-cache/64b6ebf2581d94d71e9d70bd27b13bca6f9bd08284c815e7712003affe9d103d.txt",
+    "characters": 1303
+  },
+  {
+    "url": "https://animals.sandiegozoo.org/animals/axolotl",
+    "status": 200,
+    "resolved": "https://animals.sandiegozoo.org/animals/axolotl",
+    "title": "Axolotl | San Diego Zoo Animals & Plants",
+    "cache": "/tmp/quizpk-source-cache/93db66bf7c3f348bf5dfe6514cf41a90dfbafc5d3d6c258ca484db3f4d8cc354.txt",
+    "characters": 7700
+  },
+  {
+    "url": "https://animals.sandiegozoo.org/animals/giraffe",
+    "status": 200,
+    "resolved": "https://animals.sandiegozoo.org/animals/giraffe",
+    "title": "Giraffe | San Diego Zoo Animals & Plants",
+    "cache": "/tmp/quizpk-source-cache/325101ff573dca590a577a9a6b72420a4a6f4eca2037bd18569a930f99e1d33a.txt",
+    "characters": 10072
+  },
+  {
+    "url": "https://animals.sandiegozoo.org/animals/koala",
+    "status": 200,
+    "resolved": "https://animals.sandiegozoo.org/animals/koala",
+    "title": "Koala | San Diego Zoo Animals & Plants",
+    "cache": "/tmp/quizpk-source-cache/70e97bb53a3246c86b7a24426b071cee85c5273ed6caca99eee55067d2634996.txt",
+    "characters": 12565
+  },
+  {
+    "url": "https://animals.sandiegozoo.org/animals/platypus",
+    "status": 200,
+    "resolved": "https://animals.sandiegozoo.org/animals/platypus",
+    "title": "Platypus | San Diego Zoo Animals & Plants",
+    "cache": "/tmp/quizpk-source-cache/becb627b2fbf5b05d1cb08d329a0596e4386dd78c135ac941cbec8de04b7cbd4.txt",
+    "characters": 14553
+  },
+  {
+    "url": "https://books.lib.uoguelph.ca/cheesemakingtechnologyebook/chapter/1-introduction-to-cheese-making/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://books.lib.uoguelph.ca/dairyscienceandtechnologyebook/chapter/cultured-dairy-products-and-cheese/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://corporate.bwfbadminton.com/statutes/",
+    "error": "[Errno 104] Connection reset by peer"
+  },
+  {
+    "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+    "status": 200,
+    "resolved": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+    "title": "Snow White and the Seven Dwarfs (film) - D23",
+    "cache": "/tmp/quizpk-source-cache/48366550f46109b776ad06adf751d8ebba0f10d182d99ce868a81d96689b1a87.txt",
+    "characters": 5198
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/URL",
+    "status": 200,
+    "resolved": "https://developer.mozilla.org/en-US/docs/Glossary/URL",
+    "title": "URL - Glossary | MDN",
+    "cache": "/tmp/quizpk-source-cache/5a62720d1e9e3510d1596da8586aad96c87b095d1e1ea8391b53b69c89df99a0.txt",
+    "characters": 11274
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "status": 200,
+    "resolved": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "cache": "/tmp/quizpk-source-cache/79ff745dd27b94112c1c9547af3cc6e70ee3864179547b5a158de9c079529f31.txt",
+    "characters": 8160
+  },
+  {
+    "url": "https://dictionary.cambridge.org/dictionary/english/hummus",
+    "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+    "url": "https://dictionary.cambridge.org/dictionary/english/miso",
+    "error": "<urlopen error [Errno 104] Connection reset by peer>"
+  },
+  {
+    "url": "https://dictionary.cambridge.org/dictionary/english/tahini",
+    "status": 200,
+    "resolved": "https://dictionary.cambridge.org/dictionary/english/tahini",
+    "cache": "/tmp/quizpk-source-cache/9533d7efb4f285e08eb8743f7d67db678ba85327f375ad1f74c63c7400fd111a.txt",
+    "characters": 10824
+  },
+  {
+    "url": "https://dictionary.cambridge.org/dictionary/english/tofu",
+    "status": 200,
+    "resolved": "https://dictionary.cambridge.org/dictionary/english/tofu",
+    "cache": "/tmp/quizpk-source-cache/1ab01c6c7dc0eed48e1ae68be71b0484c442574b4f1ef69182541e4014c10169.txt",
+    "characters": 11844
+  },
+  {
+    "url": "https://docs.python.org/3/library/functions.html#bin",
+    "status": 200,
+    "resolved": "https://docs.python.org/3/builtins/functions.html",
+    "title": "Built-in functions \u2014 Python 3.15.0 documentation",
+    "cache": "/tmp/quizpk-source-cache/a68a0c8c62e77bb33ef120ed6e3f17aba3665989b0b11e1cb700323725f700ea.txt",
+    "characters": 81839
+  },
+  {
+    "url": "https://docs.python.org/3/library/functions.html#hex",
+    "status": 200,
+    "resolved": "https://docs.python.org/3/builtins/functions.html",
+    "title": "Built-in functions \u2014 Python 3.15.0 documentation",
+    "cache": "/tmp/quizpk-source-cache/8be71d5dc43fbcfb6fbb8ace462df2cec5d2c8d8a2e1cd2e393f4ce21ca48f3f.txt",
+    "characters": 81839
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/Continent/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/Continent/",
+    "title": "Continent",
+    "cache": "/tmp/quizpk-source-cache/afd9cc91428d3f7256eb97f6d23061815794b014913bac60ade030d6a56f2499.txt",
+    "characters": 47164
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/antarctica/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/antarctica/",
+    "title": "Antarctica",
+    "cache": "/tmp/quizpk-source-cache/3cb39a8d30954ff138340292f28dabecacc4e5dcf2ed27ec71f1cda967172d8c.txt",
+    "characters": 37789
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/date-line/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/date-line/",
+    "title": "Date Line",
+    "cache": "/tmp/quizpk-source-cache/448b3d84040651e570281791d710f6475f7aa8de714af541956f608d4ede23da.txt",
+    "characters": 4638
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/equator/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/equator/",
+    "title": "Equator",
+    "cache": "/tmp/quizpk-source-cache/5d35819d5848b729d0aa6d94cca59a3833b1a9f9e528c19ad3609c7a193b190b.txt",
+    "characters": 12413
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/hemisphere/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/hemisphere/",
+    "title": "Hemisphere",
+    "cache": "/tmp/quizpk-source-cache/628f5e4eaffb5315ceb8de59524eb72f233e4cc97771c0b25a21495aa17b8230.txt",
+    "characters": 7505
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/latitude/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/latitude/",
+    "title": "Latitude",
+    "cache": "/tmp/quizpk-source-cache/1f95a011634265167a09c6448e2c7f7f380274996e1072f2608361f2d0240c44.txt",
+    "characters": 5624
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/longitude/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/longitude/",
+    "title": "Longitude",
+    "cache": "/tmp/quizpk-source-cache/02bf138f106d01ca368f1eb421abd8af1f4079dd01c70a433cac789281b25b1f.txt",
+    "characters": 5799
+  },
+  {
+    "url": "https://education.nationalgeographic.org/resource/mount-everest/",
+    "status": 200,
+    "resolved": "https://education.nationalgeographic.org/resource/mount-everest/",
+    "title": "Mount Everest",
+    "cache": "/tmp/quizpk-source-cache/8024d0b0b5d2163e3ad11632c184b1c137b14372309b67c12f36846b296c9ca8.txt",
+    "characters": 6997
+  },
+  {
+    "url": "https://egymonuments.gov.eg/monuments/the-great-pyramid/",
+    "status": 200,
+    "resolved": "https://egymonuments.gov.eg/monuments/the-great-pyramid/",
+    "cache": "/tmp/quizpk-source-cache/28b7bae40bd5d84e7309be638ff3d28bb523297e239f4292041c346c90eb2fc4.txt",
+    "characters": 2841
+  },
+  {
+    "url": "https://mpns.science.kew.org/mpns-portal/drugDetail?drugName=saffron",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/american-flamingo",
+    "status": 200,
+    "resolved": "https://nationalzoo.si.edu/animals/american-flamingo",
+    "title": "American flamingo | Smithsonian's National Zoo and Conservation Biology Institute",
+    "cache": "/tmp/quizpk-source-cache/c98a7941218fe93bd9c2f6fd2acf96916eb045c1ce81ca6a10255624b388dba1.txt",
+    "characters": 11597
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/asian-elephant",
+    "status": 200,
+    "resolved": "https://nationalzoo.si.edu/animals/asian-elephant",
+    "title": "Asian elephant | Smithsonian's National Zoo and Conservation Biology Institute",
+    "cache": "/tmp/quizpk-source-cache/f1f8d77b314a149f3cc0ac5f6e46fee9f0aab60fd3d9358127ed3ea3e6420177.txt",
+    "characters": 29891
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/cheetah",
+    "status": 200,
+    "resolved": "https://nationalzoo.si.edu/animals/cheetah",
+    "title": "Cheetah | Smithsonian's National Zoo and Conservation Biology Institute",
+    "cache": "/tmp/quizpk-source-cache/f831e684bef31e9fd1a1990953007e04cfeeb3642acc028c36f5586853acb1a5.txt",
+    "characters": 20506
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/giant-panda",
+    "status": 200,
+    "resolved": "https://nationalzoo.si.edu/animals/giant-panda",
+    "title": "Giant panda | Smithsonian's National Zoo and Conservation Biology Institute",
+    "cache": "/tmp/quizpk-source-cache/5afcfa13196994d2e972039a4a614c8b46dd785886a76a33db007343c67ae5a9.txt",
+    "characters": 37656
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/facts/bigfish.html",
+    "status": 200,
+    "resolved": "https://oceanservice.noaa.gov/facts/bigfish.html",
+    "cache": "/tmp/quizpk-source-cache/ca39c5b8821f6e9b5d1e9dd8c356cac805038a5a10d4d964bd7a6934f74b7b51.txt",
+    "characters": 3346
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/facts/biggestocean.html",
+    "status": 200,
+    "resolved": "https://oceanservice.noaa.gov/facts/biggestocean.html",
+    "title": "What is the largest ocean basin on Earth?",
+    "cache": "/tmp/quizpk-source-cache/69ee8898e3987f81a799a86de29cd4c6caced9b81233ce4776b46e6831b19bda.txt",
+    "characters": 3321
+  },
+  {
+    "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+    "status": 200,
+    "resolved": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+    "title": "How deep is the ocean?",
+    "cache": "/tmp/quizpk-source-cache/146e90d4aa0488e0ec84bee5a29f2863ef486e59292cb9553d760ee589fae3ee.txt",
+    "characters": 3173
+  },
+  {
+    "url": "https://ods.od.nih.gov/factsheets/VitaminC-Consumer/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://olympics.com/ioc/olympic-rings",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing",
+    "status": 200,
+    "resolved": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing",
+    "title": "14.2 DNA Structure and Sequencing - Biology 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/fed44ea521aac35b9383338e90df0b7a9a553fd38353a7aac2bbcf0f227fbda3.txt",
+    "characters": 18696
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi",
+    "status": 200,
+    "resolved": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi",
+    "cache": "/tmp/quizpk-source-cache/485b48a99af4184d2f6a5828279471d05ea228b8d08dfe3b51e670ac1be2c1a1.txt",
+    "characters": 21918
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+    "status": 200,
+    "resolved": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+    "title": "4.3 Eukaryotic Cells - Biology 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/6406fa39822349e91dcb7b38be08e8b3372146c41802c4ea9275c0bfd44e969e.txt",
+    "characters": 23271
+  },
+  {
+    "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+    "status": 200,
+    "resolved": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
+    "title": "8.1 Overview of Photosynthesis - Biology 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/557b9b04ad9d95735e8d6a57503940fd4f955f355784961dfbab6448bbb371f4.txt",
+    "characters": 14347
+  },
+  {
+    "url": "https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams",
+    "status": 200,
+    "resolved": "https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams",
+    "title": "10.4 Phase Diagrams - Chemistry 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/95acfa0bb3148eaa064be6e127a14bb0e318ecedcf03db30ee3a7ab89c0db52a.txt",
+    "characters": 18631
+  },
+  {
+    "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "status": 200,
+    "resolved": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "title": "2.3 Atomic Structure and Symbolism - Chemistry 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/a25003549ced6bd04def9f701ebf7b33ac0fa9502a9a7149bd1dd17bbf28d420.txt",
+    "characters": 23720
+  },
+  {
+    "url": "https://openstax.org/books/college-algebra-2e/pages/9-5-counting-principles",
+    "status": 200,
+    "resolved": "https://openstax.org/books/college-algebra-2e/pages/9-5-counting-principles",
+    "cache": "/tmp/quizpk-source-cache/fb3963ae199ea1d5c68545e4832fa172e1bc3725fe063410520a4eb8da7a3d8d.txt",
+    "characters": 29556
+  },
+  {
+    "url": "https://openstax.org/books/college-physics-2e/pages/4-3-newtons-second-law-of-motion-concept-of-a-system",
+    "status": 200,
+    "resolved": "https://openstax.org/books/college-physics-2e/pages/4-3-newtons-second-law-of-motion-concept-of-a-system",
+    "title": "4.3 Newton\u2019s Second Law of Motion: Concept of a System - College Physics 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/8cff81bc0b3b6677cfe41560b6697d3aa3ece3ac83dfb502b6b1f4184eb7aa89.txt",
+    "characters": 23680
+  },
+  {
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+    "status": 200,
+    "resolved": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+    "title": "2.5 Measures of the Center of the Data - Introductory Statistics 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/165518ba54b45e99564bbffb1c9da0d04650a6c4789d3bcf2ad479d7fb4a8b15.txt",
+    "characters": 14953
+  },
+  {
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+    "status": 200,
+    "resolved": "https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology",
+    "title": "3.1 Terminology - Introductory Statistics 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/6272bc3dd36bbe985ea7896fe5adac4a9a494e4467c2f5ad7434b525e4ddb5cd.txt",
+    "characters": 16017
+  },
+  {
+    "url": "https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers",
+    "status": 200,
+    "resolved": "https://openstax.org/books/prealgebra-2e/pages/1-5-divide-whole-numbers",
+    "title": "1.5 Divide Whole Numbers - Prealgebra 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/5562072c1b423371e0f515f25c927ab3ab17c0314eef051226bf0dcb4f2437bc.txt",
+    "characters": 28268
+  },
+  {
+    "url": "https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple",
+    "status": 200,
+    "resolved": "https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple",
+    "title": "2.5 Prime Factorization and the Least Common Multiple - Prealgebra 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/8e1151ad3b3a1f3552124a6a1bae650c4812d5f614bbd3c9ce7231188cd7c7f5.txt",
+    "characters": 19140
+  },
+  {
+    "url": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem",
+    "status": 200,
+    "resolved": "https://openstax.org/books/prealgebra-2e/pages/9-3-use-properties-of-angles-triangles-and-the-pythagorean-theorem",
+    "title": "9.3 Use Properties of Angles, Triangles, and the Pythagorean Theorem - Prealgebra 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/5baa4ce09d6935a59bdf69eda5df3bd4ad5126eba7b6a415bb2a842c5a39e7ed.txt",
+    "characters": 25935
+  },
+  {
+    "url": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids",
+    "status": 200,
+    "resolved": "https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids",
+    "title": "9.4 Use Properties of Rectangles, Triangles, and Trapezoids - Prealgebra 2e | OpenStax",
+    "cache": "/tmp/quizpk-source-cache/c69cb4fde894038379c91ee0a19c1c0a81d0c758a8f5f24cd51a8e2353102800.txt",
+    "characters": 42550
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/1/hydrogen",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/1/hydrogen",
+    "title": "\r\n\t\r\n    Hydrogen\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/e7f270b91f9ac9fae1c4de1cb8c87621a118cdf53202de2998a90d5a615fc419.txt",
+    "characters": 25418
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/11/sodium",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/11/sodium",
+    "title": "\r\n\t\r\n    Sodium\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/fe85c7a924523cd77a480c89444d47848cc26633cce355cc75c8eb51a904ac83.txt",
+    "characters": 24325
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/19/potassium",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/19/potassium",
+    "title": "\r\n\t\r\n    Potassium\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/ae0ef483554c732017a4fbcf0aae389bc0d491bb2666aa883a4d146122d6b51c.txt",
+    "characters": 23046
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/26/iron",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/26/iron",
+    "title": "\r\n\t\r\n    Iron\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/44bd57a299b5315d7f98e110e2847aea9e8e1b0d90f8f1815ed057e5726485ba.txt",
+    "characters": 24185
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/35/bromine",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/35/bromine",
+    "title": "\r\n\t\r\n    Bromine\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/faef68edbb9e3cc5f567f0273c5dd59a0bba4559933614b564fc96bd5ee16380.txt",
+    "characters": 23570
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/6/carbon",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/6/carbon",
+    "title": "\r\n\t\r\n    Carbon\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/1dc866710bd4c39463f994a96329592f8055265e42b202aefe7889a1ee5ddebf.txt",
+    "characters": 29132
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/74/tungsten",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/74/tungsten",
+    "title": "\r\n\t\r\n    Tungsten\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/a29f4626a39bc5efd43328edbd8d33d9351efef5c309f5e0b07f014b58616eb0.txt",
+    "characters": 22720
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/79/gold",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/79/gold",
+    "title": "\r\n\t\r\n    Gold\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/fa99da4aff96c1c65b1c5d5ceb027b4d1f25c540728ccab2c97184db101f0895.txt",
+    "characters": 22902
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/8/oxygen",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/8/oxygen",
+    "title": "\r\n\t\r\n    Oxygen\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/741c2bc44b6bbc5ce63e3d7339600db162f8d19ab9a7add5576d04e1d62cbc4b.txt",
+    "characters": 23894
+  },
+  {
+    "url": "https://periodic-table.rsc.org/element/80/mercury",
+    "status": 200,
+    "resolved": "https://periodic-table.rsc.org/element/80/mercury",
+    "title": "\r\n\t\r\n    Mercury\r\n    - Element information, properties and uses | Periodic Table\r\n\r\n",
+    "cache": "/tmp/quizpk-source-cache/2956fb9d585163ff02c4a4480771db17d024f1c38c738eb0f8bd4c2117cedb5b.txt",
+    "characters": 23262
+  },
+  {
+    "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+    "status": 200,
+    "resolved": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+    "title": "CODATA Value:    speed of light in vacuum",
+    "cache": "/tmp/quizpk-source-cache/c1db73c242713f91fc36d427b2a4ee8cc720cc4841a1127ee884f2480fe6ad71.txt",
+    "characters": 532
+  },
+  {
+    "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77126699-1/general-information",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.7b00882",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+    "title": "Pluto: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/94c80c1e8ea1d8a49b364b1ff64c53a4e9b47ccccd326de9d7a0ee5ec0ecdea2.txt",
+    "characters": 16486
+  },
+  {
+    "url": "https://science.nasa.gov/jupiter/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/jupiter/jupiter-facts/",
+    "title": "Jupiter Facts",
+    "cache": "/tmp/quizpk-source-cache/fdb9ae0fde061b9fecb46c379d17d6a596bca7acc32284606951c2568a9bc6b1.txt",
+    "characters": 18634
+  },
+  {
+    "url": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/",
+    "checked": "2026-10-12"
+  },
+  {
+    "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+    "cache": "/tmp/quizpk-source-cache/618adaa0e580ca7ada382efa9aab620c432d5c5a5e0330847dcbcdc484f7ef16.txt",
+    "characters": 18845
+  },
+  {
+    "url": "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/",
+    "cache": "/tmp/quizpk-source-cache/6a5dd441d30828c6b2af46f9381aa2114348a5642abd726632a3bb72ca92b4ae.txt",
+    "characters": 12125
+  },
+  {
+    "url": "https://science.nasa.gov/mars/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/mars/facts/",
+    "title": "Mars: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/800804528a5885f79cd25808c9120d9919a2fa4db47e3012d6528f4ca6be013c.txt",
+    "characters": 16677
+  },
+  {
+    "url": "https://science.nasa.gov/mercury/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/mercury/facts/",
+    "title": "Mercury: Facts",
+    "cache": "/tmp/quizpk-source-cache/14ee5dbf611975636fe4cc11dd63e701bc7fbddb10a995302a32aa9aeac45d77.txt",
+    "characters": 13368
+  },
+  {
+    "url": "https://science.nasa.gov/mission/cassini/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/mission/cassini/",
+    "title": "Cassini-Huygens - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/bfe35952311aee937f5aec87f751f22cc0b439e12b0c73be0210e6b846021377.txt",
+    "characters": 11735
+  },
+  {
+    "url": "https://science.nasa.gov/moon/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/moon/facts/",
+    "title": "Moon Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/a9162fb8ffa4bf5fa69fec182b41ee4fce08a6f9b57f872106eed93d9dbbd3e6.txt",
+    "characters": 16676
+  },
+  {
+    "url": "https://science.nasa.gov/neptune/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/neptune/neptune-facts/",
+    "title": "Neptune: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/545361ef2c53b5a68017bd55302241960e8bf8bf1a7efa0b8679426b4a7c0178.txt",
+    "characters": 15641
+  },
+  {
+    "url": "https://science.nasa.gov/solar-system/planets/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/solar-system/planets/",
+    "title": "About the Planets",
+    "cache": "/tmp/quizpk-source-cache/70b1fb324f8cc0a07f9468a5ea6082b7b0bd86edc7e6bd20ff84018516fb8dd6.txt",
+    "characters": 12098
+  },
+  {
+    "url": "https://science.nasa.gov/solar-system/solar-system-facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/solar-system/solar-system-facts/",
+    "title": "Solar System: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/b9443019da3ade1d81fe2775371b2ab199240f30496783696ddcaaf7aa5f4921.txt",
+    "characters": 13472
+  },
+  {
+    "url": "https://science.nasa.gov/uranus/facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/uranus/facts/",
+    "title": "Uranus: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/d11e5224f4040692aeb11a148f7278fafef4aada300ed6dedf2952733f338aaa.txt",
+    "characters": 13477
+  },
+  {
+    "url": "https://science.nasa.gov/venus/venus-facts/",
+    "status": 200,
+    "resolved": "https://science.nasa.gov/venus/venus-facts/",
+    "title": "Venus: Facts - NASA Science",
+    "cache": "/tmp/quizpk-source-cache/46f616d3adef209f6710b329f40d3b747277b8621111a7f335446a73e65d689c.txt",
+    "characters": 21969
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "status": 200,
+    "resolved": "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+    "title": "Intervals \u2013 Open Music Theory",
+    "cache": "/tmp/quizpk-source-cache/c2adcfe1e3f1b45604644bcdd330cc0c9e71cf103713b3e0909d2929c6670874.txt",
+    "characters": 45404
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+    "status": 200,
+    "resolved": "https://viva.pressbooks.pub/openmusictheory/chapter/major-scales/",
+    "title": "Major Scales, Scale Degrees, and Key Signatures \u2013 Open Music Theory",
+    "cache": "/tmp/quizpk-source-cache/2f62598d5ca455064dcd88bafb30950e9495cc9dce36ba79139afbd1a6352927.txt",
+    "characters": 39796
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+    "status": 200,
+    "resolved": "https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/",
+    "title": "Minor Scales, Scale Degrees, and Key Signatures \u2013 Open Music Theory",
+    "cache": "/tmp/quizpk-source-cache/57406a5f406c261bcfb90c44e9e33b323e0dd894a457eb5e28f67f08cf3f17ea.txt",
+    "characters": 40458
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/notation-of-notes-clefs-and-ledger-lines/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/other-aspects-of-notation/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+    "status": 200,
+    "resolved": "https://viva.pressbooks.pub/openmusictheory/chapter/triads/",
+    "title": "Triads \u2013 Open Music Theory",
+    "cache": "/tmp/quizpk-source-cache/6ead1c70a64035142d6d3e600587b51b01a3b47fc526109048484f3b3049baf9.txt",
+    "characters": 37834
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/274/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/274/",
+    "title": "Historic Sanctuary of Machu Picchu - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/64548e3a782086273f79bd8ca98eb5a096fa2d91d2366e4b037d0bb7ec860616.txt",
+    "characters": 20829
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/326/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/326/",
+    "title": "Petra - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/3116384acf4b72a2457bd1cc0fac99454feb4b64317283b27d2a673bed08529a.txt",
+    "characters": 19746
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/438/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/438/",
+    "title": "The Great Wall - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/d55b1096b6779efd3032806965ef27e95d6c987148d7ca2c1384dd3b93999e54.txt",
+    "characters": 17253
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/668/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/668/",
+    "title": "Angkor - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/807895077725fabfd158143bfb199b85954337e1b182a21cc3c299dd0076dfb6.txt",
+    "characters": 22696
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/754/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/754/",
+    "title": "Lake Baikal - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/1d1c0c8d27ea8ce5ba085799f0eaf11a461390464bd2263cef202169df251e27.txt",
+    "characters": 12704
+  },
+  {
+    "url": "https://whc.unesco.org/en/list/86/",
+    "status": 200,
+    "resolved": "https://whc.unesco.org/en/list/86/",
+    "title": "Memphis and its Necropolis \u2013 the Pyramid Fields from Giza to Dahshur - UNESCO World Heritage Centre",
+    "cache": "/tmp/quizpk-source-cache/af7d991f043d844f80c11a3e6681ed15c656ff05e623b3a1ec22dbc8b5ace794.txt",
+    "characters": 18494
+  },
+  {
+    "url": "https://worldathletics.org/disciplines/combined-events/decathlon",
+    "status": 200,
+    "resolved": "https://worldathletics.org/disciplines/combined-events/decathlon",
+    "title": "\n        Decathlon \n    ",
+    "cache": "/tmp/quizpk-source-cache/59bfac25c56fed4aba8f493135e9f9c1980acd63f6e6a15b1d26df44464f2852.txt",
+    "characters": 12538
+  },
+  {
+    "url": "https://worldathletics.org/disciplines/middlelong/3000-metres-steeplechase",
+    "status": 200,
+    "resolved": "https://worldathletics.org/disciplines/middlelong/3000-metres-steeplechase",
+    "title": "\n        3000 Metres Steeplechase \n    ",
+    "cache": "/tmp/quizpk-source-cache/cf89154f1ab23e43463fc86a603748256a0fb765a27d7b6fe34c8ebccf373ba0.txt",
+    "characters": 13441
+  },
+  {
+    "url": "https://worldathletics.org/disciplines/road-running/marathon",
+    "status": 200,
+    "resolved": "https://worldathletics.org/disciplines/road-running/marathon",
+    "title": "\n        Marathon \n    ",
+    "cache": "/tmp/quizpk-source-cache/14859d70ebfa9569d67b432b8b4ecab627959d2c026cb9d645947c48f6a72be3.txt",
+    "characters": 6575
+  },
+  {
+    "url": "https://www.acs.org/molecule-of-the-week/archive/c/capsaicin.html",
+    "status": 200,
+    "resolved": "https://www.acs.org/molecule-of-the-week/archive/c/capsaicin.html",
+    "cache": "/tmp/quizpk-source-cache/911f97e094effa5087d4155e8196cab67ad2f1ba842e1ca15bce09edbfec3d29.txt",
+    "characters": 1
+  },
+  {
+    "url": "https://www.archives.gov/exhibits/featured-documents/magna-carta",
+    "status": 200,
+    "resolved": "https://www.archives.gov/exhibits/featured-documents/magna-carta",
+    "title": "Magna Carta | National Archives",
+    "cache": "/tmp/quizpk-source-cache/01cba4cc6df5bfa5a2202de42b3d7601d4e1da475206ecaa8e82bd0e399449e3.txt",
+    "characters": 4953
+  },
+  {
+    "url": "https://www.archives.gov/milestone-documents/constitution",
+    "status": 200,
+    "resolved": "https://www.archives.gov/milestone-documents/constitution",
+    "title": "Constitution of the United States (1787) | National Archives",
+    "cache": "/tmp/quizpk-source-cache/407849d4d871c8c5b09badc42f1c80b4bd765e29e783fbd1e002d18ff3b8713c.txt",
+    "characters": 4103
+  },
+  {
+    "url": "https://www.archives.gov/milestone-documents/declaration-of-independence",
+    "status": 200,
+    "resolved": "https://www.archives.gov/milestone-documents/declaration-of-independence",
+    "title": "Declaration of Independence (1776) | National Archives",
+    "cache": "/tmp/quizpk-source-cache/614b40fb45bb8d0486d6a0ed7c287385149e840de9679fd9bfe5c3d2aa85a5a0.txt",
+    "characters": 14752
+  },
+  {
+    "url": "https://www.archives.gov/milestone-documents/emancipation-proclamation",
+    "status": 200,
+    "resolved": "https://www.archives.gov/milestone-documents/emancipation-proclamation",
+    "title": "Emancipation Proclamation (1863) | National Archives",
+    "cache": "/tmp/quizpk-source-cache/30f4435caafd64fe6df0dd945889b0ea1c4736249397e48266a98c81dd6a9f07.txt",
+    "characters": 9387
+  },
+  {
+    "url": "https://www.archives.gov/milestone-documents/list",
+    "status": 200,
+    "resolved": "https://www.archives.gov/milestone-documents/list",
+    "title": "Milestone Documents | National Archives",
+    "cache": "/tmp/quizpk-source-cache/1d6ad1e27032e48259b9060614c0186107f18661e5858770c3eac3c5e367fc3b.txt",
+    "characters": 7704
+  },
+  {
+    "url": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "status": 200,
+    "resolved": "https://www.bipm.org/en/measurement-units/si-base-units",
+    "title": "SI base units - BIPM",
+    "cache": "/tmp/quizpk-source-cache/29f4604cbb62aec6e97ed785e9481ad564e3975f7bc89b38e283599608dc93b9.txt",
+    "characters": 6919
+  },
+  {
+    "url": "https://www.bipm.org/en/measurement-units/si-prefixes",
+    "status": 200,
+    "resolved": "https://www.bipm.org/en/measurement-units/si-prefixes",
+    "title": "SI prefixes - BIPM",
+    "cache": "/tmp/quizpk-source-cache/08dc49d6b2b249cdfa825dd173818037dc1f7b3951c113ff062c0f162267205a.txt",
+    "characters": 7018
+  },
+  {
+    "url": "https://www.breville.com/content/dam/breville/nz/assets/miscellaneous/instruction-manual/cookers/LRC480-instruction-manual.pdf",
+    "status": 200,
+    "resolved": "https://www.breville.com/content/dam/breville/nz/assets/miscellaneous/instruction-manual/cookers/LRC480-instruction-manual.pdf",
+    "checked": "2026-10-12"
+  },
+  {
+    "url": "https://www.britannica.com/event/Berlin-Wall",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.britannica.com/place/Andes-Mountains",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.britannica.com/place/Strait-of-Gibraltar",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.fs.usda.gov/wildflowers/pollinators/animals/bees.shtml",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.fs.usda.gov/wildflowers/pollinators/animals/butterflies.shtml",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.geonames.org/countries/",
+    "status": 200,
+    "resolved": "https://www.geonames.org/countries/",
+    "title": "GeoNames Country Codes \u2014 GeoNames UI",
+    "cache": "/tmp/quizpk-source-cache/9e8bf096653dab7c39c2cfce33e7efb207691650cd8ad0e18feba290515f7c4c.txt",
+    "characters": 14163
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/11",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/120",
+    "status": 200,
+    "resolved": "https://www.gutenberg.org/ebooks/120",
+    "title": "Treasure Island by Robert Louis Stevenson | Project Gutenberg",
+    "cache": "/tmp/quizpk-source-cache/0418b86fc1b0184133a7d1a700b7c231891a1dc111e4cb002fdf26f3789c07bd.txt",
+    "characters": 2658
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1342",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1400",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/145",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1513",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/1661",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/174",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/23042",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/2701",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/345",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/35",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/43",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/768",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/84",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "url": "https://www.gutenberg.org/ebooks/98",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "url": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+    "status": 200,
+    "resolved": "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/",
+    "title": "",
+    "cache": "/tmp/quizpk-source-cache/b80f4e36e44be1b873e3a9dafdd6dd3126af55353c8abd2ed551a7a405b2d61a.txt",
+    "characters": 1
+  },
+  {
+    "url": "https://www.kew.org/plants/avocado",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kew.org/plants/cacao-tree",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kew.org/plants/cinnamon",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kew.org/plants/ginger",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kew.org/plants/quinoa",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kew.org/read-and-watch/christmas-spices",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.kingarthurbaking.com/learn/guides/sourdough/faq",
+    "status": 200,
+    "resolved": "https://www.kingarthurbaking.com/learn/guides/sourdough/faq",
+    "cache": "/tmp/quizpk-source-cache/b2619c0d353fa76c6b79e1bbb4a9d6bf2b6c0dba1bc7e9bacc2943f1d8aa41c1.txt",
+    "characters": 12948
+  },
+  {
+    "url": "https://www.lords.org/mcc/laws-of-cricket/laws/law-17-the-over/",
+    "status": 200,
+    "resolved": "https://lawsofcricket.lords.org/laws-of-cricket/the-over-scoring-runs-dead-ball-and-extras/the-over",
+    "cache": "/tmp/quizpk-source-cache/06b1b64d0c684f4b91e69c505c26680f7bc5bb9dca951384195006a2fe9d1d07.txt",
+    "characters": 27
+  },
+  {
+    "url": "https://www.lords.org/mcc/laws-of-cricket/laws/law-6-the-pitch/",
+    "status": 200,
+    "resolved": "https://lawsofcricket.lords.org/laws-of-cricket/setting-up-the-game/the-pitch",
+    "cache": "/tmp/quizpk-source-cache/3b2ffacb2bafe0d30a3c4133b7021cfec2dea819ad230d6bc98f972270a825de.txt",
+    "characters": 27
+  },
+  {
+    "url": "https://www.lords.org/mcc/laws-of-cricket/laws/law-8-the-wickets/",
+    "status": 200,
+    "resolved": "https://lawsofcricket.lords.org/laws-of-cricket/setting-up-the-game/the-wickets",
+    "cache": "/tmp/quizpk-source-cache/3b2e08a5efedd07042a20722804c9c814c5910f3d89457e09a2e5778b4101eb5.txt",
+    "characters": 29
+  },
+  {
+    "url": "https://www.merriam-webster.com/dictionary/dozen",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-pacific-octopus",
+    "status": 200,
+    "resolved": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus",
+    "title": "Giant Pacific octopus | Monterey Bay Aquarium",
+    "cache": "/tmp/quizpk-source-cache/af1e5542a8d5372c0ec04fc373121f8dffb540ec5c431702caaafa89c567aafe.txt",
+    "characters": 15553
+  },
+  {
+    "url": "https://www.nasa.gov/mission/apollo-11/",
+    "status": 200,
+    "resolved": "https://www.nasa.gov/mission/apollo-11/",
+    "title": "Apollo 11 - NASA",
+    "cache": "/tmp/quizpk-source-cache/c96064ff33edee6169f34af1e19c66fb6ddeb9f69dd15f09a5249858efeeffb3.txt",
+    "characters": 14768
+  },
+  {
+    "url": "https://www.nps.gov/yose/learn/nature/bats.htm",
+    "status": 200,
+    "resolved": "https://www.nps.gov/yose/learn/nature/bats.htm",
+    "cache": "/tmp/quizpk-source-cache/ce0af85f6b6a810e933d6cabc9dbe725005a0223a1f9b88c785906fea9b0c306.txt",
+    "characters": 6946
+  },
+  {
+    "url": "https://www.oscars.org/oscars/ceremonies/1929",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.oscars.org/oscars/ceremonies/1998",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.oscars.org/oscars/ceremonies/2002",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.oscars.org/oscars/ceremonies/2003",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.oscars.org/oscars/ceremonies/2004",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.oscars.org/oscars/statuette",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/originsofparliament/birthofparliament/overview/magnacarta/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.pixar.com/cars",
+    "status": 200,
+    "resolved": "https://www.pixar.com/cars",
+    "title": "Cars \u2014 Pixar Animation Studios",
+    "cache": "/tmp/quizpk-source-cache/a5dee60313c81dad3aa809d88ce0be927564a53a649a8158efa0fe82decf4c60.txt",
+    "characters": 8017
+  },
+  {
+    "url": "https://www.pixar.com/finding-nemo",
+    "status": 200,
+    "resolved": "https://www.pixar.com/finding-nemo",
+    "title": "Finding Nemo \u2014 Pixar Animation Studios",
+    "cache": "/tmp/quizpk-source-cache/482e406c6ad7c0126c5ee5f5178cb9bf65e9100b9c87afdffaa6d48ecb5dbddf.txt",
+    "characters": 11632
+  },
+  {
+    "url": "https://www.pixar.com/inside-out",
+    "status": 200,
+    "resolved": "https://www.pixar.com/inside-out",
+    "title": "Inside Out \u2014 Pixar Animation Studios",
+    "cache": "/tmp/quizpk-source-cache/7be0b01152ed347f8614a822a809636f5779f59b69e3d3de98fc120febe3dfc9.txt",
+    "characters": 6393
+  },
+  {
+    "url": "https://www.pixar.com/monsters-inc",
+    "status": 200,
+    "resolved": "https://www.pixar.com/monsters-inc",
+    "title": "Monster's Inc. \u2014 Pixar Animation Studios",
+    "cache": "/tmp/quizpk-source-cache/c1e93135a45846d7e6b71d8ac2f1a4fe63d7453cd4fa88609e86caeacbc548f5.txt",
+    "characters": 9172
+  },
+  {
+    "url": "https://www.pixar.com/toy-story",
+    "status": 200,
+    "resolved": "https://www.pixar.com/toy-story",
+    "title": "Toy Story \u2014 Pixar Animation Studios",
+    "cache": "/tmp/quizpk-source-cache/b447b5c3df553a0fb16a5bb28b1c5b124d7fce45bad89839c19cb4e6cc198d5c.txt",
+    "characters": 6149
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "status": 200,
+    "resolved": "https://www.rfc-editor.org/rfc/rfc1034.html",
+    "title": "",
+    "cache": "/tmp/quizpk-source-cache/c368a0dbdf8fa8719e60e9cdce98efb9d932130f5af8817496506bfda0b3608b.txt",
+    "characters": 107349
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc3629.html",
+    "status": 200,
+    "resolved": "https://www.rfc-editor.org/rfc/rfc3629.html",
+    "title": "",
+    "cache": "/tmp/quizpk-source-cache/8d32d52e461470b58837788052d5a7efe220544f0b6adb9beb0e8c020ee662bb.txt",
+    "characters": 30117
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+    "status": 200,
+    "resolved": "https://www.rfc-editor.org/rfc/rfc8200.html",
+    "title": "",
+    "cache": "/tmp/quizpk-source-cache/96217019c42f58cc1faa99c0abe80bda60dfefd09ee032336bd2c092bfe5ba5b.txt",
+    "characters": 74862
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+    "status": 200,
+    "resolved": "https://www.rfc-editor.org/rfc/rfc8259.html",
+    "title": "",
+    "cache": "/tmp/quizpk-source-cache/fe4dd298229f7dffbbc1e8452826c3f2008bbbb5bef9012409b240299544c6de.txt",
+    "characters": 23808
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "status": 200,
+    "resolved": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "title": "RFC 9110: HTTP Semantics",
+    "cache": "/tmp/quizpk-source-cache/b1b13a12aee75c6ecc20fb910c724cdfd1e4d841add5e14d1dd4a2006727a9ad.txt",
+    "characters": 450784
+  },
+  {
+    "url": "https://www.sqlite.org/lang.html",
+    "status": 200,
+    "resolved": "https://www.sqlite.org/lang.html",
+    "title": "Query Language Understood by SQLite",
+    "cache": "/tmp/quizpk-source-cache/fbbe8a457e79190dc2e7f4e8a809dd7f170155849764a23e68f8c43122fef2bb.txt",
+    "characters": 2036
+  },
+  {
+    "url": "https://www.sqlite.org/lang_createtable.html",
+    "status": 200,
+    "resolved": "https://www.sqlite.org/lang_createtable.html",
+    "title": "CREATE TABLE",
+    "cache": "/tmp/quizpk-source-cache/9dc4dc666cbaa7c75d0fe9d718d95d3df8e758e5b1644bf43c412ca1ad787160.txt",
+    "characters": 25187
+  },
+  {
+    "url": "https://www.sqlite.org/transactional.html",
+    "status": 200,
+    "resolved": "https://www.sqlite.org/transactional.html",
+    "title": "SQLite Is Transactional",
+    "cache": "/tmp/quizpk-source-cache/f6d60023063c94381c23fcf97b90f0c2031155d1794f1dd9da3ff6f895a5d4bb.txt",
+    "characters": 1123
+  },
+  {
+    "url": "https://www.theifab.com/laws/latest/offside/",
+    "status": 200,
+    "resolved": "https://www.theifab.com/laws/latest/offside/",
+    "title": "Law 11 - Offside | IFAB",
+    "cache": "/tmp/quizpk-source-cache/88494f91591eb2944c88fa0a9f7297418f32b8607348234907974bc028eeed23.txt",
+    "characters": 47484
+  },
+  {
+    "url": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+    "status": 200,
+    "resolved": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+    "title": "Law 7 - The Duration of the Match | IFAB",
+    "cache": "/tmp/quizpk-source-cache/3dd5baa054ea2d1eb7f0be85431533eb9fde0d6cf54f7446ed99699791df7765.txt",
+    "characters": 9063
+  },
+  {
+    "url": "https://www.theifab.com/laws/latest/the-field-of-play/",
+    "status": 200,
+    "resolved": "https://www.theifab.com/laws/latest/the-field-of-play/",
+    "title": "Law 1 - The Field of Play | IFAB",
+    "cache": "/tmp/quizpk-source-cache/4c6a4c4bf43e04b6cc9ba5424270e18ad8cf9f15387dbaf4acdee312cb16b905.txt",
+    "characters": 17465
+  },
+  {
+    "url": "https://www.theifab.com/laws/latest/the-players/",
+    "status": 200,
+    "resolved": "https://www.theifab.com/laws/latest/the-players/",
+    "title": "Law 3 - The Players | IFAB",
+    "cache": "/tmp/quizpk-source-cache/eea05b78ea80b75e2bee631b7e300e6d4c7ada31e8a726dcf2f9d97b66b2530e.txt",
+    "characters": 39602
+  },
+  {
+    "url": "https://www.timeanddate.com/calendar/gregorian-calendar.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www.un.org/en/about-us",
+    "status": 200,
+    "resolved": "https://www.un.org/en/about-us",
+    "title": "About Us | United Nations",
+    "cache": "/tmp/quizpk-source-cache/b6ba1db9613d7f3a86c1261c10fca71beea5b368314a30039ab61838f0039381.txt",
+    "characters": 7317
+  },
+  {
+    "url": "https://www.un.org/en/about-us/history-of-the-un",
+    "status": 200,
+    "resolved": "https://www.un.org/en/about-us/history-of-the-un",
+    "title": "History of the United Nations | United Nations",
+    "cache": "/tmp/quizpk-source-cache/45587ef79e2f8e640ff6f64e62663935c825a6a868795b7a5d1a2b9f8ec66aaf.txt",
+    "characters": 5709
+  },
+  {
+    "url": "https://www.un.org/en/about-us/un-charter/full-text",
+    "status": 200,
+    "resolved": "https://www.un.org/en/about-us/un-charter/full-text",
+    "title": "United Nations Charter (full text) | United Nations",
+    "cache": "/tmp/quizpk-source-cache/de56bbfa44b11f8ad34598a6256568eecf5f8e60cd493aff1f8318ee636ecc19.txt",
+    "characters": 60465
+  },
+  {
+    "url": "https://www.un.org/en/our-work/official-languages",
+    "status": 200,
+    "resolved": "https://www.un.org/en/our-work/official-languages",
+    "title": "Official Languages | United Nations",
+    "cache": "/tmp/quizpk-source-cache/adca96d4fc4c4c647c01ed518fedfb1c308f6231b113aaa7fc37a081fc5b9212.txt",
+    "characters": 7574
+  },
+  {
+    "url": "https://www.w3.org/People/Berners-Lee/",
+    "status": 200,
+    "resolved": "https://www.w3.org/People/Berners-Lee/",
+    "title": "Tim Berners-Lee",
+    "cache": "/tmp/quizpk-source-cache/2c20bee83e2591290907dce64d86a0726a3b7b934db001d35c60b661065ad077.txt",
+    "characters": 12179
+  },
+  {
+    "url": "https://www.w3.org/Style/CSS/Overview.en.html",
+    "status": 200,
+    "resolved": "https://www.w3.org/Style/CSS/Overview.en.html",
+    "title": "Cascading Style Sheets",
+    "cache": "/tmp/quizpk-source-cache/1e782467ee8546e2ef2cef95a2deddaac2e161866545257aff7583aff0848b4c.txt",
+    "characters": 5188
+  },
+  {
+    "url": "https://www.w3.org/TR/html401/intro/intro.html",
+    "status": 200,
+    "resolved": "https://www.w3.org/TR/html401/intro/intro.html",
+    "title": "Introduction to HTML 4",
+    "cache": "/tmp/quizpk-source-cache/0a421eaeaf44c1c315e1a8a4f6e865b9cc428b52bae505d4284962ffc8db505b.txt",
+    "characters": 14238
+  },
+  {
+    "url": "https://zoo.sandiegozoo.org/animals/penguin",
+    "status": 200,
+    "resolved": "https://zoo.sandiegozoo.org/animals/penguin",
+    "checked": "2026-10-12"
+  }
+]

@@ -1,0 +1,32 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Warning: Unable to set daemon's environment variables to match the client because: 
+  There is no native integration with this operating environment.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.aapt2FromMavenOverride=/tmp/manhwa-toolchain/sdk/build-tools/36.0.0/aapt2' is experimental.
+Add android.sync.suppressAgpWarnings=UNSUPPORTED_PROJECT_OPTION_USE to the gradle.properties file to suppress this warning.
+e: file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:89:60: Argument type mismatch: actual type is 'File', but 'String' was expected.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts' line: 89
+
+* What went wrong:
+Script compilation error:
+
+  Line 89:     sourceSets.getByName("test").resources.directories.add(rootProject.file("protocol"))
+                                                                      ^ Argument type mismatch: actual type is 'File', but 'String' was expected.
+
+1 error
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 30s

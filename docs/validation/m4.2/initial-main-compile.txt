@@ -1,0 +1,62 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Warning: Unable to set daemon's environment variables to match the client because: 
+  There is no native integration with this operating environment.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.aapt2FromMavenOverride=/tmp/manhwa-toolchain/sdk/build-tools/36.0.0/aapt2' is experimental.
+Add android.sync.suppressAgpWarnings=UNSUPPORTED_PROJECT_OPTION_USE to the gradle.properties file to suppress this warning.
+w: file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/build.gradle.kts:89:44: 'fun srcDir(srcDir: Any): Any' is deprecated. Use `directories` mutable set instead.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:generateDebugRFile
+> Task :app:compileDebugKotlin NO-SOURCE
+
+> Task :app:compileDebugJavaWithJavac
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java:171: error: reference to ClipboardManager is ambiguous
+    private void copy(){RoomProtocol.Snapshot s=confirmedRoom();if(s==null)return;ClipboardManager clipboard=(ClipboardManager)requireContext().getSystemService(Context.CLIPBOARD_SERVICE);clipboard.setPrimaryClip(ClipData.newPlainText(getString(R.string.mp_invite_label),s.inviteCode));Toast.makeText(requireContext(),R.string.mp_copied,Toast.LENGTH_SHORT).show();}
+                                                                                  ^
+  both class android.text.ClipboardManager in android.text and class android.content.ClipboardManager in android.content match
+/mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java:171: error: reference to ClipboardManager is ambiguous
+    private void copy(){RoomProtocol.Snapshot s=confirmedRoom();if(s==null)return;ClipboardManager clipboard=(ClipboardManager)requireContext().getSystemService(Context.CLIPBOARD_SERVICE);clipboard.setPrimaryClip(ClipData.newPlainText(getString(R.string.mp_invite_label),s.inviteCode));Toast.makeText(requireContext(),R.string.mp_copied,Toast.LENGTH_SHORT).show();}
+                                                                                                              ^
+  both class android.text.ClipboardManager in android.text and class android.content.ClipboardManager in android.content match
+2 errors
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///mnt/sdcard/CodeOnTheGoProjects/QuizPK/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac' (registered by plugin 'com.android.internal.application').
+> Compilation failed; see the compiler output below.
+  /mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java:171: error: reference to ClipboardManager is ambiguous
+      private void copy(){RoomProtocol.Snapshot s=confirmedRoom();if(s==null)return;ClipboardManager clipboard=(ClipboardManager)requireContext().getSystemService(Context.CLIPBOARD_SERVICE);clipboard.setPrimaryClip(ClipData.newPlainText(getString(R.string.mp_invite_label),s.inviteCode));Toast.makeText(requireContext(),R.string.mp_copied,Toast.LENGTH_SHORT).show();}
+                                                                                    ^
+    both class android.text.ClipboardManager in android.text and class android.content.ClipboardManager in android.content match
+  /mnt/sdcard/CodeOnTheGoProjects/QuizPK/app/src/main/java/com/zeke/quizpk/ui/screens/MultiplayerFragment.java:171: error: reference to ClipboardManager is ambiguous
+      private void copy(){RoomProtocol.Snapshot s=confirmedRoom();if(s==null)return;ClipboardManager clipboard=(ClipboardManager)requireContext().getSystemService(Context.CLIPBOARD_SERVICE);clipboard.setPrimaryClip(ClipData.newPlainText(getString(R.string.mp_invite_label),s.inviteCode));Toast.makeText(requireContext(),R.string.mp_copied,Toast.LENGTH_SHORT).show();}
+                                                                                                                ^
+    both class android.text.ClipboardManager in android.text and class android.content.ClipboardManager in android.content match
+  2 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 5m 22s
+10 actionable tasks: 8 executed, 2 up-to-date

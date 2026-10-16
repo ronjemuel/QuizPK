@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zeke.quizpk.LobbyBackendIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:23:06.179Z" hostname="localhost" time="2.575">
+  <properties/>
+  <testcase name="twoNativeClientsUseRealModeratorLobbyAuthorityWithoutChangingM3" classname="com.zeke.quizpk.LobbyBackendIntegrationTest" time="2.571"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

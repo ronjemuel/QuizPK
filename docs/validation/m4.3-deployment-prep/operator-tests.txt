@@ -1,0 +1,30 @@
+..E/data/data/com.termux/files/usr/lib/python3.14/unittest/mock.py:2259: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x6f89660b80>
+  def __init__(self, name, parent):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/data/data/com.termux/files/usr/lib/python3.14/unittest/mock.py:2259: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x6f896616c0>
+  def __init__(self, name, parent):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.../data/data/com.termux/files/usr/lib/python3.14/unittest/mock.py:2259: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x6f896613f0>
+  def __init__(self, name, parent):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+..........................
+======================================================================
+ERROR: test_schema_two_can_be_backed_up_for_fallback (tools.test_m43_backend_ops.BackupTests.test_schema_two_can_be_backed_up_for_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/test_m43_backend_ops.py", line 103, in test_schema_two_can_be_backed_up_for_fallback
+    p = self.backup(True)
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/test_m43_backend_ops.py", line 67, in backup
+    b.backup('maintenance' if stopped else 'preflight', str(seed) if stopped else None)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m43_backend_backup.py", line 113, in backup
+    ensure_stopped()
+    ~~~~~~~~~~~~~~^^
+  File "/mnt/sdcard/CodeOnTheGoProjects/QuizPK/tools/m43_backend_backup.py", line 81, in ensure_stopped
+    raise RuntimeError('DATABASE_OWNER_PRESENT')
+RuntimeError: DATABASE_OWNER_PRESENT
+
+----------------------------------------------------------------------
+Ran 32 tests in 9.063s
+
+FAILED (errors=1)

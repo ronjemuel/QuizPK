@@ -1,0 +1,58 @@
+{
+  "protocolVersion": 1,
+  "stage": "M4.3",
+  "implementedCommands": ["room.create", "room.join", "room.leave", "room.heartbeat", "room.ready", "room.settings", "match.start", "match.answer"],
+  "requiredCommandFields": ["protocolVersion", "requestId", "issuedAtMs", "type", "payload"],
+  "authorityNetworks": ["ONLINE", "LOCAL"],
+  "contestantLimit": 8,
+  "minimumContestantsToStart": 2,
+  "heartbeatEveryMs": 15000,
+  "presenceTimeoutMs": 45000,
+  "pollEveryMs": 5000,
+  "createFixture": {
+    "protocolVersion": 1,
+    "requestId": "00000000-0000-4000-8000-000000000001",
+    "issuedAtMs": 1791792000000,
+    "type": "room.create",
+    "payload": {
+      "mode": "CLASSIC",
+      "displayName": "Fixture host",
+      "settings": {"category": "Science", "difficulty": "Normal", "questionCount": 5, "timerSeconds": 15}
+    }
+  },
+  "scoringDesignOnly": false,
+  "scoreVectors": [
+    {"correct": true, "elapsedMs": 0, "durationMs": 10000, "cancelled": false, "expected": 150},
+    {"correct": true, "elapsedMs": 2500, "durationMs": 10000, "cancelled": false, "expected": 137},
+    {"correct": true, "elapsedMs": 5000, "durationMs": 10000, "cancelled": false, "expected": 125},
+    {"correct": true, "elapsedMs": 9999, "durationMs": 10000, "cancelled": false, "expected": 100},
+    {"correct": true, "elapsedMs": 10000, "durationMs": 10000, "cancelled": false, "expected": 0},
+    {"correct": false, "elapsedMs": 0, "durationMs": 10000, "cancelled": false, "expected": 0},
+    {"correct": true, "elapsedMs": 0, "durationMs": 10000, "cancelled": true, "expected": 0}
+  ],
+  "orderingVectors": [
+    {"name": "wrong first, correct second", "submissions": [{"id": "a", "sequence": 1, "correct": false, "elapsedMs": 100}, {"id": "b", "sequence": 2, "correct": true, "elapsedMs": 200}], "first": "a", "fastestCorrect": "b"},
+    {"name": "same elapsed time uses accepted sequence", "submissions": [{"id": "b", "sequence": 2, "correct": true, "elapsedMs": 100}, {"id": "a", "sequence": 1, "correct": true, "elapsedMs": 100}], "first": "a", "fastestCorrect": "a"},
+    {"name": "no correct answers", "submissions": [{"id": "a", "sequence": 1, "correct": false, "elapsedMs": 100}], "first": "a", "fastestCorrect": null},
+    {"name": "no submissions", "submissions": [], "first": null, "fastestCorrect": null}
+  ],
+  "transitionDesignOnly": true,
+  "transitionVectors": [
+    {"mode": "MODERATOR", "state": "LOBBY", "action": "match.start", "actor": "MODERATOR", "contestants": 2, "expected": "READY"},
+    {"mode": "MODERATOR", "state": "LOBBY", "action": "match.start", "actor": "MODERATOR", "contestants": 1, "expected": "TOO_FEW_CONTESTANTS"},
+    {"mode": "CLASSIC", "state": "LOBBY", "action": "match.start", "actor": "OWNER", "contestants": 2, "expected": "ROUND_PREPARED"},
+    {"mode": "MODERATOR", "state": "READY", "action": "round.prepare", "actor": "MODERATOR", "expected": "ROUND_PREPARED"},
+    {"mode": "MODERATOR", "state": "ROUND_PREPARED", "action": "round.start", "actor": "CONTESTANT", "expected": "FORBIDDEN"},
+    {"mode": "MODERATOR", "state": "ROUND_PREPARED", "action": "round.start", "actor": "MODERATOR", "expected": "ROUND_LIVE"},
+    {"mode": "MODERATOR", "state": "ROUND_LIVE", "action": "round.start", "actor": "MODERATOR", "expected": "INVALID_STATE"},
+    {"mode": "MODERATOR", "state": "ROUND_LIVE", "action": "round.deadline", "actor": "SERVER", "expected": "ROUND_CLOSED"},
+    {"mode": "MODERATOR", "state": "ROUND_LIVE", "action": "host.disconnect", "actor": "SERVER", "expected": "ROUND_LIVE"},
+    {"mode": "MODERATOR", "state": "ROUND_CLOSED", "action": "round.reveal", "actor": "CONTESTANT", "expected": "FORBIDDEN"},
+    {"mode": "MODERATOR", "state": "ROUND_CLOSED", "action": "round.reveal", "actor": "MODERATOR", "expected": "ROUND_REVEALED"},
+    {"mode": "MODERATOR", "state": "ROUND_REVEALED", "action": "round.next", "actor": "SERVER", "expected": "FORBIDDEN"},
+    {"mode": "MODERATOR", "state": "ROUND_REVEALED", "action": "round.next", "actor": "MODERATOR", "expected": "ROUND_PREPARED"},
+    {"mode": "CLASSIC", "state": "ROUND_PREPARED", "action": "round.start", "actor": "OWNER", "expected": "FORBIDDEN"},
+    {"mode": "CLASSIC", "state": "ROUND_PREPARED", "action": "round.start", "actor": "SERVER", "expected": "ROUND_LIVE"},
+    {"mode": "MODERATOR", "state": "ROUND_LIVE", "action": "server.restart", "actor": "SERVER", "expected": "ROUND_CLOSED"}
+  ]
+}

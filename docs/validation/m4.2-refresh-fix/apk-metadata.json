@@ -1,0 +1,17 @@
+{
+  "artifact": "artifacts/QuizPK-M4.2-refresh-fix-debug.apk",
+  "bytes": 6367273,
+  "sha256": "8299fa4fb782892f409ced06f53e9cb01b1d29348b4bccd894cafc6e4c8c494b",
+  "package": "com.zeke.quizpk",
+  "versionCode": 5,
+  "versionName": "1.3.1-M4.2",
+  "installedVersionCode": 4,
+  "minSdk": "24",
+  "targetSdk": "36",
+  "permissionsUnchanged": true,
+  "bankBytesUnchanged": true,
+  "testAndSecretFilesExcluded": true,
+  "matchesFinalBuild": true,
+  "privateValuesAndHashesAbsentFromPublicChangesAndUncompressedApk": true,
+  "testFixtureAndRobolectricClassesAbsentFromDex": true
+}
